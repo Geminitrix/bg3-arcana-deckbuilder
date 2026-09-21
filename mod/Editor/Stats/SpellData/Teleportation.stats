@@ -29,7 +29,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_ArcaneGate_L6to8" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsSpell;CannotTargetItems;CannotTargetCharacter;RangeIgnoreVerticalThreshold;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
@@ -55,7 +55,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Revivify_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_Revivify_L1to3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Revivify" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(5)):Resurrect(100,5);IF(CharacterLevelGreaterThan(5) and not CharacterLevelGreaterThan(6)):Resurrect(100,10);IF(CharacterLevelGreaterThan(6) and not CharacterLevelGreaterThan(7)):Resurrect(100,20);IF(CharacterLevelGreaterThan(7) and not CharacterLevelGreaterThan(8)):Resurrect(100,30);IF(CharacterLevelGreaterThan(8) and not CharacterLevelGreaterThan(9)):Resurrect(100,40);IF(CharacterLevelGreaterThan(9) and not CharacterLevelGreaterThan(10)):Resurrect(100,60);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(11)):Resurrect(100,80);IF(CharacterLevelGreaterThan(11)):Resurrect(100,100);RestoreResource(Movement,100%,0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(Starbreath_Heal)" />

@@ -4,7 +4,7 @@ local D = {}
 local EMPTY = {}
 
 -- cost = Threads spent in combat. Rule (2026-09-20): X = the card's level, no exceptions.
--- The engine is what actually charges it: ARCANA_WEAVING replaces the card's ArcanaSpellSlotsGroup:1:1:X
+-- The engine is what actually charges it: ARCANA_WEAVING replaces the card's SpellSlotsGroup:1:1:X
 -- with X Threads, one generic boost per level. The number here is the Lua's own bookkeeping
 -- (tests, !arcanahand, previews), so it must match the spell's UseCosts -- when a card's level
 -- changes, both move together. A card with no slot cost is free in combat: cost = 0.
@@ -55,9 +55,10 @@ D.cards = {
     ["Target_Arcana_Created_ZephyrStrike"] = { aspect = "Unbound", cost = 1 },
     ["Shout_Arcana_Created_Reweave"] = { cost = 0 },
 
-    -- Cantrips have no slot cost, so ARCANA_WEAVING never touches them: free in combat.
-    ["Target_Arcana_Card_Spell_MaliciousWhispers"] = { aspect = "Deceiver", cost = 0 },
-    ["Shout_Arcana_Card_Spell_HowlOfTheDead"] = { aspect = "Eternal", cost = 0 },
+    -- A cantrip has no slot cost, so ARCANA_WEAVING has nothing to zero on it and only adds: it is
+    -- the one case that tests the Add half of the mechanism on its own. 1 Thread, like any card.
+    ["Target_Arcana_Card_Spell_MaliciousWhispers"] = { aspect = "Deceiver", cost = 1 },
+    ["Shout_Arcana_Card_Spell_HowlOfTheDead"] = { aspect = "Eternal", cost = 1 },
 
     -- Reaction activation cards. The resource is given back by the spell's own SpellProperties,
     -- so the console edition needs none of this; the Lua only decides when to zero it.

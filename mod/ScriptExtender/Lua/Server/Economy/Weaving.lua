@@ -1,6 +1,6 @@
 -- ARCANA_WEAVING is what turns slot costs into Thread costs, generically, for the whole combat.
 -- It only ever exists on the SE edition: the console build has no Lua to apply it, so its cards
--- keep paying ArcanaSpellSlotsGroup from their own UseCosts, exactly as written.
+-- keep paying SpellSlotsGroup from their own UseCosts, exactly as written.
 local C = Req("Server/Core/Const.lua")
 local E = Req("Server/Core/Events.lua")
 

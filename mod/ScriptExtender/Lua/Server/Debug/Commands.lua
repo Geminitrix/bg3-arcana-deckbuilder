@@ -45,11 +45,25 @@ Ext.RegisterConsoleCommand("arcanahand", function()
         print("not in combat -- there is no hand outside combat")
         return
     end
-    print(string.format("hand %d/%d   threads %d", #st.hand, C.HAND_MAX, Th.io.get(char)))
+    -- Where each card came from, because an opening hand is not only the cards you drew: the
+    -- innate ones are pulled from the deck when combat starts and the Reweave token is handed to
+    -- you on turn 1, so a hand of "4" reads as 6.
+    local drawn, innate, created = 0, 0, 0
+    local origin = {}
+    for _, e in ipairs(st.hand) do
+        local tag
+        if D.Has(e.id, "Fated") then tag, innate = "innate", innate + 1
+        elseif e.conjured then tag, created = "created", created + 1
+        else tag, drawn = "", drawn + 1 end
+        origin[e.id] = tag
+    end
+    print(string.format("hand %d/%d   threads %d   (%d drawn, %d innate, %d created)",
+        #st.hand, C.HAND_MAX, Th.io.get(char), drawn, innate, created))
     local order, count = tally(st.hand)
     for _, id in ipairs(order) do
-        print(string.format("  %dx  %-42s %d thread%s",
-            count[id], O.NameOf(id), D.CostOf(id), D.CostOf(id) == 1 and "" or "s"))
+        print(string.format("  %dx  %-40s %d thread%s %s",
+            count[id], O.NameOf(id), D.CostOf(id), D.CostOf(id) == 1 and " " or "s",
+            origin[id] ~= "" and ("[" .. origin[id] .. "]") or ""))
     end
     print(string.format("deck %d   frayed %d   unraveled %d",
         #st.deck, #(st.frayed or {}), #(st.unraveled or {})))

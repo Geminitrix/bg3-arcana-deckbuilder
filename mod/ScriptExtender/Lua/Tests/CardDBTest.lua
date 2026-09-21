@@ -24,9 +24,9 @@ return {
             T.eq(D.Skipped("Shout_Arcana_Util_Faceless"), false, "the container itself stays")
             T.eq(D.Skipped("Target_Arcana_Card_Spell_Distortion"), false)
         end,
-        ["A cantrip has no slot cost, so it is free in combat"] = function()
-            T.eq(D.CostOf("Target_Arcana_Card_Spell_MaliciousWhispers"), 0)
-            T.eq(D.CostOf("Shout_Arcana_Card_Spell_HowlOfTheDead"), 0)
+        ["A cantrip costs 1 Thread: nothing to zero, the status only adds"] = function()
+            T.eq(D.CostOf("Target_Arcana_Card_Spell_MaliciousWhispers"), 1)
+            T.eq(D.CostOf("Shout_Arcana_Card_Spell_HowlOfTheDead"), 1)
         end,
         ["Every reaction card names a resource and is Unique"] = function()
             local seen = 0

@@ -208,7 +208,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TransmutationStone" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Combat() and IsCardSpell(context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Combat() and IsCardSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ARCANE_SHARDS,100,SpellPowerLevel)" />
       </fields>
     </stat_object>
@@ -233,7 +233,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell(context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ArcaneEssence,1,0)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SculptSpells" />
       </fields>
@@ -247,9 +247,9 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('ARCANE_MASTERY_USED',context.Source)" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary;Highlighted;OncePerLongRest" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell(context.Source),ModifyUseCosts(Replace,ArcaneEssence,0,0,ArcaneEssence),ModifyTooltipDescription(),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell(),ModifyUseCosts(Replace,ArcaneEssence,0,0,ArcaneEssence),ModifyTooltipDescription(),ModifyIconGlow());" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell(context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ARCANE_MASTERY_USED,100,-1)" />
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="MINOR_ILLUSION_StatusEffect" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PotentCantrip" />

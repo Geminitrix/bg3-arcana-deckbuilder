@@ -1,7 +1,9 @@
 -- "E uma carta" -- toda carta custa 1 ArcanaHandCard, e so carta custa. Serve tanto para o truque,
 -- que nao gasta espaco de magia, quanto para a carta gerada e para a carta de ativacao de reacao.
 -- Carta nova nao precisa ser cadastrada em lugar nenhum: basta ter o custo.
-function IsCardSpell(entity)
-    entity = entity or context.Source
-    return HasSpellFlag(SpellFlags.Spell) & HasUseCosts('ArcanaHandCard', true, entity)
+-- Um argumento so, como o UseSpellSlot.khn do vanilla faz: a pergunta e sobre a magia, nao sobre o
+-- personagem poder pagar. Com o terceiro argumento, um personagem sem o recurso deixaria de ter
+-- cartas -- e sem respec e exatamente isso que acontece.
+function IsCardSpell()
+    return HasSpellFlag(SpellFlags.Spell) & HasUseCosts('ArcanaHandCard')
 end
