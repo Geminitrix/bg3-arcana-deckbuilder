@@ -3,11 +3,11 @@ local C = Req("Server/Core/Const.lua")
 local D = {}
 local EMPTY = {}
 
--- cost = Threads spent in combat. Rule (2026-09-20): X = the card's level, no exceptions.
--- The engine is what actually charges it: ARCANA_WEAVING zeroes the card's ArcanaSpellSlot:X
--- with X Threads, one generic boost per level. The number here is the Lua's own bookkeeping
--- (tests, !arcanahand, previews), so it must match the spell's UseCosts -- when a card's level
--- changes, both move together. A card with no slot cost is free in combat: cost = 0.
+-- cost = Threads spent in combat. Rule: X = the card's level, no exceptions.
+-- The engine is what actually charges it. Out of combat a card costs X points of ArcanaSpellSlot;
+-- in combat ARCANA_WEAVING zeroes that and adds X Threads in its place, one boost per level. The
+-- number here is the Lua's own bookkeeping (tests, !arcanahand, previews), so it has to match the
+-- spell's UseCosts: when a card's level changes, both move together.
 D.cards = {
     ["Target_Arcana_Card_Spell_Distortion"] = {
         aspect = "Deceiver",
