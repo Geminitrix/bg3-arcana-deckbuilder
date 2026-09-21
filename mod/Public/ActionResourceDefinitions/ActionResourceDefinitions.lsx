@@ -30,13 +30,11 @@
                     <attribute id="Description" type="TranslatedString" handle="h14b68f97g6c1cgaca0gd5f3g3726b192f909" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h333d2f38gdb09ga547gf491g8afd4a404675" version="1"/>
                     <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="9"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
                     <attribute id="Name" type="FixedString" value="ArcanaSpellSlot"/>
                     <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="true"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="h5688f20dgbad7g3405g80e7gc3e9ac802c8f" version="2"/>

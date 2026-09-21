@@ -4,7 +4,7 @@ local D = {}
 local EMPTY = {}
 
 -- cost = Threads spent in combat. Rule (2026-09-20): X = the card's level, no exceptions.
--- The engine is what actually charges it: ARCANA_WEAVING replaces the card's SpellSlotsGroup:1:1:X
+-- The engine is what actually charges it: ARCANA_WEAVING zeroes the card's ArcanaSpellSlot:X
 -- with X Threads, one generic boost per level. The number here is the Lua's own bookkeeping
 -- (tests, !arcanahand, previews), so it must match the spell's UseCosts -- when a card's level
 -- changes, both move together. A card with no slot cost is free in combat: cost = 0.
