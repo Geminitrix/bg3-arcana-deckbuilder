@@ -1,0 +1,11 @@
+function IsArcanaCantrip()
+    return SpellId('Target_Light')
+    | SpellId('Shout_ProduceFlame')
+    | SpellId('Shout_Arcana_Util_Faceless')
+    | SpellId('Target_Arcana_Util_Friends')
+    | SpellId('Target_Arcana_Card_Spell_MaliciousWhispers')
+    | SpellId('Shout_Arcana_Card_Spell_HowlOfTheDead')
+    | SpellId('Target_TrueStrike')
+    | SpellId('Target_Arcana_Util_DeadWhispers')
+    | SpellId('Target_ChillTouch')
+end

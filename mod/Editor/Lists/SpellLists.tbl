@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3f5063e7-e02b-4849-a503-9ba01dc6e2e6">
+  <stat_objects>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d945724f-6795-4b3a-8aae-e4b0bf1e1fc8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_MageHand;Shout_Arcana_Util_ComprehendLanguages" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac907a42-680d-4681-909a-c60113635d03" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_DetectSupernatural;Shout_Arcana_Util_ArcaneRecovery" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 4" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_ArcaneLock;Target_Arcana_Util_ArcaneUnlock" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78845e81-a866-4494-956e-8f75371fcd29" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 6" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_DispelMagic" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="078625f8-b4ed-4d85-a6f6-68dda60a8261" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 8" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_ThirdEye" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="238a66a8-4726-48b8-a95b-96138625bc75" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 10" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_ThirdEyeProjection" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76697ce5-b088-468a-89e1-00fb01a3f7c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 12" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Teleportation_Arcana_Util_ArcaneGate" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06cf51c4-651d-4959-947d-82e8b8ea9d32" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Arcana_Card_Spell_Starcall;Target_Arcana_Card_Spell_AstralInfusion;Target_Light;Shout_ProduceFlame" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc0de737-2953-465d-9407-9f58e7391280" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarPurge;Target_Arcana_Card_Spell_LunarAegis" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a8369c4e-5383-4680-85b0-3c5cd21f01a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath;Target_Arcana_Card_Spell_LucentSingularity;Shout_Arcana_Card_Spell_StarRadiance" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37a31021-566b-4a78-a713-0eadc65c0fcb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 7" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_Wish;Target_Arcana_Card_Spell_MoonGravity" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30032bd8-7c3b-4ac5-a1df-88480ba61c29" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 9" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Equinox;Shout_Arcana_Card_Spell_AstralFortitude" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b544d37a-e65d-4cd4-8b33-6145ab1ef5ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 11" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarFlare;Zone_Arcana_Card_Spell_FinalSpark" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c411afc3-58b2-4288-82d0-f4aaf951f543" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 12" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_StellarGrace" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38284119-78ca-4f17-8fb3-28a3d6e01727" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 13" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Arcana_Card_Spell_Starcall_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b48dd2d-8f6e-4a27-aaf6-b65aad626004" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 15" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_StarRadiance_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1489b7a-2201-4e55-8e5b-eaee56d2008c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 17" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_AstralFortitude_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="154921a7-1044-401f-b347-6dcbfdf84d2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 19" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="507f2c2a-ccdd-44f0-bf45-ca3676e1a03f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Arcana_Card_Spell_SigilofMalice;Shout_Arcana_Util_Faceless;Target_Arcana_Card_Spell_MaliciousWhispers" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5216d9b-4fed-49f0-b1ea-8a5e2b831b59" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EtherealChains;Target_Arcana_Card_Spell_MentalPrison;Target_Arcana_Card_Spell_HypnoticGaze" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9aac7d55-57b7-4942-afb4-1751e506b172" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Distortion;Shout_Arcana_Card_Passive_InstinctiveCharm" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8163075e-1c66-4173-a15c-2c78a9524021" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 7" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MirrorImage;Target_Arcana_Created_Mimic" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55ff77d4-6dd9-4cda-8e9b-84ba78cf5a54" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 9" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Marionette;Target_Arcana_Card_Spell_Terrify" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7134712c-169c-4210-9b13-541e9660392c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 11" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HostileTakeover;Shout_Arcana_Card_Passive_HollowImage" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 13" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Faceless_Copy_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1b77b762-3a24-447e-a468-9c6ee2af6ff1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 15" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HostileTakeover_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2de9211-6a8e-453d-82f8-760d2ff6ff62" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 19" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MirrorImage_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43261c49-335c-4231-ae5d-6a828cff974c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst;Target_TrueStrike" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="706b4719-9a6d-42c0-8e08-8b273eb3e0e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_WindBlast;Shout_Arcana_Card_Spell_FlowState;Shout_Arcana_Card_Passive_GaleDeflection" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="438610de-b4a4-4a60-87e0-7f6c4034b140" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_WindWhispers" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87872209-4d00-4a57-8e24-02fbb18c75bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unboung Level 7" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_StormFists" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc46dcfe-4126-4b55-92ab-87e8fb43e8f9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 9" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Ability_Untethered;Shout_Arcana_Card_Spell_EvasiveFlow" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0892650-f4dd-41c1-bbe3-76cd7e361985" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 11" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_Thunderclap" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f42bd753-926b-4f25-a003-e9272b5bb48e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 13" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_EvasiveFlow_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad4890cf-4fd9-4de2-adac-085257187890" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 15" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_FlowState_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="270387bc-806f-4dbf-b2e3-cf32e81f95bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Unbound Level 17" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_StormFists_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b712a9e-66d3-45af-bb20-38b750ea651a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper;Target_Arcana_Card_Spell_Obliterate;Target_Arcana_Card_Spell_Transfusion;Target_Arcana_Util_DeadWhispers;Target_ChillTouch" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49694d21-16e7-4637-a162-1a60bfc31d1b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp;Shout_Arcana_Card_Spell_Indestructible" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1299dd4-7dd8-49d4-bfbd-c52260802959" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af1ededf-418f-4a60-9312-aa551b6cdec4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 9" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_DeathsAspect;Target_Arcana_Card_Spell_Hemoplague" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b295c7bf-22ba-4876-a273-edc0d7cee239" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 11" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemorrhage" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a394a4ac-fdc1-474f-ad93-753de30cac15" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 12" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_RealmOfDeath" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8abac308-3262-4ce8-99c2-3d3e9c6ba42e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 13" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab8427d8-c8df-4bf5-a7ed-a44e15d506c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 15" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp_EX" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d83dde3-8eb7-4aee-bb88-2d98eca566d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 19" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_RealmOfDeath_EX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Deck Core" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Reweave" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Deck DEBUG" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

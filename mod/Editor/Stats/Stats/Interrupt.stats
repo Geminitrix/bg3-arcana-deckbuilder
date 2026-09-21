@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="48f9ba72-0eb1-4d59-baf0-47b4727ba9b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_InstinctiveCharm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h33656580ga9ccgf16egfec9g23d4a4e81d7c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23767714g8015g8bb6g86c0g55819723adea" version="1" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasActionResource('ArcanaReactInstinctiveCharm', 1, 0, false, false, context.Observer) and Self(context.Target,context.Observer) and HasStringInSpellRoll('Attack') and not AnyEntityIsItem() and not HasStatus('INSTINCTIVE_CHARM_UNTARGETABLE',context.Source,context.Observer)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_InstinctiveCharm" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(14,context.Observer,Ability.Intelligence),AdvantageOnCharmPerson(),false,context.Source)" />
+        <field name="Success" type="StringTableFieldDefinition" value="Counterspell();UseSpell(OBSERVER_SOURCE,Target_Arcana_Reaction_InstinctiveCharm,true,true,true);IF(HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_Q,100,1);IF(not HasAnyExtraAttack(context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);" />
+        <field name="Failure" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_SOURCE,INSTINCTIVE_CHARM_UNTARGETABLE, 100, -1)" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc0b99f8-6af4-4955-a7a6-e715b4b07c8b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_GaleDeflection" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6d997ff6g83a9g9559g93e2g130982ccf79b" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h402ace5bgf1e8g2fe1gf6e4g220b7505458b" version="6" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2837f023g0194gbdcbga128g045992bece74" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DeflectMissiles" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasActionResource('ArcanaReactGaleDeflection', 1, 0, false, false, context.Observer) and Self(context.Target,context.Observer) and IsRangedWeaponAttack() and not HasStatus('SG_Polymorph_BeastShape') and not AnyEntityIsItem()" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Arcana)));ApplyStatus(OBSERVER_TARGET,INTERRUPT_GALE_DEFLECT_MISSILES_HIT,100,1);RestoreResource(ArcanaGaleDeflectReturn,1,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e283c236-36e7-4857-91e0-5d1ea1c0cee6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_GaleDeflection_EX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bc0b99f8-6af4-4955-a7a6-e715b4b07c8b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6d86759agda3dg4012ga417ga9c7128c3dca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h858daf1egc1d7gac8ega25fg58232679746e" version="2" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasActionResource('ArcanaReactGaleDeflection', 1, 0, false, false, context.Observer) and Self(context.Target,context.Observer) and IsRangedWeaponAttack() and not HasStatus('SG_Polymorph_BeastShape') and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(2d10+DexterityModifier+ClassLevel(Arcana)));ApplyStatus(OBSERVER_TARGET,INTERRUPT_GALE_DEFLECT_MISSILES_HIT,100,1);RestoreResource(ArcanaGaleDeflectReturn,1,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="166893eb-76bf-4458-bf39-02ccce591c42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_GaleDeflection_Return" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h505342d8g9905g2f9cg6775g4562b770bc96" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac5f848fg4cc0g9eb9gf88eg9cf5e9a17da8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DeflectMissiles" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttackType(AttackType.RangedWeaponAttack) and not (IsCriticalMiss() or IsMiss()) and HasActionResource('ArcanaGaleDeflectReturn', 1, 0, false, false, context.Observer) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Projectile_Arcana_Reaction_GaleDeflection,true,true,true,c4598bdb-fc07-40dd-a62c-90cc138bd76f);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcanaGaleDeflectReturn:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3686cd26-146b-4ef4-a07f-b38bbba045eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_GaleDeflection_EX_Return" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="166893eb-76bf-4458-bf39-02ccce591c42" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc1639d1fg5ef6g7a95gb562g4ab4ded6664e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h90a0239fg9207g37b2gbceag1d64f466c00a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(,Thunder)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Projectile_Arcana_Reaction_GaleDeflection_EX,true,true,true,c4598bdb-fc07-40dd-a62c-90cc138bd76f);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcanaGaleDeflectReturn:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb0dbaac-23b0-4519-9a06-3c27f0b73218" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_HollowImage" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca40bd63g7dd8g40adga01cg7b98a8ce8b81" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd7ec658g3da4g46a5g8cf0gaf97f0c7e630" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8f9cf5a2ga4d3g447aga317g9e1796f86ba2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_IllusorySelf" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsSetInterruptInteresting(1, context.Source)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);ApplyStatus(INTERRUPT_HOLLOW_IMAGE,100,0)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ArcanaReactHollowImage:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('ArcanaReactHollowImage', 1, 0, false, false, context.Source);" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="699444b9-849b-4c9b-8512-1e57a81304ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_Reaction_HollowImage_EX" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3d9a78bg92ccg41faga257g7382d53daaf9" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba73e0bdgd0e0g20b8ge1bbgd5b671159403" version="2" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsSetInterruptInteresting(1, context.Source)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);ApplyStatus(INTERRUPT_HOLLOW_IMAGE_EX,100,0);ApplyStatus(OBSERVER_SOURCE,SIGIL_TECH,100,0);ApplyStatus(OBSERVER_OBSERVER,HOLLOW_IMAGE_INVISIBLE,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ArcanaReactHollowImage:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_IllusorySelf" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('ArcanaReactHollowImage', 1, 0, false, false, context.Source);" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7b05ee1dg6b73g13d9g1979gcbe131d1e1aa" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

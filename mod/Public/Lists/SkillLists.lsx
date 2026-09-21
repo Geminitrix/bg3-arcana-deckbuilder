@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="The Wanderer Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Nature, Perception, Survival, Stealth, SleightOfHand, Athletics"/>
+                    <attribute id="UUID" type="guid" value="46830276-a1ea-46dd-909e-ad4bf0059235"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="The Witch Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Deception, Insight, Intimidation, Performance, Persuasion, Perception, History, Investigation"/>
+                    <attribute id="UUID" type="guid" value="1135673f-7380-4c84-b4f6-f35199cdaae9"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="The Shaman Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Arcana, History, Medicine, Nature, Religion, Perception, Survival, AnimalHandling"/>
+                    <attribute id="UUID" type="guid" value="b65fa7bc-0683-47eb-bb87-25ef7b4625b7"/>
+                </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="The Eternal Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Medicine, History, Nature, Investigation, Religion, Survival"/>
+                    <attribute id="UUID" type="guid" value="41e6f58d-0957-41dd-a6e3-393f7970b46a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

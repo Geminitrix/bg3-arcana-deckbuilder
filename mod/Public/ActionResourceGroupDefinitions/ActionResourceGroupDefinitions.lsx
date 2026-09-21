@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="ActionResourceGroupDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceGroupDefinition">
+                    <attribute id="ActionResourceDefinitions" type="LSString" value="25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
+                    <attribute id="Name" type="LSString" value="ArcanaSpellSlotsGroup"/>
+                    <attribute id="UUID" type="guid" value="9b0b7641-1508-40f1-a4e3-fc8b54f275d9"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

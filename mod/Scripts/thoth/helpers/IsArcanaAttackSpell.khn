@@ -1,0 +1,3 @@
+function IsArcanaAttackSpell()
+    return IsCardSpell() & HasStringInSpellRoll('Attack')
+end

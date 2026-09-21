@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="500"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Name" type="FixedString" value="Arcane Familiar"/>
+                    <attribute id="Passives" type="LSString" value="Arcana_Passive_ArcaneFamiliar_Cat,Arcana_Passive_ArcaneFamiliar_Dog,Arcana_Passive_ArcaneFamiliar_Crab,Arcana_Passive_ArcaneFamiliar_Frog,Arcana_Passive_ArcaneFamiliar_Rat,Arcana_Passive_ArcaneFamiliar_Raven,Arcana_Passive_ArcaneFamiliar_Spider"/>
+                    <attribute id="UUID" type="guid" value="80c5c4b2-be3f-47e0-9541-09d1194fe34a"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

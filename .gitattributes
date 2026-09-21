@@ -1,0 +1,6 @@
+# Text files from this repository's own tooling and docs may be normalised.
+* text=auto
+
+# Game data must not be. The engine reads these bytes as they are, the Toolkit rewrites them with
+# CRLF, and a normalising checkout would produce a diff against the installed mod on every sync.
+mod/** -text

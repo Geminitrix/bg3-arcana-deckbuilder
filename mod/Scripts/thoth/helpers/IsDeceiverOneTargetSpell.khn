@@ -1,0 +1,11 @@
+function IsDeceiverOneTargetSpell()
+    return SpellId('Target_Arcana_Card_Spell_MaliciousWhispers') |
+    SpellId('Target_Arcana_Util_Friends') |
+    SpellId('Target_Arcana_Card_Spell_EtherealChains') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains') |
+    SpellId('Target_Arcana_Card_Spell_MentalPrison') |
+    SpellId('Target_Arcana_Card_Spell_Terrify') |
+    SpellId('Target_Arcana_Card_Spell_Marionette') |
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice')
+end

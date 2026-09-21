@@ -1,0 +1,37 @@
+# This repository holds the deck system, not the whole mod project. Everything below lives in the
+# project folder beside it and is deliberately not tracked: class design, published art, backups.
+
+/Design/
+/Gameplay/
+/Boons/
+/Obsidian/
+/Pages/
+/Patch Notes/
+/Backup/
+/Old Patch/
+/Support/
+/Lua/
+/CLAUDE.md
+/Docs/codex-src/
+/Docs/fingerprint.sh
+
+# --- Backups and superseded copies ---
+*.bak
+*.bak-*
+*.orig
+
+# --- Packed builds and binary game assets ---
+*.pak
+*.gr2
+*.dds
+*.wem
+*.bin
+
+# --- The mirrored ScriptExtender folder keeps its own history in the game
+#     directory; the copy here must not carry a nested repository. ---
+mod/ScriptExtender/.git/
+
+# --- Editors and OS ---
+.obsidian/
+Thumbs.db
+desktop.ini

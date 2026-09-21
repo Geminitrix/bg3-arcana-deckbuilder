@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="7b3e5d55-79e7-4c79-a045-65832047778a">
+  <stat_objects>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46830276-a1ea-46dd-909e-ad4bf0059235" />
+        <field name="Name" type="NameTableFieldDefinition" value="The Wanderer Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Acrobatics, AnimalHandling, Nature, Perception, Survival, Stealth, SleightOfHand, Athletics" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1135673f-7380-4c84-b4f6-f35199cdaae9" />
+        <field name="Name" type="NameTableFieldDefinition" value="The Witch Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Deception, Insight, Intimidation, Performance, Persuasion, Perception, History, Investigation" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b65fa7bc-0683-47eb-bb87-25ef7b4625b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="The Shaman Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Arcana, History, Medicine, Nature, Religion, Perception, Survival, AnimalHandling" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41e6f58d-0957-41dd-a6e3-393f7970b46a" />
+        <field name="Name" type="NameTableFieldDefinition" value="The Eternal Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Athletics, Intimidation, Medicine, History, Nature, Investigation, Religion, Survival" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9521a374-084f-4c52-8e84-419edc88a308" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANA_WPN_Maul_Bastionbreaker" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="23a0a8a2-5389-4bab-a4b0-d7855276f4e2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c7887784-543f-4b28-b996-ea57fa6a1812" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="2d6" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+        <field name="Value" type="IntegerTableFieldDefinition" value="6000" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(Item()):DealDamage(MaxHP,Force);ApplyStatus(SELF,BASTIONBREAKER,100,1);ApplyStatus(SELF,BASTIONBREAKER_TECHNICAL,100,2);" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Constitution,1,30,false);Ability(Strength,1);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Arcana_Passive_Equip_BastionbreakerDamage;Arcana_Passive_Equip_BastionbreakerVitality;" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

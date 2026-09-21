@@ -1,0 +1,5 @@
+function UseSpellSlot()
+    return HasSpellSpellLevel()
+    & HasSpellFlag(SpellFlags.Spell)
+    & (HasUseCosts('SpellSlotsGroup') | HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot'))
+end

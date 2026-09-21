@@ -1,0 +1,3 @@
+function IsArcanaSaveSpell()
+    return IsCardSpell() & (HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow'))
+end
