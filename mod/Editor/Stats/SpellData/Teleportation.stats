@@ -56,7 +56,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Revivify_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_Revivify_L1to3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Revivify" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1;ArcanaHandCard:1;" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(5)):Resurrect(100,5);IF(CharacterLevelGreaterThan(5) and not CharacterLevelGreaterThan(6)):Resurrect(100,10);IF(CharacterLevelGreaterThan(6) and not CharacterLevelGreaterThan(7)):Resurrect(100,20);IF(CharacterLevelGreaterThan(7) and not CharacterLevelGreaterThan(8)):Resurrect(100,30);IF(CharacterLevelGreaterThan(8) and not CharacterLevelGreaterThan(9)):Resurrect(100,40);IF(CharacterLevelGreaterThan(9) and not CharacterLevelGreaterThan(10)):Resurrect(100,60);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(11)):Resurrect(100,80);IF(CharacterLevelGreaterThan(11)):Resurrect(100,100);RestoreResource(Movement,100%,0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(Starbreath_Heal)" />
