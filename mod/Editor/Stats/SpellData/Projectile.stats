@@ -77,7 +77,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h017e38fcgbde3g30a3gad81g2c3f78d55899" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84244ffdg36b3gad4fg1411gb381ad2251fb" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>

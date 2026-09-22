@@ -65,7 +65,7 @@ data "SpellSuccess" "DealDamage(LevelMapValue(Starcall_Damage),Radiant,Magical);
 data "DisplayName" "h017e38fcgbde3g30a3gad81g2c3f78d55899;1"
 data "Description" "h84244ffdg36b3gad4fg1411gb381ad2251fb;2"
 data "DescriptionParams" "Distance(6)"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;"
 data "SpellFlags" "HasSomaticComponent;HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell;Temporary"
 
 new entry "Projectile_Arcana_Card_Ability_Fly_TheStarchild"

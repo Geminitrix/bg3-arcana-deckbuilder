@@ -32,7 +32,7 @@
                     <attribute id="IsHidden" type="bool" value="false"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>
                     <attribute id="Name" type="FixedString" value="ArcanaSpellSlot"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
                 </node>

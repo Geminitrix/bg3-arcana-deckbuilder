@@ -51,7 +51,7 @@ data "Description" "hc794a392g942age43cg6f1cg9906a442e207;12"
 data "DescriptionParams" "LevelMapValue(Starbreath_Heal)"
 data "CastSound" "Spell_Cast_Healing_Revivify_L1to3"
 data "TargetSound" "Spell_Impact_Healing_Revivify_L1to3"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;"
 data "SpellFlags" "IsSpell;RangeIgnoreVerticalThreshold;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;CannotTargetItems"
 data "HitAnimationType" "None"
 

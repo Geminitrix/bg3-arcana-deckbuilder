@@ -479,7 +479,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08f0e50eg29dfg347bg2b83ga4b1795dc6f0" version="5" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62d04cf4gdae4g1ca7gf625g344125bf869c" version="11" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;e37d18b8-0de7-4bbc-a644-31ec2a91e548,,;acfe8d41-20c1-4fe8-b158-f4b2be86e080,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -518,7 +518,7 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;2f5d8e0b-35f3-416f-99e9-1cc9d942204e,,;f2ec369f-4a3b-451e-b954-2ab0a53d51d6,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -538,7 +538,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_AEGIS_EX,100,-1);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf9e41595g6ff9g1919gcc51g0b8c4e0dc1f0" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_AEGIS_EX,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -552,7 +552,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23fb83d6ga7fcgba6eg4c4ag360bc335c7c8" version="10" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
@@ -592,7 +592,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_FreedomOfMovement_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;94ad1609-9862-499a-8337-5e6a7d9487f9,c8f325f3-9d7d-4387-af85-b3b4257e26cc,f4b7eabd-2875-46fa-bae3-9f4d0a51c955;8373f3da-2368-4a51-98b1-146ec3586660,12971987-e66c-45dd-9843-b4784c30d9a2,279cd9eb-1d9c-4e4c-a44e-e751ae0eae66;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;ab7b6aac-b3c9-4918-8f17-f777a94dcb5e,,;57211a11-ed0b-46d7-9369-81df25a85df6,,;,,;,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
@@ -623,7 +623,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Silence" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9313094a-bae2-454f-9701-f920d0e8e98d,,;,,;4148823a-6dbc-4692-a8ff-71520315a10f,,;1b8cdb9d-6f8e-4161-901c-1fd7a7787c7c,,;808fdfab-2e6c-472e-b3c4-19ce4a719d9d,,;,,;ea745d30-eb87-447f-b190-c81298e27d9c,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;CannotTargetItems;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -652,7 +652,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he742e437gc26eg20d9g11f8g3162a96fa3d3" version="11" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;CanAreaDamageEvade;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -814,7 +814,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ca1779bg251cgd7e9g169cga4bdce93b2c7" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(NEMESIS,100,2)" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy();" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -828,7 +828,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9ce7070g7529g7835ga365gf087009b761f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0cc4e041g2995ge3d1g9de4g7febc0fc2946" version="13" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;5e7e63e1-0e69-46e7-ade7-fe3dadcc9184,,;e9ad50df-e7f1-43a0-b782-4c08f92b0f5a,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetItems;CannotTargetTerrain;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -910,7 +910,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Paralyze" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -937,7 +937,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h09b13723g7984g46cegba46g4bbcb1b452e9" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h42c6b1f9g8aa8g549cg7422g2025f4fe4fa9" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;8ce3e582-e8bb-4d2f-9c5c-46c70c9b87c0,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
@@ -970,7 +970,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Wizard_BenignTranspositionTeleport_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Wizard_BenignTranspositionTeleport_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b94b9184-9bd0-4840-be7d-003700173b37,,;,,;5df11e35-f081-44f7-bd6f-7049d0e533cd,,;8dccb0f6-24e3-44b7-a60b-1f217b7db523,,;066f8e0e-b3e1-4b76-a473-d1e23a3b7230,,;,,;7a28f440-1b0b-4a18-96a8-3767959b601a,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -998,7 +998,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb619d7e4g5900gda93ge912g6a66824f4016" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MimicDistortion_Damage),Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsLinkedSpellContainer;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('MIMIC_DISTORTION_HELPER') and HasStatus('DISTORTION_LAST_CASTED');" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea3258c7g78a8g47c1g40cbg1263fd6d0156" version="1" />
       </fields>
@@ -1047,7 +1047,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfdec3a47gb1c5g5c51g6b2eg00757ffc4aef" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h805db51fg1ce6g5aa9g3a26g99b6279b2218" version="11" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;4acb9350-ba51-40c0-8b72-32dc3d50d4a2,,;58711808-db75-47e7-ba95-31e73dcdf9cd,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CannotTargetItems;CannotTargetCharacter;HasSomaticComponent;HasVerbalComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -1071,7 +1071,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(4267f207-3e8b-4431-99e0-ba91eb29a836,-1,,,CreateCloneStack2,MIRROR_IMAGE_TECHNICAL,MIRROR_IMAGE_CLONE_SCALING);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9febea7g3060g3d1eg7657g23352aa094f2" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h648f69c1g8f76g09f2gab54g3b17bfec6003" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CannotTargetItems;CannotTargetCharacter;HasSomaticComponent;HasVerbalComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -1093,7 +1093,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Debuff_EyebitePanicked_L6to8" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_EyebitePanicked_L6to8" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9313094a-bae2-454f-9701-f920d0e8e98d,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;808fdfab-2e6c-472e-b3c4-19ce4a719d9d,,;,,;ea745d30-eb87-447f-b190-c81298e27d9c,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -1129,7 +1129,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_DominatePerson_L4to5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;af94aac1-d8eb-4ccb-9520-694ade11b61c,,;f5db4001-b136-4c48-9aa4-026c4a7dd3b7,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -1164,7 +1164,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Confuse" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;8ce3e582-e8bb-4d2f-9c5c-46c70c9b87c0,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -1190,7 +1190,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2860887eg2cbbg4642gc1d1g2e42a82f8c7a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf65a8a0g8472g6450ged91g838380afe396" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CONFUSION,100,10);ApplyStatus(SIGIL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SIGIL_TECH,100,0);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -1422,7 +1422,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a3b2223ga5f5g13a3g5581g68e27bc8393c" version="4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -1475,7 +1475,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Warlock_SoulPluck" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Warlock_SoulPluck" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;8252328a-66dd-4dc0-bbe0-00eea3204922,,;982d842b-5d44-4ef6-ab33-14d5ae514a50,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems;CannotTargetTerrain;AddFallDamageOnLand;IsSpell;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
@@ -1499,7 +1499,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83c6147agb5abg57d2ged56g14c502da5a74" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc30ba6f4g435bg63cagaa3eg320f1becba03" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REAPER_MARK,100,1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems;CannotTargetTerrain;AddFallDamageOnLand;IsSpell;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -1520,7 +1520,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_DeathWard_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;e37d18b8-0de7-4bbc-a644-31ec2a91e548,,;acfe8d41-20c1-4fe8-b158-f4b2be86e080,,;,,;,,;,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
@@ -1556,7 +1556,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_Contagion_L4to5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;cd5e5d4a-38e1-4d4d-b346-3fbc1e4c3c90,,;141f48d9-9615-496a-8737-9240f0dba60d,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
@@ -1662,7 +1662,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CRAWLING_GNAW_SWITCH,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsMelee;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -1692,7 +1692,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Necrotic_CircleofDeath_L6to8" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -1715,7 +1715,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f280d6dg780cg9802gc6f1gb9f2300b52d1" version="3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;CannotTargetItems;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
@@ -1756,7 +1756,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_AnimateDead" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
