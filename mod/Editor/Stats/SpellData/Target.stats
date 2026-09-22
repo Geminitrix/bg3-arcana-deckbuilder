@@ -377,6 +377,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="40e617f2-f21e-4648-88a3-51a5c50cd708" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Util_DispelMagic" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() or Item();" />
@@ -384,7 +385,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3a63fa8gb0f0g2851g760bg8934504d9510" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h856ee80ag4765gbdefge1e2geb9189f59307" version="3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;CannotTargetTerrain;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
@@ -406,6 +407,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="61bd472c-215f-402f-a73f-727789581913" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Util_ThirdEyeProjection" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(ffa1b1ca-903c-4508-96d4-bc3068013d84,-1,,,,UNSUMMON_ABLE);" />
@@ -416,7 +418,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h206ffa4dgd0b7g2f7ag9090g47b840052e6c" version="5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsConcentration;IsSpell;CannotTargetCharacter;CannotTargetItems;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
