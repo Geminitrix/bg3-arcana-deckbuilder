@@ -1,11 +1,40 @@
+-- GERADO por gen_upcast_variants.pl a partir de @DECEIVER_ONE_TARGET. Nao edite a mao:
+-- acrescente a carta base na lista do gerador e rode de novo.
+-- SpellId() compara o nome exato, entao cada variante de upcast precisa estar aqui.
 function IsDeceiverOneTargetSpell()
     return SpellId('Target_Arcana_Card_Spell_MaliciousWhispers') |
     SpellId('Target_Arcana_Util_Friends') |
     SpellId('Target_Arcana_Card_Spell_EtherealChains') |
+    SpellId('Target_Arcana_Card_Spell_EtherealChains_3') |
+    SpellId('Target_Arcana_Card_Spell_EtherealChains_4') |
+    SpellId('Target_Arcana_Card_Spell_EtherealChains_5') |
+    SpellId('Target_Arcana_Card_Spell_EtherealChains_6') |
     SpellId('Target_Arcana_Created_MimicEtherealChains') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains_2') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains_3') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains_4') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains_5') |
+    SpellId('Target_Arcana_Created_MimicEtherealChains_6') |
     SpellId('Target_Arcana_Card_Spell_MentalPrison') |
+    SpellId('Target_Arcana_Card_Spell_MentalPrison_3') |
+    SpellId('Target_Arcana_Card_Spell_MentalPrison_4') |
+    SpellId('Target_Arcana_Card_Spell_MentalPrison_5') |
+    SpellId('Target_Arcana_Card_Spell_MentalPrison_6') |
     SpellId('Target_Arcana_Card_Spell_Terrify') |
+    SpellId('Target_Arcana_Card_Spell_Terrify_5') |
+    SpellId('Target_Arcana_Card_Spell_Terrify_6') |
     SpellId('Target_Arcana_Card_Spell_Marionette') |
+    SpellId('Target_Arcana_Card_Spell_Marionette_6') |
     SpellId('Projectile_Arcana_Card_Spell_SigilofMalice') |
-    SpellId('Projectile_Arcana_Created_MimicSigilofMalice')
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice_2') |
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice_3') |
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice_4') |
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice_5') |
+    SpellId('Projectile_Arcana_Card_Spell_SigilofMalice_6') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice_2') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice_3') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice_4') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice_5') |
+    SpellId('Projectile_Arcana_Created_MimicSigilofMalice_6')
 end
