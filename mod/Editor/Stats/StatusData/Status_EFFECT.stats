@@ -3,15 +3,6 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9062a64d-33a9-41b3-8dae-78b4018cad8f" />
-        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_GALE_DEFLECT_MISSILES_HIT" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a24a1d87-237f-4d19-9f5e-f515d6365dcc" />
         <field name="Name" type="NameTableFieldDefinition" value="ETHEREAL_CHAINS_EFFECT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50e0e457g54b7g93e9g6394g7b3f1dbc6262" version="1" />
@@ -29,10 +20,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8b776920-d1cb-4378-83c4-c7721c12f1e4" />
-        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_HOLLOW_IMAGE_EX" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9062a64d-33a9-41b3-8dae-78b4018cad8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_GALE_DEFLECT_MISSILES_HIT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d45899d6-06c4-45a5-bc29-6610b1bdf83d" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -42,6 +34,14 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d45899d6-06c4-45a5-bc29-6610b1bdf83d" />
       </fields>
+    </stat_object><stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b776920-d1cb-4378-83c4-c7721c12f1e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_HOLLOW_IMAGE_EX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d45899d6-06c4-45a5-bc29-6610b1bdf83d" />
+      </fields>
     </stat_object>
+    
   </stat_objects>
 </stats>

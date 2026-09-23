@@ -3,20 +3,6 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="636f629b-91c3-4a86-9f96-439b94e17efc" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_IMAGE_TECHNICAL" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="245a831a-fb83-4158-8f23-96c48e69e013" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784131eeg4b49g41f3g2db9ge081041f4762" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16f5114f-2a1b-4276-b9ff-ea52be218d2f" />
         <field name="Name" type="NameTableFieldDefinition" value="HOLLOW_IMAGE_INVISIBLE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8599f8e8-ac20-44db-896c-4ea5c6bf89c4" />
@@ -29,6 +15,20 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
+    </stat_object><stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="636f629b-91c3-4a86-9f96-439b94e17efc" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_IMAGE_TECHNICAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="245a831a-fb83-4158-8f23-96c48e69e013" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784131eeg4b49g41f3g2db9ge081041f4762" version="1" />
+      </fields>
     </stat_object>
+    
   </stat_objects>
 </stats>

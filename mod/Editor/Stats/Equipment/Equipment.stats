@@ -19,7 +19,23 @@
         <field name="12" type="StatReferenceTableFieldDefinition" value="WPN_LightCrossbow" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B008B" is_substat="false">
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4fc88759-981f-428d-a66a-80b4c947d206" />
+        <field name="Name" type="NameTableFieldDefinition" value="EQP_CC_Eternal" />
+        <field name="1" type="StatReferenceTableFieldDefinition" value="ARCANA_CC_ARM_Heavy_Eternal" />
+        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Shoes" />
+        <field name="3" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Body" />
+        <field name="4" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Shoes" />
+        <field name="5" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="6" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
+        <field name="7" type="StatReferenceTableFieldDefinition" value="OBJ_Scroll_Revivify" />
+        <field name="8" type="StatReferenceTableFieldDefinition" value="OBJ_Keychain" />
+        <field name="9" type="StatReferenceTableFieldDefinition" value="OBJ_Bag_AlchemyPouch" />
+        <field name="10" type="StatReferenceTableFieldDefinition" value="OBJ_Backpack_CampSupplies" />
+        <field name="11" type="StatReferenceTableFieldDefinition" value="WPN_Maul" />
+      </fields>
+    </stat_object><stat_object color="#FF8B008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f294cc6f-9d36-4270-be05-26a865ec859e" />
         <field name="Name" type="NameTableFieldDefinition" value="EQP_CC_Starchild" />
@@ -53,22 +69,6 @@
         <field name="10" type="StatReferenceTableFieldDefinition" value="OBJ_Backpack_CampSupplies" />
       </fields>
     </stat_object>
-    <stat_object color="#FF2F4F4F" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4fc88759-981f-428d-a66a-80b4c947d206" />
-        <field name="Name" type="NameTableFieldDefinition" value="EQP_CC_Eternal" />
-        <field name="1" type="StatReferenceTableFieldDefinition" value="ARCANA_CC_ARM_Heavy_Eternal" />
-        <field name="2" type="StatReferenceTableFieldDefinition" value="ARM_Shoes" />
-        <field name="3" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Body" />
-        <field name="4" type="StatReferenceTableFieldDefinition" value="ARM_Camp_Shoes" />
-        <field name="5" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
-        <field name="6" type="StatReferenceTableFieldDefinition" value="OBJ_Potion_Healing" />
-        <field name="7" type="StatReferenceTableFieldDefinition" value="OBJ_Scroll_Revivify" />
-        <field name="8" type="StatReferenceTableFieldDefinition" value="OBJ_Keychain" />
-        <field name="9" type="StatReferenceTableFieldDefinition" value="OBJ_Bag_AlchemyPouch" />
-        <field name="10" type="StatReferenceTableFieldDefinition" value="OBJ_Backpack_CampSupplies" />
-        <field name="11" type="StatReferenceTableFieldDefinition" value="WPN_Maul" />
-      </fields>
-    </stat_object>
+    
   </stat_objects>
 </stats>
