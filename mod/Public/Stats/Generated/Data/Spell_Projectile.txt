@@ -89,6 +89,41 @@ data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExte
 data "RequirementConditions" "HasStatus('SIGIL_OF_MALICE_LAST_CASTED');"
 data "CombatAIOverrideSpell" "Projectile_MagicMissile_AI"
 
+new entry "Projectile_Arcana_Created_MimicSigilofMalice_2"
+type "SpellData"
+using "Projectile_Arcana_Created_MimicSigilofMalice"
+data "RootSpellID" "Projectile_Arcana_Created_MimicSigilofMalice"
+data "PowerLevel" "2"
+data "UseCosts" "BonusActionPoint:1;ArcanaSpellSlot:1:2;ArcanaHandCard:1;"
+
+new entry "Projectile_Arcana_Created_MimicSigilofMalice_3"
+type "SpellData"
+using "Projectile_Arcana_Created_MimicSigilofMalice"
+data "RootSpellID" "Projectile_Arcana_Created_MimicSigilofMalice"
+data "PowerLevel" "3"
+data "UseCosts" "BonusActionPoint:1;ArcanaSpellSlot:1:3;ArcanaHandCard:1;"
+
+new entry "Projectile_Arcana_Created_MimicSigilofMalice_4"
+type "SpellData"
+using "Projectile_Arcana_Created_MimicSigilofMalice"
+data "RootSpellID" "Projectile_Arcana_Created_MimicSigilofMalice"
+data "PowerLevel" "4"
+data "UseCosts" "BonusActionPoint:1;ArcanaSpellSlot:1:4;ArcanaHandCard:1;"
+
+new entry "Projectile_Arcana_Created_MimicSigilofMalice_5"
+type "SpellData"
+using "Projectile_Arcana_Created_MimicSigilofMalice"
+data "RootSpellID" "Projectile_Arcana_Created_MimicSigilofMalice"
+data "PowerLevel" "5"
+data "UseCosts" "BonusActionPoint:1;ArcanaSpellSlot:1:5;ArcanaHandCard:1;"
+
+new entry "Projectile_Arcana_Created_MimicSigilofMalice_6"
+type "SpellData"
+using "Projectile_Arcana_Created_MimicSigilofMalice"
+data "RootSpellID" "Projectile_Arcana_Created_MimicSigilofMalice"
+data "PowerLevel" "6"
+data "UseCosts" "BonusActionPoint:1;ArcanaSpellSlot:1:6;ArcanaHandCard:1;"
+
 new entry "Projectile_Arcana_Distortion_Explosion"
 type "SpellData"
 data "SpellType" "Projectile"
@@ -339,4 +374,5 @@ data "DisplayName" "h053aa305g97acg595ag9055g24968a7118b2;2"
 data "SpellAnimation" "414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,"
 data "VerbalIntent" "Healing"
 data "HitAnimationType" "MagicalNonDamage"
+
 

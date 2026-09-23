@@ -61,6 +61,34 @@ data "TooltipStatusApply" "ApplyStatus(FINAL_SPARK,100,1);ApplyStatus(FAERIE_FIR
 data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:2;ArcanaHandCard:1;"
 data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;Temporary"
 
+new entry "Zone_Arcana_Created_FinalSpark_Recreate_3"
+type "SpellData"
+using "Zone_Arcana_Created_FinalSpark_Recreate"
+data "RootSpellID" "Zone_Arcana_Created_FinalSpark_Recreate"
+data "PowerLevel" "3"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:3;ArcanaHandCard:1;"
+
+new entry "Zone_Arcana_Created_FinalSpark_Recreate_4"
+type "SpellData"
+using "Zone_Arcana_Created_FinalSpark_Recreate"
+data "RootSpellID" "Zone_Arcana_Created_FinalSpark_Recreate"
+data "PowerLevel" "4"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:4;ArcanaHandCard:1;"
+
+new entry "Zone_Arcana_Created_FinalSpark_Recreate_5"
+type "SpellData"
+using "Zone_Arcana_Created_FinalSpark_Recreate"
+data "RootSpellID" "Zone_Arcana_Created_FinalSpark_Recreate"
+data "PowerLevel" "5"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:5;ArcanaHandCard:1;"
+
+new entry "Zone_Arcana_Created_FinalSpark_Recreate_6"
+type "SpellData"
+using "Zone_Arcana_Created_FinalSpark_Recreate"
+data "RootSpellID" "Zone_Arcana_Created_FinalSpark_Recreate"
+data "PowerLevel" "6"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:6;ArcanaHandCard:1;"
+
 new entry "Zone_UNBOUND SPELLS"
 type "SpellData"
 data "SpellType" "Zone"
@@ -105,6 +133,7 @@ data "RequirementConditions" "not WearingArmor(context.Source) and not HasShield
 data "PrepareEffect" "2af907e1-127c-4c83-a117-af18f211c59d"
 data "CastEffect" "f0fc3adc-db50-4a8d-bd30-904902cbefbd"
 data "TargetEffect" "766d4d52-d6a1-4efd-b37b-bd1496718e49"
+
 
 
 new entry "Zone_Arcana_Card_Spell_WindBlast_3"
