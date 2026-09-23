@@ -40,12 +40,15 @@ copy "Mods/$MOD/Scripts"                                "Scripts"
 # lado do motor: os recursos, o status que converte o custo, os custos das cartas
 copy "Public/$MOD/Stats"                                "Public/Stats"
 copy "Public/$MOD/ActionResourceDefinitions"            "Public/ActionResourceDefinitions"
+# o grupo e quem os 255 custos das cartas nomeiam -- sem ele nada e conjuravel
+copy "Public/$MOD/ActionResourceGroupDefinitions"       "Public/ActionResourceGroupDefinitions"
 copy "Public/$MOD/Lists"                                "Public/Lists"
 copy "Public/$MOD/Progressions"                         "Public/Progressions"
 
 # os mesmos dados do lado do Toolkit: tem de bater com os de cima, sempre
 copy "Editor/Mods/$MOD/Stats"                           "Editor/Stats"
 copy "Editor/Mods/$MOD/ActionResourceDefinitions"       "Editor/ActionResourceDefinitions"
+copy "Editor/Mods/$MOD/ActionResourceGroupDefinitions"  "Editor/ActionResourceGroupDefinitions"
 copy "Editor/Mods/$MOD/Lists"                           "Editor/Lists"
 copy "Editor/Mods/$MOD/Progressions"                    "Editor/Progressions"
 
