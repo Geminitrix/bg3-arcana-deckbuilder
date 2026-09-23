@@ -5,11 +5,11 @@
         <node id="root">
             <children>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaSpellSlotUnlock,1,9);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,1,0,ArcaneLevel1,,25d3f3a7-f097-4e33-813c-54a1ef79ba8e,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290)"/>
                     <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
                     <attribute id="UUID" type="guid" value="082473bf-d121-4734-8327-ad5a148311f8"/>
                     <children>
@@ -32,7 +32,7 @@
                     </children>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,4,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="Portent"/>
@@ -42,7 +42,7 @@
                     <attribute id="UUID" type="guid" value="e90a675c-7b33-4445-adda-1bb6ac631f71"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,6,2);ActionResourceOverride(ArcanaSpellSlot,0,1)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -51,7 +51,7 @@
                 </node>
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,7,2)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="ExpertDivination"/>
@@ -61,7 +61,7 @@
                     <attribute id="UUID" type="guid" value="a791ae94-2b46-430b-9956-3e4431530c2f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,9,3);ActionResourceOverride(ArcanaSpellSlot,0,2)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -69,7 +69,7 @@
                     <attribute id="UUID" type="guid" value="e8ecf3a9-81b4-4bf0-a5a0-49afceed4bcb"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,10,3)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -78,7 +78,7 @@
                     <attribute id="UUID" type="guid" value="f4856572-c739-4f17-969b-91ea998187aa"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,11,4);ActionResourceOverride(ArcanaSpellSlot,0,3)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -87,7 +87,7 @@
                 </node>
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,12,4)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -96,7 +96,7 @@
                     <attribute id="UUID" type="guid" value="4e6c8409-a1a8-4549-b494-7ac52e4014a3"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,14,5);ActionResourceOverride(ArcanaSpellSlot,0,4)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -104,7 +104,7 @@
                     <attribute id="UUID" type="guid" value="a5a3cbc2-a242-477c-a839-a9c54f5c2d35"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,15,5)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -113,7 +113,7 @@
                     <attribute id="UUID" type="guid" value="4a946ff8-0c31-4460-b7c8-57810753ee5f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,16,6);ActionResourceOverride(ArcanaSpellSlot,0,5)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -130,7 +130,7 @@
                     <attribute id="UUID" type="guid" value="49cb914f-a9cb-4307-88a7-7b597cabff3c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,17,6)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneShards;Arcana_Passive_ArcaneShards_Remove"/>
@@ -147,7 +147,7 @@
                     <attribute id="UUID" type="guid" value="7c00c185-0fd6-45ef-a1b0-2693fdaa13a1"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,18,6)"/>
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -164,7 +164,7 @@
                     <attribute id="UUID" type="guid" value="bd7a6c33-b9a3-4118-82da-ff4374df4fde"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,19,6)"/>
                     <attribute id="Level" type="uint8" value="17"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -172,7 +172,7 @@
                     <attribute id="UUID" type="guid" value="543cf476-7477-4795-9c3e-c83552cdf5e4"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,20,6)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneVeil"/>
@@ -181,7 +181,7 @@
                     <attribute id="UUID" type="guid" value="2db0a028-a338-4eda-8ccf-d2d529c8f22a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,21,6)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -190,7 +190,7 @@
                 </node>
                 <node id="Progression">
                     <attribute id="AllowImprovement" type="bool" value="true"/>
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,22,6)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneAvatar"/>
@@ -953,6 +953,7 @@
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
                     <attribute id="UUID" type="guid" value="8ba69d3c-9e0e-4a78-9637-8466e41314d2"/>
                 </node>
+                
             </children>
         </node>
     </region>

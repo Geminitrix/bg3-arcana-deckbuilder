@@ -52,8 +52,11 @@ function Po.Relevant(char)
     local out = {}
     for _, id in ipairs(Po.SpellIds(char)) do
         local cat = U.Category(id)
+        local root = U.StripUpcast(id)
         if (C.DECK_CATEGORIES[cat] or cat == "Created" or cat == "Util") and not D.Skipped(id) then
-            out[#out + 1] = { id = id, cat = cat }
+            -- An upcast variant is a separate spell in the spellbook, so it needs its own lock or
+            -- glow boost -- but the decision belongs to the card it came from, not to itself.
+            out[#out + 1] = { id = id, cat = cat, root = root ~= id and root or nil }
         end
     end
     return out
@@ -63,7 +66,8 @@ function Po.Cards(char)
     local copies = mirroredCopies(char)
     local out = {}
     for _, id in ipairs(Po.SpellIds(char)) do
-        if C.DECK_CATEGORIES[U.Category(id)] and not copies[id] and not D.Get(id).conjuredOnly then
+        if C.DECK_CATEGORIES[U.Category(id)] and not U.IsUpcast(id) and not copies[id]
+            and not D.Get(id).conjuredOnly then
             out[#out + 1] = id
         end
     end

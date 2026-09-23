@@ -4,6 +4,11 @@ local U = Req("Server/Core/Util.lua")
 return {
     name = "Util",
     cases = {
+        ["IsUpcast only fires on a trailing _N"] = function()
+            T.ok(U.IsUpcast("Target_Arcana_Card_Spell_Distortion_5"), "variant")
+            T.ok(not U.IsUpcast("Target_Arcana_Card_Spell_Distortion"), "base card")
+            T.ok(not U.IsUpcast("Target_Arcana_Card_Spell_Transfusion_EX"), "_EX is not a level")
+        end,
         ["Category reads the Arcana prefix after the spell type"] = function()
             T.eq(U.Category("Target_Arcana_Card_Spell_Distortion"), "Card")
             T.eq(U.Category("Shout_Arcana_Created_Withdraw"), "Created")

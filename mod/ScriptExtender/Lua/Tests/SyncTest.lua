@@ -40,6 +40,14 @@ return {
             T.ok(boost:find("ModifyIconGlow()", 1, true), "glow lights the icon")
             T.ok(not boost:find("ArcanaThread", 1, true), "the glow boost carries no cost")
         end,
+        ["An upcast variant follows the card it came from, not itself"] = function()
+            local UP = CARD .. "_4"
+            local rel = { { id = CARD, cat = "Card" }, { id = UP, cat = "Card", root = CARD } }
+            local lit = Sy.Desired(inCombat({ CARD }), rel)
+            T.eq(lit[UP], Sy.GlowFor(UP), "in hand: the variant glows under its own name")
+            local dark = Sy.Desired(inCombat(), rel)
+            T.eq(dark[UP], Sy.LockFor(UP), "out of hand: the variant is locked too")
+        end,
         ["Cards and Tokens out of hand are locked"] = function()
             local want = Sy.Desired(inCombat(), RELEVANT)
             T.eq(want[CARD], Sy.LockFor(CARD))

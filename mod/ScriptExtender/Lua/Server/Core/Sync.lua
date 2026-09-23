@@ -24,16 +24,19 @@ function Sy.Desired(st, relevant)
     local inHand = {}
     for _, e in ipairs(st.hand) do inHand[e.id] = true end
     for _, s in ipairs(relevant) do
+        -- The boost always names the spell itself, but an upcast variant is lit or locked by the
+        -- card it belongs to; otherwise a locked card could still be cast one level higher.
+        local card = s.root or s.id
         if s.cat == "Util" then
             want[s.id] = Sy.LockFor(s.id)
         elseif C.DECK_CATEGORIES[s.cat] or s.cat == "Created" then
-            local lit = inHand[s.id] == true
-            for _, sub in ipairs(D.containers[s.id] or {}) do
+            local lit = inHand[card] == true
+            for _, sub in ipairs(D.containers[card] or {}) do
                 if inHand[sub] then lit = true end
             end
-            local parent = D.parentOf[s.id]
+            local parent = D.parentOf[card]
             if parent and inHand[parent] then lit = true end
-            if lit and not D.Get(s.id).unplayable then
+            if lit and not D.Get(card).unplayable then
                 want[s.id] = Sy.GlowFor(s.id)
             else
                 want[s.id] = Sy.LockFor(s.id)

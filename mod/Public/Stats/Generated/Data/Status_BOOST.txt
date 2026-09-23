@@ -621,7 +621,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h34f46efbg619ag290ag7eddg2383b122a86a;1"
 data "StackId" "MIRRORED_SPELL_HELPER"
 data "StackType" "Overwrite"
-data "Boosts" "UnlockSpellVariant(UseSpellSlot(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,ArcanaSpellSlot,0,-1,ArcanaSpellSlot),ModifyTooltipDescription(),ModifyIconGlow());"
+data "Boosts" "UnlockSpellVariant(UseSpellSlot(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyTooltipDescription(),ModifyIconGlow());"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "StatusGroups" "SG_RemoveOnRespec"
 

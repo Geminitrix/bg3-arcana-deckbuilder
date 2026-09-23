@@ -23,6 +23,12 @@ function U.StripUpcast(spellId)
     return (spellId:gsub("_%d+$", ""))
 end
 
+-- Upcast variants (Card_Spell/Card_Ability with a "_N" tail) are generated copies of a card that
+-- differ only in which slot level they cost. The deck must never treat one as a card of its own.
+function U.IsUpcast(spellId)
+    return type(spellId) == "string" and U.StripUpcast(spellId) ~= spellId
+end
+
 function U.Guid(s)
     if type(s) ~= "string" then return s end
     return s:match(GUID_PATTERN) or s

@@ -9,11 +9,12 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaSpellSlotUnlock,1,9);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,1,0,ArcaneLevel1,,25d3f3a7-f097-4e33-813c-54a1ef79ba8e,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290)" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4831bb91-b13e-4740-b205-0227dbdddd12;c229d522-d294-43e1-8a05-1967e15c17e8;31b64a26-a650-4ef1-aeec-c2872f48ec14;dc2e68d3-5577-4a9f-be4f-1a71707c1995" />
       </fields>
     </stat_object>
+    
     <stat_object color="#FF808080" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
@@ -22,7 +23,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,4,1)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ac907a42-680d-4681-909a-c60113635d03)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Portent" />
       </fields>
@@ -35,7 +36,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,6,2);ActionResourceOverride(ArcanaSpellSlot,0,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -49,7 +50,7 @@
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ExpertDivination" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,7,2)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -60,7 +61,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,9,3);ActionResourceOverride(ArcanaSpellSlot,0,2)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -72,7 +73,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(78845e81-a866-4494-956e-8f75371fcd29)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,10,3)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -83,7 +84,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,11,4);ActionResourceOverride(ArcanaSpellSlot,0,3)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -96,7 +97,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(078625f8-b4ed-4d85-a6f6-68dda60a8261)" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,12,4)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -107,7 +108,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,14,5);ActionResourceOverride(ArcanaSpellSlot,0,4)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -119,7 +120,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(238a66a8-4726-48b8-a95b-96138625bc75)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,15,5)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -130,7 +131,7 @@
         <field name="TableUUID" type="GuidTableFieldDefinition" value="99f583de-f62e-43a7-b8f7-4aa29812709f" />
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,16,6);ActionResourceOverride(ArcanaSpellSlot,0,5)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -153,7 +154,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="13" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,17,6)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_ArcaneShards;Arcana_Passive_ArcaneShards_Remove" />
       </fields>
     </stat_object>
@@ -176,7 +177,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,18,6)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -199,7 +200,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="17" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,19,6)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -211,7 +212,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="18" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_ArcaneVeil" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,20,6)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -222,7 +223,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,21,6)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -235,7 +236,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_ArcaneAvatar" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,22,6)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
