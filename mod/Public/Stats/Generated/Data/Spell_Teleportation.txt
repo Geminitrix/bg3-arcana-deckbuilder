@@ -51,9 +51,10 @@ data "Description" "hc794a392g942age43cg6f1cg9906a442e207;12"
 data "DescriptionParams" "LevelMapValue(Starbreath_Heal)"
 data "CastSound" "Spell_Cast_Healing_Revivify_L1to3"
 data "TargetSound" "Spell_Impact_Healing_Revivify_L1to3"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;"
 data "SpellFlags" "IsSpell;RangeIgnoreVerticalThreshold;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;CannotTargetItems"
 data "HitAnimationType" "None"
+
 
 
 
@@ -66,7 +67,7 @@ data "SpellType" "Teleportation"
 using "Teleportation_Arcana_Card_Spell_Starbreath"
 data "RootSpellID" "Teleportation_Arcana_Card_Spell_Starbreath"
 data "PowerLevel" "4"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;"
 
 new entry "Teleportation_Arcana_Card_Spell_Starbreath_5"
 type "SpellData"
@@ -74,7 +75,7 @@ data "SpellType" "Teleportation"
 using "Teleportation_Arcana_Card_Spell_Starbreath"
 data "RootSpellID" "Teleportation_Arcana_Card_Spell_Starbreath"
 data "PowerLevel" "5"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;"
 
 new entry "Teleportation_Arcana_Card_Spell_Starbreath_6"
 type "SpellData"
@@ -82,5 +83,5 @@ data "SpellType" "Teleportation"
 using "Teleportation_Arcana_Card_Spell_Starbreath"
 data "RootSpellID" "Teleportation_Arcana_Card_Spell_Starbreath"
 data "PowerLevel" "6"
-data "UseCosts" "ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;"
+data "UseCosts" "ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;"
 

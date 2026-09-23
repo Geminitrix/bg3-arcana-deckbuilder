@@ -452,7 +452,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Wizard_BenignTranspositionTeleport_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Wizard_BenignTranspositionTeleport_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b94b9184-9bd0-4840-be7d-003700173b37,,;,,;5df11e35-f081-44f7-bd6f-7049d0e533cd,,;8dccb0f6-24e3-44b7-a60b-1f217b7db523,,;066f8e0e-b3e1-4b76-a473-d1e23a3b7230,,;,,;7a28f440-1b0b-4a18-96a8-3767959b601a,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -471,32 +471,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e3da4927-cd32-4c96-afc3-e783e40e8710" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1933f554-bdec-4706-a4d2-78106568e69f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Distortion_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1c53dfbd-0e3a-414d-91be-7cd9e406d75d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Distortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ce3c427c-781e-4432-9d71-48a96779c915" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4d8cbe6a-d0e1-4245-8bf9-3bb7a105601f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Distortion_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1c53dfbd-0e3a-414d-91be-7cd9e406d75d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Distortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ae0c454b-b9a6-4a21-b234-30021f19356e" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dafc4eb3-e76e-4a4d-95a1-0688e0028da1" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Distortion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1c53dfbd-0e3a-414d-91be-7cd9e406d75d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Distortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -509,7 +509,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9ce7070g7529g7835ga365gf087009b761f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0cc4e041g2995ge3d1g9de4g7febc0fc2946" version="13" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;5e7e63e1-0e69-46e7-ade7-fe3dadcc9184,,;e9ad50df-e7f1-43a0-b782-4c08f92b0f5a,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetItems;CannotTargetTerrain;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -537,42 +537,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="612d31ec-d834-48a9-b671-97a36f660183" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1e2e6a1f-9a31-40ef-8185-1169c7825e5f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_EtherealChains_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="236c68fd-d341-421e-a6e0-46a8badbb83f" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="facc2b25-d4ff-4183-92df-fdf6bc74c29d" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c15da071-8d7a-4003-8bb3-09aac294108f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_EtherealChains_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="236c68fd-d341-421e-a6e0-46a8badbb83f" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2c8dd15e-7fd9-4459-837a-bcdab0df4449" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a6921106-c269-4ff3-9375-97c0a88a402d" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_EtherealChains_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="236c68fd-d341-421e-a6e0-46a8badbb83f" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b1c8c926-bb1e-4cbf-a661-c22573cd9b79" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cce4d2c4-5aaf-4e5f-979a-0e011e4f59e3" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_EtherealChains_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="236c68fd-d341-421e-a6e0-46a8badbb83f" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -590,28 +590,28 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ca1779bg251cgd7e9g169cga4bdce93b2c7" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(NEMESIS,100,2)" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy();" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="255f46f2-273b-4b1d-8463-c861166cd133" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2bd363d1-29f3-441a-887f-78dd04b9dad4" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Faceless_Copy_EX_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f370790d-80dc-49f9-93e1-0444bd8c069b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Faceless_Copy_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a8426f8c-0e40-4d3c-bd84-0fd1a8956e3a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="95cf960a-3d59-49b9-b097-a3d8e928083e" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Faceless_Copy_EX_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f370790d-80dc-49f9-93e1-0444bd8c069b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Faceless_Copy_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -634,7 +634,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Confuse" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;8ce3e582-e8bb-4d2f-9c5c-46c70c9b87c0,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -651,12 +651,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2789dc5b-38d6-43b1-a509-4900f7c79a05" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f1414fc0-a0e4-4fdf-bb75-2fb76de036a8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_HostileTakeover_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3cc9261-f189-4862-9ee0-5c73b0e07295" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HostileTakeover" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -670,7 +670,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2860887eg2cbbg4642gc1d1g2e42a82f8c7a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf65a8a0g8472g6450ged91g838380afe396" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CONFUSION,100,10);ApplyStatus(SIGIL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SIGIL_TECH,100,0);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -688,7 +688,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h09b13723g7984g46cegba46g4bbcb1b452e9" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h42c6b1f9g8aa8g549cg7422g2025f4fe4fa9" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;8ce3e582-e8bb-4d2f-9c5c-46c70c9b87c0,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
@@ -710,42 +710,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7a64d783-430f-4a8f-b01b-ab35714a9dfd" />
+        <field name="UUID" type="IdTableFieldDefinition" value="70aeab10-1501-48fe-8617-d5694216950b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_HypnoticGaze_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c05920-b38e-4257-8abb-938fe2ee4034" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HypnoticGaze" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="41c69319-e9af-435b-9f1f-1e23fbda3f01" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9b7aa989-06c6-4ebb-a735-9efe083c0f13" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_HypnoticGaze_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c05920-b38e-4257-8abb-938fe2ee4034" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HypnoticGaze" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ba2c1733-6acb-4d1a-afba-a87ab6b59cc7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7d3f5d77-de00-4d08-9e83-2d898db3f511" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_HypnoticGaze_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c05920-b38e-4257-8abb-938fe2ee4034" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HypnoticGaze" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d61b70c9-7e27-4442-aae5-76654a04cd8d" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fc82d162-5c0a-4fa2-89ea-10f726aee63f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_HypnoticGaze_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c05920-b38e-4257-8abb-938fe2ee4034" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_HypnoticGaze" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -806,7 +806,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_DominatePerson_L4to5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;af94aac1-d8eb-4ccb-9520-694ade11b61c,,;f5db4001-b136-4c48-9aa4-026c4a7dd3b7,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -823,12 +823,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f69f52aa-419f-458d-ac90-67252ecf6c5d" />
+        <field name="UUID" type="IdTableFieldDefinition" value="16a31c0e-b17f-4d6c-a732-93b9d30b3f2c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Marionette_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70b3a8f6-7a58-4d91-83ee-41906e257fdb" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Marionette" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -854,7 +854,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Paralyze" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -870,42 +870,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3ce3e13f-aa8e-4d84-b30a-98a7db9d9616" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b3bc09b9-7874-414f-9ea0-f6b245382b4d" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MentalPrison_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d710b457-e984-4eec-a4ce-57a2610e22ee" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MentalPrison" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16e5b3ad-d20f-4d82-8ac3-46a031ce5246" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5abcbfe2-0bdf-44e3-bc4a-7fd7566a4b1b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MentalPrison_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d710b457-e984-4eec-a4ce-57a2610e22ee" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MentalPrison" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c661e276-c0f5-4608-8c89-8b44a8ea1ab0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f4bef47f-d088-4ad3-b74b-6afe42924230" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MentalPrison_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d710b457-e984-4eec-a4ce-57a2610e22ee" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MentalPrison" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="424d06a8-883c-4b76-8155-5f51636751c8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0cf7f973-1b44-440c-91cd-43e8766bdd3d" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MentalPrison_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d710b457-e984-4eec-a4ce-57a2610e22ee" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MentalPrison" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -919,7 +919,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfdec3a47gb1c5g5c51g6b2eg00757ffc4aef" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h805db51fg1ce6g5aa9g3a26g99b6279b2218" version="11" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;4acb9350-ba51-40c0-8b72-32dc3d50d4a2,,;58711808-db75-47e7-ba95-31e73dcdf9cd,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CannotTargetItems;CannotTargetCharacter;HasSomaticComponent;HasVerbalComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -936,22 +936,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="577b31e9-737f-43e0-b66a-3047d5f314c7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ad58c094-7f64-498d-a921-487712cb9016" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MirrorImage_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad017d75-08fc-45fb-8e3c-7b602698e2ad" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MirrorImage" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4308df3d-4019-4904-b7da-08d94ea09b30" />
+        <field name="UUID" type="IdTableFieldDefinition" value="34fc587c-a1db-4a5d-ac48-dd22cfcb0139" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MirrorImage_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad017d75-08fc-45fb-8e3c-7b602698e2ad" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MirrorImage" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -963,7 +963,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(4267f207-3e8b-4431-99e0-ba91eb29a836,-1,,,CreateCloneStack2,MIRROR_IMAGE_TECHNICAL,MIRROR_IMAGE_CLONE_SCALING);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9febea7g3060g3d1eg7657g23352aa094f2" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h648f69c1g8f76g09f2gab54g3b17bfec6003" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CannotTargetItems;CannotTargetCharacter;HasSomaticComponent;HasVerbalComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -985,7 +985,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Debuff_EyebitePanicked_L6to8" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_EyebitePanicked_L6to8" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9313094a-bae2-454f-9701-f920d0e8e98d,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;808fdfab-2e6c-472e-b3c4-19ce4a719d9d,,;,,;ea745d30-eb87-447f-b190-c81298e27d9c,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -1003,22 +1003,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="be3f24a3-52e3-497f-b8fa-254d8d0ad448" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9bed9b00-90ed-492a-a8d4-3fdd42222fe7" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Terrify_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ead35758-f89a-4673-8e3e-e2300594464b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Terrify" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3be6638e-70e2-46f8-bf9f-487117e14f6c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="010e586d-c78f-4a38-9160-6f89a35be8f7" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Terrify_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ead35758-f89a-4673-8e3e-e2300594464b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Terrify" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1049,49 +1049,49 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb619d7e4g5900gda93ge912g6a66824f4016" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MimicDistortion_Damage),Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsLinkedSpellContainer;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('MIMIC_DISTORTION_HELPER') and HasStatus('DISTORTION_LAST_CASTED');" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea3258c7g78a8g47c1g40cbg1263fd6d0156" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0ae95091-9bbf-4d97-bbb7-653e88eedca9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b5bd90a9-8b91-4ecb-820c-a9838ed735d3" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicDistortion_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f8bf47f-3051-47db-8b0e-8ca2bf7ae6b8" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="613f8998-d712-44fb-bb36-ee83e3999504" />
+        <field name="UUID" type="IdTableFieldDefinition" value="08233b45-2f01-44b3-bd3a-7b196f499019" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicDistortion_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f8bf47f-3051-47db-8b0e-8ca2bf7ae6b8" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="aab6843b-7c2b-4e79-8b8b-f37f3344ef91" />
+        <field name="UUID" type="IdTableFieldDefinition" value="24f7e078-89df-42d4-ada0-97af32635f7a" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicDistortion_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f8bf47f-3051-47db-8b0e-8ca2bf7ae6b8" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="06e67e05-60a3-4744-a981-f10234f85d69" />
+        <field name="UUID" type="IdTableFieldDefinition" value="53af11be-8239-430a-b6d6-3c36d6134168" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicDistortion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f8bf47f-3051-47db-8b0e-8ca2bf7ae6b8" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1107,58 +1107,58 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MIMIC_ETHEREAL_CHAINS,100,1)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsLinkedSpellContainer;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h98433cefgd6dfg3e06g3791g33bdfcb25951" version="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('ETHEREAL_CHAINS_LAST_CASTED');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a20e71fb-f780-4a1d-868d-7f1d7af7d363" />
+        <field name="UUID" type="IdTableFieldDefinition" value="654a8970-936e-4723-9c00-8244c3646776" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicEtherealChains_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="090dbf11-c91a-42a6-8ba4-0036adef58f1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicEtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="35743522-d446-4af5-8b33-057cd41da2ef" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f0ad5348-6d39-407a-be31-e06511d71c2f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicEtherealChains_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="090dbf11-c91a-42a6-8ba4-0036adef58f1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicEtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb5bfcb5-1c5e-4c61-bf1e-8a517e2e89a0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8299de91-0119-416f-8084-451115b9fe9f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicEtherealChains_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="090dbf11-c91a-42a6-8ba4-0036adef58f1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicEtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="67282dfa-acd8-4d2c-b512-4902ffc5a7bc" />
+        <field name="UUID" type="IdTableFieldDefinition" value="11d3da06-c415-46f8-b009-7950160ba4ea" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicEtherealChains_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="090dbf11-c91a-42a6-8ba4-0036adef58f1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicEtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c758a3ec-b1de-427f-8209-8dcdb1cbf88e" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dd170575-e230-4ec9-b6ee-486331fc4094" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicEtherealChains_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="090dbf11-c91a-42a6-8ba4-0036adef58f1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicEtherealChains" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1307,7 +1307,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9e90fb4g4e50g8850g39ceg8935a7a7e0cb" version="18" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_HealingWord_L1to3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
@@ -1327,52 +1327,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="146c40fe-b119-4839-b92c-b56862994200" />
+        <field name="UUID" type="IdTableFieldDefinition" value="08358159-6d99-4374-8c3f-b223e41cf3b0" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_AstralInfusion_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3cad5e55-53e7-4035-aba2-387052b0322f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6bfe3189-25ad-48cc-945b-40d41b3a0c6e" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_AstralInfusion_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c293237d-9dbc-4729-a5bd-bc00d00d1a39" />
+        <field name="UUID" type="IdTableFieldDefinition" value="82a534db-c50c-4481-b74b-210b8bc33f94" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_AstralInfusion_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f9bb9b9c-a8ce-4acd-ae95-9c8b1ef47f9f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="57689f27-ec25-43b4-aeb4-b01dcca24dbf" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_AstralInfusion_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bce03322-aac2-4c13-86b2-db585e98fc2b" />
+        <field name="UUID" type="IdTableFieldDefinition" value="318128ef-46b4-4923-908f-09965d913434" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_AstralInfusion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1394,7 +1394,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Silence" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9313094a-bae2-454f-9701-f920d0e8e98d,,;,,;4148823a-6dbc-4692-a8ff-71520315a10f,,;1b8cdb9d-6f8e-4161-901c-1fd7a7787c7c,,;808fdfab-2e6c-472e-b3c4-19ce4a719d9d,,;,,;ea745d30-eb87-447f-b190-c81298e27d9c,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;CannotTargetItems;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -1411,12 +1411,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f154fc47-48c8-4cdf-893d-fd7760bb1cbc" />
+        <field name="UUID" type="IdTableFieldDefinition" value="67c9ddb4-4066-4e22-ba29-df6f46715e01" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Equinox_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3b76770-910e-484a-bcfc-a5f78ce46cf1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Equinox" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1429,7 +1429,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23fb83d6ga7fcgba6eg4c4ag360bc335c7c8" version="10" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
@@ -1450,32 +1450,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="80887eee-f04a-4cee-9148-52ee52e938d2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d916e152-52e1-4852-8de0-0d77f635d776" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LucentSingularity_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d66b4083-1220-4dfc-b992-6ae118c4c58b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LucentSingularity" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f3a181d0-7103-4be0-9dcd-88cf9547a066" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3ee955c7-0fab-43e4-93fe-48457bf24842" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LucentSingularity_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d66b4083-1220-4dfc-b992-6ae118c4c58b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LucentSingularity" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4fecc0e2-62f6-4e00-9000-2541cf9751c0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="192095e7-4644-4dab-915f-567c44052035" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LucentSingularity_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d66b4083-1220-4dfc-b992-6ae118c4c58b" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LucentSingularity" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1498,7 +1498,7 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;2f5d8e0b-35f3-416f-99e9-1cc9d942204e,,;f2ec369f-4a3b-451e-b954-2ab0a53d51d6,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -1511,42 +1511,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="650519e2-e0e5-4467-8923-979ca81393a7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="16d6c284-b284-478b-9fb5-28b8302e4890" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a9f54a9-8f56-4c4b-a354-30a4492d85a2" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ca650eb9-3ccc-492b-87fd-70d9edf406a9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7fe2cff9-b360-4ac6-b514-9695950fb8bd" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a9f54a9-8f56-4c4b-a354-30a4492d85a2" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fbf9f457-f420-477f-b8cf-965154a958ef" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8d70410a-db21-4c18-afef-dd6e515d561f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a9f54a9-8f56-4c4b-a354-30a4492d85a2" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2b76390e-73a3-4fd7-a003-9333e22f6055" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f757793a-cf42-4be1-bdbc-bdd7183cba2e" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a9f54a9-8f56-4c4b-a354-30a4492d85a2" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1558,28 +1558,28 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_AEGIS_EX,100,-1);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf9e41595g6ff9g1919gcc51g0b8c4e0dc1f0" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_AEGIS_EX,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="dcb75509-0cb9-471f-9f66-d4a584f367ef" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cc6d3949-d9bd-4159-9c39-03b8631fabfa" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_EX_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="11da5456-1ca6-4d04-82eb-7930828c295c" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3085dbe9-2d28-4e45-b71c-8484a8eb4057" />
+        <field name="UUID" type="IdTableFieldDefinition" value="795dbccb-3ccf-4e17-9657-2d10e2e4dc74" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_LunarAegis_EX_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="11da5456-1ca6-4d04-82eb-7930828c295c" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_LunarAegis_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1603,7 +1603,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_FreedomOfMovement_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;94ad1609-9862-499a-8337-5e6a7d9487f9,c8f325f3-9d7d-4387-af85-b3b4257e26cc,f4b7eabd-2875-46fa-bae3-9f4d0a51c955;8373f3da-2368-4a51-98b1-146ec3586660,12971987-e66c-45dd-9843-b4784c30d9a2,279cd9eb-1d9c-4e4c-a44e-e751ae0eae66;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;499b7945-9eff-40a2-9911-73b8963108e4,,;1d3a29f0-9409-462e-81cd-3f24944f63ca,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;ab7b6aac-b3c9-4918-8f17-f777a94dcb5e,,;57211a11-ed0b-46d7-9369-81df25a85df6,,;,,;,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
@@ -1617,22 +1617,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b41a9579-841e-4d98-bc80-618ded94e52f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="15e99af0-bc35-4cde-83ed-2993d178642c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MoonGravity_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bb3f53c6-f1a9-41da-9c87-07232e0332c7" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MoonGravity" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9799608b-0762-4b84-97dd-9ff06c26847a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dcc63233-9199-4903-803f-e3d7caf26e61" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_MoonGravity_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bb3f53c6-f1a9-41da-9c87-07232e0332c7" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_MoonGravity" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1649,7 +1649,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he742e437gc26eg20d9g11f8g3162a96fa3d3" version="11" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;CanAreaDamageEvade;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -1683,7 +1683,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08f0e50eg29dfg347bg2b83ga4b1795dc6f0" version="5" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62d04cf4gdae4g1ca7gf625g344125bf869c" version="11" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;e37d18b8-0de7-4bbc-a644-31ec2a91e548,,;acfe8d41-20c1-4fe8-b158-f4b2be86e080,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -1704,42 +1704,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d9b4798a-4430-4383-9705-739a51355756" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a4d3df1d-ae50-4a41-9add-a3cfc4deec04" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_SolarPurge_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dec41f9-5d25-483e-a74d-dd23a479374d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarPurge" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fc518930-688f-4354-b3d9-88fa5a82149b" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fdc65f52-d272-4315-a706-07ee699031dd" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_SolarPurge_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dec41f9-5d25-483e-a74d-dd23a479374d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarPurge" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2f9c8850-fe89-4b0b-a629-e0e029166844" />
+        <field name="UUID" type="IdTableFieldDefinition" value="085f3b11-3a35-49f1-a398-0c516d6feb68" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_SolarPurge_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dec41f9-5d25-483e-a74d-dd23a479374d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarPurge" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e248b88d-01ac-48e0-9c8b-34f196dc800a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a2f514b0-df5d-447c-a9b9-437ff50b1979" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_SolarPurge_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dec41f9-5d25-483e-a74d-dd23a479374d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_SolarPurge" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
@@ -1771,7 +1771,7 @@
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_FistofUnbrokenAir_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="32456253-9787-49c8-9775-4cd93d602f05,,;,,;761e67fa-d2da-42a7-a2bc-3ec24633309f,,;2aa08b98-0999-40a6-9ae8-a27e35a6a5f8,,;5c9e3bb0-8963-4cc3-aa24-c0ba1c49494b,,;,,;c79f1495-5c5c-4e22-bed4-38beb3779b23,,;,,;,," />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;DisableBlood;AddFallDamageOnLand;IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
@@ -1786,52 +1786,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a6625645-2e9f-497f-a8ad-6430fcdd215b" />
+        <field name="UUID" type="IdTableFieldDefinition" value="39289934-c24d-4ec9-901a-eb52a59841c8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_GaleBurst_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7846b8-d523-4488-9ecd-1e3ed2ec1386" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d9d63700-ac6b-4346-87dc-7e8c4dfefcf4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="df33c104-93b7-4a35-8d36-ea5b620b6b0c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_GaleBurst_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7846b8-d523-4488-9ecd-1e3ed2ec1386" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="29195e99-4f94-4d3a-8369-aac38ac3faa6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="868c798a-943e-4890-ab51-ec32bc711b45" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_GaleBurst_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7846b8-d523-4488-9ecd-1e3ed2ec1386" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e2b05051-bcf8-448a-9843-3878c8dbae53" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dab5f898-8358-4357-b549-a94097817c51" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_GaleBurst_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7846b8-d523-4488-9ecd-1e3ed2ec1386" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="25a01b33-874b-4e5f-8638-a79b424853bb" />
+        <field name="UUID" type="IdTableFieldDefinition" value="58939f2e-2a2f-4a5b-a7bb-3f97f424044c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_GaleBurst_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7846b8-d523-4488-9ecd-1e3ed2ec1386" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1858,7 +1858,7 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
@@ -1874,52 +1874,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="344b2b2d-0c5c-4167-9822-ec10539ed946" />
+        <field name="UUID" type="IdTableFieldDefinition" value="15e4b9b1-c00b-4cda-b35c-820ad113d16a" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_ZephyrStrike_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_ZephyrStrike" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d426d0ea-29a0-40ba-9726-44ef80542592" />
+        <field name="UUID" type="IdTableFieldDefinition" value="605dc37c-6e8b-494c-840f-4d2d746b6e12" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_ZephyrStrike_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_ZephyrStrike" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8930c5b4-e00d-4a9d-85d8-3c7f7ec7734d" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3da95259-a38a-4df0-bd96-690462c62bc4" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_ZephyrStrike_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_ZephyrStrike" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="957a016a-7b14-4b2d-b052-abb6b14c00f1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="eb98287b-61d0-40ec-84bc-eb08744038b4" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_ZephyrStrike_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_ZephyrStrike" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9bc489b6-6018-4808-9918-55bfdd46fca1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2188ed3e-b9f9-484a-bb93-c04735e4cf22" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_ZephyrStrike_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_ZephyrStrike" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object><stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
@@ -1950,7 +1950,7 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;477bdade-9c91-4373-9fad-113c6c3b0bbf,67ceaa8c-c0e3-409c-8cd7-1f7e089bfad2,c8efc85f-7718-4bcd-b35a-8739b436f1dc;06c28cf4-0e9b-4dad-8ed4-84780e7df33c,f36c1287-2de6-443c-aca5-a44966348e88,e9004fde-1183-45eb-8459-c33e2cd29078;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1961,52 +1961,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b1cd3c28-dba0-47bb-a647-476da8297cc1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9419bfc2-8eb7-41ba-895d-fc1da22717b1" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodReaper_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c32cc8dc-6b8d-45af-923e-cfd9efd0e914" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7b0fcf0c-2555-48e2-a875-d7cbc248b539" />
+        <field name="UUID" type="IdTableFieldDefinition" value="abfdf2ce-d7f3-4320-836e-afb7f14ce449" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodReaper_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c32cc8dc-6b8d-45af-923e-cfd9efd0e914" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d65533a2-f444-4449-983f-78b4800f6234" />
+        <field name="UUID" type="IdTableFieldDefinition" value="29fc681d-7c81-4300-afd5-3f08d0413b39" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodReaper_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c32cc8dc-6b8d-45af-923e-cfd9efd0e914" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cbca5bd3-48bd-415c-8cfb-6daade176c09" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ae3de329-ca48-4c13-9ed5-65576ba5c1d4" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodReaper_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c32cc8dc-6b8d-45af-923e-cfd9efd0e914" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9fc69c71-9857-443b-a562-12541318802c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="75fa09b7-0058-4423-b6f9-0b6e841a66e6" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodReaper_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c32cc8dc-6b8d-45af-923e-cfd9efd0e914" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2028,7 +2028,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Warlock_SoulPluck" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Warlock_SoulPluck" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;8252328a-66dd-4dc0-bbe0-00eea3204922,,;982d842b-5d44-4ef6-ab33-14d5ae514a50,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems;CannotTargetTerrain;AddFallDamageOnLand;IsSpell;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
@@ -2043,42 +2043,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="79736980-8453-4530-aeac-53035da7fe9b" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e03a8a76-9694-4e42-baa6-056308fcc6f9" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9d0364c-0204-4d6d-8d8a-4cff9be52dae" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6d3aa90a-32e6-4ee0-98dd-dcb835198d15" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fc35ffb7-32f5-433d-a5a8-9a0f887840ad" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9d0364c-0204-4d6d-8d8a-4cff9be52dae" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b78e9e03-3138-4e83-967c-6561b2341bbb" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bb4ab60e-0e66-4f3f-b0ca-ad730e7cd2b8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9d0364c-0204-4d6d-8d8a-4cff9be52dae" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5c642442-8410-41e7-8047-706e6a7cdc99" />
+        <field name="UUID" type="IdTableFieldDefinition" value="506fa5e7-6a44-465f-b4b7-35c43f955f25" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9d0364c-0204-4d6d-8d8a-4cff9be52dae" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2092,28 +2092,28 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83c6147agb5abg57d2ged56g14c502da5a74" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc30ba6f4g435bg63cagaa3eg320f1becba03" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(REAPER_MARK,100,1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;CannotTargetItems;CannotTargetTerrain;AddFallDamageOnLand;IsSpell;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="86168fd3-2249-4d53-8db2-523e4e60e78c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="55db1f3f-d5e2-4191-97b4-6f8255179227" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_EX_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ebaed570-2a11-4b42-a04f-f065a7abc383" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a1779238-d668-4875-9159-f519c9d8ab61" />
+        <field name="UUID" type="IdTableFieldDefinition" value="25213aeb-ac1c-478d-860b-ee7999c37f4b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathsGrasp_EX_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ebaed570-2a11-4b42-a04f-f065a7abc383" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2133,7 +2133,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_DeathWard_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;e37d18b8-0de7-4bbc-a644-31ec2a91e548,,;acfe8d41-20c1-4fe8-b158-f4b2be86e080,,;,,;,,;,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
@@ -2147,32 +2147,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2db3bd96-2582-4248-b99c-348f152b40aa" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f25a0034-4275-4c9d-a314-eda94f7dbe3a" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathWard_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e0784a2-37fa-4252-9229-dda4311ad5cd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b004afea-32d1-48f2-8dd4-7a3487b6bbad" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4c702afa-e86a-455b-80e4-cdc942db2412" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathWard_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e0784a2-37fa-4252-9229-dda4311ad5cd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="be83b089-decb-44cd-a840-457da1837715" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9f85de3b-f5d7-4fbc-b30c-a3485487f4cb" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_DeathWard_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e0784a2-37fa-4252-9229-dda4311ad5cd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2199,7 +2199,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_Contagion_L4to5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;cd5e5d4a-38e1-4d4d-b346-3fbc1e4c3c90,,;141f48d9-9615-496a-8737-9240f0dba60d,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
@@ -2210,22 +2210,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb807eaa-cc22-46f4-94a3-b0c54c48ac70" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a47aaa0a-94b0-4ee3-b1b1-8752445f7f80" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Hemoplague_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03dd6651-55fa-4a47-8cab-31a6a0104bf1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c60c71b3-90aa-4030-b51c-4208e9ed75ed" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b3c9c4da-8a3e-4e41-9353-db68d9eb3285" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Hemoplague_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03dd6651-55fa-4a47-8cab-31a6a0104bf1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2243,7 +2243,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CRAWLING_GNAW_SWITCH,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsMelee;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -2273,7 +2273,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Necrotic_CircleofDeath_L6to8" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -2311,7 +2311,7 @@
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="CastOffhand" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="78f21217-de38-4dc3-b2f8-c914f2e515ba,,;655f5d8e-39c7-45b4-8a36-fdd3358a448c,,;c07a9d83-9a39-464a-b281-15c67c528ffb,,;32c33123-7962-4d95-b497-532b1a897e85,,;a11d7030-17a1-4da8-9a65-c707ec3341c6,,;7465f7f7-67ea-41f2-8dd4-3c97f1089a54,,;23602d90-3bc0-4b81-aafe-a3e56b197daf,,;,,;,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="78f21217-de38-4dc3-b2f8-c914f2e515ba,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,,;f4ac302b-1569-404f-bd52-1fe443e265df,,:722df2d7-7898-4b0b-b930-5a850b55ccf0,,;a693a7c3-e7e7-4edb-98dd-db5fd700663f,,;a11d7030-17a1-4da8-9a65-c707ec3341c6,,;2b81c18b-9698-4262-a623-932c2bb1296d,,;23602d90-3bc0-4b81-aafe-a3e56b197daf,,;,,;,," />
@@ -2329,52 +2329,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ede8fb1a-1016-4eb8-b75e-02e3029c5d84" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c294ce9d-d773-4f28-923a-08b5c022c464" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Obliterate_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce1cd2e6-f681-46a5-a5a8-aeb036cf294d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Obliterate" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2fd57e1b-8bd9-46b5-89ee-3ae1d7e25939" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4da16239-fa76-4598-af38-bfe9d17cd79f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Obliterate_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce1cd2e6-f681-46a5-a5a8-aeb036cf294d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Obliterate" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7535b065-8d2d-46ed-b1f1-353fa9f8219a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="34217c4e-b81e-44ef-beec-f36dc06a4eed" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Obliterate_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce1cd2e6-f681-46a5-a5a8-aeb036cf294d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Obliterate" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a4f29c59-ccb0-449d-8afb-b1c9c8f52dd9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c83d6b12-3bde-41f8-9d19-310e46473eba" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Obliterate_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce1cd2e6-f681-46a5-a5a8-aeb036cf294d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Obliterate" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7376e631-bc96-4ecf-9de2-124111ca94e0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b27c9df2-4ea1-41a4-89a5-45f3eb2ca78b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Obliterate_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce1cd2e6-f681-46a5-a5a8-aeb036cf294d" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Obliterate" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2389,7 +2389,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f280d6dg780cg9802gc6f1gb9f2300b52d1" version="3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;CannotTargetItems;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
@@ -2430,7 +2430,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_AnimateDead" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="6f42f5f3-7a5a-4441-a02e-71b0450ac4b7,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;42aaefdc-cf9b-4249-b159-285041851f69,,;,,;20e11c98-fff9-4417-88de-5bcc2368a1bd,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
@@ -2462,7 +2462,7 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:1;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:1;ArcanaHandCard:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;c17a3562-3758-4c4a-96e8-790cebed1df4,,;a8012b19-b279-45ec-89b0-86a1b73ad584,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -2477,52 +2477,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="39a34c5f-3398-4a34-b12d-c90671559af4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f2fcf2dc-fd09-4319-ab3f-0630daf3be66" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1903faae-e28b-4729-bab2-59c1e74b1548" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:2;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:2;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e695d73f-b33a-4da1-9565-e31ce9ccbaec" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4bf418ab-af48-4725-9c42-4645e37630da" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1903faae-e28b-4729-bab2-59c1e74b1548" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="74b9c446-4aa8-461b-b39e-72b991509afd" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8df2b382-fec3-4684-9cad-5b91f4f580f5" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1903faae-e28b-4729-bab2-59c1e74b1548" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="93f9451b-1440-455b-9867-6dbba6f1b272" />
+        <field name="UUID" type="IdTableFieldDefinition" value="19c19dfe-474e-4c9b-b8e1-a115d067ff60" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1903faae-e28b-4729-bab2-59c1e74b1548" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ace0d294-575f-4f68-90a7-936f1f2b6ee3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a5a90544-299d-417b-8871-9c9fa20fa36c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1903faae-e28b-4729-bab2-59c1e74b1548" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2538,38 +2538,38 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a3b2223ga5f5g13a3g5581g68e27bc8393c" version="4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IgnorePreviouslyPickedEntities;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2ee48bbe-1c23-4ac4-b3c8-d45b0592a752" />
+        <field name="UUID" type="IdTableFieldDefinition" value="47c0d418-3b06-4612-b457-329c3f282a36" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_EX_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="adcf1ea1-edf0-4fb6-95b1-813f177ad588" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0b8af80c-822f-496e-afcd-f5281918f3f1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2d0900fe-f843-4928-bf05-94f51e2a9a6d" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_EX_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="adcf1ea1-edf0-4fb6-95b1-813f177ad588" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a4ddca95-8687-46df-8b75-b7a5c5a768e4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="43f05d80-a74d-4161-828b-381d2c68ab0e" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Transfusion_EX_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="adcf1ea1-edf0-4fb6-95b1-813f177ad588" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2684,6 +2684,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="e7b6ad82-c85a-40ac-9781-cb85f2dffb89" />
       </fields>
     </stat_object>    
+    
     
     
     
