@@ -10,7 +10,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1,,,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc,,,,AlwaysPrepared);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290,,,,AlwaysPrepared)" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4831bb91-b13e-4740-b205-0227dbdddd12;c229d522-d294-43e1-8a05-1967e15c17e8;31b64a26-a650-4ef1-aeec-c2872f48ec14;dc2e68d3-5577-4a9f-be4f-1a71707c1995" />
       </fields>
     </stat_object>
@@ -24,7 +24,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ac907a42-680d-4681-909a-c60113635d03)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ac907a42-680d-4681-909a-c60113635d03,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Portent" />
       </fields>
     </stat_object>
@@ -49,7 +49,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ExpertDivination" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,2)" />
       </fields>
     </stat_object>
@@ -72,7 +72,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(78845e81-a866-4494-956e-8f75371fcd29)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(78845e81-a866-4494-956e-8f75371fcd29,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,3)" />
       </fields>
     </stat_object>
@@ -95,7 +95,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="Level" type="ByteTableFieldDefinition" value="8" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(078625f8-b4ed-4d85-a6f6-68dda60a8261)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(078625f8-b4ed-4d85-a6f6-68dda60a8261,,,,AlwaysPrepared)" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,4)" />
       </fields>
@@ -119,7 +119,7 @@
         <field name="TableUUID" type="GuidTableFieldDefinition" value="99f583de-f62e-43a7-b8f7-4aa29812709f" />
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(238a66a8-4726-48b8-a95b-96138625bc75)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(238a66a8-4726-48b8-a95b-96138625bc75,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,5)" />
       </fields>
     </stat_object>
@@ -143,7 +143,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Arcana" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(76697ce5-b088-468a-89e1-00fb01a3f7c1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(76697ce5-b088-468a-89e1-00fb01a3f7c1,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -260,7 +260,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="d75cb44d-bba6-43ad-851f-4497ec526e80" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch;Arcana_Passive_ArcaneSpells_Unbound" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(43261c49-335c-4231-ae5d-6a828cff974c)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(43261c49-335c-4231-ae5d-6a828cff974c,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,2,0)" />
       </fields>
     </stat_object>
@@ -285,7 +285,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_GaleDeflection" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(706b4719-9a6d-42c0-8e08-8b273eb3e0e4)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(706b4719-9a6d-42c0-8e08-8b273eb3e0e4,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0);ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -310,7 +310,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_5;Arcana_Passive_Weightless_5;Arcana_Passive_FlowingAssault;" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_3" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(438610de-b4a4-4a60-87e0-7f6c4034b140)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(438610de-b4a4-4a60-87e0-7f6c4034b140,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -335,7 +335,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_7;Arcana_Passive_Weightless_7;Arcana_Passive_MagicStrikes" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_5;Arcana_Passive_Weightless_5" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(87872209-4d00-4a57-8e24-02fbb18c75bc)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(87872209-4d00-4a57-8e24-02fbb18c75bc,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -360,7 +360,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_9;Arcana_Passive_Weightless_9;Arcana_Passive_EyeOfTheStorm_UI" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_7;Arcana_Passive_Weightless_7" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(fc46dcfe-4126-4b55-92ab-87e8fb43e8f9)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(fc46dcfe-4126-4b55-92ab-87e8fb43e8f9,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -385,7 +385,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_11;Arcana_Passive_Weightless_11;Arcana_Passive_Momentum_UI" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_9;Arcana_Passive_Weightless_9" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f0892650-f4dd-41c1-bbe3-76cd7e361985)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f0892650-f4dd-41c1-bbe3-76cd7e361985,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -412,7 +412,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_13" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_12" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f42bd753-926b-4f25-a003-e9272b5bb48e)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f42bd753-926b-4f25-a003-e9272b5bb48e,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -437,7 +437,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_15" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_13" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ad4890cf-4fd9-4de2-adac-085257187890)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ad4890cf-4fd9-4de2-adac-085257187890,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -462,7 +462,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_17" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_15" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(270387bc-806f-4dbf-b2e3-cf32e81f95bd)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(270387bc-806f-4dbf-b2e3-cf32e81f95bd,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(UnboundDeck,1,0)" />
       </fields>
     </stat_object>
@@ -523,7 +523,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Telepathy;Arcana_Passive_ArcaneSpells_Deceiver;Arcana_Passive_UnlockFriends" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,2,0)" />
       </fields>
@@ -547,7 +547,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f5216d9b-4fed-49f0-b1ea-8a5e2b831b59)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f5216d9b-4fed-49f0-b1ea-8a5e2b831b59,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -570,7 +570,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(9aac7d55-57b7-4942-afb4-1751e506b172)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(9aac7d55-57b7-4942-afb4-1751e506b172,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_InstinctiveCharm" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaReactInstinctiveCharm,1,0);ActionResource(DeceiverDeck,1,0)" />
       </fields>
@@ -594,7 +594,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(8163075e-1c66-4173-a15c-2c78a9524021)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(8163075e-1c66-4173-a15c-2c78a9524021,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -617,7 +617,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(55ff77d4-6dd9-4cda-8e9b-84ba78cf5a54)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(55ff77d4-6dd9-4cda-8e9b-84ba78cf5a54,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -640,7 +640,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(7134712c-169c-4210-9b13-541e9660392c)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(7134712c-169c-4210-9b13-541e9660392c,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_HollowImage" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
@@ -665,7 +665,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="13" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -688,7 +688,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(1b77b762-3a24-447e-a468-9c6ee2af6ff1)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(1b77b762-3a24-447e-a468-9c6ee2af6ff1,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -734,7 +734,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f2de9211-6a8e-453d-82f8-760d2ff6ff62)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f2de9211-6a8e-453d-82f8-760d2ff6ff62,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DeceiverDeck,1,0)" />
       </fields>
     </stat_object>
@@ -770,7 +770,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32,,,,AlwaysPrepared)" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability;Arcana_Passive_ArcaneSpells_Starchild" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,2,0)" />
@@ -796,7 +796,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_LunarWisp;Arcana_Passive_StellarAnchor" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -819,7 +819,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a8369c4e-5383-4680-85b0-3c5cd21f01a7)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a8369c4e-5383-4680-85b0-3c5cd21f01a7,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -842,7 +842,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="7" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(37a31021-566b-4a78-a713-0eadc65c0fcb)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(37a31021-566b-4a78-a713-0eadc65c0fcb,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -865,7 +865,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(30032bd8-7c3b-4ac5-a1df-88480ba61c29)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(30032bd8-7c3b-4ac5-a1df-88480ba61c29,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -888,7 +888,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b544d37a-e65d-4cd4-8b33-6145ab1ef5ad)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b544d37a-e65d-4cd4-8b33-6145ab1ef5ad,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -900,7 +900,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(c411afc3-58b2-4288-82d0-f4aaf951f543)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(c411afc3-58b2-4288-82d0-f4aaf951f543,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -912,7 +912,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="13" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(38284119-78ca-4f17-8fb3-28a3d6e01727)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(38284119-78ca-4f17-8fb3-28a3d6e01727,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -935,7 +935,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5b48dd2d-8f6e-4a27-aaf6-b65aad626004)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5b48dd2d-8f6e-4a27-aaf6-b65aad626004,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -958,7 +958,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="17" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(e1489b7a-2201-4e55-8e5b-eaee56d2008c)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(e1489b7a-2201-4e55-8e5b-eaee56d2008c,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -981,7 +981,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(154921a7-1044-401f-b347-6dcbfdf84d2d)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(154921a7-1044-401f-b347-6dcbfdf84d2d,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(StarchildDeck,1,0)" />
       </fields>
     </stat_object>
@@ -1017,7 +1017,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_ArcaneSpells_Eternal" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,2,0)" />
       </fields>
@@ -1041,7 +1041,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(49694d21-16e7-4637-a162-1a60bfc31d1b)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(49694d21-16e7-4637-a162-1a60bfc31d1b,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_ImmortalBlood" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
@@ -1065,7 +1065,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="5" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b1299dd4-7dd8-49d4-bfbd-c52260802959)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b1299dd4-7dd8-49d4-bfbd-c52260802959,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ExtraAttack;InescapableDestruction" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
@@ -1112,7 +1112,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(af1ededf-418f-4a60-9312-aa551b6cdec4)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(af1ededf-418f-4a60-9312-aa551b6cdec4,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
     </stat_object>
@@ -1135,7 +1135,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b295c7bf-22ba-4876-a273-edc0d7cee239)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(b295c7bf-22ba-4876-a273-edc0d7cee239,,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="InuredtoUndeath" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
@@ -1148,7 +1148,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a394a4ac-fdc1-474f-ad93-753de30cac15)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a394a4ac-fdc1-474f-ad93-753de30cac15,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
     </stat_object>
@@ -1160,7 +1160,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="13" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(8abac308-3262-4ce8-99c2-3d3e9c6ba42e)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(8abac308-3262-4ce8-99c2-3d3e9c6ba42e,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
     </stat_object>
@@ -1183,7 +1183,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ab8427d8-c8df-4bf5-a7ed-a44e15d506c4)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ab8427d8-c8df-4bf5-a7ed-a44e15d506c4,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
     </stat_object>
@@ -1230,7 +1230,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4d83dde3-8eb7-4aee-bb88-2d98eca566d9)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4d83dde3-8eb7-4aee-bb88-2d98eca566d9,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(EternalDeck,1,0)" />
       </fields>
     </stat_object>
