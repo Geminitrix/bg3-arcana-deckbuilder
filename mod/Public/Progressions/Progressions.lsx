@@ -208,7 +208,6 @@
                     <attribute id="UUID" type="guid" value="5a26cfd4-4d2c-461e-a939-e74ce87fe3c6"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch;Arcana_Passive_ArcaneSpells_Unbound"/>
@@ -218,7 +217,6 @@
                     <attribute id="UUID" type="guid" value="71db6872-91ab-4b2f-97e8-bac5da934f48"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -226,7 +224,7 @@
                     <attribute id="UUID" type="guid" value="8cf47f3b-3c5a-4736-ad7b-a6342fe06f1e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0);ActionResource(UnboundDeck,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_GaleDeflection"/>
@@ -237,7 +235,6 @@
                     <attribute id="UUID" type="guid" value="fb53cf40-4c7a-4130-9b21-6f42fb58cb1c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -245,7 +242,6 @@
                     <attribute id="UUID" type="guid" value="c16cd90e-8c94-4cde-8b8c-fca87eae54df"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_5;Arcana_Passive_Weightless_5;Arcana_Passive_FlowingAssault;"/>
@@ -256,7 +252,6 @@
                     <attribute id="UUID" type="guid" value="bc0188a8-1914-4bb8-bb2c-e6f056ebad3b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -264,7 +259,6 @@
                     <attribute id="UUID" type="guid" value="494b7973-b45e-478c-a695-be4e0cb66e05"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_7;Arcana_Passive_Weightless_7;Arcana_Passive_MagicStrikes"/>
@@ -275,7 +269,6 @@
                     <attribute id="UUID" type="guid" value="d67189a0-6e3b-4800-8155-6295ea2a8158"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -283,7 +276,6 @@
                     <attribute id="UUID" type="guid" value="bacab022-3911-456f-9847-025d9e6ab7b5"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_9;Arcana_Passive_Weightless_9;Arcana_Passive_EyeOfTheStorm_UI"/>
@@ -294,7 +286,6 @@
                     <attribute id="UUID" type="guid" value="1e8fdfd5-879c-455b-a5bd-0a52c7ea5dd9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -302,7 +293,6 @@
                     <attribute id="UUID" type="guid" value="e94f9a80-20e2-44cc-ab3c-bebfa5b61ab9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_11;Arcana_Passive_Weightless_11;Arcana_Passive_Momentum_UI"/>
@@ -313,7 +303,6 @@
                     <attribute id="UUID" type="guid" value="3be9c808-f46a-47c0-9562-9ca8009b2964"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_12;Arcana_Passive_Weightless_12;Arcana_Passive_EmptyState"/>
@@ -323,7 +312,6 @@
                     <attribute id="UUID" type="guid" value="207f9358-88f8-4c28-a7e5-4cbc5b528cc3"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_13"/>
@@ -334,7 +322,6 @@
                     <attribute id="UUID" type="guid" value="e6cfeae8-e674-4047-a700-b16aadb04a2e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="14"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -342,7 +329,6 @@
                     <attribute id="UUID" type="guid" value="a5af06d5-7b4e-4d4c-b272-e01d4f5086b2"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_15"/>
@@ -353,7 +339,6 @@
                     <attribute id="UUID" type="guid" value="c63a38be-8cd1-43ba-9df2-cd790e25354b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -361,7 +346,6 @@
                     <attribute id="UUID" type="guid" value="3afb5634-4289-447a-973a-33fbdcd30d3d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="17"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_17"/>
@@ -372,7 +356,6 @@
                     <attribute id="UUID" type="guid" value="f654f991-a4b7-452b-96b1-57029a496eb6"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -380,7 +363,6 @@
                     <attribute id="UUID" type="guid" value="3cec7224-51fe-4b73-aff8-f0d9e23437d0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_19;Arcana_Passive_GaleDeflection_EX"/>
@@ -390,7 +372,6 @@
                     <attribute id="UUID" type="guid" value="916ca4c5-e2fe-49a4-a2b2-b16addc0025e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(UnboundDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_20;Arcana_Passive_TheFool_EX;Arcana_Passive_TheFool_EX_Tech"/>
@@ -409,7 +390,6 @@
                     <attribute id="UUID" type="guid" value="7df73cfc-f7f2-44f5-b017-c5d0c85e333d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Telepathy;Arcana_Passive_ArcaneSpells_Deceiver;Arcana_Passive_UnlockFriends"/>
@@ -419,7 +399,6 @@
                     <attribute id="UUID" type="guid" value="0c560a79-48fa-4510-897f-081b7be96c1c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -427,7 +406,6 @@
                     <attribute id="UUID" type="guid" value="60599c85-c668-4f83-bdd5-3a4360e6812e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -436,7 +414,6 @@
                     <attribute id="UUID" type="guid" value="8e9c09c9-9390-4c6f-9d49-0585c4ec842a"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -444,7 +421,7 @@
                     <attribute id="UUID" type="guid" value="4d97ac51-3722-46ce-8320-167c9bf8bdb1"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaReactInstinctiveCharm,1,0);ActionResource(DeceiverDeck,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaReactInstinctiveCharm,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_InstinctiveCharm"/>
@@ -454,7 +431,6 @@
                     <attribute id="UUID" type="guid" value="ebf883a0-95be-41ea-a91c-792a45548e1c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -462,7 +438,6 @@
                     <attribute id="UUID" type="guid" value="cdee39e4-6ef1-4fca-8a34-9b9271b6751c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -471,7 +446,6 @@
                     <attribute id="UUID" type="guid" value="d355f68d-767d-42ed-81c6-b7c63e01d7f8"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -479,7 +453,6 @@
                     <attribute id="UUID" type="guid" value="b4abe228-1b61-4f53-872d-e294d4bc9925"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -488,7 +461,6 @@
                     <attribute id="UUID" type="guid" value="3ce373b9-deb5-4c79-8592-0fe462f524fb"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -496,7 +468,6 @@
                     <attribute id="UUID" type="guid" value="f513be4f-254e-48ed-819c-9ee215eac88d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_HollowImage"/>
@@ -506,7 +477,6 @@
                     <attribute id="UUID" type="guid" value="efb9aec8-814e-450b-ab45-9bf06a6f94cd"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_MirroredCharm;Arcana_Passive_MirroredSpell"/>
@@ -515,7 +485,6 @@
                     <attribute id="UUID" type="guid" value="dd366005-9385-440c-9515-5363933908c8"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -524,7 +493,6 @@
                     <attribute id="UUID" type="guid" value="04d20a3e-8978-41ce-b277-7f0166f00343"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="14"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -532,7 +500,6 @@
                     <attribute id="UUID" type="guid" value="3086d886-1f7c-4616-aea2-7181695dcc64"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -541,7 +508,6 @@
                     <attribute id="UUID" type="guid" value="38ddef2d-6c42-41a7-bf45-dc1a42fd9ac9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -549,7 +515,6 @@
                     <attribute id="UUID" type="guid" value="f772ae9f-951f-4898-9e17-5456de2e1e76"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="17"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_HollowImage_EX"/>
@@ -558,7 +523,6 @@
                     <attribute id="UUID" type="guid" value="678e0915-e01b-46c2-8636-20d3e62ad121"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -566,7 +530,6 @@
                     <attribute id="UUID" type="guid" value="27451cbd-2035-4412-be37-5a35734ff318"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -575,7 +538,6 @@
                     <attribute id="UUID" type="guid" value="96337256-b050-43c0-973b-9fbd46858a77"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(DeceiverDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TheEmpress_EX;Arcana_Passive_TheEmpress_EX_Tech_I;Arcana_Passive_TheEmpress_EX_Tech_II;Arcana_Passive_TheEmpress_EX_Unlock"/>
@@ -594,7 +556,6 @@
                     <attribute id="UUID" type="guid" value="9e9dc5b1-d9dc-4c81-bd23-c987442ea2d3"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="PassivesAdded" type="LSString" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability;Arcana_Passive_ArcaneSpells_Starchild"/>
@@ -604,7 +565,6 @@
                     <attribute id="UUID" type="guid" value="ebe622d4-39a5-45fb-8bde-bd1b70a167df"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -612,7 +572,6 @@
                     <attribute id="UUID" type="guid" value="5aeac789-0ed2-4b08-b0fd-a866866e228c"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_LunarWisp;Arcana_Passive_StellarAnchor"/>
@@ -622,7 +581,6 @@
                     <attribute id="UUID" type="guid" value="b5d65203-1e22-4ae6-874b-01a1721ccda1"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -630,7 +588,6 @@
                     <attribute id="UUID" type="guid" value="db39192b-6139-429c-99fe-218366047e22"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -639,7 +596,6 @@
                     <attribute id="UUID" type="guid" value="751ac277-f5fa-4976-a662-95763f4c03b0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -647,7 +603,6 @@
                     <attribute id="UUID" type="guid" value="283dda3a-a412-44fc-9db3-ebd381d5800b"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -656,7 +611,6 @@
                     <attribute id="UUID" type="guid" value="124e876a-062b-4c9a-a7e5-161ae3aeda96"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -664,7 +618,6 @@
                     <attribute id="UUID" type="guid" value="f447af6a-70cd-4960-9d98-0e4d2a0681c7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -673,7 +626,6 @@
                     <attribute id="UUID" type="guid" value="293b4c11-0e14-44ce-a47a-ce3eee94ae88"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -681,7 +633,6 @@
                     <attribute id="UUID" type="guid" value="7284f879-0efa-43c6-9115-c0a034289265"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -690,7 +641,6 @@
                     <attribute id="UUID" type="guid" value="eed21f36-91bc-4247-894b-7b6c4f936739"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -699,7 +649,6 @@
                     <attribute id="UUID" type="guid" value="a78eaf69-9b36-4014-b00c-04665b240129"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -708,7 +657,6 @@
                     <attribute id="UUID" type="guid" value="8d14ff2b-4870-4885-a989-1270203c30b2"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="14"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -716,7 +664,6 @@
                     <attribute id="UUID" type="guid" value="0a111d1c-adb2-43d7-8070-f85a4401aebd"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -725,7 +672,6 @@
                     <attribute id="UUID" type="guid" value="9842017f-2cbe-4711-a709-14db0a24f879"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -733,7 +679,6 @@
                     <attribute id="UUID" type="guid" value="d4e6ddab-5a68-4699-8763-d7bcef4ea728"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="17"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -742,7 +687,6 @@
                     <attribute id="UUID" type="guid" value="4e960d48-8a90-4605-8f27-dd5152989df7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -750,7 +694,6 @@
                     <attribute id="UUID" type="guid" value="c891f99f-e66c-4585-9682-e42e682a9495"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -759,7 +702,6 @@
                     <attribute id="UUID" type="guid" value="4c2bd1c5-d90f-4ce3-ad25-73f7de4d1597"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(StarchildDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TheStar_EX;Arcana_Passive_TheStar_EX_Tech;Arcana_Passive_TheStar_EX_Unlock"/>
@@ -777,7 +719,6 @@
                     <attribute id="UUID" type="guid" value="ba6d575a-d498-4c32-907e-c5e743c91eff"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneSpells_Eternal"/>
@@ -787,7 +728,6 @@
                     <attribute id="UUID" type="guid" value="7da22dfc-39c0-49b0-b1d5-12e367c6a4ea"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -795,7 +735,6 @@
                     <attribute id="UUID" type="guid" value="865d042b-5f79-4db9-93ee-e3577e216d81"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ImmortalBlood"/>
@@ -805,7 +744,6 @@
                     <attribute id="UUID" type="guid" value="0fe06ade-94c1-4618-9abe-4fe8e204ed7d"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -813,7 +751,6 @@
                     <attribute id="UUID" type="guid" value="1daecba3-6643-45d9-8078-c796bb787182"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;InescapableDestruction"/>
@@ -823,7 +760,6 @@
                     <attribute id="UUID" type="guid" value="bfded755-89ad-4a71-9056-8d974216d0ac"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -831,7 +767,6 @@
                     <attribute id="UUID" type="guid" value="04235cd0-2232-4920-8531-f4853c65e478"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_DarknessRise;Arcana_Passive_Unbroken"/>
@@ -840,7 +775,6 @@
                     <attribute id="UUID" type="guid" value="fca3a169-ac9f-4845-82bc-8c0a6683aa24"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="8"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -848,7 +782,6 @@
                     <attribute id="UUID" type="guid" value="87e6c8e2-8c19-47f6-920f-56884667799f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="9"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -857,7 +790,6 @@
                     <attribute id="UUID" type="guid" value="b66c5349-7135-4c4a-a568-5aa4e233f656"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="10"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -865,7 +797,6 @@
                     <attribute id="UUID" type="guid" value="34688aec-d666-4523-94f2-5e15fca83e6f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="InuredtoUndeath"/>
@@ -875,7 +806,6 @@
                     <attribute id="UUID" type="guid" value="bc8bf8cf-3e3a-415f-8994-6fb15d33accc"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -884,7 +814,6 @@
                     <attribute id="UUID" type="guid" value="a7c619e4-879d-417d-a811-f2c78243cd6e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -893,7 +822,6 @@
                     <attribute id="UUID" type="guid" value="728d8a19-1ce1-4972-9812-c4a00d30097e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="14"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -901,7 +829,6 @@
                     <attribute id="UUID" type="guid" value="d0976032-b635-4504-be57-5804ffaa07ee"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="15"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -910,7 +837,6 @@
                     <attribute id="UUID" type="guid" value="1002d116-02bc-4995-b006-3745d55cab13"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -918,7 +844,6 @@
                     <attribute id="UUID" type="guid" value="99df3f37-0823-435e-872a-288610e37940"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="17"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Unbroken_EX;Arcana_Passive_Hemoplague_EX"/>
@@ -928,7 +853,6 @@
                     <attribute id="UUID" type="guid" value="b965d74f-79bb-40dd-be0f-fb4d8d9e3f30"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="18"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -936,7 +860,6 @@
                     <attribute id="UUID" type="guid" value="8eaf37af-a4f1-4257-aa3f-e8d54cc47ea9"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="19"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
@@ -945,7 +868,6 @@
                     <attribute id="UUID" type="guid" value="243dd08e-902f-469e-93e1-f61d42f3478f"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(EternalDeck,1,0)"/>
                     <attribute id="Level" type="uint8" value="20"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Death_EX;Arcana_Passive_Death_EX_Unlock"/>

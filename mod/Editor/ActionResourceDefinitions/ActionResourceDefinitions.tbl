@@ -18,7 +18,6 @@
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Never" />
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
         <field name="IsSpellResource" type="BoolTableFieldDefinition" value="False" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -27,34 +26,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bf5014d4-b7d7-4f49-88f9-d92ca9fb8b75" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcanaHandCard" />
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c6c8a00ga4c1g4905g926ega3864b5bb061" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0404744gf41fg487cgb95bg5a956118dc3f" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="UUID" type="IdTableFieldDefinition" value="dfd001dc-7d70-4360-803e-bda7234420cc" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcaneEssence" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88a26c08gdb8cg7a3dg5251g81180bc36a14" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6677dfefge374g0e7eg2f5cg2ef6f64de15f" version="2" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
-        <field name="UUID" type="IdTableFieldDefinition" value="35a65ecf-c556-4bac-9b80-3f50f8a2d4ea" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcaneShards" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha5838c62g3bbag4fceg823dg6bc1af99e09c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7b9af7c0g98b2gc06ag71acg82b967e7b24a" version="1" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Never" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -82,63 +56,6 @@
         <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Never" />
         <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="False" />
         <field name="IsSpellResource" type="BoolTableFieldDefinition" value="False" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
-        <field name="UUID" type="IdTableFieldDefinition" value="5b863ed4-6cad-4727-a8e4-0e205a634a59" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="DeceiverDeck" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h266ce54ag029bg7de6gf942gb3792315b3a1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5688f20dgbad7g3405g80e7gc3e9ac802c8f" version="2" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsSpellResource" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
-        <field name="UUID" type="IdTableFieldDefinition" value="19eafe9e-4030-4817-981f-9e7415714c2d" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="StarchildDeck" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h272a8ce4ge384gdd3fgaaa9g3c58291e4c6f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha9239143g1a53g1e4dgb3b4g05beb58f0a7c" version="2" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsSpellResource" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
-        <field name="UUID" type="IdTableFieldDefinition" value="6715f327-4c8c-41d7-84b8-ff308c138095" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="UnboundDeck" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24b82a36gc6c2gfcb7gd152g6ce68b3fa56e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37f8a005g5bb2gb357gf871g250d3195231a" version="2" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsSpellResource" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
-        <field name="UUID" type="IdTableFieldDefinition" value="0a1d3134-2933-4ca5-8bd9-f240f6e6d6de" />
-        <field name="NameFS" type="FixedStringTableFieldDefinition" value="EternalDeck" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h91ddb0b6gb142gb645g9a62g0ecd83c42dfa" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c636094g37f4g829cg18f1g678bbcde7346" version="2" />
-        <field name="MaxLevel" type="IntegerTableFieldDefinition" value="0" />
-        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Rest" />
-        <field name="ShowOnActionResourcePanel" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsSpellResource" type="BoolTableFieldDefinition" value="True" />
-        <field name="IsHidden" type="BoolTableFieldDefinition" value="False" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

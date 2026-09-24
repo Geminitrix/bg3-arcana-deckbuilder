@@ -9,31 +9,21 @@
                     <attribute id="UUID" type="guid" value="a6d89ea7-2c35-419f-ac0a-ba1e22bba386"/>
                 </node>
                 <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h231611b4g0b3eg4a7eg9509g6ff300202a47" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb80b8b1fg7f65g4801gbde3g1dbe7816aeb6" version="1"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaThread"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="d6f4f7d5-b4b2-453c-b1bb-35b67d2d1547"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="he0404744gf41fg487cgb95bg5a956118dc3f" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h4c6c8a00ga4c1g4905g926ega3864b5bb061" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
                     <attribute id="Name" type="FixedString" value="ArcanaHandCard"/>
                     <attribute id="ReplenishType" type="FixedString" value="Rest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="bf5014d4-b7d7-4f49-88f9-d92ca9fb8b75"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h6677dfefge374g0e7eg2f5cg2ef6f64de15f" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h88a26c08gdb8cg7a3dg5251g81180bc36a14" version="2"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="ArcaneEssence"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="dfd001dc-7d70-4360-803e-bda7234420cc"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h7b9af7c0g98b2gc06ag71acg82b967e7b24a" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="ha5838c62g3bbag4fceg823dg6bc1af99e09c" version="1"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="ArcaneShards"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="35a65ecf-c556-4bac-9b80-3f50f8a2d4ea"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="h14b68f97g6c1cgaca0gd5f3g3726b192f909" version="2"/>
@@ -49,57 +39,12 @@
                 <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="h11ba3a50g005fgbd45ge3ecg4f45a1eb8390" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="he20cc837gb7b3g1327g5414g0d14b3b65167" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
                     <attribute id="IsSpellResource" type="bool" value="false"/>
                     <attribute id="MaxValue" type="uint32" value="0"/>
                     <attribute id="Name" type="FixedString" value="ArcanaNotInHand"/>
                     <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="e300e916-fcb5-4f24-b5b2-aab00706ced5"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h5688f20dgbad7g3405g80e7gc3e9ac802c8f" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h266ce54ag029bg7de6gf942gb3792315b3a1" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="DeceiverDeck"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="5b863ed4-6cad-4727-a8e4-0e205a634a59"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="ha9239143g1a53g1e4dgb3b4g05beb58f0a7c" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h272a8ce4ge384gdd3fgaaa9g3c58291e4c6f" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="StarchildDeck"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="19eafe9e-4030-4817-981f-9e7415714c2d"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h37f8a005g5bb2gb357gf871g250d3195231a" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h24b82a36gc6c2gfcb7gd152g6ce68b3fa56e" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="UnboundDeck"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="6715f327-4c8c-41d7-84b8-ff308c138095"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h6c636094g37f4g829cg18f1g678bbcde7346" version="2"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="h91ddb0b6gb142gb645g9a62g0ecd83c42dfa" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="true"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="EternalDeck"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="0a1d3134-2933-4ca5-8bd9-f240f6e6d6de"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="REACTIONS RESOURCES"/>
@@ -128,16 +73,6 @@
                     <attribute id="Name" type="FixedString" value="ArcanaReactInstinctiveCharm"/>
                     <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
                     <attribute id="UUID" type="guid" value="509598ba-2b73-47db-b624-b65fb740c1fc"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h231611b4g0b3eg4a7eg9509g6ff300202a47" version="1"/>
-                    <attribute id="DisplayName" type="TranslatedString" handle="hb80b8b1fg7f65g4801gbde3g1dbe7816aeb6" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="false"/>
-                    <attribute id="IsSpellResource" type="bool" value="false"/>
-                    <attribute id="Name" type="FixedString" value="ArcanaThread"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="d6f4f7d5-b4b2-453c-b1bb-35b67d2d1547"/>
                 </node>
             </children>
         </node>

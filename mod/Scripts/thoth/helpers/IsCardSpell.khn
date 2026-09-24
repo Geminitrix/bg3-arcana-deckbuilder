@@ -1,9 +1,18 @@
--- "E uma carta" -- toda carta custa 1 ArcanaHandCard, e so carta custa. Serve tanto para o truque,
--- que nao gasta espaco de magia, quanto para a carta gerada e para a carta de ativacao de reacao.
--- Carta nova nao precisa ser cadastrada em lugar nenhum: basta ter o custo.
--- Um argumento so, como o UseSpellSlot.khn do vanilla faz: a pergunta e sobre a magia, nao sobre o
--- personagem poder pagar. Com o terceiro argumento, um personagem sem o recurso deixaria de ter
--- cartas -- e sem respec e exatamente isso que acontece.
+-- "E uma carta" -- pela MARCA na condicao, nao pelo custo.
+--
+-- Antes isto era HasUseCosts('ArcanaHandCard'). Funcionava, mas o custo extra no UseCosts impedia o
+-- motor de colapsar a carta base na variante de upcast do nivel que o personagem tem: base e variante
+-- ficavam as duas no grimario e o jogo mostrava a caixa de Superconjurar. O Warlock, cujas magias
+-- nao carregam nenhum custo alem do espaco, fica so com a variante -- e por isso nunca mostra caixa.
+-- Confirmado em 2026-09-24 tirando o custo de uma carta de teste: a base sumiu, a caixa junto.
+--
+-- A marca e uma condicao sempre verdadeira, porque a passiva ARCANA_IS_CARD nao existe e nao deve
+-- existir nunca. Pergunta pelo context.Source, que e sempre personagem, entao vale igual em magia de
+-- alvo, de posicao e de area. E o padrao do jogo base: a Larian enfia 'SculptSpells' no
+-- TargetConditions de 34 magias e as reconhece com HasStringInSpellConditions.
+--
+-- Carta nova precisa da marca no TargetConditions -- o gerador de variantes a propaga pelo `using`,
+-- mas a entrada base e responsabilidade de quem a cria.
 function IsCardSpell()
-    return HasSpellFlag(SpellFlags.Spell) & HasUseCosts('ArcanaHandCard')
+    return HasSpellFlag(SpellFlags.Spell) & HasStringInSpellConditions('ARCANA_IS_CARD')
 end
