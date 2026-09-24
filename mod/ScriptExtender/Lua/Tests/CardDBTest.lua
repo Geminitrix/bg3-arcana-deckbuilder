@@ -6,6 +6,14 @@ local R = Req("Server/Economy/Reactions.lua")
 return {
     name = "CardDB",
     cases = {
+        ["CostOf le o Level da magia, nao a tabela"] = function()
+            local saved = D.io.spellLevel
+            D.io.spellLevel = function(id) return id == "NV2" and 2 or nil end
+            T.eq(D.CostOf("NV2"), 2, "o Level manda -- era isso que fazia o Olhar Hipnotico dizer 1")
+            D.io.spellLevel = function() return nil end
+            T.eq(D.CostOf("Projectile_Arcana_Card_Spell_SigilofMalice"), 1, "sem Level, cai na tabela")
+            D.io.spellLevel = saved
+        end,
         ["CostOf falls back to the default"] = function()
             T.eq(D.CostOf("Unknown_Spell"), 1)
             T.eq(D.CostOf("Shout_Arcana_Card_Spell_DEBUG_Tangler"), 2)

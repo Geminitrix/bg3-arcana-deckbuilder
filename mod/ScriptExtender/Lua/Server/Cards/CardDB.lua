@@ -120,6 +120,17 @@ D.skipPrefixes = {
     "Target_Arcana_Util_ArcaneFamiliar_",
 }
 
+-- Magias do jogo base que as listas da classe concedem. Nao sao cartas -- nao tem a marca
+-- ARCANA_IS_CARD e nao entram no baralho --, mas em combate so se joga carta, entao elas sao
+-- trancadas junto com as utilitarias. Fonte: as entradas sem prefixo proprio em
+-- Public/<Mod>/Lists/SpellLists.lsx; conferir esta lista ao mexer nas listas de magia.
+D.vanillaGranted = {
+    ["Target_Light"]       = true,
+    ["Shout_ProduceFlame"] = true,
+    ["Target_ChillTouch"]  = true,
+    ["Target_TrueStrike"]  = true,
+}
+
 function D.Skipped(id)
     for _, p in ipairs(D.skipPrefixes) do
         if id:sub(1, #p) == p then return true end
@@ -133,7 +144,23 @@ function D.Get(id)
     return D.cards[id] or EMPTY
 end
 
+-- Quem cobra de verdade e o ARCANA_WEAVING, e ele cobra IsSpellLevel(n) Threads -- ou seja, o Level
+-- da magia. Ler o Level e a unica forma de a previsao nao mentir: a tabela abaixo estava dizendo 1
+-- para o Olhar Hipnotico, que e nivel 2. A tabela fica so como rede para o que os testes offline
+-- rodam sem Ext.
+D.io = {
+    spellLevel = function(id)
+        local ok, stat = pcall(function() return Ext.Stats.Get(id) end)
+        if not ok or stat == nil then return nil end
+        local lvl = tonumber(stat.Level)
+        if lvl == nil or lvl < 0 then return nil end
+        return lvl
+    end,
+}
+
 function D.CostOf(id)
+    local lvl = D.io.spellLevel(id)
+    if lvl ~= nil then return lvl end
     return D.Get(id).cost or C.DEFAULT_COST
 end
 

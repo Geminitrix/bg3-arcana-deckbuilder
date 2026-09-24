@@ -18,8 +18,11 @@ local function withState(rawChar, fn)
     S.Commit(char, st)
 end
 
+-- Monta o conjunto uma vez: a carta conjurada pode estar no grimorio so como variante de upcast, e
+-- perguntar pelo nome da raiz direto ao motor devolveria 0.
 local function hasSpellFor(char)
-    return function(id) return Po.HasSpell(char, id) end
+    local roots = Po.RootSet(char)
+    return function(id) return roots[id] == true end
 end
 
 local function watchedStatus(status)

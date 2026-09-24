@@ -14,6 +14,14 @@ function Po.HasSpell(char, id)
     return Osi.HasSpell(char, id) == 1
 end
 
+-- Perguntar por HasSpell(raiz) nao serve mais: a base pode ter sido colapsada na variante e o motor
+-- responde 0. Este conjunto diz "a carta X existe neste personagem, sob qualquer nivel".
+function Po.RootSet(char)
+    local out = {}
+    for _, id in ipairs(Po.SpellIds(char)) do out[U.StripUpcast(id)] = true end
+    return out
+end
+
 -- Osiris only exposes the character level; in multiclass this is not the Arcana level
 function Po.LevelOf(char)
     local level = Osi.GetLevel(char)
@@ -53,7 +61,11 @@ function Po.Relevant(char)
     for _, id in ipairs(Po.SpellIds(char)) do
         local cat = U.Category(id)
         local root = U.StripUpcast(id)
-        if (C.DECK_CATEGORIES[cat] or cat == "Created" or cat == "Util") and not D.Skipped(id) then
+        if D.vanillaGranted[id] then
+            -- Magia do jogo base concedida pela classe: nao e carta, mas em combate so se joga
+            -- carta, entao vai trancada como utilitaria.
+            out[#out + 1] = { id = id, cat = "Util" }
+        elseif (C.DECK_CATEGORIES[cat] or cat == "Created" or cat == "Util") and not D.Skipped(id) then
             -- An upcast variant is a separate spell in the spellbook, so it needs its own lock or
             -- glow boost -- but the decision belongs to the card it came from, not to itself.
             out[#out + 1] = { id = id, cat = cat, root = root ~= id and root or nil }
@@ -62,13 +74,20 @@ function Po.Relevant(char)
     return out
 end
 
+-- O grimorio nao guarda a carta base: desde que o custo deixou de carregar recurso extra, o motor a
+-- colapsa na variante de upcast do nivel que o personagem tem. Uma carta de nivel 1 num personagem
+-- com espaco de nivel 3 aparece SO como "..._3". Por isso o baralho e montado pela RAIZ -- pular as
+-- variantes, como se fazia antes, escondia justamente toda carta que tem variante, e sobravam os
+-- truques. A raiz tambem e a chave do CardDB e o que a mao guarda.
 function Po.Cards(char)
     local copies = mirroredCopies(char)
-    local out = {}
+    local out, seen = {}, {}
     for _, id in ipairs(Po.SpellIds(char)) do
-        if C.DECK_CATEGORIES[U.Category(id)] and not U.IsUpcast(id) and not copies[id]
-            and not D.Get(id).conjuredOnly then
-            out[#out + 1] = id
+        local root = U.StripUpcast(id)
+        if C.DECK_CATEGORIES[U.Category(root)] and not seen[root] and not copies[root]
+            and not D.Get(root).conjuredOnly then
+            seen[root] = true
+            out[#out + 1] = root
         end
     end
     table.sort(out)

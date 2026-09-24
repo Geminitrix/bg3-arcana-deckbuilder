@@ -6,6 +6,7 @@ local SUITES = {
     "Tests/EventsTest.lua",
     "Tests/StateTest.lua",
     "Tests/CardDBTest.lua",
+    "Tests/PoolTest.lua",
     "Tests/ListTest.lua",
     "Tests/PilesTest.lua",
     "Tests/ThreadsTest.lua",

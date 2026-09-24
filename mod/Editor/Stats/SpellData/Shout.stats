@@ -574,17 +574,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0d25d952-a388-4066-9b7c-55ced1b06519" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicWithdraw" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7c0a814a-7eeb-4938-bd23-c0d81ccad215" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha88ea3afg2012g59e5g8455gb13b526c3109" version="1" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,MIMIC_DISTORTION_HELPER);" />
-        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7c0a814a-7eeb-4938-bd23-c0d81ccad215" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Withdraw" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Teleport" />
@@ -600,7 +589,7 @@
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="4226c755-e28f-4050-849c-e34c97552058" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,DISTORTION_HELPER);" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Distortion" />
@@ -656,7 +645,18 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
-    </stat_object><stat_object is_substat="false">
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d25d952-a388-4066-9b7c-55ced1b06519" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicWithdraw" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7c0a814a-7eeb-4938-bd23-c0d81ccad215" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha88ea3afg2012g59e5g8455gb13b526c3109" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,MIMIC_DISTORTION_HELPER);" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Target_Arcana_Created_MimicDistortion" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cab9a1a6-c0ae-4822-a710-bf85e6436985" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Util_Faceless" />
@@ -2138,7 +2138,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Arcana)*5);RegainHitPoints(ClassLevel(Arcana)*2)" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
-    </stat_object>    <stat_object is_substat="false">
+    </stat_object>
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="245df07b-1cf3-4a19-853e-67c1f0439fb5" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Indestructible_3" />
@@ -2178,10 +2179,5 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
-    
-    
-    
-
-    
   </stat_objects>
 </stats>
