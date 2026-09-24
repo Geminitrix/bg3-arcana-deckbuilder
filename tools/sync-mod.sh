@@ -52,6 +52,17 @@ copy "Editor/Mods/$MOD/ActionResourceGroupDefinitions"  "Editor/ActionResourceGr
 copy "Editor/Mods/$MOD/Lists"                           "Editor/Lists"
 copy "Editor/Mods/$MOD/Progressions"                    "Editor/Progressions"
 
+# o gerador de variantes de upcast e a ordenacao dos stats: sem eles, quem clonar o repo nao consegue
+# refazer as variantes nem o helper do Mirrored Charm. A copia de trabalho continua em
+# Design/Rework/tools (fora do git, onde specs e planos apontam); aqui e so espelho, como mod/.
+TOOLS_SRC="$HERE/Design/Rework/tools"
+rm -rf "$HERE/tools/stats"
+mkdir -p "$HERE/tools/stats"
+for t in gen_upcast_variants.pl sort_stats.pl; do
+    if [ -f "$TOOLS_SRC/$t" ]; then cp "$TOOLS_SRC/$t" "$HERE/tools/stats/$t"
+    else echo "  faltando: Design/Rework/tools/$t" >&2; fi
+done
+
 # o ScriptExtender e um repositorio proprio la na pasta do jogo
 rm -rf "$DEST/ScriptExtender/.git"
 find "$DEST" -name '*.bak*' -delete
