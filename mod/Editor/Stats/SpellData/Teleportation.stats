@@ -56,7 +56,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Revivify_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_Revivify_L1to3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Revivify" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:3;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;ArcanaHandCard:1;" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(5)):Resurrect(100,5);IF(CharacterLevelGreaterThan(5) and not CharacterLevelGreaterThan(6)):Resurrect(100,10);IF(CharacterLevelGreaterThan(6) and not CharacterLevelGreaterThan(7)):Resurrect(100,20);IF(CharacterLevelGreaterThan(7) and not CharacterLevelGreaterThan(8)):Resurrect(100,30);IF(CharacterLevelGreaterThan(8) and not CharacterLevelGreaterThan(9)):Resurrect(100,40);IF(CharacterLevelGreaterThan(9) and not CharacterLevelGreaterThan(10)):Resurrect(100,60);IF(CharacterLevelGreaterThan(10) and not CharacterLevelGreaterThan(11)):Resurrect(100,80);IF(CharacterLevelGreaterThan(11)):Resurrect(100,100);RestoreResource(Movement,100%,0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(Starbreath_Heal)" />
@@ -67,34 +67,35 @@
       </fields>
     </stat_object>    <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="30926528-5a39-41b2-8bb1-303ad9e3c2e8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fb6a0e06-9fef-4088-9071-10fd14ff1fe5" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:4;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fedcd8e5-38d7-4113-8e7a-0602dda07d88" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cfec1fcf-fc40-4756-a3a2-f1a2db04a9c4" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:5;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="70d58901-42e4-4d83-8208-2631f2fc7040" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7c4d0001-ce4a-4250-868a-fc2b2f560f6b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArcanaSpellSlot:1:1:6;ArcanaHandCard:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;ArcanaHandCard:1;" />
       </fields>
     </stat_object>
+    
     
     
     

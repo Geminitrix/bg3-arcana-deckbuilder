@@ -4,15 +4,10 @@
     <region id="ActionResourceGroupDefinitions">
         <node id="root">
             <children>
-                <!-- Nenhuma magia do jogo base cobra um recurso de espaco direto: os 2288 custos
-                     passam por um grupo. Este e o equivalente do SpellSlotsGroup para a Arcana, com
-                     o ArcanaSpellSlot sozinho dentro. Nao mexemos no grupo do vanilla: ele e
-                     compartilhado e nao saberia distinguir uma carta da Arcana de uma magia de
-                     multiclasse. -->
                 <node id="ActionResourceGroupDefinition">
-                    <attribute id="ActionResourceDefinitions" type="LSString" value="25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
-                    <attribute id="Name" type="LSString" value="ArcanaSpellSlotsGroup"/>
-                    <attribute id="UUID" type="guid" value="8c9de04f-9bbc-4be9-8cb2-120bfca07777"/>
+                    <attribute id="ActionResourceDefinitions" type="LSString" value="d136c5d9-0ff0-43da-acce-a74a07f8d6bf;e9127b70-22b7-42a1-b172-d02f828f260a;77fcde9b-9cda-4fbc-8806-393e26b2f3e1;25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
+                    <attribute id="Name" type="LSString" value="SpellSlotsGroup"/>
+                    <attribute id="UUID" type="guid" value="03b17647-161a-42e1-9660-5ba517e80ad2"/>
                 </node>
             </children>
         </node>
