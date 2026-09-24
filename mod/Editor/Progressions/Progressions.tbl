@@ -14,7 +14,6 @@
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4831bb91-b13e-4740-b205-0227dbdddd12;c229d522-d294-43e1-8a05-1967e15c17e8;31b64a26-a650-4ef1-aeec-c2872f48ec14;dc2e68d3-5577-4a9f-be4f-1a71707c1995" />
       </fields>
     </stat_object>
-    
     <stat_object color="#FF808080" is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />

@@ -46,7 +46,6 @@
                     <attribute id="UUID" type="guid" value="25d3f3a7-f097-4e33-813c-54a1ef79ba8e"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="true"/>
                 </node>
-                
                 <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="h11ba3a50g005fgbd45ge3ecg4f45a1eb8390" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="he20cc837gb7b3g1327g5414g0d14b3b65167" version="1"/>

@@ -953,7 +953,6 @@
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
                     <attribute id="UUID" type="guid" value="8ba69d3c-9e0e-4a78-9637-8466e41314d2"/>
                 </node>
-                
             </children>
         </node>
     </region>
