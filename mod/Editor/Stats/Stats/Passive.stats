@@ -105,7 +105,7 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('ARCANE_MASTERY_USED',context.Source)" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary;Highlighted;OncePerLongRest" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell(),ModifyUseCosts(Replace,ArcaneEssence,0,0,ArcaneEssence),ModifyTooltipDescription(),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,ArcanaThread,0,0,ArcanaThread),ModifyTooltipDescription(),ModifyIconGlow());" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ARCANE_MASTERY_USED,100,-1)" />
@@ -122,8 +122,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ArcaneEssence,1,0)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCardSpell() and Combat() and not HasStatus('ARCANE_OVERFLOW_USED',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,ArcanaThread,1,0);IF(not ClassLevelHigherOrEqualThan(3,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,1);IF(ClassLevelHigherOrEqualThan(3,'Arcana') and not ClassLevelHigherOrEqualThan(5,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,2);IF(ClassLevelHigherOrEqualThan(5,'Arcana') and not ClassLevelHigherOrEqualThan(7,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,3);IF(ClassLevelHigherOrEqualThan(7,'Arcana') and not ClassLevelHigherOrEqualThan(9,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,4);IF(ClassLevelHigherOrEqualThan(9,'Arcana') and not ClassLevelHigherOrEqualThan(11,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,5);IF(ClassLevelHigherOrEqualThan(11,'Arcana')):RestoreResource(SELF,ArcanaSpellSlot,1,6);ApplyStatus(SELF,ARCANE_OVERFLOW_USED,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SculptSpells" />
       </fields>
     </stat_object>
@@ -252,9 +252,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1db9d360g745dg3fd1g0586g868dfb79601e" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebe50e8bg943eg9487gb9c1g7e016fb544ab" version="6" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsDeceiverOneTargetSpell(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyUseCosts(Add,ArcaneEssence,1,0),ModifyTooltipDescription(),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsDeceiverOneTargetSpell(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyUseCosts(Add,ArcanaThread,1,0),ModifyTooltipDescription(),ModifyIconGlow());" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SplitEnchantment" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ArcaneEssence', 2, 0, false, false, context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TWINNED_ON,100,-1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TWINNED_ON)" />

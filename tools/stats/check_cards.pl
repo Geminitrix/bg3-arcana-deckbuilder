@@ -66,6 +66,25 @@ for my $f (bsd_glob("$D/Editor/Mods/$M/Stats/SpellData/*.stats")) {
 push @err, "marca so no Public         $_" for sort grep { !$edt{$_} } keys %pub;
 push @err, "marca so no Editor         $_" for sort grep { !$pub{$_} } keys %edt;
 
+# ---------- recurso que nao existe mais ----------
+for my $f (bsd_glob("$D/Public/$M/Stats/Generated/Data/*.txt")) {
+    (my $bn = $f) =~ s{.*/}{};
+    my $n = () = slurp($f) =~ /ArcaneEssence/g;
+    push @err, "ArcaneEssence em $bn ($n) -- o recurso foi apagado" if $n;
+}
+
+# ---------- Story: gatilho comparando nome de carta ----------
+# O evento de conjurar entrega o nome da VARIANTE paga (..._5), entao comparar o nome da carta perde
+# toda conjuracao com upcast. A regra tem de perguntar DB_ARCANA_CardFamily(_ArcanaSpell, "<carta>").
+for my $f (bsd_glob("$D/Mods/$M/Story/RawFiles/Goals/*.txt")) {
+    (my $bn = $f) =~ s{.*/}{};
+    my $s = slurp($f);
+    while ($s =~ /^((?:UsingSpell|UsingSpellOnTarget|CastSpell|CastedSpell)\([^\r\n]*"([A-Za-z]+_Arcana_(?:Card_[A-Za-z]+|Created)_[A-Za-z0-9_]+)")/mg) {
+        my $card = $2;
+        push @err, "Story compara nome de carta  $bn  ($card) -- use DB_ARCANA_CardFamily";
+    }
+}
+
 # ---------- o grupo que as cartas cobram ----------
 my $g = slurp("$D/Public/$M/ActionResourceGroupDefinitions/ActionResourceGroupDefinitions.lsx");
 push @err, "SpellSlotsGroup com UUID trocado (o Toolkit recria a linha com UUID novo; tem de ser $GROUP_UUID)"

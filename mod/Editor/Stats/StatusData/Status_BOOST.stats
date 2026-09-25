@@ -23,7 +23,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DEBUG_INFINITE_CARDS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69a23d86g5302gf355ga7bega083f87f14bd" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_DetectEvilAndGood" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneEssence,999,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaThread,999,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -76,7 +76,18 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+        <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b1f7c2e-3a8d-4e61-9c47-2d8a6f0b3e19" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_OVERFLOW_USED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e2c4a71g5d3bg4f09ga6e1g3c7b9d2f4a18" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_OVERFLOW_USED" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+<stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd5b2866-4761-41e1-ad2d-536a6ab8de02" />
         <field name="Name" type="NameTableFieldDefinition" value="ARCANE_SHARDS" />

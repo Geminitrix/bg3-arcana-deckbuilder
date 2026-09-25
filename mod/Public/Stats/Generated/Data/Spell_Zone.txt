@@ -149,6 +149,7 @@ data "TargetEffect" "766d4d52-d6a1-4efd-b37b-bd1496718e49"
 
 
 
+
 new entry "Zone_Arcana_Card_Spell_WindBlast_3"
 type "SpellData"
 data "SpellType" "Zone"

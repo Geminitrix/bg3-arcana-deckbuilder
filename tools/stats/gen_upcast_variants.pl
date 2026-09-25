@@ -40,13 +40,14 @@ sub uuid {
 }
 
 # ---------- 1. o que gerar, lido do .txt ----------
-my (%plan, %fileOf);
+my (%plan, %fileOf, %allRoots);
 for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
     open my $fh,'<:raw',$f or die "$f: $!"; local $/; my $s=<$fh>; close $fh;
     for my $b (split /(?=new entry )/, $s) {
         next unless $b =~ /^new entry "([^"]+)"/; my $n = $1;
         next unless $n =~ $WANTS_VARIANTS;
         next if $n =~ $IS_VARIANT;                       # nunca gerar variante de variante
+        $allRoots{$n} = 1;                               # toda carta entra na tabela do Osiris
         my ($l) = $b =~ /data "Level" "([^"]*)"/;
         my ($u) = $b =~ /data "UseCosts" "([^"]*)"/;
         # Forma do vanilla: SpellSlotsGroup:min:max:nivel. O ArcanaSpellSlot e membro desse grupo --
@@ -171,6 +172,46 @@ my @DECEIVER_ONE_TARGET = qw(
     $khnNote = sprintf("IsDeceiverOneTargetSpell.khn reescrito com %d SpellId", scalar @ids);
 }
 
+# ---------- 4c. tabela de familias para o Osiris ----------
+# O evento de conjurar (UsingSpell, CastSpell, UsingSpellOnTarget) entrega o nome da VARIANTE que o
+# personagem pagou -- "..._5" --, nao o da carta. Confirmado no jogo em 2026-09-24: Distortion com
+# upcast nao liberava o Withdraw, e Sigil/Ethereal nao aplicavam o status do Mimic. Por isso nenhuma
+# regra do Story deve comparar nome de carta direto; ela pergunta
+#     DB_ARCANA_CardFamily(_ArcanaSpell, "<carta>")
+# e a tabela abaixo liga cada carta e cada variante a raiz. Ela e montada numa PROC chamada pelo
+# INITSECTION (jogo novo) e pelo SavegameLoaded (save existente -- INITSECTION nao roda de novo em
+# save antigo). Mora no goal do Withdraw porque ele ja esta registrado e ativo; a DB e global.
+{
+    my $goal = "$base/Mods/$mod/Story/RawFiles/Goals/ARCANA_Spell_Withdraw.txt";
+    my $g = exists $pending{$goal} ? $pending{$goal} : do { open my $h,'<:raw',$goal or die "$goal: $!"; local $/; my $x=<$h>; close $h; $x };
+    # O goal e CRLF. O cat -A do Git Bash esconde o CR e ja enganou uma checagem minha, entao o fim
+    # de linha e lido do proprio arquivo em vez de assumido.
+    my $nl = ($g =~ /\r\n/) ? "\r\n" : "\n";
+    my @facts;
+    for my $r (sort keys %allRoots) {
+        push @facts, qq{DB_ARCANA_CardFamily("$r", "$r");};
+        push @facts, qq{DB_ARCANA_CardFamily("${r}_$_", "$r");} for ($plan{$r} ? ($plan{$r}{level}+1 .. $MAXSLOT) : ());
+    }
+    my @region = (
+        "//REGION Gerado por gen_upcast_variants.pl -- familias de cartas (nao edite a mao)",
+        "// Regra que reage a uma carta pergunta DB_ARCANA_CardFamily(_ArcanaSpell, \"<carta>\"), porque o evento",
+        "// de conjurar entrega o nome da variante paga (..._5), nao o da carta.",
+        "PROC", "PROC_ARCANA_CardFamilies()", "THEN", @facts, "",
+        "IF", "SavegameLoaded()", "THEN", "PROC_ARCANA_CardFamilies();", "//END_REGION",
+    );
+    my $region = join($nl, @region) . $nl;
+    my $START = '//REGION Gerado por gen_upcast_variants.pl';
+    if ($g =~ /\Q$START\E/) {
+        $g =~ s{\Q$START\E.*?//END_REGION\r?\n}{$region}s;
+    } else {
+        $g =~ s{(KBSECTION\r?\n)}{$1$region$nl} or push @warn, "  goal do Withdraw sem KBSECTION";
+    }
+    $g =~ s{(INITSECTION\r?\n)}{$1PROC_ARCANA_CardFamilies();$nl}
+        unless $g =~ /INITSECTION\r?\nPROC_ARCANA_CardFamilies\(\);/;
+    $pending{$goal} = $g;
+    $khnNote .= sprintf("; familias do Osiris: %d cartas, %d linhas", scalar keys %allRoots, scalar @facts);
+}
+
 # ---------- 5. juntar tudo em memória, conferir, e só então gravar ----------
 sub current { my $f = shift;
     return $pending{$f} if exists $pending{$f};
@@ -195,5 +236,6 @@ unless ($DRY) {
 printf "== %s variantes para %s cartas (antigas removidas: %s) ==\n", scalar @log, scalar keys %plan, $removed;
 print "$_\n" for @log[0..($#log > 7 ? 7 : $#log)];
 print "  ...\n" if @log > 8;
+print "  $khnNote\n" if $khnNote;
 print "== AVISOS (", scalar @warn, ") ==\n", map {"$_\n"} @warn;
 print $DRY ? "*** DRY RUN ***\n" : "*** GRAVADO ***\n";

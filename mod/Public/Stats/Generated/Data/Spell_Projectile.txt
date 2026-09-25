@@ -8,7 +8,7 @@ type "SpellData"
 data "SpellType" "Projectile"
 data "Level" "1"
 data "SpellSchool" "Evocation"
-data "SpellProperties" "DealDamage(LevelMapValue(SigilofMalice_Damage),Force,Magical);ApplyStatus(SIGIL_TECH,100,0);"
+data "SpellProperties" "DealDamage(LevelMapValue(SigilofMalice_Damage),Force,Magical);ApplyStatus(SIGIL_TECH,100,0);ApplyStatus(SELF,SIGIL_OF_MALICE_LAST_CASTED,100,-1)"
 data "TargetFloor" "-1"
 data "TargetRadius" "18"
 data "AmountOfTargets" "1"
@@ -393,6 +393,7 @@ data "DisplayName" "h053aa305g97acg595ag9055g24968a7118b2;2"
 data "SpellAnimation" "414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,,"
 data "VerbalIntent" "Healing"
 data "HitAnimationType" "MagicalNonDamage"
+
 
 
 
