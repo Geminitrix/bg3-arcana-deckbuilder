@@ -68,12 +68,11 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FINAL_SPARK,100,1);ApplyStatus(FAERIE_FIRE,100,1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasPassive('ARCANA_IS_CARD', context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="136b9a97-1a47-49ce-b52e-7294776503d7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7fc71e67-8818-4507-9c3e-05b0626bf8cc" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_FinalSpark_Recreate_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="00457cf2-7121-4833-9ec9-bcbe799f3e62" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Created_FinalSpark_Recreate" />
@@ -83,7 +82,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="65a76e10-3678-44eb-8c5e-2ab46075c1ef" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1b5df2be-8668-4df5-834c-1243b83a083c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_FinalSpark_Recreate_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="00457cf2-7121-4833-9ec9-bcbe799f3e62" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Created_FinalSpark_Recreate" />
@@ -93,7 +92,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="83772c9a-8666-4443-90e3-cb7a5adec6ac" />
+        <field name="UUID" type="IdTableFieldDefinition" value="64e8c977-e1ee-4146-a31d-4dbade961d7b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_FinalSpark_Recreate_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="00457cf2-7121-4833-9ec9-bcbe799f3e62" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Created_FinalSpark_Recreate" />
@@ -103,7 +102,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="def73c6f-87a6-4d1d-af18-4a63ddbd73d1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ecab8fc3-eca2-4ac3-930a-7c819596d58a" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_FinalSpark_Recreate_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="00457cf2-7121-4833-9ec9-bcbe799f3e62" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Created_FinalSpark_Recreate" />
@@ -160,7 +159,7 @@
       </fields>
     </stat_object>    <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="54a45f8c-891b-4e6a-8bdc-c33e7cd3e2a9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dc07e203-4bae-427b-b688-3199a0866b21" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_WindBlast_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b8dd2f5f-f526-41ac-bbf0-5c5e8c8cbc46" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_WindBlast" />
@@ -170,7 +169,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2ab19cad-b358-4a58-b1c4-7bc0c2141dbb" />
+        <field name="UUID" type="IdTableFieldDefinition" value="51a06daa-9a2e-4bfc-82bb-b4304fb0866f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_WindBlast_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b8dd2f5f-f526-41ac-bbf0-5c5e8c8cbc46" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_WindBlast" />
@@ -180,7 +179,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="be63313c-3dc8-4ee5-ab8f-46ab92b4f6d1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8e889e93-73b6-4397-802a-6c0fc668d15e" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_WindBlast_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b8dd2f5f-f526-41ac-bbf0-5c5e8c8cbc46" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_WindBlast" />
@@ -190,7 +189,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8ef818eb-0a53-462b-acfa-d6cba2963634" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0f6585a5-9fcf-4228-a0ce-0d33e6c96bb2" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_WindBlast_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b8dd2f5f-f526-41ac-bbf0-5c5e8c8cbc46" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_WindBlast" />
@@ -198,6 +197,8 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
+    
+    
     
     
     

@@ -58,7 +58,7 @@ copy "Editor/Mods/$MOD/Progressions"                    "Editor/Progressions"
 TOOLS_SRC="$HERE/Design/Rework/tools"
 rm -rf "$HERE/tools/stats"
 mkdir -p "$HERE/tools/stats"
-for t in gen_upcast_variants.pl sort_stats.pl; do
+for t in gen_upcast_variants.pl sort_stats.pl check_cards.pl; do
     if [ -f "$TOOLS_SRC/$t" ]; then cp "$TOOLS_SRC/$t" "$HERE/tools/stats/$t"
     else echo "  faltando: Design/Rework/tools/$t" >&2; fi
 done

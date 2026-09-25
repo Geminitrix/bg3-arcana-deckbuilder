@@ -50,7 +50,6 @@ new entry "Zone_Arcana_Created_FinalSpark_Recreate"
 type "SpellData"
 data "Level" "2"
 data "SpellType" "Zone"
-data "TargetConditions" "not HasPassive('ARCANA_IS_CARD', context.Source)"
 using "Zone_Arcana_Card_Spell_FinalSpark"
 data "Cooldown" ""
 data "SpellProperties" ""
@@ -138,6 +137,7 @@ data "RequirementConditions" "not WearingArmor(context.Source) and not HasShield
 data "PrepareEffect" "2af907e1-127c-4c83-a117-af18f211c59d"
 data "CastEffect" "f0fc3adc-db50-4a8d-bd30-904902cbefbd"
 data "TargetEffect" "766d4d52-d6a1-4efd-b37b-bd1496718e49"
+
 
 
 
