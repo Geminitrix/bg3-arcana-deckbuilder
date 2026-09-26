@@ -22,6 +22,8 @@ for _, kw in ipairs({ "Fated", "Fleeting", "Unique", "Conjured", "Reweave", "Tan
 end
 
 Req("Server/Economy/Weaving.lua")
+-- before HandCards: on CombatStarted the resource has to be granted before anything sets it
+Req("Server/Economy/CombatResources.lua")
 Req("Server/Economy/HandCards.lua")
 Req("Server/Economy/Reactions.lua")
 Req("Server/Feedback/Overhead.lua")

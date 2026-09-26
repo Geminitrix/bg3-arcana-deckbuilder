@@ -1,5 +1,4 @@
 local T = Req("Tests/T.lua")
-local C = Req("Server/Core/Const.lua")
 local S = Req("Server/Core/State.lua")
 local P = Req("Server/Core/Piles.lua")
 local F = Req("Server/Core/Flow.lua")
@@ -49,10 +48,6 @@ return {
             T.eq(H.Sync(CHAR, inCombat()), 0)
             T.eq(last, 0)
         end,
-        ["The end of combat hands the resource back in full"] = function()
-            H.Release(CHAR)
-            T.eq(last, C.HAND_MAX, "so a card is never blocked outside a fight")
-        end,
         ["The flow wires it up"] = function()
             local st = S.New()
             st.list = { [CARD] = 6 }
@@ -61,8 +56,9 @@ return {
             F.StartTurn(CHAR, st, function() return true end, 1)
             T.eq(last, #st.hand, "the opening hand is counted")
             T.ok(last > 0, "and it is not zero")
+            local before = last
             F.EndCombat(CHAR, st)
-            T.eq(last, C.HAND_MAX, "released when the fight ends")
+            T.eq(last, before, "the end of a fight sets nothing: the resource itself goes away")
         end,
     },
 }

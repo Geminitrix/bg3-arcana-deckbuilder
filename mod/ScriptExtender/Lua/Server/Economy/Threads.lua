@@ -29,9 +29,15 @@ function Th.io.get(char)
     return (list and list[1]) and list[1].Amount or 0
 end
 
-function Th.io.set(char, value)
+function Th.io.set(char, value, retried)
     local entity, list = resourceEntries(char)
     if not list then
+        -- The resource comes with the combat boost (CombatResources.lua), which the engine applies
+        -- a tick after AddBoosts; the first refill of a fight can get here before it.
+        if not retried and Ext.Timer then
+            Ext.Timer.WaitFor(250, function() Th.io.set(char, value, true) end)
+            return
+        end
         print("[ArcanaDeck] " .. tostring(char) .. " has no " .. C.RES_THREAD)
         return
     end

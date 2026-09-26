@@ -110,6 +110,11 @@
                     <attribute id="UUID" type="guid" value="7134712c-169c-4210-9b13-541e9660392c"/>
                 </node>
                 <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Deceiver Level 12"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_MirroredCharm"/>
+                    <attribute id="UUID" type="guid" value="292cab8b-27ad-467c-9a99-2f0b7bddd406"/>
+                </node>
+                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 13"/>
                     <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Faceless_Copy_EX"/>
                     <attribute id="UUID" type="guid" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d"/>

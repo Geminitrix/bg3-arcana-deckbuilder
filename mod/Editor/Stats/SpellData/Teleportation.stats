@@ -66,9 +66,10 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasPassive('ARCANA_IS_CARD', context.Source)" />
       </fields>
-    </stat_object>    <stat_object is_substat="false">
+    </stat_object>
+    <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="aca5a1d3-7814-4f67-9b7c-d3f3db08f119" />
+        <field name="UUID" type="IdTableFieldDefinition" value="68e577c5-af50-4572-b6b8-4ae8e8eb10c2" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
@@ -78,7 +79,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5ce90432-b621-439d-be6e-6bf48d82d52f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c9b3db96-7762-4c17-825f-48daea27ab32" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
@@ -88,7 +89,7 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8860d08b-af07-403d-92b4-4add29be8fd9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="75ad8562-7a06-4eee-ae7c-9a099fd66f06" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starbreath_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7624a623-2e8b-4b10-99a6-2f1e1dd74b52" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_Arcana_Card_Spell_Starbreath" />
@@ -96,17 +97,5 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
   </stat_objects>
 </stats>

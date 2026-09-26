@@ -138,18 +138,6 @@ data "PrepareEffect" "2af907e1-127c-4c83-a117-af18f211c59d"
 data "CastEffect" "f0fc3adc-db50-4a8d-bd30-904902cbefbd"
 data "TargetEffect" "766d4d52-d6a1-4efd-b37b-bd1496718e49"
 
-
-
-
-
-
-
-
-
-
-
-
-
 new entry "Zone_Arcana_Card_Spell_WindBlast_3"
 type "SpellData"
 data "SpellType" "Zone"

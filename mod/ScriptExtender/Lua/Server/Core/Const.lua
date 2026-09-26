@@ -27,10 +27,16 @@ C.DEFAULT_LEVEL = 1
 C.DEFAULT_COST = 1
 
 C.RES_THREAD = "ArcanaThread"
--- Visible counter of the hand; every card costs 1, so the engine enforces the hand on its own.
+-- Visible counter of the hand. Only a display: what refuses a card not in hand is LOCK_BOOST.
 C.RES_HAND_CARD = "ArcanaHandCard"
 -- UUID of the ArcanaThread ActionResourceDefinition; nil falls back to a name lookup.
 C.RES_THREAD_UUID = "d6f4f7d5-b4b2-453c-b1bb-35b67d2d1547"
+-- Granted at the start of each combat and removed at its end (Economy/CombatResources.lua). No
+-- progression grants them, so the console edition never has either resource.
+C.COMBAT_RESOURCES = {
+    string.format("ActionResource(%s,%d,0)", C.RES_THREAD, C.THREAD_CAP),
+    string.format("ActionResource(%s,%d,0)", C.RES_HAND_CARD, C.HAND_MAX),
+}
 
 C.BOOST_SOURCE = "ArcanaDeck"
 -- Engine syntax not yet verified in game: swap Replace for Override/Add here if the test fails.

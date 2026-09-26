@@ -5,7 +5,7 @@
         <node id="root">
             <children>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1);ActionResource(ArcanaThread,6,0);ActionResource(ArcanaHandCard,22,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
@@ -479,8 +479,9 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_MirroredCharm;Arcana_Passive_MirroredSpell"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_MirroredSpell"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(292cab8b-27ad-467c-9a99-2f0b7bddd406,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
                     <attribute id="UUID" type="guid" value="dd366005-9385-440c-9515-5363933908c8"/>
                 </node>

@@ -37,9 +37,14 @@ function Rs.io.get(char, name)
     return (list and list[1]) and list[1].Amount or 0
 end
 
-function Rs.io.set(char, name, value)
+function Rs.io.set(char, name, value, retried)
     local entity, list = entries(char, name)
     if not list then
+        -- ArcanaHandCard arrives with the combat boost a tick after AddBoosts (CombatResources.lua)
+        if not retried and entityApi() and Ext.Timer then
+            Ext.Timer.WaitFor(250, function() Rs.io.set(char, name, value, true) end)
+            return false
+        end
         if entityApi() then print("[ArcanaDeck] " .. tostring(char) .. " has no " .. tostring(name)) end
         return false
     end

@@ -32,8 +32,11 @@ my $KINDS          = qr/Card_Spell|Card_Ability|Card_Passive|Created/;
 my $WANTS_VARIANTS = qr/_Arcana_(?:$KINDS)_/;
 my $IS_VARIANT     = qr/_Arcana_(?:$KINDS)_.*_[1-9]$/;
 
+# Derivado do nome da variante: a mesma variante ganha o mesmo UUID em toda execucao. Com UUID
+# aleatorio, cada rodada do gerador reescrevia os 190 UUIDs e o diff do .stats virava ruido.
+use Digest::MD5 qw(md5_hex);
 sub uuid {
-    my @h = map { sprintf "%04x", int(rand(65536)) } 1..8;
+    my @h = unpack '(A4)8', md5_hex("arcana-upcast-variant:" . shift);
     $h[3] = sprintf("4%03x", hex($h[3]) & 0x0fff);
     $h[4] = sprintf("%04x", (hex($h[4]) & 0x3fff) | 0x8000);
     return "$h[0]$h[1]-$h[2]-$h[3]-$h[4]-$h[5]$h[6]$h[7]";
@@ -127,7 +130,7 @@ for my $n (sort keys %plan) {
             my $sf = $statsFileOf{$key};
             $statsAdd{$sf} .=
                 qq{    <stat_object is_substat="false">\n      <fields>\n}
-              . qq{        <field name="UUID" type="IdTableFieldDefinition" value="}.uuid().qq{" />\n}
+              . qq{        <field name="UUID" type="IdTableFieldDefinition" value="}.uuid("${key}_$L").qq{" />\n}
               . qq{        <field name="Name" type="NameTableFieldDefinition" value="${key}_$L" />\n}
               . qq{        <field name="Using" type="BaseClassTableFieldDefinition" value="$bu" />\n}
               . qq{        <field name="RootSpellID" type="StringTableFieldDefinition" value="$n" />\n}
@@ -180,36 +183,37 @@ my @DECEIVER_ONE_TARGET = qw(
 #     DB_ARCANA_CardFamily(_ArcanaSpell, "<carta>")
 # e a tabela abaixo liga cada carta e cada variante a raiz. Ela e montada numa PROC chamada pelo
 # INITSECTION (jogo novo) e pelo SavegameLoaded (save existente -- INITSECTION nao roda de novo em
-# save antigo). Mora no goal do Withdraw porque ele ja esta registrado e ativo; a DB e global.
+# save antigo). O goal ARCANA_CardFamilies e so dela e e reescrito inteiro a cada execucao; a DB e
+# global, entao qualquer goal a consulta.
 {
-    my $goal = "$base/Mods/$mod/Story/RawFiles/Goals/ARCANA_Spell_Withdraw.txt";
-    my $g = exists $pending{$goal} ? $pending{$goal} : do { open my $h,'<:raw',$goal or die "$goal: $!"; local $/; my $x=<$h>; close $h; $x };
-    # O goal e CRLF. O cat -A do Git Bash esconde o CR e ja enganou uma checagem minha, entao o fim
-    # de linha e lido do proprio arquivo em vez de assumido.
+    my $dir  = "$base/Mods/$mod/Story/RawFiles/Goals";
+    my $goal = "$dir/ARCANA_CardFamilies.txt";
+    # Os goals sao CRLF. O cat -A do Git Bash esconde o CR e ja enganou uma checagem minha, entao o
+    # fim de linha e lido de um goal existente em vez de assumido.
+    my $w = "$dir/ARCANA_Spell_Withdraw.txt";
+    my $g = exists $pending{$w} ? $pending{$w} : do { open my $h,'<:raw',$w or die "$w: $!"; local $/; my $x=<$h>; close $h; $x };
     my $nl = ($g =~ /\r\n/) ? "\r\n" : "\n";
     my @facts;
     for my $r (sort keys %allRoots) {
         push @facts, qq{DB_ARCANA_CardFamily("$r", "$r");};
         push @facts, qq{DB_ARCANA_CardFamily("${r}_$_", "$r");} for ($plan{$r} ? ($plan{$r}{level}+1 .. $MAXSLOT) : ());
     }
-    my @region = (
-        "//REGION Gerado por gen_upcast_variants.pl -- familias de cartas (nao edite a mao)",
+    $pending{$goal} = join($nl,
+        "Version 1", "SubGoalCombiner SGC_AND", "INITSECTION", "PROC_ARCANA_CardFamilies();", "",
+        "KBSECTION",
+        "// GERADO por gen_upcast_variants.pl -- nao edite a mao: rode o gerador de novo.",
         "// Regra que reage a uma carta pergunta DB_ARCANA_CardFamily(_ArcanaSpell, \"<carta>\"), porque o evento",
         "// de conjurar entrega o nome da variante paga (..._5), nao o da carta.",
         "PROC", "PROC_ARCANA_CardFamilies()", "THEN", @facts, "",
-        "IF", "SavegameLoaded()", "THEN", "PROC_ARCANA_CardFamilies();", "//END_REGION",
-    );
-    my $region = join($nl, @region) . $nl;
+        "IF", "SavegameLoaded()", "THEN", "PROC_ARCANA_CardFamilies();",
+        "EXITSECTION", "", "ENDEXITSECTION", "");
+    # Ate 2026-09-26 a tabela morava no goal do Withdraw. Tira de la se ainda estiver.
     my $START = '//REGION Gerado por gen_upcast_variants.pl';
-    if ($g =~ /\Q$START\E/) {
-        $g =~ s{\Q$START\E.*?//END_REGION\r?\n}{$region}s;
-    } else {
-        $g =~ s{(KBSECTION\r?\n)}{$1$region$nl} or push @warn, "  goal do Withdraw sem KBSECTION";
-    }
-    $g =~ s{(INITSECTION\r?\n)}{$1PROC_ARCANA_CardFamilies();$nl}
-        unless $g =~ /INITSECTION\r?\nPROC_ARCANA_CardFamilies\(\);/;
-    $pending{$goal} = $g;
-    $khnNote .= sprintf("; familias do Osiris: %d cartas, %d linhas", scalar keys %allRoots, scalar @facts);
+    my $o = $g;
+    $g =~ s{\Q$START\E.*?//END_REGION\r?\n(?:\r?\n)?}{}s;
+    $g =~ s{(INITSECTION\r?\n)PROC_ARCANA_CardFamilies\(\);\r?\n}{$1};
+    $pending{$w} = $g if $g ne $o;
+    $khnNote .= sprintf("; familias do Osiris (ARCANA_CardFamilies): %d cartas, %d linhas", scalar keys %allRoots, scalar @facts);
 }
 
 # ---------- 5. juntar tudo em memória, conferir, e só então gravar ----------
@@ -224,6 +228,23 @@ for my $f (keys %statsAdd) {
         or push @warn, "  $f: fechamento </stat_objects> nao encontrado";
     $pending{$f} = $s;
 }
+# Arrumacao de espaco em branco. Os arquivos sao CRLF e as variantes eram montadas com LF, e cada
+# execucao deixava para tras uma linha em branco no .txt e uma linha so de espacos no .stats -- ja
+# havia trechos com 15 quebras seguidas. Aqui o fim de linha vira o do proprio arquivo, o .txt fica
+# com exatamente uma linha em branco entre entradas, e o .stats perde as linhas vazias.
+for my $f (grep { /\.(?:txt|stats)$/ && !m{/Goals/} } keys %pending) {
+    my $s = $pending{$f};
+    my $nl = ($s =~ /\r\n/) ? "\r\n" : "\n";
+    $s =~ s/\r?\n/$nl/g;
+    if ($f =~ /\.txt$/) {
+        $s =~ s/(?:[ \t]*\Q$nl\E){3,}/$nl$nl/g;
+    } else {
+        $s =~ s{</stat_object>[ \t]*<stat_object}{</stat_object>$nl    <stat_object}g;
+        $s =~ s/(?<=\n)[ \t]*\Q$nl\E//g;
+    }
+    $pending{$f} = $s;
+}
+
 # uma âncora perdida significaria variante só de um lado -- melhor não gravar nada
 if (grep { /stat_objects/ } @warn) {
     print "== ABORTADO, nada foi gravado ==\n", map {"$_\n"} @warn;

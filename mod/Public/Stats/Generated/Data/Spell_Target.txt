@@ -401,7 +401,7 @@ type "SpellData"
 data "SpellType" "Target"
 data "Level" "3"
 data "SpellSchool" "Evocation"
-data "SpellProperties" "GROUND:Summon(SELF,c3c514b2-152d-4a01-9e7d-e49d1062d2f0,2);GROUND:IF(CanStand('')):TeleportSource();GROUND:CreateExplosion(Projectile_Arcana_Distortion_Explosion);ApplyStatus(SELF,DISTORTION_LAST_CASTED,100,-1)"
+data "SpellProperties" "GROUND:Summon(SELF,c3c514b2-152d-4a01-9e7d-e49d1062d2f0,2);GROUND:IF(CanStand('')):TeleportSource();GROUND:CreateExplosion(Projectile_Arcana_Distortion_Explosion);GROUND:ApplyStatus(SELF,DISTORTION_LAST_CASTED,100,-1)"
 data "TargetRadius" "18"
 data "AreaRadius" "3"
 data "RequirementConditions" "not HasStatus('DISTORTION_HELPER');"
@@ -2131,7 +2131,6 @@ data "CastEffect" "111a8b8c-b395-46d0-b2f0-a10ac6f9731f"
 data "TargetEffect" "a082692d-ad88-44e2-ab4e-f92e69150438"
 data "DamageType" "Necrotic"
 
-
 new entry "Target_Arcana_Card_Spell_Transfusion"
 type "SpellData"
 data "SpellType" "Target"
@@ -2359,15 +2358,4 @@ data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent"
 data "PrepareEffect" "5d4a5adb-db3a-47ed-9c29-b84e09425921"
 data "CastEffect" "c582c3b6-2758-4d72-81f6-e45f07519a10"
 data "TargetEffect" "e7b6ad82-c85a-40ac-9781-cb85f2dffb89"
-
-
-
-
-
-
-
-
-
-
-
 

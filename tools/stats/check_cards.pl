@@ -37,6 +37,14 @@ for my $x (sort keys %e) {
         my ($field, $val) = ($1, $2);
         push @err, "';' no meio da condicao  $x  ($field)" if $val =~ /;\s*(?:and|or)\b/;
     }
+    # magia que mira o chao: funtor sem GROUND: nao acha em quem cair. Foi assim que a Distortion
+    # parou de aplicar o DISTORTION_LAST_CASTED e o Mimic travou (2026-09-26).
+    if ($b =~ /data "SpellProperties" "([^"]*)"/) {
+        my @f = split /;/, $1;
+        if (grep { /^GROUND:/ } @f) {
+            push @err, "funtor sem GROUND: numa magia de chao  $x  ($_)" for grep { /^ApplyStatus\(SELF,/ } @f;
+        }
+    }
     next if $x =~ /_[1-9]$/;                                   # variantes herdam da base
     my $r = resolved($x); my $marked = defined $r && $r =~ $MARKRE;
 
@@ -82,6 +90,16 @@ for my $f (bsd_glob("$D/Mods/$M/Story/RawFiles/Goals/*.txt")) {
     while ($s =~ /^((?:UsingSpell|UsingSpellOnTarget|CastSpell|CastedSpell)\([^\r\n]*"([A-Za-z]+_Arcana_(?:Card_[A-Za-z]+|Created)_[A-Za-z0-9_]+)")/mg) {
         my $card = $2;
         push @err, "Story compara nome de carta  $bn  ($card) -- use DB_ARCANA_CardFamily";
+    }
+}
+
+# ---------- recursos do baralho so existem em combate, pelo SE ----------
+# Threads e o contador da mao sao dados pelo Lua quando o combate comeca (CombatResources.lua). Se a
+# progressao voltar a da-los, o console ganha dois recursos inuteis e o SE comeca a luta com eles cheios.
+for my $f (bsd_glob("$D/Public/$M/Progressions/*.lsx"), bsd_glob("$D/Editor/Mods/$M/Progressions/*.tbl")) {
+    (my $bn = $f) =~ s{.*/}{};
+    for my $r (qw(ArcanaThread ArcanaHandCard)) {
+        push @err, "progressao concede $r ($bn) -- quem da e o SE, so em combate" if slurp($f) =~ /ActionResource\($r,/;
     }
 }
 

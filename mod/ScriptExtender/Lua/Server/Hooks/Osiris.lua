@@ -5,7 +5,7 @@ local Po = Req("Server/Core/Pool.lua")
 local Sy = Req("Server/Core/Sync.lua")
 local L = Req("Server/Deck/List.lua")
 local D = Req("Server/Cards/CardDB.lua")
-local HC = Req("Server/Economy/HandCards.lua")
+local CR = Req("Server/Economy/CombatResources.lua")
 
 local H = {}
 
@@ -33,11 +33,9 @@ function H.ResyncAll()
     for char, st in pairs(S.All()) do
         Sy.ClearAll(char, st)
         if st.combat and Osi.IsInCombat(char) ~= 1 then F.EndCombat(char, st) end
-        -- ArcanaHandCard replenishes per turn, and out of combat there are no turns: whatever it
-        -- was left holding it keeps forever. Left at 0 -- by a fight that ended without its
-        -- CombatEnded, a respec, a crash -- every card becomes unpayable and the panel shows an
-        -- empty counter. Out of combat the hand is not a limit, so hand it back in full.
-        if not st.combat then HC.Release(char) end
+        -- Threads and the hand counter belong to a fight. One that ended without its CombatEnded
+        -- -- a crash, a reload -- would leave them on the panel for good, so take them away here.
+        if not st.combat then CR.Revoke(char) end
         S.Commit(char, st)
     end
 end

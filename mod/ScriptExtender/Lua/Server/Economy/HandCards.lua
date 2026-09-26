@@ -1,6 +1,6 @@
 -- ArcanaHandCard is the hand made visible: a resource next to the spell slots whose value is how
--- many cards you are holding. Every card costs 1 of it, so the engine itself refuses a card once the
--- hand is empty, and the count is on screen instead of buried in !arcana.
+-- many cards you are holding, on screen instead of buried in !arcana. It exists only during a fight
+-- (CombatResources.lua).
 --
 -- The engine no longer spends it: ArcanaHandCard left the cards' UseCosts on 2026-09-24, because an
 -- extra resource in the cost stopped the engine from collapsing a card into its upcast variant. So
@@ -19,16 +19,10 @@ function H.Sync(char, st)
     return n
 end
 
--- Out of combat there is no hand, so the resource goes back to full: it must never be what stops a
--- card from being cast outside a fight, and on the console edition nothing else would refill it.
-function H.Release(char)
-    H.io.set(char, C.HAND_MAX)
-end
-
+-- Out of combat there is nothing to set: the resource itself is removed when the fight ends
+-- (CombatResources.lua), so it can never block a card outside a fight.
 for _, event in ipairs({ "CardDrawn", "CardAdded", "CardPlayed", "CardUnraveled", "CombatStarted", "TurnStarted" }) do
     E.On(event, function(ctx) H.Sync(ctx.char, ctx.state) end)
 end
-
-E.On("CombatEnded", function(ctx) H.Release(ctx.char) end)
 
 return H

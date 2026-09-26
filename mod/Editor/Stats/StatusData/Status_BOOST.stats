@@ -387,6 +387,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da569c68-5c9a-42e1-8ef7-679912100d5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIRRORED_SELF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1db9d360g745dg3fd1g0586g868dfb79601e" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03baad22gd1afg4f6fg8a13g19f6248372b4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SplitEnchantment" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MIRRORED_SELF" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_MirroredCharm" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8ad9368-5e02-4050-9aac-bbcd64b7ebe4" />
         <field name="Name" type="NameTableFieldDefinition" value="MIRRORED_SPELL_HELPER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34f46efbg619ag290ag7eddg2383b122a86a" version="1" />
