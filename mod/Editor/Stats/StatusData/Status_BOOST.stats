@@ -281,7 +281,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Arcana_Card_Spell_MaliciousWhispers') or SpellId('Projectile_Arcana_Card_Spell_SigilofMalice') or SpellId('Projectile_Arcana_Created_MimicSigilofMalice') or SpellId('Projectile_Deceiver_Clone_MirrorSigilofMalice') or SpellId('Projectile_Arcana_Distortion_Explosion') or SpellId('Projectile_Arcana_MimicDistortion_Explosion') or SpellId('Projectile_Arcana_MirrorDistortion_Explosion') or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)" />
       </fields>
     </stat_object>
@@ -414,10 +414,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b30ca021-0639-4c61-a8e1-24c74d99b507" />
         <field name="Name" type="NameTableFieldDefinition" value="MIRRORED_SPELL_ON" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa5e063cga90egac8cg9e75gb55fc8aa24e3" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c6805e2gef72gde13g0ac7g7d9b19112b25" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he90aacc4g6866g4063gb0c8g54dc6d444509" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Counterspell" />
         <field name="StackId" type="StringTableFieldDefinition" value="MIRRORED_SPELL_ON" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>

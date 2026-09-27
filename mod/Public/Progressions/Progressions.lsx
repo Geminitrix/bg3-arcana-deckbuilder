@@ -479,7 +479,6 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="12"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_MirroredSpell"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(292cab8b-27ad-467c-9a99-2f0b7bddd406,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>

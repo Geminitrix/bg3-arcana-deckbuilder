@@ -258,19 +258,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9b8bee12-787f-4723-9356-92502a5b22f2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_MirroredSpell" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c6805e2gef72gde13g0ac7g7d9b19112b25" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1b4c14fg68b2g2642g9a32gc052f2f749b1" version="3" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Counterspell" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;Highlighted;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,MIRRORED_SPELL_ON,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,MIRRORED_SPELL_ON);RemoveStatus(SELF,MIRRORED_SPELL_HELPER)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fdd4ab46-ba46-49a0-a604-8d9eeee750db" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Nemesis_Owner" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip() and HasStatus('NEMESIS',context.Target)):Advantage(AttackRoll);" />

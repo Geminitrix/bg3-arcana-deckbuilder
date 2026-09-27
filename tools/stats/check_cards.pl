@@ -26,6 +26,9 @@ for my $f (bsd_glob("$D/Public/$M/Stats/Generated/Data/Spell_*.txt")) {
 }
 sub tc  { my $x = shift; return undef unless $e{$x}; $e{$x} =~ /data "TargetConditions" "([^"]*)"/ ? $1 : undef }
 sub par { my $x = shift; return undef unless $e{$x}; $e{$x} =~ /^using "([^"]+)"/m ? $1 : undef }
+# campo qualquer, seguindo o `using`
+sub field { my ($x, $k) = @_; my $i = 0;
+    while ($x && $i++ < 10) { return $1 if $e{$x} && $e{$x} =~ /data "$k" "([^"]*)"/; $x = par($x) } return undef }
 sub resolved { my $x = shift; my $k = 0;
     while ($x && $k++ < 10) { my $t = tc($x); return $t if defined $t; $x = par($x) } return undef }
 
@@ -47,6 +50,15 @@ for my $x (sort keys %e) {
     }
     next if $x =~ /_[1-9]$/;                                   # variantes herdam da base
     my $r = resolved($x); my $marked = defined $r && $r =~ $MARKRE;
+
+    # magia da classe que causa dano precisa de uma marca, carta ou ARCANA_IS_SPELL: e por ela que o
+    # IsArcanaSpell() reconhece o dano, e a marca SIGIL so detona com IsArcanaSpell() (2026-09-26)
+    if ($x =~ /_Arcana_|^Projectile_Deceiver_Clone_|^Target_Deceiver_Clone_|^Zone_Deceiver_Clone_/) {
+        my $sp = join ';', grep { defined } map { field($x, $_) } qw(SpellProperties SpellSuccess SpellFail);
+        if ($sp =~ /DealDamage/ && !$marked && !(defined $r && $r =~ /not HasPassive\('ARCANA_IS_SPELL', context\.Source\)/)) {
+            push @err, "dano sem marca da Arcana   $x (nao detona o SIGIL: ponha ARCANA_IS_SPELL no TargetConditions)";
+        }
+    }
 
     if ($x =~ /_Arcana_Card_(?:Spell|Passive)_/ && !$marked) { push @err, "carta sem a marca          $x" }
     if ($x =~ /_Deceiver_Clone_/ && $marked)                   { push @err, "clone com a marca          $x (quem conjura e o clone, nao e carta)" }

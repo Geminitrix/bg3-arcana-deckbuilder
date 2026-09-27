@@ -624,7 +624,6 @@
         <field name="Level" type="ByteTableFieldDefinition" value="12" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(292cab8b-27ad-467c-9a99-2f0b7bddd406,,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_MirroredSpell" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">

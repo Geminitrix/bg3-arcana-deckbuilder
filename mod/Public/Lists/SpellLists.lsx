@@ -111,7 +111,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 12"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_MirroredCharm"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_MirroredCharm;Shout_Arcana_Card_Passive_MirroredSpell"/>
                     <attribute id="UUID" type="guid" value="292cab8b-27ad-467c-9a99-2f0b7bddd406"/>
                 </node>
                 <node id="SpellList">

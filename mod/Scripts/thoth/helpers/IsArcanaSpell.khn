@@ -1,0 +1,9 @@
+-- Any spell of the Arcana class: a card, or one of the class's own spells that is not a card but
+-- still deals its damage (the Distortion explosions, the clone's Sigil, the Gale Deflection ricochet).
+-- Cards carry ARCANA_IS_CARD in their TargetConditions (see IsCardSpell); the others carry
+-- ARCANA_IS_SPELL, the same way. Reading a marker instead of listing names keeps every upcast
+-- variant in: SpellId() compares the exact name, so a list missed the "..._3" of every card.
+-- Used by the SIGIL mark to know what detonates it.
+function IsArcanaSpell()
+    return HasStringInSpellConditions('ARCANA_IS_CARD') | HasStringInSpellConditions('ARCANA_IS_SPELL')
+end

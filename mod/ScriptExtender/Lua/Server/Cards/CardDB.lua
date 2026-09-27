@@ -3,6 +3,9 @@ local C = Req("Server/Core/Const.lua")
 local D = {}
 local EMPTY = {}
 
+-- The two piles a card can go to (see D.DestinationOf): the discard and the exile.
+D.PILE_FRAYED, D.PILE_UNRAVEL = "frayed", "unravel"
+
 -- cost = Threads spent in combat. Rule: X = the card's level, no exceptions.
 -- The engine is what actually charges it. Out of combat a card costs one SpellSlotsGroup slot of its own level (the group now holds ArcanaSpellSlot);
 -- in combat ARCANA_WEAVING zeroes that and adds X Threads in its place, one boost per level. The
@@ -73,6 +76,15 @@ D.cards = {
     ["Shout_Arcana_Card_Passive_HollowImage"] = {
         aspect = "Deceiver", cost = 3, keywords = { Unique = true },
         reaction = { resource = "ArcanaReactHollowImage", perTurn = true },
+    },
+
+    -- Spells with a cooldown of their own: a second copy would only ever be drawn dead.
+    ["Target_Arcana_Card_Spell_MentalPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },
+    ["Target_Arcana_Card_Spell_Marionette"] = { aspect = "Deceiver", keywords = { Unique = true } },
+    -- Its status lasts until the next long rest, so once played it has nothing left to do in this
+    -- fight: straight to the exile.
+    ["Shout_Arcana_Card_Passive_MirroredSpell"] = {
+        aspect = "Deceiver", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
 
     ["Shout_Arcana_Card_Spell_DEBUG_Fated"] = { keywords = { Fated = true } },
@@ -207,7 +219,7 @@ end
 --
 -- Two moves are not destinations and stay outside this: a card that overflows the hand never
 -- entered it (always exiled), and Reweave returns the hand to the deck (a mulligan, not a pile).
-D.PILE_FRAYED, D.PILE_UNRAVEL = "frayed", "unravel"
+-- (D.PILE_FRAYED / D.PILE_UNRAVEL are defined at the top, before D.cards uses them.)
 
 function D.DestinationOf(id, default)
     return D.Get(id).destination or default

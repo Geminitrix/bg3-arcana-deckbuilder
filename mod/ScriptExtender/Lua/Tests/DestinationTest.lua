@@ -3,7 +3,9 @@ local S = Req("Server/Core/State.lua")
 local P = Req("Server/Core/Piles.lua")
 local D = Req("Server/Cards/CardDB.lua")
 local E = Req("Server/Core/Events.lua")
+local L = Req("Server/Deck/List.lua")
 Req("Server/Keywords/Fleeting.lua")
+Req("Server/Keywords/Unique.lua")
 
 -- The rule these cases pin down: a card that names its pile (`destination`) goes there, whatever
 -- moved it. Keywords and mechanics only decide for cards that say nothing.
@@ -56,6 +58,15 @@ return {
             T.eq(#st.hand, 0, "Fleeting still clears it from the hand")
             T.ok(has(st.frayed, FLEETING_STAYS), "but it goes where the card says")
             T.eq(#st.unraveled, 0)
+        end,
+        ["Mirrored Spell: Unique, and played straight to the exile"] = function()
+            local id = "Shout_Arcana_Card_Passive_MirroredSpell"
+            T.eq(L.MaxCopies(id), 1)
+            T.eq(D.PlayedTo(id, false), D.PILE_UNRAVEL, "its status lasts until the long rest")
+        end,
+        ["Cards with a cooldown of their own are Unique"] = function()
+            T.eq(L.MaxCopies("Target_Arcana_Card_Spell_MentalPrison"), 1)
+            T.eq(L.MaxCopies("Target_Arcana_Card_Spell_Marionette"), 1)
         end,
         ["A conjured card running out: the card's pile beats the default"] = function()
             local st = combatState()

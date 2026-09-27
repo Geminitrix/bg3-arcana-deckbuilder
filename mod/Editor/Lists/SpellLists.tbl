@@ -173,7 +173,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="292cab8b-27ad-467c-9a99-2f0b7bddd406" />
         <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 12" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_MirroredCharm" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_MirroredCharm;Shout_Arcana_Card_Passive_MirroredSpell" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
