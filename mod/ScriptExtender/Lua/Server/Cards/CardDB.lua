@@ -197,20 +197,30 @@ function D.CostOf(id)
     return D.Get(id).cost or C.DEFAULT_COST
 end
 
--- Where a card goes once played: "frayed" (the discard, shuffled back into the deck when it runs
--- out) or "unravel" (the exile, gone for the rest of the fight). A card can say so itself with
--- `playedTo` in D.cards, which wins over everything. Otherwise:
---   * a weapon action goes to the exile: the game's own cooldown (once per short rest) means it could
---     not be cast again this fight, so shuffling it back would only hand the player a dead card;
---   * a conjured card goes to the exile, as it always did;
---   * everything else goes to the discard.
+-- Where a card goes when it leaves the hand for a pile: "frayed" (the discard, shuffled back into
+-- the deck when it runs out) or "unravel" (the exile, gone for the rest of the fight).
+--
+-- THE CARD WINS. A card that names its pile with `destination` in D.cards goes there, whatever put
+-- it in motion: being played, a keyword that clears it from the hand (Fleeting at the end of the
+-- turn), or a conjured card running out of turns. Keywords and mechanics only supply the default
+-- for cards that say nothing. Every move from hand to a pile asks here -- none may hard-code one.
+--
+-- Two moves are not destinations and stay outside this: a card that overflows the hand never
+-- entered it (always exiled), and Reweave returns the hand to the deck (a mulligan, not a pile).
 D.PILE_FRAYED, D.PILE_UNRAVEL = "frayed", "unravel"
 
+function D.DestinationOf(id, default)
+    return D.Get(id).destination or default
+end
+
+-- Default when played:
+--   * a weapon action goes to the exile: the game's own cooldown (once per short rest) means it
+--     could not be cast again this fight, so shuffling it back would only hand over a dead card;
+--   * a conjured card goes to the exile;
+--   * everything else goes to the discard.
 function D.PlayedTo(id, conjured)
-    local explicit = D.Get(id).playedTo
-    if explicit then return explicit end
-    if D.IsWeaponAction(id) then return D.PILE_UNRAVEL end
-    return conjured and D.PILE_UNRAVEL or D.PILE_FRAYED
+    local default = (conjured or D.IsWeaponAction(id)) and D.PILE_UNRAVEL or D.PILE_FRAYED
+    return D.DestinationOf(id, default)
 end
 
 function D.Has(id, keyword)

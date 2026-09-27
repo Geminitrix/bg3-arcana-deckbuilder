@@ -113,7 +113,9 @@ function P.ExpireConjured(char, st, endedTurn, hasSpell)
         if e.conjured then
             local timedOut = endedTurn ~= nil and e.expiresOnTurn ~= nil and e.expiresOnTurn <= endedTurn
             local gone = hasSpell ~= nil and not hasSpell(e.id)
-            if timedOut or gone then P.RemoveFromHand(char, st, i, "unravel", "expired") end
+            if timedOut or gone then
+                P.RemoveFromHand(char, st, i, D.DestinationOf(e.id, D.PILE_UNRAVEL), "expired")
+            end
         end
     end
 end

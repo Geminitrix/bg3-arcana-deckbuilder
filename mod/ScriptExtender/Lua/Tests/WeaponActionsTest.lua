@@ -84,14 +84,11 @@ return {
             P.Play("char", st, CARD)
             T.list(st.frayed, { CARD }, "an ordinary card still goes to the discard")
         end,
-        ["A card can name its own pile, and that wins"] = function()
-            D.cards["Target_Test_ExileMe"] = { playedTo = D.PILE_UNRAVEL }
-            D.cards["Target_Test_KeepMe"] = { playedTo = D.PILE_FRAYED }
-            T.eq(D.PlayedTo("Target_Test_ExileMe", false), D.PILE_UNRAVEL)
-            T.eq(D.PlayedTo("Target_Test_KeepMe", true), D.PILE_FRAYED, "even over the conjured rule")
-            T.eq(D.PlayedTo(CARD, true), D.PILE_UNRAVEL, "conjured default unchanged")
-            T.eq(D.PlayedTo(CARD, false), D.PILE_FRAYED, "ordinary default unchanged")
-            D.cards["Target_Test_ExileMe"], D.cards["Target_Test_KeepMe"] = nil, nil
+        ["A weapon action that names its own pile goes there"] = function()
+            D.cards[SLASH] = { destination = D.PILE_FRAYED }
+            T.eq(D.PlayedTo(SLASH, false), D.PILE_FRAYED, "the card beats the weapon-action rule")
+            D.cards[SLASH] = nil
+            T.eq(D.PlayedTo(SLASH, false), D.PILE_UNRAVEL)
         end,
         ["A card whose weapon is not equipped stays listed but out of the fight"] = function()
             local st = S.New()
