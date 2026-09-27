@@ -574,7 +574,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_LunarWisp;Arcana_Passive_StellarAnchor"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_StellarAnchor"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>

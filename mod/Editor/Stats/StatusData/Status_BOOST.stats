@@ -584,6 +584,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9774f33-e85f-4e94-8471-e56c6e452634" />
+        <field name="Name" type="NameTableFieldDefinition" value="LUNAR_WISP_BLESSING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8219083g6cb4gb9fdg03b0g4b24d8fd6ff5" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbf1a97cgc4bbg8eb9gc917gc68c2b0a693f" version="11" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Arcana)+(WisdomModifier*2))" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LUNAR_WISP_BLESSING" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_LunarWisp" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1a2b7187-e67e-4a66-abd6-8c2025c1046f" />
         <field name="Name" type="NameTableFieldDefinition" value="LUNAR_WISP_TECHNICAL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb33ae590gae47gde31g9b6cg0ff23d30f1c2" version="4" />

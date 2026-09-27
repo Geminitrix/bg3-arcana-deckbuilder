@@ -46,7 +46,6 @@
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Sunbeam" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="94cab8bc-58f3-450d-8138-c1852ce28ee7" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FINAL_SPARK_OWNER,100,2);" />

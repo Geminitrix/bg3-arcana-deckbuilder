@@ -754,7 +754,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_LunarWisp;Arcana_Passive_StellarAnchor" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_StellarAnchor" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>

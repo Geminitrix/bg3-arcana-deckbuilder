@@ -574,6 +574,80 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,LUNAR_WISP_BLESSING,100,-1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8219083g6cb4gb9fdg03b0g4b24d8fd6ff5" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h843fe5ebg87b1g4a71gbfe2g02adfaa7ae98" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_WISP_BLESSING,100,-1)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="355a5479-07c9-4a34-9ab6-3b2669fdd248,,;,,;2ac8ee64-6d74-4cad-a74c-660ef3fc3d06,,;5bf6f6e6-353e-40f9-9a6f-0d6d16e19496,,;1c5627cb-6352-454b-9b84-c5b10ef2d201,,;,,;1cc6ba3b-fa78-48f8-858c-ac4c78fdb8fc,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('LUNAR_WISP_BLESSING',context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c817dd7-724e-4e39-89ab-96a89636c403" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_LunarWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a3141ea-87d3-455d-a98f-f787061e90b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_LunarWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a531bd2c-defc-4f5e-8bc3-9d1575f9df45" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_LunarWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd90c8f7-6ac2-4c11-8eea-183e083e7d06" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_LunarWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="901814e9-72dd-4661-be0c-14dc183fe6ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_LunarWisp_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="49aa7619-272f-46cc-935d-1f20468a2f1d" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_LunarWisp" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3405af41-1983-4552-9b17-6a3c23201e08" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_MirroredCharm" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />

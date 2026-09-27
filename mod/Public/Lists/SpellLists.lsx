@@ -46,7 +46,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Starchild Level 3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_SolarPurge;Target_Arcana_Card_Spell_LunarAegis"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_SolarPurge;Target_Arcana_Card_Spell_LunarAegis;Shout_Arcana_Card_Passive_LunarWisp"/>
                     <attribute id="UUID" type="guid" value="dc0de737-2953-465d-9407-9f58e7391280"/>
                 </node>
                 <node id="SpellList">

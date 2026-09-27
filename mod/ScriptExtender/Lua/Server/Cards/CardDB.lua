@@ -81,10 +81,21 @@ D.cards = {
     -- Spells with a cooldown of their own: a second copy would only ever be drawn dead.
     ["Target_Arcana_Card_Spell_MentalPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },
     ["Target_Arcana_Card_Spell_Marionette"] = { aspect = "Deceiver", keywords = { Unique = true } },
-    -- Its status lasts until the next long rest, so once played it has nothing left to do in this
-    -- fight: straight to the exile.
+    ["Target_Arcana_Card_Spell_SolarPurge"] = { aspect = "Starchild", keywords = { Unique = true } },
+    ["Teleportation_Arcana_Card_Spell_Starbreath"] = { aspect = "Starchild", keywords = { Unique = true } },
+    ["Shout_Arcana_Card_Spell_StellarGrace"] = { aspect = "Starchild", keywords = { Unique = true } },
+    -- once per combat, not per rest: still a dead second copy in the same fight
+    ["Shout_Arcana_Card_Spell_Wish"] = { aspect = "Starchild", keywords = { Unique = true } },
+    -- Solar Flare and Final Spark lost their cooldowns on 2026-09-27 so they can run three copies;
+    -- their damage is to be tuned down for it.
+
+    -- Their status lasts until the next long rest, so once played they have nothing left to do in
+    -- this fight: straight to the exile.
     ["Shout_Arcana_Card_Passive_MirroredSpell"] = {
         aspect = "Deceiver", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Shout_Arcana_Card_Passive_LunarWisp"] = {
+        aspect = "Starchild", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
 
     ["Shout_Arcana_Card_Spell_DEBUG_Fated"] = { keywords = { Fated = true } },

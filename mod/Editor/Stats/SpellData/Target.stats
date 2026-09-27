@@ -1439,7 +1439,7 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('da0186fc-37a9-4a8e-aff7-552162d0c945') and not Character() and not Item() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(da0186fc-37a9-4a8e-aff7-552162d0c945, 10,,,Daylight,LUCENT_SINGULARITY_GROUND);GROUND:SurfaceChange(Daylight);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(da0186fc-37a9-4a8e-aff7-552162d0c945, 2,,,Daylight,LUCENT_SINGULARITY_GROUND);GROUND:SurfaceChange(Daylight);" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="518bc78f-c169-43ba-b951-977d75429199" />
@@ -1447,7 +1447,7 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="15" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_Gen_Daylight" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_Daylight_L3" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DIFFICULT_TERRAIN);ApplyStatus(FAERIE_FIRE)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DIFFICULT_TERRAIN,100,2);ApplyStatus(FAERIE_FIRE,100,2)" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
@@ -1673,7 +1673,6 @@
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_FlameStrike_L4to5" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STUNNED,100,1);ApplyStatus(BURNING,100,3)" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
       </fields>
