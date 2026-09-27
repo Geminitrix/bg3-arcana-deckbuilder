@@ -230,7 +230,7 @@ data "DescriptionParams" "DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psych
 data "Icon" "Spell_Necromancy_BestowCurse"
 data "StackId" "SIGIL"
 data "StackType" "Ignore"
-data "RemoveConditions" "IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})"
+data "RemoveConditions" "(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))"
 data "RemoveEvents" "OnDamage;OnStatusApplied"
 data "OnRemoveFunctors" "IF(not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)"
 data "ApplyEffect" "54d3e1a2-7513-4f46-bb46-53dec4e83b8d"

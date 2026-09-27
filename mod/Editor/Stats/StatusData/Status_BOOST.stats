@@ -281,7 +281,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)" />
       </fields>
     </stat_object>
