@@ -61,7 +61,14 @@ C.PREFIX = {
 }
 
 -- Categories that live in the deck and get lock/glow boosts.
-C.DECK_CATEGORIES = { Card = true, Passive = true }
+C.DECK_CATEGORIES = { Card = true, Passive = true, WeaponAction = true }
+
+-- Weapon actions (Slash, Cleave, Piercing Shot...) are cards since 2026-09-26. There is no prefix to
+-- recognise them by: every one the game grants through a weapon carries this spell flag, and the
+-- item spells that are not weapon actions (a bow's Haste, a staff's Fire Bolt) do not. Reading the
+-- flag, rather than which weapon the character holds, also catches actions reached through a
+-- multiclass or a feat.
+C.WEAPON_ACTION_FLAG = "IsDefaultWeaponAction"
 
 C.REWEAVE_TOKEN = "Shout_Arcana_Created_Reweave"
 

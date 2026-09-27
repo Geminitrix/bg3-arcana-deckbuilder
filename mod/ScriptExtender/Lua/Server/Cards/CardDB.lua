@@ -156,9 +156,42 @@ D.io = {
         if lvl == nil or lvl < 0 then return nil end
         return lvl
     end,
+    -- SpellFlags comes back as a list of names; a string is accepted too, to be safe
+    spellFlags = function(id)
+        local ok, flags = pcall(function()
+            local stat = Ext.Stats.Get(id)
+            return stat and stat.SpellFlags
+        end)
+        if not ok then return nil end
+        return flags
+    end,
 }
 
+-- Asked for every spell in the spellbook on every sync, and a spell's flags never change during a
+-- session, so the answer is kept.
+local weaponAction = {}
+
+function D.IsWeaponAction(id)
+    local known = weaponAction[id]
+    if known ~= nil then return known end
+    local flags, yes = D.io.spellFlags(id), false
+    if type(flags) == "string" then
+        yes = flags:find(C.WEAPON_ACTION_FLAG, 1, true) ~= nil
+    elseif flags ~= nil then
+        for _, f in ipairs(flags) do
+            if f == C.WEAPON_ACTION_FLAG then yes = true; break end
+        end
+    end
+    weaponAction[id] = yes
+    return yes
+end
+
+-- for the tests, which swap D.io between cases
+function D.ForgetWeaponActions() weaponAction = {} end
+
 function D.CostOf(id)
+    -- A weapon action already costs its action or bonus action; the card in hand is the limit.
+    if D.IsWeaponAction(id) then return 0 end
     local lvl = D.io.spellLevel(id)
     if lvl ~= nil then return lvl end
     return D.Get(id).cost or C.DEFAULT_COST

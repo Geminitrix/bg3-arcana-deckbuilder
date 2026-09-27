@@ -17,6 +17,7 @@ local SUITES = {
     "Tests/OverheadTest.lua",
     "Tests/HandCardsTest.lua",
     "Tests/CombatResourcesTest.lua",
+    "Tests/WeaponActionsTest.lua",
 }
 
 -- Loaded here, at bootstrap, and not inside Run(): Ext.Require only works while the mod context is

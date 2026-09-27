@@ -4,6 +4,21 @@ local D = Req("Server/Cards/CardDB.lua")
 
 local Po = {}
 
+-- The class's own spells are told apart by prefix; a weapon action is a base-game spell and is
+-- told apart by its flag (C.WEAPON_ACTION_FLAG).
+function Po.CategoryOf(id)
+    local cat = U.Category(id)
+    if cat == nil and D.IsWeaponAction(id) then return "WeaponAction" end
+    return cat
+end
+
+-- None of the base-game spells is an upcast variant of ours, so only the class's own spells go
+-- through StripUpcast -- a base-game name that happens to end in _2 stays whole.
+local function rootOf(id)
+    if U.Category(id) == nil then return id end
+    return U.StripUpcast(id)
+end
+
 function Po.IsDeckUser(char)
     return Osi.IsPlayer(char) == 1
         and Osi.IsTagged(char, C.TAG_ARCANA) == 1
@@ -18,7 +33,7 @@ end
 -- responde 0. Este conjunto diz "a carta X existe neste personagem, sob qualquer nivel".
 function Po.RootSet(char)
     local out = {}
-    for _, id in ipairs(Po.SpellIds(char)) do out[U.StripUpcast(id)] = true end
+    for _, id in ipairs(Po.SpellIds(char)) do out[rootOf(id)] = true end
     return out
 end
 
@@ -59,8 +74,8 @@ end
 function Po.Relevant(char)
     local out = {}
     for _, id in ipairs(Po.SpellIds(char)) do
-        local cat = U.Category(id)
-        local root = U.StripUpcast(id)
+        local cat = Po.CategoryOf(id)
+        local root = rootOf(id)
         if D.vanillaGranted[id] then
             -- Magia do jogo base concedida pela classe: nao e carta, mas em combate so se joga
             -- carta, entao vai trancada como utilitaria.
@@ -83,8 +98,8 @@ function Po.Cards(char)
     local copies = mirroredCopies(char)
     local out, seen = {}, {}
     for _, id in ipairs(Po.SpellIds(char)) do
-        local root = U.StripUpcast(id)
-        if C.DECK_CATEGORIES[U.Category(root)] and not seen[root] and not copies[root]
+        local root = rootOf(id)
+        if C.DECK_CATEGORIES[Po.CategoryOf(root)] and not seen[root] and not copies[root]
             and not D.Get(root).conjuredOnly then
             seen[root] = true
             out[#out + 1] = root

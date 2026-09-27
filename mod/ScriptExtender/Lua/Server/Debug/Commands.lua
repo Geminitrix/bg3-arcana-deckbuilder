@@ -154,6 +154,22 @@ Ext.RegisterConsoleCommand("arcanareset", function()
     print("deck state cleared")
 end)
 
+-- Everyone the deck keeps state for. Written to chase the slow DismissClone (2026-09-26): a clone
+-- that is a Transform of the player could pass for a deck user, collect a lock boost per spell, and
+-- then make Unsummon strip them all. Run it with a clone out, after it has cast a few spells.
+Ext.RegisterConsoleCommand("arcanastates", function()
+    local n = 0
+    for char, st in pairs(S.All()) do
+        n = n + 1
+        local applied = 0
+        for _ in pairs(st.applied or {}) do applied = applied + 1 end
+        print(string.format("%s  player=%s summon=%s deckUser=%s  combat=%s  boosts=%d  hand=%d",
+            char, tostring(Osi.IsPlayer(char)), tostring(Osi.IsSummon(char)),
+            tostring(Po.IsDeckUser(char)), tostring(st.combat ~= nil), applied, #(st.hand or {})))
+    end
+    print(n .. " character(s) with deck state")
+end)
+
 Ext.RegisterConsoleCommand("arcanatest", function()
     Tests.Run()
 end)

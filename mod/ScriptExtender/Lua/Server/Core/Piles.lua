@@ -13,7 +13,11 @@ end
 function P.BuildDeck(st)
     local deck = {}
     for _, id in ipairs(U.SortedKeys(st.list)) do
-        for _ = 1, st.list[id] do deck[#deck + 1] = id end
+        -- a card the character cannot cast right now (the weapon it came with is not equipped)
+        -- stays on the list but out of this fight's deck; no `available` means nothing to filter
+        if st.available == nil or st.available[id] then
+            for _ = 1, st.list[id] do deck[#deck + 1] = id end
+        end
     end
     st.deck = U.Shuffle(deck, P.rand)
 end
