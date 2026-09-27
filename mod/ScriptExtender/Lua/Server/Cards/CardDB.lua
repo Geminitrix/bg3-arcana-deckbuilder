@@ -63,20 +63,13 @@ D.cards = {
     ["Target_Arcana_Card_Spell_MaliciousWhispers"] = { aspect = "Deceiver", cost = 1 },
     ["Shout_Arcana_Card_Spell_HowlOfTheDead"] = { aspect = "Eternal", cost = 1 },
 
-    -- Reaction activation cards. The resource is given back by the spell's own SpellProperties,
-    -- so the console edition needs none of this; the Lua only decides when to zero it.
-    ["Shout_Arcana_Card_Passive_GaleDeflection"] = {
-        aspect = "Unbound", cost = 2, keywords = { Unique = true },
-        reaction = { resource = "ArcanaReactGaleDeflection" },
-    },
-    ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = {
-        aspect = "Deceiver", cost = 2, keywords = { Unique = true },
-        reaction = { resource = "ArcanaReactInstinctiveCharm" },
-    },
-    ["Shout_Arcana_Card_Passive_HollowImage"] = {
-        aspect = "Deceiver", cost = 3, keywords = { Unique = true },
-        reaction = { resource = "ArcanaReactHollowImage", perTurn = true },
-    },
+    -- Reaction cards. Since 2026-09-27 everything lives in the stats, so the console edition
+    -- behaves the same: the card applies a <REACTION>_READY status (until the long rest, and removed
+    -- when combat ends) that grants the reaction's passive, and refills one charge. The progression no
+    -- longer grants these passives, and the Lua that used to zero the charges in combat is gone.
+    ["Shout_Arcana_Card_Passive_GaleDeflection"] = { aspect = "Unbound", cost = 2, keywords = { Unique = true } },
+    ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = { aspect = "Deceiver", cost = 2, keywords = { Unique = true } },
+    ["Shout_Arcana_Card_Passive_HollowImage"] = { aspect = "Deceiver", cost = 3, keywords = { Unique = true } },
 
     -- Spells with a cooldown of their own: a second copy would only ever be drawn dead.
     ["Target_Arcana_Card_Spell_MentalPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },

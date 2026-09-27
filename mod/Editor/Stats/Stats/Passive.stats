@@ -153,7 +153,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_IllusorySelf" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Arcana_Reaction_HollowImage);ActionResource(ArcanaReactHollowImage,1,0)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -162,6 +162,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_HollowImage_EX" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="647b97ed-f48a-41c0-a3f4-3169c0b95fb7" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h559873e2g715cg7dc4g1136g7eff482bacb8" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Arcana_Reaction_HollowImage_EX);ActionResource(ArcanaReactHollowImage,1,0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06794c35g0d0bg171bg257ag41dd2850a171" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
@@ -175,7 +176,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf220ce90g2b6eg3f2cg1707gbbc0a6ea2bd3" version="2" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_InstinctiveCharm" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Arcana_Reaction_InstinctiveCharm);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
@@ -473,7 +474,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hf3063b7ag3bb9ga30cgc8eagde1503cab63f" version="5" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DeflectMissiles" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Polymorph_BeastShape')):UnlockInterrupt(Interrupt_Arcana_Reaction_GaleDeflection);UnlockInterrupt(Interrupt_Arcana_Reaction_GaleDeflection_Return);" />
@@ -489,6 +490,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_GaleDeflection_EX" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4d1f21f-0713-4f77-849e-8b6bc720e58e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a2b0510g387bg714agb0begdc10098a8648" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h109466bcgc911g6210gc459g04b8e29932cc" version="6" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('SG_Polymorph_BeastShape')):UnlockInterrupt(Interrupt_Arcana_Reaction_GaleDeflection_EX);UnlockInterrupt(Interrupt_Arcana_Reaction_GaleDeflection_EX_Return);" />

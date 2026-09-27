@@ -1,7 +1,6 @@
 local T = Req("Tests/T.lua")
 local U = Req("Server/Core/Util.lua")
 local D = Req("Server/Cards/CardDB.lua")
-local R = Req("Server/Economy/Reactions.lua")
 
 return {
     name = "CardDB",
@@ -36,15 +35,13 @@ return {
             T.eq(D.CostOf("Target_Arcana_Card_Spell_MaliciousWhispers"), 1)
             T.eq(D.CostOf("Shout_Arcana_Card_Spell_HowlOfTheDead"), 1)
         end,
-        ["Every reaction card names a resource and is Unique"] = function()
-            local seen = 0
-            for _, e in ipairs(R.Each()) do
-                seen = seen + 1
-                T.ok(type(e.reaction.resource) == "string", e.id .. " has a resource")
-                T.eq(U.Category(e.id), "Passive", e.id)
-                T.eq(D.Has(e.id, "Unique"), true, e.id .. " is Unique")
+        ["Every reaction card is a Passive card and Unique"] = function()
+            for _, id in ipairs({ "Shout_Arcana_Card_Passive_GaleDeflection",
+                                  "Shout_Arcana_Card_Passive_InstinctiveCharm",
+                                  "Shout_Arcana_Card_Passive_HollowImage" }) do
+                T.eq(U.Category(id), "Passive", id)
+                T.eq(D.Has(id, "Unique"), true, id .. " is Unique")
             end
-            T.eq(seen, 3, "three reactions")
         end,
         ["Has reads keyword flags"] = function()
             T.eq(D.Has("Shout_Arcana_Card_Spell_DEBUG_Fated", "Fated"), true)

@@ -460,11 +460,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_HollowImage" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Illusion" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,ArcanaReactHollowImage,1,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HOLLOW_IMAGE_READY,100,-1);RestoreResource(SELF,ArcanaReactHollowImage,1,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_IllusorySelf" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b552d18gcb30g49d6g9df6g4d6005a75093" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5fcbba23g4ed9g4fc2g891eg4b6214a32e28" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5fcbba23g4ed9g4fc2g891eg4b6214a32e28" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HOLLOW_IMAGE_READY,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -475,7 +476,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('ArcanaReactHollowImage',1,0,false,false,context.Source)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HOLLOW_IMAGE_READY',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -514,11 +515,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_InstinctiveCharm" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,ArcanaReactInstinctiveCharm,1,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,INSTINCTIVE_CHARM_READY,100,-1);RestoreResource(SELF,ArcanaReactInstinctiveCharm,1,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_InstinctiveCharm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h512e887aga2deg4374ga545ge1fc342420b4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfae5f193gdcc7g46e5g8ec7gbf766b704871" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfae5f193gdcc7g46e5g8ec7gbf766b704871" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INSTINCTIVE_CHARM_READY,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -529,7 +531,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('ArcanaReactInstinctiveCharm',1,0,false,false,context.Source)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not (HasStatus('INSTINCTIVE_CHARM_READY',context.Source) and HasActionResource('ArcanaReactInstinctiveCharm',1,0,false,false,context.Source))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -582,7 +584,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8219083g6cb4gb9fdg03b0g4b24d8fd6ff5" version="3" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h843fe5ebg87b1g4a71gbfe2g02adfaa7ae98" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h843fe5ebg87b1g4a71gbfe2g02adfaa7ae98" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(LUNAR_WISP_BLESSING,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
@@ -720,7 +722,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Counterspell" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c6805e2gef72gde13g0ac7g7d9b19112b25" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf96ee53g1ac2g4ec1gb730g8d495bf1a00c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf96ee53g1ac2g4ec1gb730g8d495bf1a00c" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MIRRORED_SPELL_ON,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
@@ -1533,7 +1535,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Aid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e8d2eaag1698g31b4g57d9g1a725571a841" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdca4f038gd1fdg32a6g1364g118707c3d893" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdca4f038gd1fdg32a6g1364g118707c3d893" version="5" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(ClassLevel(Arcana))" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ASTRAL_FORTITUDE,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Aid_L1to3" />
@@ -1549,7 +1551,7 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="96a51ac8-2e7e-4718-bb62-dcfd18964a02" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b50decc3-5f93-4467-8d3a-aa8b01fc915e" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="a908e49b-b59f-4a20-b487-e25ae198d926" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);ClassLevel(Arcana)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1794,11 +1796,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_GaleDeflection" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,ArcanaReactGaleDeflection,1,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,GALE_DEFLECTION_READY,100,-1);RestoreResource(SELF,ArcanaReactGaleDeflection,1,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_DeflectMissile" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h718d26f3g2c29g4039ga915gb9dd92f85bd8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf77f8e6egab61g4904gb290gb7bc67941ee7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf77f8e6egab61g4904gb290gb7bc67941ee7" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GALE_DEFLECTION_READY,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -1809,7 +1812,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('ArcanaReactGaleDeflection',1,0,false,false,context.Source)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not (HasStatus('GALE_DEFLECTION_READY',context.Source) and HasActionResource('ArcanaReactGaleDeflection',1,0,false,false,context.Source))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

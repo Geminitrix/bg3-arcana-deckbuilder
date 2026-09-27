@@ -1,5 +1,5 @@
 -- Read and write any action resource by name. Threads.lua keeps its own fast path for
--- ArcanaThread; this is for the reaction gates, which are one-off lookups.
+-- ArcanaThread; this is for the one-off lookups (the hand counter).
 local Rs = { io = {} }
 
 local uuids = {}

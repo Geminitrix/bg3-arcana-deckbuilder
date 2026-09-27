@@ -13,7 +13,6 @@ local SUITES = {
     "Tests/SyncTest.lua",
     "Tests/FlowTest.lua",
     "Tests/KeywordsTest.lua",
-    "Tests/ReactionsTest.lua",
     "Tests/OverheadTest.lua",
     "Tests/HandCardsTest.lua",
     "Tests/CombatResourcesTest.lua",

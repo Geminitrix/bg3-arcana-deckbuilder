@@ -703,7 +703,6 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Wizard_HypnoticGaze" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Wizard_HypnoticGaze" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="a71e9779-ab72-47d8-b8d7-e0f16e1d0d9b" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6693458aga404g29cdg6025g75ddd2960218" version="1" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_CHARM, 100, 0)" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
@@ -1272,7 +1271,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('MIRROR_DISTORTION_HELPER');" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he4a289bcg086cg8355g75bcg04de11ade4d8" version="1" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="CanStand('') and not Self()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1289,7 +1288,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19148393g43edg142eg8af8gc41f2c6b60f9" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="Character() and not Self() and not Dead()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -1447,7 +1446,7 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="15" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_Gen_Daylight" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_Daylight_L3" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DIFFICULT_TERRAIN,100,2);ApplyStatus(FAERIE_FIRE,100,2)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FAERIE_FIRE,100,2);ApplyStatus(DIFFICULT_TERRAIN,100,2)" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
