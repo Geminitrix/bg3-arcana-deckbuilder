@@ -252,7 +252,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1db9d360g745dg3fd1g0586g868dfb79601e" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebe50e8bg943eg9487gb9c1g7e016fb544ab" version="8" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsDeceiverOneTargetSpell(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsMirroredSelfSpell(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow());" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SplitEnchantment" />
       </fields>
     </stat_object>

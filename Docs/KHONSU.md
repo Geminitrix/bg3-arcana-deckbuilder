@@ -248,7 +248,7 @@ A 60+ term `SpellId(...) | SpellId(...) | …` expression inside `UnlockSpellVar
 suspected of crashing and stopped crashing once split into per-subclass functions combined by a small
 5-term combiner. That test was confounded by other simultaneous changes and the `BoostConditions`
 finding above is the likelier cause in that case — so **don't treat length alone as a proven root
-cause**. Splitting is still good practice for readability. See `IsDeceiverOneTargetSpell.khn`.
+cause**. Splitting is still good practice for readability. See `IsMirroredSelfSpell.khn`.
 
 ### Schema-valid ≠ works
 
@@ -265,11 +265,11 @@ differently. Passing the schema is necessary, not sufficient.
 
 | File | Function | Definition |
 |---|---|---|
-| `IsArcanaSpell.khn` | `IsArcanaSpell(entity)` | `HasSpellSpellLevel() & HasSpellFlag(SpellFlags.Spell) & HasUseCosts('ArcaneEssence', true, entity)` — defaults `entity` to `context.Source` |
-| `IsArcanaAttackSpell.khn` | `IsArcanaAttackSpell()` | `IsArcanaSpell() & HasStringInSpellRoll('Attack')` |
-| `IsArcanaSaveSpell.khn` | `IsArcanaSaveSpell()` | `IsArcanaSpell() & (HasStringInSpellRoll('SavingThrow') \| HasStringInFunctorConditions('SavingThrow'))` |
+| `IsArcanaSpell.khn` | `IsArcanaSpell()` | Any class spell: its conditions carry the card marker `ARCANA_IS_CARD` or the `ARCANA_IS_SPELL` marker (non-card damage spells and utilities aimed at a creature or object). Used by the SIGIL detonation and by `IsMirroredSelfSpell` |
+| `IsArcanaAttackSpell.khn` | `IsArcanaAttackSpell()` | `IsCardSpell() & HasStringInSpellRoll('Attack')` |
+| `IsArcanaSaveSpell.khn` | `IsArcanaSaveSpell()` | `IsCardSpell() & (HasStringInSpellRoll('SavingThrow') \| HasStringInFunctorConditions('SavingThrow'))` |
 | `IsArcanaCantrip.khn` | `IsArcanaCantrip()` | Fixed `SpellId(...)` OR-chain over the 8 class cantrips |
-| `IsDeceiverOneTargetSpell.khn` | `IsDeceiverOneTargetSpell()` | 9-term `SpellId(...)` OR-chain; drives **Mirrored Self** |
+| `IsMirroredSelfSpell.khn` | `IsMirroredSelfSpell()` | `IsArcanaSpell()` + Target or Projectile type + no area + no Summon functor, read from spell properties like vanilla Twinned (no list, so upcast variants count); drives **Mirrored Self**. Replaced `IsDeceiverOneTargetSpell` (a `SpellId` list) on 2026-09-27 |
 | `UseSpellSlot.khn` | `UseSpellSlot()` | Spell that costs a SpellSlot / WarlockSpellSlot / SpellSlotsGroup; drives **Mirrored Spell** |
 
 > ⚠️ Known defect: `IsArcanaCantrip()` lists `SpellId('Target_Friends')`, but the mod's cantrip is

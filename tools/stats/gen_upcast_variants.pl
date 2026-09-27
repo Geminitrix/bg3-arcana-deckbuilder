@@ -81,13 +81,28 @@ for my $f (bsd_glob("$base/Editor/Mods/$mod/Stats/SpellData/*.stats")) {
 # ---------- 3. limpar variantes antigas ----------
 # Nada é gravado antes do fim: uma gravação parcial deixa metade dos arquivos com as variantes
 # novas e metade sem, e foi exatamente assim que eu truncei três .stats numa tentativa anterior.
+#
+# CAMPOS EDITADOS A MAO SOBREVIVEM. O gerador e dono so do que ele escreve (SpellType, using,
+# RootSpellID, PowerLevel e UseCosts no .txt; UUID, Name, Using, RootSpellID, PowerLevel e UseCosts no
+# .stats). Qualquer outro campo que alguem ponha numa variante -- duracao de status, numero de alvos
+# por nivel de upcast, como o jogo base faz nas dele -- e guardado aqui e escrito de volta na variante
+# recriada, dos dois lados. Pedido do usuario em 2026-09-27.
 my %pending;
 my $removed = 0;
+my (%keepTxt, %keepStats, %generated, %generatedKey);
+my %OWN_TXT   = map { $_ => 1 } qw(SpellType RootSpellID PowerLevel UseCosts);
+my %OWN_STATS = map { $_ => 1 } qw(UUID Name Using RootSpellID PowerLevel UseCosts);
 for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
     open my $fh,'<:raw',$f or die $!; local $/; my $s=<$fh>; close $fh; my $o=$s;
     my @keep;
     for my $b (split /(?=new entry )/, $s) {
-        if ($b =~ /^new entry "([^"]+)"/ && $1 =~ $IS_VARIANT && $b =~ /data "RootSpellID"/) { $removed++; next }
+        # o nome sai de $1 ANTES do proximo regex, que zera o $1 -- armadilha que ja pegou o lint
+        my ($v) = $b =~ /^new entry "([^"]+)"/;
+        if (defined $v && $v =~ $IS_VARIANT && $b =~ /data "RootSpellID"/) {
+            my @extra = grep { /^data "(\w+)"/ && !$OWN_TXT{$1} } map { s/\r$//r } split /\n/, $b;
+            $keepTxt{$v} = \@extra if @extra;
+            $removed++; next;
+        }
         push @keep, $b;
     }
     $s = join '', @keep;
@@ -102,7 +117,12 @@ for my $f (bsd_glob("$base/Editor/Mods/$mod/Stats/SpellData/*.stats")) {
     if (@chunks && $chunks[-1] =~ s{(</stat_object>)(.*)$}{$1}s) { $tail = $2 }
     my @keep;
     for my $b (@chunks) {
-        if ($b =~ /<field name="Name"[^>]*value="([^"]+)"/ && "_$1" =~ $IS_VARIANT && $b =~ /name="RootSpellID"/) { next }
+        my ($v) = $b =~ /<field name="Name"[^>]*value="([^"]+)"/;
+        if (defined $v && "_$v" =~ $IS_VARIANT && $b =~ /name="RootSpellID"/) {
+            my @extra = grep { /<field name="(\w+)"/ && !$OWN_STATS{$1} } map { s/\r$//r } split /\n/, $b;
+            $keepStats{$v} = \@extra if @extra;
+            next;
+        }
         push @keep, $b;
     }
     $s = join('', @keep) . $tail;
@@ -125,7 +145,8 @@ for my $n (sort keys %plan) {
             qq{new entry "${n}_$L"}, q{type "SpellData"}, qq{data "SpellType" "$sptype"},
             qq{using "$n"},
             qq{data "RootSpellID" "$n"}, qq{data "PowerLevel" "$L"},
-            qq{data "UseCosts" "$cost"}) . "\n\n";
+            qq{data "UseCosts" "$cost"}, @{ $keepTxt{"${n}_$L"} || [] }) . "\n\n";
+        $generated{"${n}_$L"} = 1;
         if (my $bu = $baseUuid{$key}) {
             my $sf = $statsFileOf{$key};
             $statsAdd{$sf} .=
@@ -136,44 +157,22 @@ for my $n (sort keys %plan) {
               . qq{        <field name="RootSpellID" type="StringTableFieldDefinition" value="$n" />\n}
               . qq{        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="$L" />\n}
               . qq{        <field name="UseCosts" type="StringTableFieldDefinition" value="$cost" />\n}
+              . join('', map { "$_\n" } @{ $keepStats{"${key}_$L"} || [] })
               . qq{      </fields>\n    </stat_object>\n};
+            $generatedKey{"${key}_$L"} = 1;
         }
         push @log, sprintf("  %-50s nivel %s", "${n}_$L", $L);
     }
 }
 
-# ---------- 4b. reescrever o helper do Mirrored Charm ----------
-# SpellId() e comparacao EXATA: o motor nao resolve a raiz, e o proprio vanilla enumera cada nivel na
-# mao (Target_Polymorph, _5, _6). Sem isso o Mirrored Charm para de valer assim que o jogador conjura
-# num nivel acima -- e do personagem 11 em diante ele nunca mais vale, porque so a variante _6 e
-# pagavel. A lista-fonte sao as cartas base abaixo; as variantes saem daqui, sempre em dia.
-my @DECEIVER_ONE_TARGET = qw(
-    Target_Arcana_Card_Spell_MaliciousWhispers
-    Target_Arcana_Util_Friends
-    Target_Arcana_Card_Spell_EtherealChains
-    Target_Arcana_Created_MimicEtherealChains
-    Target_Arcana_Card_Spell_MentalPrison
-    Target_Arcana_Card_Spell_Terrify
-    Target_Arcana_Card_Spell_Marionette
-    Projectile_Arcana_Card_Spell_SigilofMalice
-    Projectile_Arcana_Created_MimicSigilofMalice
-);
-{
-    my @ids;
-    for my $n (@DECEIVER_ONE_TARGET) {
-        push @warn, "  $n: na lista do Mirrored Charm mas nao existe nos stats" unless $fileOf{$n} || !exists $plan{$n};
-        push @ids, $n;
-        push @ids, "${n}_$_" for ($plan{$n} ? ($plan{$n}{level}+1 .. $MAXSLOT) : ());
-    }
-    my $khn = "-- GERADO por gen_upcast_variants.pl a partir de \@DECEIVER_ONE_TARGET. Nao edite a mao:\n"
-            . "-- acrescente a carta base na lista do gerador e rode de novo.\n"
-            . "-- SpellId() compara o nome exato, entao cada variante de upcast precisa estar aqui.\n"
-            . "function IsDeceiverOneTargetSpell()\n    return "
-            . join(" |\n    ", map { "SpellId('$_')" } @ids) . "\n end\n";
-    $khn =~ s/\n end\n$/\nend\n/;
-    $pending{"$base/Mods/$mod/Scripts/thoth/helpers/IsDeceiverOneTargetSpell.khn"} = $khn;
-    $khnNote = sprintf("IsDeceiverOneTargetSpell.khn reescrito com %d SpellId", scalar @ids);
-}
+# (4b, o helper IsDeceiverOneTargetSpell.khn com a lista de SpellId do Mirrored Charm, saiu em
+# 2026-09-27: o Mirrored Self passou a escolher as magias por propriedade, em IsMirroredSelfSpell.khn,
+# como o Twinned do jogo base, e nao precisa mais de lista nem de variante enumerada.)
+
+# variante que era preservada e nao foi gerada de novo: a carta mudou de nivel ou de nome
+for my $v (sort keys %keepTxt)   { push @warn, "  campos editados em $v se perderam: a variante nao existe mais" unless $generated{$v} }
+for my $v (sort keys %keepStats) { push @warn, "  campos editados em $v (Editor) se perderam: a variante nao existe mais" unless $generatedKey{$v} }
+$khnNote = sprintf("%d variante(s) com campos editados preservados", scalar keys %keepTxt);
 
 # ---------- 4c. tabela de familias para o Osiris ----------
 # O evento de conjurar (UsingSpell, CastSpell, UsingSpellOnTarget) entrega o nome da VARIANTE que o

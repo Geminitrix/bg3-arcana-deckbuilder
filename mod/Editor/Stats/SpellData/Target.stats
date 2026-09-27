@@ -297,7 +297,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_LOCK,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Item() and not Tagged('ARCANE_LOCK_BLOCK') and (HasActionType(ActionType.OpenClose) or HasActionType(ActionType.Teleport) or HasActionType(ActionType.Door)) and not HasStatus('ARCANE_LOCK')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Item() and not Tagged('ARCANE_LOCK_BLOCK') and (HasActionType(ActionType.OpenClose) or HasActionType(ActionType.Teleport) or HasActionType(ActionType.Door)) and not HasStatus('ARCANE_LOCK')) and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ArcaneLock" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ab357dcg7e62g0fceg3497g07facea10621" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5cceeefag4995gfef9g6db4g25087901b2f5" version="1" />
@@ -325,7 +325,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('ARCANE_LOCK')):RemoveStatus(ARCANE_LOCK);Unlock();" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Item() and (Locked() or Tagged('KNOCK_TARGET'));" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Item() and (Locked() or Tagged('KNOCK_TARGET'))) and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ArcaneLock_Dismiss" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d5d8023ga13fg27dag028ega28b316272ba" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5b993aag9c78g8fc2gcaa9g944b27f7f5d3" version="3" />
@@ -353,7 +353,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() or Item();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() or Item()) and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DispelMagic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3a63fa8gb0f0g2851g760bg8934504d9510" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h856ee80ag4765gbdefge1e2geb9189f59307" version="3" />
@@ -1218,7 +1218,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dbb9d174-4f36-468a-a362-1dce688bd284" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Util_Friends" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Self();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Self() and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Friends" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba7df2c8gc7c1gedf4g6be8g6d60752f43fd" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d0c74dag8bfbgd0fege79bgbd32c751cb1a" version="5" />
@@ -2671,7 +2671,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:ApplyStatus(SPEAK_WITH_DEAD,100,0);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Tagged('CORPSE_SPOKEN') and not Tagged('BLOCK_SPEAK_WITH_DEAD') and ((FreshCorpse() and not Tagged('BEAST') and not Tagged('UNDEAD') and not Player()) or Tagged('ALLOW_SPEAK_WITH_DEAD')) and not HasStatus('SILENCED')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(not Tagged('CORPSE_SPOKEN') and not Tagged('BLOCK_SPEAK_WITH_DEAD') and ((FreshCorpse() and not Tagged('BEAST') and not Tagged('UNDEAD') and not Player()) or Tagged('ALLOW_SPEAK_WITH_DEAD')) and not HasStatus('SILENCED')) and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_SpeakWithDead" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h202e0218g0ecbgdbc9g3a3cg066f57b5e6a5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c06a80egc3cfg1039geac5g4428834988db" version="1" />

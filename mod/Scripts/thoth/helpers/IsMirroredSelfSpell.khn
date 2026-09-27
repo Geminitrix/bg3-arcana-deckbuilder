@@ -1,0 +1,14 @@
+-- What Mirrored Self twins: any Arcana spell aimed at creatures or objects, of any subclass.
+-- Read from the spell's own properties, the way the base game's Twinned Spell does
+-- (TwinnedTargetSpellCheck / TwinnedProjectileSpellCheck in CommonConditions.khn), so an upcast
+-- variant, a new card or a marked utility counts without being listed anywhere. It replaced
+-- IsDeceiverOneTargetSpell, a list of names: SpellId() compares the exact name, and the list lost
+-- the icon glow on the cards that have upcast variants.
+-- Unlike Twinned there is no "only one target" limit: a spell that gains targets by upcasting still
+-- gets +1 (ModifyNumberOfTargets(AdditiveBase,...) adds, it does not override).
+function IsMirroredSelfSpell()
+    return IsArcanaSpell()
+        & (SpellTypeIs(SpellType.Target) | SpellTypeIs(SpellType.Projectile))
+        & ~AreaRadiusGreaterThan(0)
+        & ~HasFunctor(StatsFunctorType.Summon)
+end
