@@ -133,7 +133,6 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,1,6)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneShards;Arcana_Passive_ArcaneShards_Remove"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
                     <attribute id="UUID" type="guid" value="55b271da-8cf2-4cb8-90cf-a397aee710cf"/>
@@ -735,7 +734,6 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ImmortalBlood"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(49694d21-16e7-4637-a162-1a60bfc31d1b,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
@@ -751,7 +749,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="5"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;InescapableDestruction"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(b1299dd4-7dd8-49d4-bfbd-c52260802959,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
@@ -767,8 +765,8 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="7"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_DarknessRise;Arcana_Passive_Unbroken"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(6cc7bce7-943c-4b5c-b4b4-e5144917adf1,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
                     <attribute id="UUID" type="guid" value="fca3a169-ac9f-4845-82bc-8c0a6683aa24"/>
                 </node>
@@ -797,7 +795,6 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="11"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="InuredtoUndeath"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(b295c7bf-22ba-4876-a273-edc0d7cee239,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>

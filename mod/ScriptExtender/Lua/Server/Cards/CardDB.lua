@@ -54,7 +54,8 @@ D.cards = {
     ["Target_Arcana_Created_MimicEtherealChains"] = { aspect = "Deceiver", cost = 1 },
     ["Shout_Arcana_Created_Withdraw"] = { aspect = "Deceiver", cost = 1 },
     ["Shout_Arcana_Created_MimicWithdraw"] = { aspect = "Deceiver", cost = 1 },
-    ["Zone_Arcana_Created_FinalSpark_Recreate"] = { aspect = "Starchild", cost = 2 },
+    -- level 1 and no slot since 2026-09-27: one Thread in combat, free outside
+    ["Zone_Arcana_Created_FinalSpark_Recreate"] = { aspect = "Starchild", cost = 1 },
     ["Target_Arcana_Created_ZephyrStrike"] = { aspect = "Unbound", cost = 1 },
     ["Shout_Arcana_Created_Reweave"] = { cost = 0 },
 
@@ -90,6 +91,22 @@ D.cards = {
     ["Shout_Arcana_Card_Passive_LunarWisp"] = {
         aspect = "Starchild", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
+    ["Shout_Arcana_Card_Passive_ImmortalBlood"] = {
+        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Shout_Arcana_Card_Passive_InescapableDestruction"] = {
+        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Shout_Arcana_Card_Passive_DarknessRise"] = {
+        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Shout_Arcana_Card_Passive_Unbroken"] = {
+        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Shout_Arcana_Card_Passive_InuredToUndeath"] = {
+        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
+    },
+    ["Target_Arcana_Card_Spell_DeathWard"] = { aspect = "Eternal", keywords = { Unique = true } },
 
     ["Shout_Arcana_Card_Spell_DEBUG_Fated"] = { keywords = { Fated = true } },
     ["Shout_Arcana_Card_Spell_DEBUG_Fleeting"] = { keywords = { Fleeting = true } },

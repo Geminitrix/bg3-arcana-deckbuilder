@@ -271,14 +271,21 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="49694d21-16e7-4637-a162-1a60bfc31d1b" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 3" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp;Shout_Arcana_Card_Spell_Indestructible" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathsGrasp;Shout_Arcana_Card_Spell_Indestructible;Shout_Arcana_Card_Passive_ImmortalBlood" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b1299dd4-7dd8-49d4-bfbd-c52260802959" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 5" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard;Shout_Arcana_Card_Passive_InescapableDestruction" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cc7bce7-943c-4b5c-b4b4-e5144917adf1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 7" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_DarknessRise;Shout_Arcana_Card_Passive_Unbroken" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -292,7 +299,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b295c7bf-22ba-4876-a273-edc0d7cee239" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 11" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemorrhage" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemorrhage;Shout_Arcana_Card_Passive_InuredToUndeath" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">

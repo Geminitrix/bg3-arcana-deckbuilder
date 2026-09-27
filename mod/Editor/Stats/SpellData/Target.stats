@@ -48,15 +48,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="57d86d71-eefc-4646-8894-a4d3e365bfef" />
-        <field name="Name" type="NameTableFieldDefinition" value="DEBUG_InfiniteShards" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="437c34df-3066-49b8-ae10-03c8d77d3e11" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEBUG_INFINITE_SHARDS,100,-1);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h59c8c82dgc19dg7f6fgfdbfg305144a26e0d" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3057654b-d155-4131-923d-e12b847559ac" />
         <field name="Name" type="NameTableFieldDefinition" value="DEBUG_InfiniteSpells" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="437c34df-3066-49b8-ae10-03c8d77d3e11" />
@@ -2132,7 +2123,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DeathWard" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a342a42g1ffdg200fgff51ge630b4d9e977" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91f28c87g52b1g5bccg9ba6g7f8c47b3c9e1" version="3" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_DOWNED,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_DeathWard_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_DeathWard_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -2217,6 +2208,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e54ba44a-cfeb-48e6-bde0-258bc0c15553" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Hemoplague_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03dd6651-55fa-4a47-8cab-31a6a0104bf1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_BlindingSickness_5;Target_Arcana_Created_Hemoplague_FilthFever_5;Target_Arcana_Created_Hemoplague_FleshRot_5;Target_Arcana_Created_Hemoplague_Mindfire_5;Target_Arcana_Created_Hemoplague_Seizure_5;Target_Arcana_Created_Hemoplague_SlimyDoom_5" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
@@ -2227,6 +2219,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="88973dfc-c0dd-4333-9351-c1611a7b8c0b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Hemoplague_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03dd6651-55fa-4a47-8cab-31a6a0104bf1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_BlindingSickness_6;Target_Arcana_Created_Hemoplague_FilthFever_6;Target_Arcana_Created_Hemoplague_FleshRot_6;Target_Arcana_Created_Hemoplague_Mindfire_6;Target_Arcana_Created_Hemoplague_Seizure_6;Target_Arcana_Created_Hemoplague_SlimyDoom_6" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
@@ -2410,7 +2403,8 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;c0513845-6e0e-42e8-9a8c-baa5e2b6ead6,,;fbf20742-9dbf-475b-9ff5-42e4b08064ad,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="9723eb8f-4eed-434a-b802-6e7e732b2ff4" />
-        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="not Self();" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(,Necrotic);DealDamage(2d6,Cold);DealDamage(2d6,Acid)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2592,6 +2586,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1294914e-3e97-4544-a7c9-1bc9113618f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_BlindingSickness_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="473056bf-cd0c-4a01-be31-0ebc1b51cac0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_BlindingSickness" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ab1168f-3c83-4102-8c23-7a990cf5d549" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_BlindingSickness_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="473056bf-cd0c-4a01-be31-0ebc1b51cac0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_BlindingSickness" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FilthFever" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03dd6651-55fa-4a47-8cab-31a6a0104bf1" />
@@ -2609,6 +2625,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="75205bda-37f5-41f0-a3db-4895aaf5cc24" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FilthFever_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_FilthFever" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="48245587-066d-4a38-b92c-c63845ea40d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FilthFever_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_FilthFever" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5e3c5f78-aa7a-4994-a47f-48e4370e3fb5" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FleshRot" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
@@ -2618,6 +2656,28 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEMOPLAGUE_FLESH_ROT,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Contagion_FleshRot" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1fc55202gd9fag4890g523cg8d7d865a54a2" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7f819bd-e61c-4422-83f6-4757c88f207a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FleshRot_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5e3c5f78-aa7a-4994-a47f-48e4370e3fb5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_FleshRot" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b88bad63-bcfb-4237-b0d2-ec880f7ccb71" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_FleshRot_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5e3c5f78-aa7a-4994-a47f-48e4370e3fb5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_FleshRot" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2635,6 +2695,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6313e43-56c6-4cc1-bfc0-288e7ade6082" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_Mindfire_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="289ddc04-e41d-4b03-9ff2-fc6ef9bb4a8d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_Mindfire" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d6bc1d9-7b47-4bcd-8b35-c4348b163e02" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_Mindfire_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="289ddc04-e41d-4b03-9ff2-fc6ef9bb4a8d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_Mindfire" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2d325041-ea33-447a-a131-9c9f7f79fd6c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_Seizure" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
@@ -2648,6 +2730,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5434135-ef1a-4c9a-a72d-0295ef623815" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_Seizure_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d325041-ea33-447a-a131-9c9f7f79fd6c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_Seizure" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ff7491a-18ac-4d99-896d-a147e8ac8dce" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_Seizure_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2d325041-ea33-447a-a131-9c9f7f79fd6c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_Seizure" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="386ada52-3795-4a63-b0d6-85cddc686067" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_SlimyDoom" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5854ae5d-f40d-4a67-85b2-238f92aa974c" />
@@ -2657,6 +2761,28 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEMOPLAGUE_SLIMY_DOOM,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Contagion_SlimyDoom" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3dfc43bdgbac3g2d4dg8b5cg7422df118302" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55cfb665-a6cf-4f1a-95b5-8d191c095995" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_SlimyDoom_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="386ada52-3795-4a63-b0d6-85cddc686067" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_SlimyDoom" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="75ae8216-4785-4050-8daa-44446eb596fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_Hemoplague_SlimyDoom_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="386ada52-3795-4a63-b0d6-85cddc686067" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Hemoplague_6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Hemoplague_SlimyDoom" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

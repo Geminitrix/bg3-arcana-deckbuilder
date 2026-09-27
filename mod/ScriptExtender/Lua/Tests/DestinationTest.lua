@@ -75,10 +75,19 @@ return {
             T.eq(L.MaxCopies("Target_Arcana_Card_Spell_SolarFlare"), 3)
             T.eq(L.MaxCopies("Zone_Arcana_Card_Spell_FinalSpark"), 3)
         end,
-        ["Lunar Wisp: Unique, and played straight to the exile"] = function()
-            local id = "Shout_Arcana_Card_Passive_LunarWisp"
-            T.eq(L.MaxCopies(id), 1)
-            T.eq(D.PlayedTo(id, false), D.PILE_UNRAVEL)
+        ["Passive cards whose status lasts past the fight: Unique, and straight to the exile"] = function()
+            for _, id in ipairs({
+                "Shout_Arcana_Card_Passive_LunarWisp", "Shout_Arcana_Card_Passive_MirroredSpell",
+                "Shout_Arcana_Card_Passive_ImmortalBlood", "Shout_Arcana_Card_Passive_InescapableDestruction",
+                "Shout_Arcana_Card_Passive_DarknessRise", "Shout_Arcana_Card_Passive_Unbroken",
+                "Shout_Arcana_Card_Passive_InuredToUndeath",
+            }) do
+                T.eq(L.MaxCopies(id), 1, id)
+                T.eq(D.PlayedTo(id, false), D.PILE_UNRAVEL, id)
+            end
+        end,
+        ["Death Ward is Unique"] = function()
+            T.eq(L.MaxCopies("Target_Arcana_Card_Spell_DeathWard"), 1)
         end,
         ["A conjured card running out: the card's pile beats the default"] = function()
             local st = combatState()

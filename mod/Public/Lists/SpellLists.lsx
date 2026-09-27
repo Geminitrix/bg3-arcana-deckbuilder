@@ -181,13 +181,18 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_DeathsGrasp;Shout_Arcana_Card_Spell_Indestructible"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_DeathsGrasp;Shout_Arcana_Card_Spell_Indestructible;Shout_Arcana_Card_Passive_ImmortalBlood"/>
                     <attribute id="UUID" type="guid" value="49694d21-16e7-4637-a162-1a60bfc31d1b"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_DeathWard"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_DeathWard;Shout_Arcana_Card_Passive_InescapableDestruction"/>
                     <attribute id="UUID" type="guid" value="b1299dd4-7dd8-49d4-bfbd-c52260802959"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Eternal Level 7"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_DarknessRise;Shout_Arcana_Card_Passive_Unbroken"/>
+                    <attribute id="UUID" type="guid" value="6cc7bce7-943c-4b5c-b4b4-e5144917adf1"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 9"/>
@@ -196,7 +201,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 11"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Hemorrhage"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Hemorrhage;Shout_Arcana_Card_Passive_InuredToUndeath"/>
                     <attribute id="UUID" type="guid" value="b295c7bf-22ba-4876-a273-edc0d7cee239"/>
                 </node>
                 <node id="SpellList">

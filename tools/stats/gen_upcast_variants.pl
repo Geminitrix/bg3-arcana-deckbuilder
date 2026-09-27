@@ -43,11 +43,12 @@ sub uuid {
 }
 
 # ---------- 1. o que gerar, lido do .txt ----------
-my (%plan, %fileOf, %allRoots);
+my (%plan, %fileOf, %allRoots, %blk, %fileAny);
 for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
     open my $fh,'<:raw',$f or die "$f: $!"; local $/; my $s=<$fh>; close $fh;
     for my $b (split /(?=new entry )/, $s) {
         next unless $b =~ /^new entry "([^"]+)"/; my $n = $1;
+        $blk{$n} = $b; $fileAny{$n} = $f;
         next unless $n =~ $WANTS_VARIANTS;
         next if $n =~ $IS_VARIANT;                       # nunca gerar variante de variante
         $allRoots{$n} = 1;                               # toda carta entra na tabela do Osiris
@@ -62,6 +63,27 @@ for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
         next unless defined $l && $l =~ /^[1-9]$/ && $l < $MAXSLOT;
         $plan{$n} = { level => $l, usecosts => $u };
         $fileOf{$n} = $f;
+    }
+}
+
+# ---------- 1b. containers com upcast ----------
+# O jogo base faz assim (Target_EnhanceAbility): a variante do container, "_3", lista as variantes
+# dos filhos, "..._BearsEndurance_3", e cada filho ganha a propria "_3", com SpellContainerID apontando
+# para o container "_3" e o custo do nivel 3. Antes a variante do container herdava a lista dos filhos
+# BASE, que apontam para o container base -- e o Hemoplague abria vazio (2026-09-27).
+sub resolved_field { my ($n, $k) = @_; my $i = 0;
+    while ($n && $i++ < 10) { return undef unless $blk{$n};
+        return $1 if $blk{$n} =~ /data "$k" "([^"]*)"/; ($n) = $blk{$n} =~ /using "([^"]+)"/ } undef }
+my (%childLevels);
+for my $n (sort keys %plan) {
+    my $cs = resolved_field($n, 'ContainerSpells');
+    next unless defined $cs && $cs =~ /\S/;
+    my @kids = grep { length } split /;/, $cs;
+    for my $c (@kids) {
+        unless ($blk{$c}) { push @{ $plan{$n}{missing} }, $c; next }
+        if ($plan{$c}) { push @{ $plan{$n}{ownPlan} }, $c; next }   # filho com variante propria: nao mexer
+        push @{ $plan{$n}{children} }, $c;
+        $childLevels{$c} = [ $plan{$n}{level}+1 .. $MAXSLOT ];
     }
 }
 
@@ -90,8 +112,8 @@ for my $f (bsd_glob("$base/Editor/Mods/$mod/Stats/SpellData/*.stats")) {
 my %pending;
 my $removed = 0;
 my (%keepTxt, %keepStats, %generated, %generatedKey);
-my %OWN_TXT   = map { $_ => 1 } qw(SpellType RootSpellID PowerLevel UseCosts);
-my %OWN_STATS = map { $_ => 1 } qw(UUID Name Using RootSpellID PowerLevel UseCosts);
+my %OWN_TXT   = map { $_ => 1 } qw(SpellType RootSpellID PowerLevel UseCosts ContainerSpells SpellContainerID);
+my %OWN_STATS = map { $_ => 1 } qw(UUID Name Using RootSpellID PowerLevel UseCosts ContainerSpells SpellContainerID);
 for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
     open my $fh,'<:raw',$f or die $!; local $/; my $s=<$fh>; close $fh; my $o=$s;
     my @keep;
@@ -131,37 +153,50 @@ for my $f (bsd_glob("$base/Editor/Mods/$mod/Stats/SpellData/*.stats")) {
 
 # ---------- 4. gerar ----------
 my (%txtAdd, %statsAdd, @log, @warn, $khnNote);
+my $TYPES = qr/^(Target|Shout|Projectile|Zone|Teleportation)_/;
+# uma variante, dos dois lados. $extra: campos de container, como [nome, valor]
+sub emit_variant { my ($n, $L, $cost, @extra) = @_;
+    (my $key = $n) =~ s/$TYPES//;
+    my ($sptype) = $n =~ $TYPES;
+    unless ($sptype) { push @warn, "  $n: nao consegui deduzir o SpellType"; return }
+    unless ($fileAny{$n}) { push @warn, "  $n: nao achei no .txt"; return }
+    unless ($baseUuid{$key}) { push @warn, "  $n sem UUID no Editor -- variante so no .txt"; }
+    # O SpellType vai explicito e antes do `using`, como o vanilla escreve em 2276 de 2276
+    # variantes. Herdar pelo `using` parece funcionar, mas nenhuma variante do jogo base faz isso.
+    $txtAdd{$fileAny{$n}} .= join("\n",
+        qq{new entry "${n}_$L"}, q{type "SpellData"}, qq{data "SpellType" "$sptype"},
+        qq{using "$n"},
+        (map { qq{data "$_->[0]" "$_->[1]"} } @extra),
+        qq{data "RootSpellID" "$n"}, qq{data "PowerLevel" "$L"},
+        qq{data "UseCosts" "$cost"}, @{ $keepTxt{"${n}_$L"} || [] }) . "\n\n";
+    $generated{"${n}_$L"} = 1;
+    if (my $bu = $baseUuid{$key}) {
+        my $sf = $statsFileOf{$key};
+        $statsAdd{$sf} .=
+            qq{    <stat_object is_substat="false">\n      <fields>\n}
+          . qq{        <field name="UUID" type="IdTableFieldDefinition" value="}.uuid("${key}_$L").qq{" />\n}
+          . qq{        <field name="Name" type="NameTableFieldDefinition" value="${key}_$L" />\n}
+          . qq{        <field name="Using" type="BaseClassTableFieldDefinition" value="$bu" />\n}
+          . join('', map { qq{        <field name="$_->[0]" type="StringTableFieldDefinition" value="$_->[1]" />\n} } @extra)
+          . qq{        <field name="RootSpellID" type="StringTableFieldDefinition" value="$n" />\n}
+          . qq{        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="$L" />\n}
+          . qq{        <field name="UseCosts" type="StringTableFieldDefinition" value="$cost" />\n}
+          . join('', map { "$_\n" } @{ $keepStats{"${key}_$L"} || [] })
+          . qq{      </fields>\n    </stat_object>\n};
+        $generatedKey{"${key}_$L"} = 1;
+    }
+    push @log, sprintf("  %-50s nivel %s", "${n}_$L", $L);
+}
 for my $n (sort keys %plan) {
     my ($lvl, $uc) = @{$plan{$n}}{qw(level usecosts)};
-    (my $key = $n) =~ s/^(?:Target|Shout|Projectile|Zone|Teleportation)_//;
-    unless ($baseUuid{$key}) { push @warn, "  $n sem UUID no Editor -- variante so no .txt"; }
-    my ($sptype) = $n =~ /^(Target|Shout|Projectile|Zone|Teleportation)_/;
-    unless ($sptype) { push @warn, "  $n: nao consegui deduzir o SpellType"; next }
+    push @warn, "  $n: filho '$_' do container nao existe" for @{ $plan{$n}{missing} || [] };
+    push @warn, "  $n: filho '$_' tem variantes proprias -- o container nao as liga" for @{ $plan{$n}{ownPlan} || [] };
+    my @kids = @{ $plan{$n}{children} || [] };
     for my $L ($lvl+1 .. $MAXSLOT) {
         (my $cost = $uc) =~ s/(SpellSlotsGroup:\d+:\d+):\d/$1:$L/;
-        # O SpellType vai explicito e antes do `using`, como o vanilla escreve em 2276 de 2276
-        # variantes. Herdar pelo `using` parece funcionar, mas nenhuma variante do jogo base faz isso.
-        $txtAdd{$fileOf{$n}} .= join("\n",
-            qq{new entry "${n}_$L"}, q{type "SpellData"}, qq{data "SpellType" "$sptype"},
-            qq{using "$n"},
-            qq{data "RootSpellID" "$n"}, qq{data "PowerLevel" "$L"},
-            qq{data "UseCosts" "$cost"}, @{ $keepTxt{"${n}_$L"} || [] }) . "\n\n";
-        $generated{"${n}_$L"} = 1;
-        if (my $bu = $baseUuid{$key}) {
-            my $sf = $statsFileOf{$key};
-            $statsAdd{$sf} .=
-                qq{    <stat_object is_substat="false">\n      <fields>\n}
-              . qq{        <field name="UUID" type="IdTableFieldDefinition" value="}.uuid("${key}_$L").qq{" />\n}
-              . qq{        <field name="Name" type="NameTableFieldDefinition" value="${key}_$L" />\n}
-              . qq{        <field name="Using" type="BaseClassTableFieldDefinition" value="$bu" />\n}
-              . qq{        <field name="RootSpellID" type="StringTableFieldDefinition" value="$n" />\n}
-              . qq{        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="$L" />\n}
-              . qq{        <field name="UseCosts" type="StringTableFieldDefinition" value="$cost" />\n}
-              . join('', map { "$_\n" } @{ $keepStats{"${key}_$L"} || [] })
-              . qq{      </fields>\n    </stat_object>\n};
-            $generatedKey{"${key}_$L"} = 1;
-        }
-        push @log, sprintf("  %-50s nivel %s", "${n}_$L", $L);
+        emit_variant($n, $L, $cost, @kids ? (['ContainerSpells', join(';', map { "${_}_$L" } @kids)]) : ());
+        # cada filho: a sua "_L", dentro do container "_L", com o custo do nivel L
+        emit_variant($_, $L, $cost, ['SpellContainerID', "${n}_$L"]) for @kids;
     }
 }
 
@@ -195,7 +230,8 @@ $khnNote = sprintf("%d variante(s) com campos editados preservados", scalar keys
     my @facts;
     for my $r (sort keys %allRoots) {
         push @facts, qq{DB_ARCANA_CardFamily("$r", "$r");};
-        push @facts, qq{DB_ARCANA_CardFamily("${r}_$_", "$r");} for ($plan{$r} ? ($plan{$r}{level}+1 .. $MAXSLOT) : ());
+        push @facts, qq{DB_ARCANA_CardFamily("${r}_$_", "$r");}
+            for ($plan{$r} ? ($plan{$r}{level}+1 .. $MAXSLOT) : @{ $childLevels{$r} || [] });
     }
     $pending{$goal} = join($nl,
         "Version 1", "SubGoalCombiner SGC_AND", "INITSECTION", "PROC_ARCANA_CardFamilies();", "",

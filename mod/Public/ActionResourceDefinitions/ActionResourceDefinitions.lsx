@@ -59,19 +59,19 @@
                 <node id="ActionResourceDefinition">
                     <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="Name" type="FixedString" value="ArcanaReactHollowImage"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="UUID" type="guid" value="66be75e2-a54e-4fcd-8db6-5e60cb10c0bf"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="Name" type="FixedString" value="ArcanaReactGaleDeflection"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="UUID" type="guid" value="9eb62e9f-6465-445a-8b9d-ba81471fac0b"/>
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="IsHidden" type="bool" value="true"/>
                     <attribute id="Name" type="FixedString" value="ArcanaReactInstinctiveCharm"/>
-                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="UUID" type="guid" value="509598ba-2b73-47db-b624-b65fb740c1fc"/>
                 </node>
             </children>

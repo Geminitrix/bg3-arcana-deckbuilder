@@ -747,7 +747,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9087eb3bg3e46gf1cag0ea8gd51ff60d79b3" version="6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(,Necrotic);3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ArmsOfHadar" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -789,7 +789,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h786a9d12g2767g7456g54a5g066d1c985765" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb703800eg5dc8g1818gaab0gb5f60c532174" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DivineHealth" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Disease);StatusImmunity(BLEEDING);StatusImmunity(GAPING_WOUND);" />
       </fields>
     </stat_object>
@@ -801,7 +801,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hccce35feg6fb3g6500gb04dgc702028577e2" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(,Bludgeoning);DealDamage(,Piercing);DealDamage(,Slashing)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Stoneskin" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(80);" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Bludgeoning, ResistantToNonMagical);Resistance(Piercing, ResistantToNonMagical);Resistance(Slashing, ResistantToNonMagical);" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="b6aa23c3-c96d-42d5-8ffa-8d441d18faa7" />
