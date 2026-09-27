@@ -1,6 +1,7 @@
 local C = Req("Server/Core/Const.lua")
 local U = Req("Server/Core/Util.lua")
 local E = Req("Server/Core/Events.lua")
+local D = Req("Server/Cards/CardDB.lua")
 
 local P = { rand = math.random }
 
@@ -101,7 +102,7 @@ function P.Play(char, st, spell)
     end
     if not index then return nil end
     local entry = st.hand[index]
-    P.RemoveFromHand(char, st, index, entry.conjured and "unravel" or "frayed", "played")
+    P.RemoveFromHand(char, st, index, D.PlayedTo(entry.id, entry.conjured), "played")
     E.Emit("CardPlayed", ctx(char, st, { entry = entry, spell = spell }))
     return entry
 end

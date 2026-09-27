@@ -197,6 +197,22 @@ function D.CostOf(id)
     return D.Get(id).cost or C.DEFAULT_COST
 end
 
+-- Where a card goes once played: "frayed" (the discard, shuffled back into the deck when it runs
+-- out) or "unravel" (the exile, gone for the rest of the fight). A card can say so itself with
+-- `playedTo` in D.cards, which wins over everything. Otherwise:
+--   * a weapon action goes to the exile: the game's own cooldown (once per short rest) means it could
+--     not be cast again this fight, so shuffling it back would only hand the player a dead card;
+--   * a conjured card goes to the exile, as it always did;
+--   * everything else goes to the discard.
+D.PILE_FRAYED, D.PILE_UNRAVEL = "frayed", "unravel"
+
+function D.PlayedTo(id, conjured)
+    local explicit = D.Get(id).playedTo
+    if explicit then return explicit end
+    if D.IsWeaponAction(id) then return D.PILE_UNRAVEL end
+    return conjured and D.PILE_UNRAVEL or D.PILE_FRAYED
+end
+
 function D.Has(id, keyword)
     local k = D.Get(id).keywords
     return k ~= nil and k[keyword] == true
