@@ -116,7 +116,12 @@ sub xml_attr { my $v = shift; $v =~ s/&/&amp;/g; $v =~ s/	/&#x9;/g; $v =~ s/</&l
 sub field_line { my ($n, $t, $a) = @_; qq{<field name="$n" type="$t" $a />} }
 sub build_field { my ($rel, $ename, $k, $v) = @_;
     $k = $ALIAS{$k} // $k;
-    my $t = $ftype{$rel}{$k}; return undef if !$t && $LENIENT; $t // die "$ename: campo $k sem tipo conhecido em $rel\n"; my ($ty, $tail) = @$t;
+    my $t = $ftype{$rel}{$k};
+    # um campo comum tem o mesmo tipo em todo tipo de magia (ou de status); o Rush.stats do vanilla, por
+    # exemplo, so tem weapon actions e nao traz Level nem SpellSchool
+    if (!$t && $rel =~ m{^(SpellData|StatusData)/}) { my $kind = $1;
+        for my $o (sort grep { m{^\Q$kind\E/} } keys %ftype) { $t = $ftype{$o}{$k} and last } }
+    return undef if !$t && $LENIENT; $t // die "$ename: campo $k sem tipo conhecido em $rel\n"; my ($ty, $tail) = @$t;
     if ($ty eq 'TranslatedStringTableFieldDefinition') {
         return field_line($k, $ty, 'clear_inherited_value="true"') if $v eq '';
         my ($h, $ver) = $v =~ /^(h[0-9a-g]+);(\d+)$/ or die "$ename: $k nao e handle;versao: $v\n";
@@ -166,7 +171,7 @@ die "uso: perl stats_add.pl a.patch [...] [--apply] | --selftest\n" unless @patc
 # ---------- patches ----------
 learn($EDS); learn($_) for @VANILLA;
 my $loca = slurp($LOCA) // die "$LOCA: $!";
-my (%loca_ver, %loca_key, %bumped, @log);
+my (%loca_ver, %loca_key, %bumped, @log, %dirty);   # %dirty: so o que mudou e gravado
 $loca_ver{$1} = $2 while $loca =~ /<content contentuid="(h[0-9a-g]+)" version="(\d+)">/g;
 sub note { push @log, shift }
 sub loca_esc { my $t = shift; $t =~ s/&(?!(?:amp|lt|gt|quot|apos);)/&amp;/g; $t =~ s/</&lt;/g; $t =~ s/>/&gt;/g; $t }
@@ -203,22 +208,22 @@ for my $pf (@patches) { my $s = slurp($pf) // die "$pf: $!"; my ($file, $sec) = 
 
 sub put_entry { my ($pub, $sec, $blk) = @_; my $e = parse_entry($blk);
     my ($opub, $oi) = find_entry($e->{name}); die "$e->{name} ja existe em $opub, nao em $pub\n" if defined $opub && $opub ne $pub;
-    my (undef, $tb) = blocks_of($pub);
+    my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1;
     if (defined $oi) { $tb->[$oi] = $blk; note("txt ~ $pub $e->{name}") }
     elsif ($sec eq '-') { push @$tb, $blk; note("txt + $pub $e->{name} (fim)") }
     else { my ($d) = grep { bname($tb->[$_]) eq $sec } 0..$#$tb; die "divisoria '$sec' nao achada em $pub\n" unless defined $d;
         my $k = $d + 1; $k++ while $k <= $#$tb && !is_divider($tb->[$k]); splice @$tb, $k, 0, $blk; note("txt + $pub $e->{name} (em $sec)") }
-    my (undef, $st) = stats_of($pub); my $sn = stats_name($pub, $e->{name});
+    my ($sp, $st) = stats_of($pub); $dirty{$sp} = 1; my $sn = stats_name($pub, $e->{name});
     my ($j) = grep { oname($st->{objs}[$_]) eq $sn } 0..$#{$st->{objs}};
     my $uuid = defined $j ? ouuid($st->{objs}[$j]) : det_uuid($e->{name});
     my $obj = build_obj($pub, $e, $uuid, defined $j ? ocolor($st->{objs}[$j]) : undef);
     if (defined $j) { $st->{objs}[$j] = $obj } else { push @{$st->{objs}}, $obj }
     $uuid_of{$e->{name}} = $uuid }
 sub set_field { my ($name, $k, $v) = @_; my ($pub, $i) = find_entry($name); die "\@set: $name nao existe\n" unless defined $pub;
-    my (undef, $tb) = blocks_of($pub); my $blk = $tb->[$i];
+    my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1; my $blk = $tb->[$i];
     if ($blk =~ /^data "\Q$k\E" ".*"$/m) { $blk =~ s/^data "\Q$k\E" ".*"$/data "$k" "$v"/m } else { $blk .= qq{\ndata "$k" "$v"} }
     $tb->[$i] = $blk;
-    my (undef, $st) = stats_of($pub); my $sn = stats_name($pub, $name);
+    my ($sp, $st) = stats_of($pub); $dirty{$sp} = 1; my $sn = stats_name($pub, $name);
     my ($j) = grep { oname($st->{objs}[$_]) eq $sn } 0..$#{$st->{objs}}; die "\@set: $name sem objeto no .stats\n" unless defined $j;
     my $line = build_field(stats_rel($pub), $name, $k, $v);
     if ($st->{objs}[$j] =~ /<field name="\Q$k\E" /) { $st->{objs}[$j] =~ s/<field name="\Q$k\E" [^\n]*\/>/$line/ }
@@ -226,8 +231,8 @@ sub set_field { my ($name, $k, $v) = @_; my ($pub, $i) = find_entry($name); die 
     note("set $name.$k") }
 sub remove_entry { my $name = shift; my ($pub, $i) = find_entry($name);
     if (!defined $pub) { note("AVISO: \@remove $name - nao existe"); return }
-    my (undef, $tb) = blocks_of($pub); splice @$tb, $i, 1;
-    my (undef, $st) = stats_of($pub); my $sn = stats_name($pub, $name);
+    my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1; splice @$tb, $i, 1;
+    my ($sp, $st) = stats_of($pub); $dirty{$sp} = 1; my $sn = stats_name($pub, $name);
     @{$st->{objs}} = grep { oname($_) ne $sn } @{$st->{objs}}; note("remove $pub $name") }
 
 for my $op (@ops) { my ($k, @a) = @$op;
@@ -237,15 +242,21 @@ for my $op (@ops) { my ($k, @a) = @$op;
 
 # versao nova de um handle existente vale em todo lugar que o cita
 if (%bumped) {
-    for my $pub (all_pubs()) { my (undef, $tb) = blocks_of($pub);
-        for (@$tb) { for my $h (keys %bumped) { s/\b\Q$h\E;\d+/$h;$bumped{$h}/g } } }
+    for my $pub (all_pubs()) { my ($tp, $tb) = blocks_of($pub);
+        for (@$tb) { for my $h (keys %bumped) { my $v = $bumped{$h};
+            $dirty{$tp} = 1 if s/\b\Q$h\E;(?!$v\b)\d+/$h;$v/g } } }
     for my $pub (all_pubs()) { next unless -e "$EDS/" . stats_rel($pub) . ".stats" or $stats{"$EDS/" . stats_rel($pub) . ".stats"};
-        my (undef, $st) = stats_of($pub);
-        for (@{$st->{objs}}) { for my $h (keys %bumped) { s/handle="\Q$h\E" version="\d+"/handle="$h" version="$bumped{$h}"/g } } } }
+        my ($sp, $st) = stats_of($pub);
+        for (@{$st->{objs}}) { for my $h (keys %bumped) { my $v = $bumped{$h};
+            $dirty{$sp} = 1 if s/handle="\Q$h\E" version="(?!$v")\d+"/handle="$h" version="$v"/g } } } }
 
 print "$_\n" for @log;
 if ($apply) {
-    for my $p (keys %blocks) { spew($p, join("\n\n", @{$blocks{$p}}) . "\n") }
-    for my $p (keys %stats) { my $s = $stats{$p}; spew($p, $s->{head} . join("\n", @{$s->{objs}}) . $s->{foot}) }
+    # linha em branco tambem depois da ultima entrada: o sort_stats.pl conta com ela e, sem ela, cola a
+    # ultima entrada na que ele mover para depois
+    for my $p (grep { $dirty{$_} } keys %blocks) { spew($p, join("\n\n", @{$blocks{$p}}) . "\n\n") }
+    for my $p (grep { $dirty{$_} } keys %stats) { my $s = $stats{$p}; my $foot = $s->{foot};
+        $foot = "\n$foot" if @{$s->{objs}} && $foot !~ /^\n/;   # arquivo que nasceu vazio (<stat_objects />)
+        spew($p, $s->{head} . join("\n", @{$s->{objs}}) . $foot) }
     spew($LOCA, $loca); print "gravado.\n" }
 else { print "(simulacao -- rode com --apply para gravar)\n" }

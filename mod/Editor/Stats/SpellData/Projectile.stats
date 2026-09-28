@@ -224,40 +224,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="93c3eadc-bf53-4974-9eb6-ff93309738c0" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Ability_Fly_TheStarchild" />
-        <field name="TargetCeiling" type="StringTableFieldDefinition" value="18" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Surface('SurfaceChasm')" />
-        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="d0a92912-c111-4c92-9575-fcdd9c0bfb8b" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_TwinklingDragonForm_Fly" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h027a092fgfef2g587bg6879ge39b7a6009c8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd8634f68ged5bg368bg9552g5630e8cacb0b" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Fly" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Fly" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Druid_TwinklingDragonFly" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="ProjectileTerrainOffset" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5;" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b94b9184-9bd0-4840-be7d-003700173b37,,;,,;5df11e35-f081-44f7-bd6f-7049d0e533cd,,;a508bef8-6767-4560-ac3a-6c04132c825e,,;066f8e0e-b3e1-4b76-a473-d1e23a3b7230,,;,,;7a28f440-1b0b-4a18-96a8-3767959b601a,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;HasHighGroundRangeExtension;IgnoreVisionBlock;RangeIgnoreVerticalThreshold;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems;NoAOEDamageOnLand;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Jump" enumeration_type_name="SpellActionType" version="1" />
-        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_Jump" enumeration_type_name="SpellCategoryFlags" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="SpellJumpType" type="EnumerationTableFieldDefinition" value="Flight" enumeration_type_name="SpellJumpType" version="1" />
-        <field name="MinJumpDistance" type="FloatTableFieldDefinition" value="2" />
-        <field name="Requirements" type="StringTableFieldDefinition" value="!Immobile" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e10fa2ab-984e-4ab7-b756-4982dfca4018" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="281c7540-a374-47d9-a53a-3af4e1731a29" />
-        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="SpellSoundMagnitude" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="90803df7-e8af-4b4c-a1ab-daab5254f2b3" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Starcall" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />

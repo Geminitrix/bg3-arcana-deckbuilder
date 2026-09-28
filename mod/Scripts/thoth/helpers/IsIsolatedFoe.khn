@@ -1,0 +1,13 @@
+-- Tier II do Aspecto de Death (ETERNAL_DREAD_AURA). No functor da aura, context.Source e o Eternal e
+-- context.Target e o inimigo dentro dela. O inimigo esta isolado quando e o unico inimigo do Eternal a
+-- ate 3 m e nenhum aliado dele esta a ate 6 m. Usa os mesmos construtores do HasEnemyWithinRange e do
+-- HasAllyWithinRange do CommonConditions.khn do vanilla.
+function IsIsolatedFoe()
+    local foes = GetEnemiesWithinRange(3, context.Source, context.Source)
+    local friends = GetAlliesWithinRange(6, context.Target, context.Target)
+    local foeCount = 0
+    if foes ~= nil then foeCount = #foes.Enemies end
+    local friendCount = 0
+    if friends ~= nil then friendCount = #friends.Allies end
+    return ConditionResult(foeCount <= 1 and friendCount == 0)
+end

@@ -180,7 +180,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d" />
         <field name="Name" type="NameTableFieldDefinition" value="Deceiver Level 13" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Faceless_Copy_EX" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Faceless_Copy_EX;Target_Arcana_Util_Friends_EX" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
@@ -285,7 +285,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6cc7bce7-943c-4b5c-b4b4-e5144917adf1" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 7" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_DarknessRise;Shout_Arcana_Card_Passive_Unbroken" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Passive_Unbroken;Shout_Arcana_Card_Spell_BloodOffering" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -313,7 +313,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8abac308-3262-4ce8-99c2-3d3e9c6ba42e" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 13" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_Transfusion_EX;Shout_Arcana_Card_Spell_HowlOfTheDead" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">

@@ -5,6 +5,18 @@
         <node id="root">
             <children>
                 <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaBeloved"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="68d32cef-75b0-1cc7-ff20-b8e7a109547b"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaFoolsLuck"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="0e255903-90a9-9fb9-dc1d-a5a407ddc83f"/>
+                </node>
+                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="ARCANE RESOURCES"/>
                     <attribute id="UUID" type="guid" value="a6d89ea7-2c35-419f-ac0a-ba1e22bba386"/>
                 </node>

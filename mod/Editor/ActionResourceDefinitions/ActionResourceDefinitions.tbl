@@ -101,5 +101,25 @@
         <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="ArcanaFoolsLuck" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0e255903-90a9-9fb9-dc1d-a5a407ddc83f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcanaFoolsLuck" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="ArcanaBeloved" />
+        <field name="UUID" type="IdTableFieldDefinition" value="68d32cef-75b0-1cc7-ff20-b8e7a109547b" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ArcanaBeloved" />
+        <field name="ReplenishType" type="FixedStringTableFieldDefinition" value="Turn" />
+        <field name="IsHidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+
+
   </stat_objects>
 </stats>

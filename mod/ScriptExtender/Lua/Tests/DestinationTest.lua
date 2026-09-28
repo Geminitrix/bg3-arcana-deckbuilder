@@ -79,7 +79,7 @@ return {
             for _, id in ipairs({
                 "Shout_Arcana_Card_Passive_LunarWisp", "Shout_Arcana_Card_Passive_MirroredSpell",
                 "Shout_Arcana_Card_Passive_ImmortalBlood", "Shout_Arcana_Card_Passive_InescapableDestruction",
-                "Shout_Arcana_Card_Passive_DarknessRise", "Shout_Arcana_Card_Passive_Unbroken",
+                "Shout_Arcana_Card_Passive_Unbroken",
                 "Shout_Arcana_Card_Passive_InuredToUndeath",
             }) do
                 T.eq(L.MaxCopies(id), 1, id)

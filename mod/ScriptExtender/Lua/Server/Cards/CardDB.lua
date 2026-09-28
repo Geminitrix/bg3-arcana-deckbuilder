@@ -97,9 +97,6 @@ D.cards = {
     ["Shout_Arcana_Card_Passive_InescapableDestruction"] = {
         aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
-    ["Shout_Arcana_Card_Passive_DarknessRise"] = {
-        aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
-    },
     ["Shout_Arcana_Card_Passive_Unbroken"] = {
         aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
@@ -107,6 +104,17 @@ D.cards = {
         aspect = "Eternal", keywords = { Unique = true }, destination = D.PILE_UNRAVEL,
     },
     ["Target_Arcana_Card_Spell_DeathWard"] = { aspect = "Eternal", keywords = { Unique = true } },
+    -- Blood Offering replaced the Darkness Rise card on 2026-09-28: Darkness Rise is now Tier I of the
+    -- Eternal's Aspect. A normal spell card, so it goes back to the discard.
+    ["Shout_Arcana_Card_Spell_BloodOffering"] = { aspect = "Eternal" },
+
+    -- Aspect cards (2026-09-28): created when the subclass awakens its Aspect (ASPECT_AWAKENED_*, see
+    -- D.statusConjures). Level 0 and no slot, so they cost no Threads; being conjured sends them to the
+    -- exile, and the engine's own OncePerCombat cooldown does the same job on the console.
+    ["Rush_Arcana_Created_Aspect_LeapOfFaith"] = { aspect = "Unbound" },
+    ["Shout_Arcana_Created_Aspect_Heartbreak"] = { aspect = "Deceiver" },
+    ["Shout_Arcana_Created_Aspect_WishUponAStar"] = { aspect = "Starchild" },
+    ["Target_Arcana_Created_Aspect_FinalToll"] = { aspect = "Eternal" },
 
     ["Shout_Arcana_Card_Spell_DEBUG_Fated"] = { keywords = { Fated = true } },
     ["Shout_Arcana_Card_Spell_DEBUG_Fleeting"] = { keywords = { Fleeting = true } },
@@ -117,6 +125,11 @@ D.cards = {
 
 D.statusConjures = {
     ZEPHYR_STRIKE = { id = "Target_Arcana_Created_ZephyrStrike", lasts = 1 },
+    -- the Aspect card stays playable for the rest of the fight
+    ASPECT_AWAKENED_FOOL = { id = "Rush_Arcana_Created_Aspect_LeapOfFaith", lasts = 99 },
+    ASPECT_AWAKENED_EMPRESS = { id = "Shout_Arcana_Created_Aspect_Heartbreak", lasts = 99 },
+    ASPECT_AWAKENED_STAR = { id = "Shout_Arcana_Created_Aspect_WishUponAStar", lasts = 99 },
+    ASPECT_AWAKENED_DEATH = { id = "Target_Arcana_Created_Aspect_FinalToll", lasts = 99 },
 }
 
 D.containers = {

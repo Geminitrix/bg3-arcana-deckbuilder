@@ -16,7 +16,7 @@ my $GROUP_UUID = '03b17647-161a-42e1-9660-5ba517e80ad2';     # o SpellSlotsGroup
 my $MARKRE = qr/not HasPassive\('ARCANA_IS_CARD', context\.Source\)/;
 my (@err, @note);
 
-sub strip_prefix { my $x = shift; $x =~ s/^(?:Target|Shout|Projectile|Zone|Teleportation)_//; $x }
+sub strip_prefix { my $x = shift; $x =~ s/^(?:Target|Shout|Projectile|Zone|Teleportation|Rush)_//; $x }
 sub slurp { open my $h,'<:raw',$_[0] or die "$_[0]: $!"; local $/; my $s=<$h>; close $h; $s }
 
 # ---------- Public ----------

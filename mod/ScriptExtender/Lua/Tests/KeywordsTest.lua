@@ -102,6 +102,29 @@ return {
             F.StatusApplied("c", st, "ZEPHYR_STRIKE")
             T.eq(#st.hand, 0)
         end,
+        ["Awakening an Aspect puts its card in hand"] = function()
+            local cards = {
+                ASPECT_AWAKENED_FOOL = "Rush_Arcana_Created_Aspect_LeapOfFaith",
+                ASPECT_AWAKENED_EMPRESS = "Shout_Arcana_Created_Aspect_Heartbreak",
+                ASPECT_AWAKENED_STAR = "Shout_Arcana_Created_Aspect_WishUponAStar",
+                ASPECT_AWAKENED_DEATH = "Target_Arcana_Created_Aspect_FinalToll",
+            }
+            for status, card in pairs(cards) do
+                local st = begin()
+                F.StartTurn("c", st, yes)
+                F.StatusApplied("c", st, status)
+                T.eq(count(st.hand, card), 1, status)
+            end
+        end,
+        ["The Aspect card lasts for the rest of the fight"] = function()
+            local st = begin()
+            F.StartTurn("c", st, yes)
+            F.StatusApplied("c", st, "ASPECT_AWAKENED_DEATH")
+            nextTurn(st)
+            nextTurn(st)
+            nextTurn(st)
+            T.eq(count(st.hand, "Target_Arcana_Created_Aspect_FinalToll"), 1)
+        end,
         ["Reweave is offered on turn 1 only"] = function()
             local st = begin()
             F.StartTurn("c", st, yes)

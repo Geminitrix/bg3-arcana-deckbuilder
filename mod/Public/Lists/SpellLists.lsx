@@ -116,7 +116,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Faceless_Copy_EX"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Faceless_Copy_EX;Target_Arcana_Util_Friends_EX"/>
                     <attribute id="UUID" type="guid" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d"/>
                 </node>
                 <node id="SpellList">
@@ -191,7 +191,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 7"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_DarknessRise;Shout_Arcana_Card_Passive_Unbroken"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_Unbroken;Shout_Arcana_Card_Spell_BloodOffering"/>
                     <attribute id="UUID" type="guid" value="6cc7bce7-943c-4b5c-b4b4-e5144917adf1"/>
                 </node>
                 <node id="SpellList">
@@ -211,7 +211,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Transfusion_EX"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Transfusion_EX;Shout_Arcana_Card_Spell_HowlOfTheDead"/>
                     <attribute id="UUID" type="guid" value="8abac308-3262-4ce8-99c2-3d3e9c6ba42e"/>
                 </node>
                 <node id="SpellList">
