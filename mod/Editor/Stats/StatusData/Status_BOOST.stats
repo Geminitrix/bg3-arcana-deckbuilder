@@ -44,6 +44,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4083d5c0-2cdc-4efa-b2f7-020e6ad8b595" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANA_WEAVING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4083d5c0g2cdcg4efagb2f7g020e6ad8b595" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ARCANA_WEAVING" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell() and IsSpellLevel(0),ModifyUseCosts(Add,ArcanaThread,1,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(1),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,1,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(2),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,2,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(3),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,3,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(4),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,4,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(5),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,5,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(6),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,6,0),ModifyTooltipDescription());" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0e95f481-7b54-499d-aa01-52c6e6191240" />
         <field name="Name" type="NameTableFieldDefinition" value="ARCANE_LANGUAGES" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57cbb238gde4cg3ff9g326dg47d822a7058b" version="1" />
@@ -256,7 +268,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical);IF(not IsKillingBlow()):ApplyStatus(SIGIL_DETONATED_TECH,100,0)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SIGIL_DETONATED_TECH,100,0);IF(RemoveCause(StatusRemoveCause.Condition) and not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('ASPECT_AWAKENED_EMPRESS', context.Target) and HasStatus('SIGIL', context.Source, context.Target)):Disadvantage(AttackRoll);" />
       </fields>
     </stat_object>
@@ -1729,16 +1741,10 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000000" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4083d5c0-2cdc-4efa-b2f7-020e6ad8b595" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANA_WEAVING" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4083d5c0g2cdcg4efagb2f7g020e6ad8b595" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ARCANA_WEAVING" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCardSpell() and IsSpellLevel(0),ModifyUseCosts(Add,ArcanaThread,1,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(1),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,1,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(2),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,2,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(3),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,3,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(4),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,4,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(5),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,5,0),ModifyTooltipDescription());UnlockSpellVariant(IsCardSpell() and IsSpellLevel(6),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ArcanaThread,6,0),ModifyTooltipDescription());" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="31e80b43-3509-4e72-9253-029f99fb004e" />
+        <field name="Name" type="NameTableFieldDefinition" value="AWAKEN STATUS" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2156,6 +2162,5 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
-    
   </stat_objects>
 </stats>
