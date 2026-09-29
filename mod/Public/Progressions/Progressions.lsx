@@ -209,7 +209,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch;Arcana_Passive_ArcaneSpells_Unbound"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(43261c49-335c-4231-ae5d-6a828cff974c,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="d75cb44d-bba6-43ad-851f-4497ec526e80"/>
@@ -391,7 +391,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Telepathy;Arcana_Passive_ArcaneSpells_Deceiver;Arcana_Passive_UnlockFriends"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Telepathy;Arcana_Passive_UnlockFriends"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
@@ -557,7 +557,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability;Arcana_Passive_ArcaneSpells_Starchild"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>
@@ -721,7 +721,6 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_ArcaneSpells_Eternal"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
