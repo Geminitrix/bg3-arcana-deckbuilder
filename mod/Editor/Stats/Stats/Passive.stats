@@ -792,7 +792,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7d0ec504-1a8a-4804-b83c-9f1f23d58382" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Aspect_Empress_III" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77a96793gb7edg0637g7edagadeac5101250" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6233dddg7b75g1f90g74acgcae8cb86d424" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6233dddg7b75g1f90g74acgcae8cb86d424" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
