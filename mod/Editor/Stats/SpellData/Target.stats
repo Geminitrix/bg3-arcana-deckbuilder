@@ -1301,7 +1301,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9e90fb4g4e50g8850g39ceg8935a7a7e0cb" version="18" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_HealingWord_L1to3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsSpell;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
@@ -1326,7 +1325,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1336,7 +1334,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1346,7 +1343,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1356,7 +1352,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1366,7 +1361,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1917,7 +1911,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
-<stat_object color="#FF2F4F4F" is_substat="false">
+    <stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7f76cea8-3bd6-4615-9e0a-4c4f1ceba82d" />
         <field name="Name" type="NameTableFieldDefinition" value="ETERNAL SPELLS" />
@@ -2844,6 +2838,5 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="e7b6ad82-c85a-40ac-9781-cb85f2dffb89" />
       </fields>
     </stat_object>
-    
   </stat_objects>
 </stats>

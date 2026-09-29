@@ -1819,7 +1819,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="db464c10-fa70-5a0a-b099-7f00565a693d" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_DEATH" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14d6cdf8gdbb5gadcdg19b1g104e7a5385c6" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e508ad9g6181g6135ga0adga655f974bc56" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e508ad9g6181g6135ga0adga655f974bc56" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ArmsOfHadar" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_DEATH" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
@@ -1861,7 +1861,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d769032e-5426-1ad5-c02f-31ea47ed97b6" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_STAR" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h234eb2e8gccb0g7a38g71edgde5fde284760" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8c497e6gb5d3ged95gb7dfg0b6310de4a9d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8c497e6gb5d3ged95gb7dfg0b6310de4a9d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_STAR" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
