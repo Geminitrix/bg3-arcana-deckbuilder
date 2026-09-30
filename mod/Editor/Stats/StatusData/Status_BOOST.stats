@@ -966,7 +966,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h36b715acgf8cbg4d33g6b9cge5c3b5baa321" version="4" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StillnessOfMind" />
         <field name="StackId" type="StringTableFieldDefinition" value="FLOW_STATE" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Arcana)*3)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Arcana)*2)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Arcana)*2);ActionResource(BonusActionPoint,1,0);" />
@@ -1024,16 +1024,15 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d760849a-1c7b-40d2-9b75-242eb1e2e516" />
         <field name="Name" type="NameTableFieldDefinition" value="WIND_WHISPERS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha6e2a33cg8bfegd011g0398g42ce5a73e62a" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba599070gc262gfacfg3f31geafbde30b608" version="6" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba599070gc262gfacfg3f31geafbde30b608" version="7" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
         <field name="StackId" type="StringTableFieldDefinition" value="WIND_WHISPERS" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('SG_Incapacitated') or WearingArmor(context.Source) or HasShieldEquipped(context.Source)" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AttackTarget);" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_WindWhispers_Counter" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AttackTarget);UnlockInterrupt(Interrupt_Arcana_WindWhispers_Riposte);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

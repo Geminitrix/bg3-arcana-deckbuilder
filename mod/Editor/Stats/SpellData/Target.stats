@@ -2844,5 +2844,17 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="e7b6ad82-c85a-40ac-9781-cb85f2dffb89" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2279a51-dd5e-7c39-d962-ef57480ab3ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_WindRiposte" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ba05fe6-b1b7-4d09-8ce3-7478584af581" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85b2e19dgcd10g7f44g2692g5fc4a3de0bb6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef2a8480gd352g815cg8378ga8c35f970c85" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

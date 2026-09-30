@@ -198,6 +198,7 @@ for my $pf (@patches) { my $s = slurp($pf) // die "$pf: $!"; my ($file, $sec) = 
             if    ($l =~ /^\@file (\S+)/)            { $file = $1 }
             elsif ($l =~ /^\@section (.+?)\s*$/)     { $sec = $1 }
             elsif ($l =~ /^\@remove (\S+)/)          { push @ops, ['remove', $1] }
+            elsif ($l =~ /^\@unset (\S+) (\S+)\s*$/) { push @ops, ['unset', $1, $2] }
             elsif ($l =~ /^\@set (\S+) (\S+) ?(.*)$/) { push @ops, ['set', $1, $2, $3] }
             elsif ($l =~ /^\@loca (\S+) (.+)$/)      { loca_set($1, $2) }
             else { push @rest, $l } }
@@ -233,6 +234,14 @@ sub set_field { my ($name, $k, $v) = @_; my ($pub, $i) = find_entry($name); die 
     if ($st->{objs}[$j] =~ /<field name="\Q$k\E" /) { $st->{objs}[$j] =~ s/<field name="\Q$k\E" [^\n]*\/>/$line/ }
     else { $st->{objs}[$j] =~ s{(\n\s*</fields>)}{\n        $line$1} }
     note("set $name.$k") }
+# tira um campo de uma entrada que ja existe, dos dois lados
+sub unset_field { my ($name, $k) = @_; my ($pub, $i) = find_entry($name); die "\@unset: $name nao existe\n" unless defined $pub;
+    my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1;
+    $tb->[$i] =~ s/\ndata "\Q$k\E" "[^\n]*"//;
+    my ($sp, $st) = stats_of($pub); $dirty{$sp} = 1; my $sn = stats_name($pub, $name); my $sk = $ALIAS{$k} // $k;
+    my ($j) = grep { oname($st->{objs}[$_]) eq $sn } 0..$#{$st->{objs}}; die "\@unset: $name sem objeto no .stats\n" unless defined $j;
+    $st->{objs}[$j] =~ s/\n[ \t]*<field name="\Q$sk\E" [^\n]*\/>//;
+    note("unset $name.$k") }
 sub remove_entry { my $name = shift; my ($pub, $i) = find_entry($name);
     if (!defined $pub) { note("AVISO: \@remove $name - nao existe"); return }
     my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1; splice @$tb, $i, 1;
@@ -242,6 +251,7 @@ sub remove_entry { my $name = shift; my ($pub, $i) = find_entry($name);
 for my $op (@ops) { my ($k, @a) = @$op;
     if    ($k eq 'put')    { put_entry($a[0], $a[1], resolve($a[2])) }
     elsif ($k eq 'set')    { set_field($a[0], $a[1], resolve($a[2])) }
+    elsif ($k eq 'unset')  { unset_field($a[0], $a[1]) }
     elsif ($k eq 'remove') { remove_entry($a[0]) } }
 
 # versao nova de um handle existente vale em todo lugar que o cita

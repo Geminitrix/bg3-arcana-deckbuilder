@@ -157,6 +157,22 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba9fc1a0-ad4c-0249-1a4b-e8525e080914" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Arcana_WindWhispers_Riposte" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h85b2e19dgcd10g7f44g2692g5fc4a3de0bb6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef2a8480gd352g815cg8378ga8c35f970c85" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and IsMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered() and not WearingArmor(context.Observer) and not HasShieldEquipped(context.Observer)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_Arcana_WindRiposte,true,true,true)" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
     
     
   </stat_objects>

@@ -2177,13 +2177,13 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE,100,10);ApplyStatus(SELF,ZEPHYR_STRIKE,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE,100,5);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StillnessOfMind" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8288db8fg32dfg6e3dgda26gcd08aedf318a" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c5dd9ccg21a6ge6e1g1f8fg8f392e8e5ce5" version="10" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Arcana)*3)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLOW_STATE,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLOW_STATE,100,5)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
@@ -2247,7 +2247,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_FlowState_EX" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6eb6aba7-b315-4374-86b0-a84b08ee8167" />
         <field name="Level" type="IntegerTableFieldDefinition" value="5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE_EX,100,20);ApplyStatus(SELF,ZEPHYR_STRIKE,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE_EX,100,20);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9fc57967g4730gffbdgd22ag4c915fd1a308" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLOW_STATE_EX,100,20)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
@@ -2271,13 +2271,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_StormFists" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,STORM_FISTS,100,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,STORM_FISTS,100,3);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h82392b3bg213dg4c12gb6c6g5f651139d12d" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h456b6976gfa1cg7d54geb90g1660c0e4606b" version="4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StormFists_Damage)+WisdomModifier,Thunder)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STORM_FISTS,100,5)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STORM_FISTS,100,3)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
@@ -2335,13 +2335,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_Thunderclap" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,THUNDERCLAP,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,THUNDERCLAP,100,5);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Thunder" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba1f43ccg5c79g67bdg3e95g58ca95fe3c21" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd264d2c3g3d31geeeag9a53g0a1a187689e2" version="6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(,Thunder)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(THUNDERCLAP,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(THUNDERCLAP,100,5)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
@@ -2389,7 +2389,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he348b9b5g4bffgf77cgaa79g953924869067" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h64279279ga897g3b4bgc173gcc1156e709e0" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h64279279ga897g3b4bgc173gcc1156e709e0" version="5" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WIND_WHISPERS,100,1)" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Utility" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Loop" />
