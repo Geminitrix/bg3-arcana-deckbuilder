@@ -27,6 +27,7 @@ end
 
 local function watchedStatus(status)
     return D.statusConjures[status] ~= nil or D.threadStartStatuses[status] ~= nil
+        or D.reactionByUsed[status] ~= nil
 end
 
 function H.ResyncAll()

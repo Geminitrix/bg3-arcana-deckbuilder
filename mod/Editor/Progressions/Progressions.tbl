@@ -282,7 +282,7 @@
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I;Arcana_Passive_Aspect_Fool_Awakening" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(706b4719-9a6d-42c0-8e08-8b273eb3e0e4,,,,AlwaysPrepared)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,3,0)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">

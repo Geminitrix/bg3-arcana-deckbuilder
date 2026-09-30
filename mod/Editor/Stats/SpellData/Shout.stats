@@ -477,7 +477,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not (HasStatus('HOLLOW_IMAGE_READY',context.Source) and HasActionResource('ArcanaReactHollowImage',1,0,false,false,context.Source))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('ARCANA_WEAVING',context.Source) and not (HasStatus('HOLLOW_IMAGE_READY',context.Source) and HasActionResource('ArcanaReactHollowImage',1,0,false,false,context.Source))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -660,7 +660,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not (HasStatus('INSTINCTIVE_CHARM_READY',context.Source) and HasActionResource('ArcanaReactInstinctiveCharm',1,0,false,false,context.Source))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('ARCANA_WEAVING',context.Source) and not (HasStatus('INSTINCTIVE_CHARM_READY',context.Source) and HasActionResource('ArcanaReactInstinctiveCharm',1,0,false,false,context.Source))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2026,11 +2026,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Passive_GaleDeflection" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,GALE_DEFLECTION_READY,100,-1);RestoreResource(SELF,ArcanaReactGaleDeflection,1,0)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasStatus('GALE_DEFLECTION_READY')):UseActionResource(SELF,ArcanaReactGaleDeflection,100%,0);IF(not HasStatus('GALE_DEFLECTION_READY')):ApplyStatus(SELF,GALE_DEFLECTION_READY,100,-1);RestoreResource(SELF,ArcanaReactGaleDeflection,1,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_DeflectMissile" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h718d26f3g2c29g4039ga915gb9dd92f85bd8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf77f8e6egab61g4904gb290gb7bc67941ee7" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf77f8e6egab61g4904gb290gb7bc67941ee7" version="3" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GALE_DEFLECTION_READY,100,-1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
@@ -2042,7 +2042,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not (HasStatus('GALE_DEFLECTION_READY',context.Source) and HasActionResource('ArcanaReactGaleDeflection',1,0,false,false,context.Source))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('ARCANA_WEAVING',context.Source) and not (HasStatus('GALE_DEFLECTION_READY',context.Source) and HasActionResource('ArcanaReactGaleDeflection',3,0,false,false,context.Source))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

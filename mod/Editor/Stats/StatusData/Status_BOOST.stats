@@ -2166,6 +2166,36 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26d72fb9-2437-0acf-fa78-55d61375440e" />
+        <field name="Name" type="NameTableFieldDefinition" value="GALE_DEFLECTION_USED_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbde3b28fgfb7fg967cgfb95g98b5d38881cf" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GALE_DEFLECTION_USED_TECH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7538475-86e4-8f8f-6c9b-427add9c5fcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLLOW_IMAGE_USED_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbde3b28fgfb7fg967cgfb95g98b5d38881cf" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLLOW_IMAGE_USED_TECH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="966dd120-e7d1-c5eb-99ef-0864ae14df51" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSTINCTIVE_CHARM_USED_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbde3b28fgfb7fg967cgfb95g98b5d38881cf" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INSTINCTIVE_CHARM_USED_TECH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     
   </stat_objects>
 </stats>

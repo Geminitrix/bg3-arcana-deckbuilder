@@ -35,13 +35,16 @@ return {
             T.eq(D.CostOf("Target_Arcana_Card_Spell_MaliciousWhispers"), 1)
             T.eq(D.CostOf("Shout_Arcana_Card_Spell_HowlOfTheDead"), 1)
         end,
-        ["Every reaction card is a Passive card and Unique"] = function()
-            for _, id in ipairs({ "Shout_Arcana_Card_Passive_GaleDeflection",
-                                  "Shout_Arcana_Card_Passive_InstinctiveCharm",
-                                  "Shout_Arcana_Card_Passive_HollowImage" }) do
+        ["Every reaction card is a Passive card; only the once-a-round ones are Unique"] = function()
+            local n = 0
+            for id, r in pairs(D.reactions) do
+                n = n + 1
                 T.eq(U.Category(id), "Passive", id)
-                T.eq(D.Has(id, "Unique"), true, id .. " is Unique")
+                T.eq(D.Has(id, "Unique"), r.perRound == 1, id .. " Unique iff once a round")
+                T.eq(D.reactionByUsed[r.used], id, r.used)
             end
+            T.eq(n, 3, "three reaction cards")
+            T.eq(D.reactions["Shout_Arcana_Card_Passive_GaleDeflection"].perRound, 3)
         end,
         ["Has reads keyword flags"] = function()
             T.eq(D.Has("Shout_Arcana_Card_Spell_DEBUG_Fated", "Fated"), true)

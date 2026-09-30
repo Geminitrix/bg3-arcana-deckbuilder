@@ -223,7 +223,7 @@
                     <attribute id="UUID" type="guid" value="8cf47f3b-3c5a-4736-ad7b-a6342fe06f1e"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,3,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
                     <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I;Arcana_Passive_Aspect_Fool_Awakening"/>

@@ -94,7 +94,8 @@ function P.FindInHand(st, id)
     return nil
 end
 
-function P.Play(char, st, spell)
+-- `extra` rides along on the CardPlayed context (Reactions.lua marks a card spent as a reaction)
+function P.Play(char, st, spell, extra)
     local index = P.FindInHand(st, spell)
     if not index then
         local base = U.StripUpcast(spell)
@@ -103,7 +104,9 @@ function P.Play(char, st, spell)
     if not index then return nil end
     local entry = st.hand[index]
     P.RemoveFromHand(char, st, index, D.PlayedTo(entry.id, entry.conjured), "played")
-    E.Emit("CardPlayed", ctx(char, st, { entry = entry, spell = spell }))
+    local fields = { entry = entry, spell = spell }
+    for k, v in pairs(extra or {}) do fields[k] = v end
+    E.Emit("CardPlayed", ctx(char, st, fields))
     return entry
 end
 

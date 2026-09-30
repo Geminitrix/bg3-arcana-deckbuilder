@@ -307,11 +307,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3b8e85c6gcf8ag4de0g5897gcfc8734a7cba" version="8" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Half);AreaDamageEvade();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,ReactionActionPoint,1,0);ApplyStatus(UNCANNYDODGE_HELPER,100,1)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MistyEscape" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source) and not HasStatus('SG_Incapacitated') and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source);" />
       </fields>

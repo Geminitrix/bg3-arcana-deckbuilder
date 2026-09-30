@@ -64,11 +64,9 @@ D.cards = {
     ["Target_Arcana_Card_Spell_MaliciousWhispers"] = { aspect = "Deceiver", cost = 1 },
     ["Shout_Arcana_Card_Spell_HowlOfTheDead"] = { aspect = "Eternal", cost = 1 },
 
-    -- Reaction cards. Since 2026-09-27 everything lives in the stats, so the console edition
-    -- behaves the same: the card applies a <REACTION>_READY status (until the long rest, and removed
-    -- when combat ends) that grants the reaction's passive, and refills one charge. The progression no
-    -- longer grants these passives, and the Lua that used to zero the charges in combat is gone.
-    ["Shout_Arcana_Card_Passive_GaleDeflection"] = { aspect = "Unbound", cost = 2, keywords = { Unique = true } },
+    -- Reaction cards: see D.reactions. Gale Deflection can be used up to 3 times a round, so it takes
+    -- three copies; the Deceiver's two are once a round and stay Unique.
+    ["Shout_Arcana_Card_Passive_GaleDeflection"] = { aspect = "Unbound", cost = 2 },
     ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = { aspect = "Deceiver", cost = 2, keywords = { Unique = true } },
     ["Shout_Arcana_Card_Passive_HollowImage"] = { aspect = "Deceiver", cost = 3, keywords = { Unique = true } },
 
@@ -131,6 +129,33 @@ D.statusConjures = {
     ASPECT_AWAKENED_STAR = { id = "Shout_Arcana_Created_Aspect_WishUponAStar", lasts = 99 },
     ASPECT_AWAKENED_DEATH = { id = "Target_Arcana_Created_Aspect_FinalToll", lasts = 99 },
 }
+
+-- Reaction cards (2026-09-30). Both editions share one rule: a reaction has a limit of uses per round,
+-- which is also the maximum of its own resource, and every use takes one charge.
+--   * console: the card is cast as a Shout. It applies `ready` (which unlocks the interrupt) and adds
+--     one charge, up to the limit.
+--   * SE: the card is never cast (its RequirementConditions refuse it under ARCANA_WEAVING). Holding it
+--     IS the charge: Economy/Reactions.lua keeps `ready` on while a copy is in hand and sets the
+--     resource to the copies in hand, capped by what is left of the round's limit. Using the reaction
+--     applies `used` (from the interrupt's own Properties), which discards one copy.
+D.reactions = {
+    ["Shout_Arcana_Card_Passive_GaleDeflection"] = {
+        ready = "GALE_DEFLECTION_READY", resource = "ArcanaReactGaleDeflection",
+        used = "GALE_DEFLECTION_USED_TECH", perRound = 3,
+    },
+    ["Shout_Arcana_Card_Passive_HollowImage"] = {
+        ready = "HOLLOW_IMAGE_READY", resource = "ArcanaReactHollowImage",
+        used = "HOLLOW_IMAGE_USED_TECH", perRound = 1,
+    },
+    ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = {
+        ready = "INSTINCTIVE_CHARM_READY", resource = "ArcanaReactInstinctiveCharm",
+        used = "INSTINCTIVE_CHARM_USED_TECH", perRound = 1,
+    },
+}
+
+-- `used` status -> the card it belongs to
+D.reactionByUsed = {}
+for id, r in pairs(D.reactions) do D.reactionByUsed[r.used] = id end
 
 D.containers = {
     ["Target_Arcana_Created_Mimic"] = {
