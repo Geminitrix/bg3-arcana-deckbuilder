@@ -1000,18 +1000,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="72102aea-2f95-acd3-d588-9fd491f3bd82" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_WindWhispers_Counter" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he348b9b5g4bffgf77cgaa79g953924869067" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ZEPHYR_STRIKE,100,2)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66ce2134-a997-0d8b-266f-9114d2ac715c" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Star_Moonlit" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hffe6447eg98f8gc354g53d1g161a67945c7d" version="1" />
@@ -1057,7 +1045,19 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsHit();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d4,Fire,Magical);ApplyStatus(BURNING,100,2);RemoveStatus(SELF,STAR_SUNLIT_II)" />
       </fields>
+    </stat_object><stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72102aea-2f95-acd3-d588-9fd491f3bd82" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_WindWhispers_Counter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he348b9b5g4bffgf77cgaa79g953924869067" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DangerSense" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ZEPHYR_STRIKE,100,2)" />
+      </fields>
     </stat_object>
+    
     
   </stat_objects>
 </stats>

@@ -209,7 +209,11 @@ for my $pf (@patches) { my $s = slurp($pf) // die "$pf: $!"; my ($file, $sec) = 
 sub put_entry { my ($pub, $sec, $blk) = @_; my $e = parse_entry($blk);
     my ($opub, $oi) = find_entry($e->{name}); die "$e->{name} ja existe em $opub, nao em $pub\n" if defined $opub && $opub ne $pub;
     my ($tp, $tb) = blocks_of($pub); $dirty{$tp} = 1;
+    # uma filha nova vai logo depois do pai quando ele esta no mesmo arquivo: o jogo le de cima para baixo e
+    # uma filha antes do pai nao herda nada (2026-09-29: STAR_MOONLIT_II sem icone e sem StackId)
+    my ($pi) = defined $e->{using} ? grep { bname($tb->[$_]) eq $e->{using} } 0..$#$tb : ();
     if (defined $oi) { $tb->[$oi] = $blk; note("txt ~ $pub $e->{name}") }
+    elsif (defined $pi) { splice @$tb, $pi + 1, 0, $blk; note("txt + $pub $e->{name} (depois de $e->{using})") }
     elsif ($sec eq '-') { push @$tb, $blk; note("txt + $pub $e->{name} (fim)") }
     else { my ($d) = grep { bname($tb->[$_]) eq $sec } 0..$#$tb; die "divisoria '$sec' nao achada em $pub\n" unless defined $d;
         my $k = $d + 1; $k++ while $k <= $#$tb && !is_divider($tb->[$k]); splice @$tb, $k, 0, $blk; note("txt + $pub $e->{name} (em $sec)") }

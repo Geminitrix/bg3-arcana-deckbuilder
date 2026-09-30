@@ -93,6 +93,21 @@ for my $f (bsd_glob("$D/Public/$M/Stats/Generated/Data/*.txt")) {
     push @err, "ArcaneEssence em $bn ($n) -- o recurso foi apagado" if $n;
 }
 
+# ---------- filha antes do pai ----------
+# O jogo le cada .txt de cima para baixo: uma entrada que faz `using` de outra do MESMO arquivo que so aparece
+# depois nao herda nada (sem Icon, sem StackId...). Em 2026-09-29 isso deixou o STAR_MOONLIT_II sem icone e
+# empilhando instancias. Pai em outro arquivo (vanilla, ou outro .txt do mod) nao entra nesta regra.
+for my $f (bsd_glob("$D/Public/$M/Stats/Generated/Data/*.txt")) {
+    (my $bn = $f) =~ s{.*/}{};
+    my (%pos, @kids); my $i = 0;
+    for my $b (split /(?=new entry )/, slurp($f)) {
+        next unless $b =~ /^new entry "([^"]+)"/; my $n = $1; $pos{$n} = ++$i;
+        push @kids, [$n, $1, $i] if $b =~ /^using "([^"]+)"/m;
+    }
+    for (@kids) { my ($n, $p, $at) = @$_;
+        push @err, "filha antes do pai       $n usa $p, que so vem depois em $bn" if $pos{$p} && $pos{$p} > $at }
+}
+
 # ---------- Story: gatilho comparando nome de carta ----------
 # O evento de conjurar entrega o nome da VARIANTE paga (..._5), entao comparar o nome da carta perde
 # toda conjuracao com upcast. A regra tem de perguntar DB_ARCANA_CardFamily(_ArcanaSpell, "<carta>").

@@ -2057,6 +2057,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a25ef576-75bf-61b0-6061-e25ec8591f80" />
+        <field name="Name" type="NameTableFieldDefinition" value="STAR_ECLIPSE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha845ac87g590bge87bg060fga6805d483621" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8147f3aeg0edcg4cdfg4fcegb2569916d479" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STAR_ECLIPSE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold,Resistant);Resistance(Fire,Resistant);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object><stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b5d33ad-3596-a692-1b39-961c7a6d18ad" />
         <field name="Name" type="NameTableFieldDefinition" value="STAR_MOONLIT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hffe6447eg98f8gc354g53d1g161a67945c7d" version="1" />
@@ -2071,6 +2083,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fba515b2-4c86-9cf0-9d2c-5ff591512875" />
+        <field name="Name" type="NameTableFieldDefinition" value="STAR_MOONLIT_II" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b5d33ad-3596-a692-1b39-961c7a6d18ad" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Cold)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Star_Moonlit_II" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="714a9f66-d264-f902-3d08-b5a836b7e0af" />
         <field name="Name" type="NameTableFieldDefinition" value="STAR_SUNLIT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hecb7b6b5g5b66g5b53g6b57g4b7d7ba22d07" version="1" />
@@ -2081,6 +2102,15 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Star_Sunlit" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed37a472-9ddf-6e24-5ff4-3dfe1b036f20" />
+        <field name="Name" type="NameTableFieldDefinition" value="STAR_SUNLIT_II" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="714a9f66-d264-f902-3d08-b5a836b7e0af" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Star_Sunlit_II" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2147,36 +2177,6 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fba515b2-4c86-9cf0-9d2c-5ff591512875" />
-        <field name="Name" type="NameTableFieldDefinition" value="STAR_MOONLIT_II" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2b5d33ad-3596-a692-1b39-961c7a6d18ad" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Cold)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Star_Moonlit_II" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ed37a472-9ddf-6e24-5ff4-3dfe1b036f20" />
-        <field name="Name" type="NameTableFieldDefinition" value="STAR_SUNLIT_II" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="714a9f66-d264-f902-3d08-b5a836b7e0af" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Star_Sunlit_II" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a25ef576-75bf-61b0-6061-e25ec8591f80" />
-        <field name="Name" type="NameTableFieldDefinition" value="STAR_ECLIPSE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha845ac87g590bge87bg060fga6805d483621" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8147f3aeg0edcg4cdfg4fcegb2569916d479" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
-        <field name="StackId" type="StringTableFieldDefinition" value="STAR_ECLIPSE" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold,Resistant);Resistance(Fire,Resistant);" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
+    
   </stat_objects>
 </stats>
