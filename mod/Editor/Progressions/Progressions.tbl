@@ -279,7 +279,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Unbound" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I;Arcana_Passive_Aspect_Fool_Awakening" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(706b4719-9a6d-42c0-8e08-8b273eb3e0e4,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0)" />
@@ -524,7 +524,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Aspect_Empress_I" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Aspect_Empress_I;Arcana_Passive_Aspect_Empress_Awakening" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f5216d9b-4fed-49f0-b1ea-8a5e2b831b59,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
@@ -753,7 +753,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_StellarAnchor;Arcana_Passive_Aspect_Star_I" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_StellarAnchor;Arcana_Passive_Aspect_Star_I;Arcana_Passive_Aspect_Star_Awakening" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
@@ -979,7 +979,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Aspect_Death_I" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Aspect_Death_I;Arcana_Passive_Aspect_Death_Awakening" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(49694d21-16e7-4637-a162-1a60bfc31d1b,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>

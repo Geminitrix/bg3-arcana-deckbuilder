@@ -2177,7 +2177,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE,100,10);ApplyStatus(SELF,ZEPHYR_STRIKE,100,1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StillnessOfMind" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8288db8fg32dfg6e3dgda26gcd08aedf318a" version="2" />
@@ -2247,7 +2247,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_FlowState_EX" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6eb6aba7-b315-4374-86b0-a84b08ee8167" />
         <field name="Level" type="IntegerTableFieldDefinition" value="5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE_EX,100,20);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE_EX,100,20);ApplyStatus(SELF,ZEPHYR_STRIKE,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9fc57967g4730gffbdgd22ag4c915fd1a308" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLOW_STATE_EX,100,20)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />

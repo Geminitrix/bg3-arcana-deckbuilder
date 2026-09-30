@@ -1843,7 +1843,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56bc27caga588g2b1agc487ge918b523cedf" version="3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56bc27caga588g2b1agc487ge918b523cedf" version="4" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4ad067bag1d03g5cc6g3769g9cbf6fb2a8f2" version="4" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />

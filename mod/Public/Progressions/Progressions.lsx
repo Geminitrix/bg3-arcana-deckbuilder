@@ -226,7 +226,7 @@
                     <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaGaleDeflectReturn,1,0);ActionResource(ArcanaReactGaleDeflection,1,0)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Unbound"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_3;Arcana_Passive_Aspect_Fool_I;Arcana_Passive_Aspect_Fool_Awakening"/>
                     <attribute id="PassivesRemoved" type="LSString" value="Arcana_Passive_TwinkleToes_1"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(706b4719-9a6d-42c0-8e08-8b273eb3e0e4,,,,AlwaysPrepared)"/>
@@ -407,7 +407,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Deceiver"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Aspect_Empress_I"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Aspect_Empress_I;Arcana_Passive_Aspect_Empress_Awakening"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(f5216d9b-4fed-49f0-b1ea-8a5e2b831b59,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
@@ -573,7 +573,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Starchild"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_StellarAnchor;Arcana_Passive_Aspect_Star_I"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_StellarAnchor;Arcana_Passive_Aspect_Star_I;Arcana_Passive_Aspect_Star_Awakening"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(dc0de737-2953-465d-9407-9f58e7391280,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>
@@ -736,7 +736,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Aspect_Death_I"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Aspect_Death_I;Arcana_Passive_Aspect_Death_Awakening"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(49694d21-16e7-4637-a162-1a60bfc31d1b,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
