@@ -923,7 +923,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="21402d6d-c542-9515-9d92-34c08189a7ff" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Aspect_Star_III" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h803ce401g2ae7g213eg9797gaf9cf7a4a991" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc58d2f49g0507g357cgd06dgec553de58dec" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc58d2f49g0507g357cgd06dgec553de58dec" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;DealDamage(2d4,Fire)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -1045,7 +1045,8 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsHit();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d4,Fire,Magical);ApplyStatus(BURNING,100,2);RemoveStatus(SELF,STAR_SUNLIT_II)" />
       </fields>
-    </stat_object><stat_object is_substat="false">
+    </stat_object>
+<stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="72102aea-2f95-acd3-d588-9fd491f3bd82" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_WindWhispers_Counter" />

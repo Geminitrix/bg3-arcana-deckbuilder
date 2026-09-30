@@ -2067,7 +2067,8 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold,Resistant);Resistance(Fire,Resistant);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
-    </stat_object><stat_object is_substat="false">
+    </stat_object>
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b5d33ad-3596-a692-1b39-961c7a6d18ad" />
         <field name="Name" type="NameTableFieldDefinition" value="STAR_MOONLIT" />
