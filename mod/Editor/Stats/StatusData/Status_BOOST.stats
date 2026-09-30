@@ -1790,8 +1790,10 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Rush_Arcana_Created_Aspect_LeapOfFaith);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_Aspect_Fool_Awakened_I;Arcana_Passive_Aspect_Fool_Awakened_II;Arcana_Passive_Aspect_Fool_Awakened_III" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Arcana_Passive_Aspect_Fool_III')):ApplyStatus(ASPECT_AWAKENED_FOOL_III,100,-1);IF(HasPassive('Arcana_Passive_Aspect_Fool_II') and not HasPassive('Arcana_Passive_Aspect_Fool_III')):ApplyStatus(ASPECT_AWAKENED_FOOL_II,100,-1);IF(not HasPassive('Arcana_Passive_Aspect_Fool_II')):ApplyStatus(ASPECT_AWAKENED_FOOL_I,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ASPECT_AWAKENED_FOOL_I);RemoveStatus(ASPECT_AWAKENED_FOOL_II);RemoveStatus(ASPECT_AWAKENED_FOOL_III)" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b79270c7-13cd-44d9-82f5-11eb41ca5f8a" />
       </fields>
@@ -2194,6 +2196,54 @@
         <field name="StackId" type="StringTableFieldDefinition" value="INSTINCTIVE_CHARM_USED_TECH" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4aef1a5c-f282-0c28-2b73-23b8c736572e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_I" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h841f077bg2136g63f3g145fg10b39d9e4eed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5aa211b3g50d8gd054g2146g6b9097806a16" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d4,Thunder)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_TIER" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82462895-80fe-c9e6-a606-b7df9196b91d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_II" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ebf0aa9ge6eeg0853gdf08g839bb462a003" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc98e7379g11e3gb428g4681g9f94f5551213" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d4,Thunder)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_TIER" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0aecdb18-983f-cb2c-01e0-fc321da9fb25" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_III" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d0bc8c9gcba9g24d9g5cc9gac6231f00c5d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d5de297g3e6egdc22gc822gf7519e223fc6" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d4,Thunder);3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_TIER" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     
