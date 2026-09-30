@@ -1316,6 +1316,7 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1325,6 +1326,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1334,6 +1336,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1343,6 +1346,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1352,6 +1356,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1361,6 +1366,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a977f3b-2765-4cd6-9597-c8273e33b7dd" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_AstralInfusion" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
