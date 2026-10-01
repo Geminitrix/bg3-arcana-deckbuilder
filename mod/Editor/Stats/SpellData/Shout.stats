@@ -1424,6 +1424,7 @@
         <field name="CinematicArenaFlags" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="CinematicArenaFlags" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h220a199fg83b7ge1d0gf593g6654fbde831c" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1446,7 +1447,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_FlowState" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FLOW_STATE,100,5);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StillnessOfMind" />
@@ -1469,6 +1469,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fa88f7ad-1ef6-4913-8166-573d1248d907" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h862291ffg0dcagc01agff59g3707148c1f0c" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1513,6 +1514,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he1334bc7g6336gf33fg3a0bg9b16c790118a" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1558,6 +1560,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fa88f7ad-1ef6-4913-8166-573d1248d907" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hf42c12f5g68c3g33d6g1283gdb0b20f96472" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1591,6 +1594,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,WIND_WHISPERS,100,1);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h82844638g0047g3b7cg19d4g22048d1b74e0" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
