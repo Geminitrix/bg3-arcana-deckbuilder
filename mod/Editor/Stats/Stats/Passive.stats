@@ -380,7 +380,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6638dcf1-e6a7-4ecb-b502-2c92d6751a58" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_FlowingStrikeZephyr" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99c87996ge8c7g0090gfd52g5145a4e60f30" version="6" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e5b5d84gf8fag7d7bgc878g960616bd7ae2" version="6" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e5b5d84gf8fag7d7bgc878g960616bd7ae2" version="7" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Precision_UnarmedDamage),Bludgeoning)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_BonusUnarmedStrike" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -838,7 +838,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Combat() and IsHit() and Enemy() and not HasStatus('ASPECT_AWAKENED_FOOL', context.Source) and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Combat() and IsAttack() and IsHit() and Enemy() and not HasStatus('ASPECT_AWAKENED_FOOL', context.Source) and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WANDERLUST_HIT_TECH,100,0)" />
       </fields>
     </stat_object>
@@ -847,7 +847,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7ab3d34c-b79d-6e7d-0c88-e9b286d5683b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Aspect_Fool_II" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8451466fg943fg2766g54bbge5811a2ba1a9" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd61170aagfbdeg9e94g39f3gab4d01140c21" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd61170aagfbdeg9e94g39f3gab4d01140c21" version="5" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h73613d54g9e1dg231dg03c1gcb8d2ba41166" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />

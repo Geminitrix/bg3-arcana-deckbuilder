@@ -250,6 +250,19 @@ suspected of crashing and stopped crashing once split into per-subclass function
 finding above is the likelier cause in that case — so **don't treat length alone as a proven root
 cause**. Splitting is still good practice for readability. See `IsMirroredSelfSpell.khn`.
 
+### ❗ `OnAttack` + `IsHit()` is not "the character made an attack"
+
+A passive with `StatsFunctorContext "OnAttack"` and `Conditions "IsHit() and Enemy()"` also fired when
+the character used the base game's **Portent** on an enemy's roll. The interrupt casts
+`Target_Portent_Interrupt` on the attacker, which has no attack roll, and it still counted as a hit
+(confirmed in osirislog, 2026-09-30). Add `IsAttack()` whenever only real attacks should count.
+
+### ❗ There is no "combat started" status event
+
+The `StatusEvent` enum (`Data/Editor/Config/Stats/Enumerations.xml`) has `OnCombatEnded` but no
+`OnCombatStarted`, so `RemoveEvents` cannot drop a status when a fight begins. Do it in Osiris on
+`EnteredCombat` instead, which also works on console. See `ARCANA_PreCombatBuffs.txt`.
+
 ### Schema-valid ≠ works
 
 `LSLibDefinitions.xml` tells you an argument's *type*, not whether the engine accepts the combination.

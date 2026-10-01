@@ -17,7 +17,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="((Character() and not Ally() and not Dead()) or Item()) and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e80e589g373ag4bb7g4bb6g5cfa7157a84c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3ca749cg6cdag38d5g9156g1224545d6d20" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3ca749cg6cdag38d5g9156g1224545d6d20" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(GaleBurst_Damage),Thunder)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning);DealDamage(LevelMapValue(GaleBurst_Damage),Thunder)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />

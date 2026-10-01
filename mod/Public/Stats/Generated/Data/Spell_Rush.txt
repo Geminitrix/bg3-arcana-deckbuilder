@@ -13,7 +13,7 @@ data "SpellSuccess" "DealDamage(UnarmedDamage,Bludgeoning);DealDamage(LevelMapVa
 data "TargetConditions" "((Character() and not Ally() and not Dead()) or Item()) and not HasPassive('ARCANA_IS_CARD', context.Source)"
 data "Icon" "Action_Monk_StepOfTheWind_Dash"
 data "DisplayName" "h3e80e589g373ag4bb7g4bb6g5cfa7157a84c;1"
-data "Description" "hf3ca749cg6cdag38d5g9156g1224545d6d20;1"
+data "Description" "hf3ca749cg6cdag38d5g9156g1224545d6d20;2"
 data "DescriptionParams" "DealDamage(LevelMapValue(GaleBurst_Damage),Thunder)"
 data "TooltipDamageList" "DealDamage(UnarmedDamage,Bludgeoning);DealDamage(LevelMapValue(GaleBurst_Damage),Thunder)"
 data "TooltipAttackSave" "MeleeUnarmedAttack"

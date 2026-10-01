@@ -1040,7 +1040,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="33de6a58-399a-4777-8606-47854bb09d17" />
         <field name="Name" type="NameTableFieldDefinition" value="ZEPHYR_STRIKE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h939a9ea3gfbabg50bbgaa8fga3efd4c6de88" version="3" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56efad21g20d8gbfd6g293dg4e2c421af268" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h56efad21g20d8gbfd6g293dg4e2c421af268" version="4" />
         <field name="StackId" type="StringTableFieldDefinition" value="MARTIAL_ARTS_BONUS_UNARMED_STRIKE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Arcana_Created_ZephyrStrike);" />
@@ -1819,7 +1819,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="db464c10-fa70-5a0a-b099-7f00565a693d" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_DEATH" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14d6cdf8gdbb5gadcdg19b1g104e7a5385c6" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14d6cdf8gdbb5gadcdg19b1g104e7a5385c6" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e508ad9g6181g6135ga0adga655f974bc56" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ArmsOfHadar" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_DEATH" />
@@ -1833,7 +1833,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="32fc5743-9c7b-4e42-b424-ec6f83fef056" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_EMPRESS" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5459358gdc89g382dgf2ffg85449e100f4f" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5459358gdc89g382dgf2ffg85449e100f4f" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0040093bg3775ga996ge868g666094354c8f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_EMPRESS" />
@@ -1847,7 +1847,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="321926f1-0db6-c936-bfb4-5c64ccedc182" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_FOOL" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdce1c43dgd72cgbaaagfa09g5220bc6a818e" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdce1c43dgd72cgbaaagfa09g5220bc6a818e" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d5e5030g7dc3gfcf9g15fag469d28ee8d5a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_FOOL" />
@@ -1861,7 +1861,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d769032e-5426-1ad5-c02f-31ea47ed97b6" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_PROGRESS_STAR" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h234eb2e8gccb0g7a38g71edgde5fde284760" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h234eb2e8gccb0g7a38g71edgde5fde284760" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8c497e6gb5d3ged95gb7dfg0b6310de4a9d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_DancingLights" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_PROGRESS_STAR" />
@@ -1967,12 +1967,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2fd3dc73-3a67-cdd4-d6d5-1b870bad845e" />
         <field name="Name" type="NameTableFieldDefinition" value="FOOL_ZEPHYR_FREE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he80cdc45g60adg8d77g50f5g626fd82b42a4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b9d78b5g0ee3g2d1eg65e8g48fd9771f335" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b9d78b5g0ee3g2d1eg65e8g48fd9771f335" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_BonusUnarmedStrike" />
         <field name="StackId" type="StringTableFieldDefinition" value="FOOL_ZEPHYR_FREE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_Arcana_Created_ZephyrStrike') or SpellId('Target_Arcana_Created_ZephyrStrike_2') or SpellId('Target_Arcana_Created_ZephyrStrike_3') or SpellId('Target_Arcana_Created_ZephyrStrike_4') or SpellId('Target_Arcana_Created_ZephyrStrike_5') or SpellId('Target_Arcana_Created_ZephyrStrike_6'),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_Arcana_Created_ZephyrStrike'),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint));" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
@@ -2219,7 +2219,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="82462895-80fe-c9e6-a606-b7df9196b91d" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_II" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ebf0aa9ge6eeg0853gdf08g839bb462a003" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc98e7379g11e3gb428g4681g9f94f5551213" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc98e7379g11e3gb428g4681g9f94f5551213" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d4,Thunder)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_TIER" />
@@ -2235,7 +2235,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0aecdb18-983f-cb2c-01e0-fc321da9fb25" />
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_III" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d0bc8c9gcba9g24d9g5cc9gac6231f00c5d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d5de297g3e6egdc22gc822gf7519e223fc6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d5de297g3e6egdc22gc822gf7519e223fc6" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(1d4,Thunder);3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="StackId" type="StringTableFieldDefinition" value="ASPECT_AWAKENED_FOOL_TIER" />
