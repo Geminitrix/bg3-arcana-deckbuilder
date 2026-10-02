@@ -267,7 +267,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','ETHEREAL_CHAINS_3','ETHEREAL_CHAINS_4','ETHEREAL_CHAINS_5','ETHEREAL_CHAINS_6','MIMIC_ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS_2','MIMIC_ETHEREAL_CHAINS_3','MIMIC_ETHEREAL_CHAINS_4','MIMIC_ETHEREAL_CHAINS_5','MIMIC_ETHEREAL_CHAINS_6','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SIGIL_DETONATED_TECH,100,0);IF(RemoveCause(StatusRemoveCause.Condition) and not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('ASPECT_AWAKENED_EMPRESS', context.Target) and HasStatus('SIGIL', context.Source, context.Target)):Disadvantage(AttackRoll);" />
       </fields>
@@ -305,13 +305,14 @@
         <field name="StackId" type="StringTableFieldDefinition" value="ETHEREAL_CHAINS" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSourceDeath" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(EtherealChains_Damage),Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RESTRAINED,100,1)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(EtherealChains_Damage),Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(EtherealChains_Damage),Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -433,11 +434,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac42a29bg29bagffcfgad6bg0f22776658d4" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MimicEtherealChains_Damage),Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
         <field name="StackId" type="StringTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MimicEtherealChains_Damage),Force,Magical)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MimicEtherealChains_Damage),Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h200724afg96c5gcdcegbc15g5d898fa0a99e" version="4" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1846,13 +1848,14 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLOOD_OFFERING" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0eb3ff71g7764g42e4g4d31g1721338680fa" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff6efa9egd816g6da4g56c9g47e3f744537e" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DeathsGrasp_Damage),Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ArmsOfHadar" />
         <field name="StackId" type="StringTableFieldDefinition" value="BLOOD_OFFERING" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip()):DamageBonus(LevelMapValue(DeathsGrasp_Damage),Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip()):DamageBonus(2d8,Necrotic);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2203,6 +2206,135 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6eaa3e68-8d93-9026-cf7f-dd71376d6b7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ETHEREAL_CHAINS_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6d02b3b-6e46-8d24-c12e-e32e01b9ada9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ETHEREAL_CHAINS_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="538ffcc2-469f-4046-1c71-3598948a91e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ETHEREAL_CHAINS_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a5d6f12-1c51-3d55-4b45-eef471b9fde7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ETHEREAL_CHAINS_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ad45c03-d8fd-bb3f-574a-ce3c0eb7bac0" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6773553-82d8-1f1f-7f30-68da6873dc45" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddd1457a-1b21-f8f1-98eb-6cd06297b5d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb44dc9d-92d2-a001-4b8f-3b9742428301" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(7d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(7d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6530864-e881-0acc-7faa-b4029ebe2b33" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d6,Force,Magical)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e056f6d-93ab-0e7f-00f6-0d59a4c5c148" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_OFFERING_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36195777-1b5c-39e6-6b72-aef2ac8664db" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip()):DamageBonus(3d8,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a4e1d37e-9632-8a7c-3080-4397c4526f34" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_OFFERING_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36195777-1b5c-39e6-6b72-aef2ac8664db" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip()):DamageBonus(4d8,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8cf92375-c8bb-6738-85b8-5cefd363887b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOOD_OFFERING_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36195777-1b5c-39e6-6b72-aef2ac8664db" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsCardSpell() or IsArcanaCantrip()):DamageBonus(5d8,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
   </stat_objects>

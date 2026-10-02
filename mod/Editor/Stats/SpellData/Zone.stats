@@ -17,12 +17,12 @@
         <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="5" />
         <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="10" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(FinalSpark_Damage),Radiant,Magical);ApplyStatus(FINAL_SPARK,100,1);ApplyStatus(FAERIE_FIRE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(FinalSpark_Damage)/2,Radiant,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant,Magical);ApplyStatus(FINAL_SPARK,100,1);ApplyStatus(FAERIE_FIRE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Radiant,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally()) and not Tagged('INVISIBLE_HELPER') and not HasPassive('ARCANA_IS_CARD', context.Source)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h33176909g769eg05e5g9450g23c4ed9c7073" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6bbf7c26gd27cg4d5fg4e6dge1d4fd9d8928" version="10" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(FinalSpark_Damage),Radiant)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Radiant)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FINAL_SPARK,100,1);ApplyStatus(FINAL_SPARK_OWNER,100,2);ApplyStatus(FAERIE_FIRE,100,1);" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
