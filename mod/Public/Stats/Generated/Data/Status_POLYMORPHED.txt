@@ -12,12 +12,6 @@ data "StackId" "DISGUISE_SELF"
 data "Boosts" "UnlockSpell(Shout_Arcana_Util_Faceless_Cancel);"
 data "StatusGroups" "SG_Polymorph;SG_Disguise;SG_RemoveOnRespec"
 
-new entry "FACELESS_COPY_EX"
-type "StatusData"
-data "StatusType" "POLYMORPHED"
-using "FACELESS_COPY"
-data "Boosts" ""
-
 new entry "FACELESS_DRAGONBORN_FEMALE"
 type "StatusData"
 data "StatusType" "POLYMORPHED"

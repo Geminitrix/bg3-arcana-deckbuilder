@@ -75,11 +75,6 @@
                     <attribute id="UUID" type="guid" value="c411afc3-58b2-4288-82d0-f4aaf951f543"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Starchild Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Arcana_Card_Spell_Starcall_EX"/>
-                    <attribute id="UUID" type="guid" value="38284119-78ca-4f17-8fb3-28a3d6e01727"/>
-                </node>
-                <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 1"/>
                     <attribute id="Spells" type="LSString" value="Projectile_Arcana_Card_Spell_SigilofMalice;Shout_Arcana_Util_Faceless;Target_Arcana_Card_Spell_MaliciousWhispers"/>
                     <attribute id="UUID" type="guid" value="507f2c2a-ccdd-44f0-bf45-ca3676e1a03f"/>
@@ -116,18 +111,8 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Faceless_Copy_EX;Target_Arcana_Util_Friends_EX"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Util_Friends_EX"/>
                     <attribute id="UUID" type="guid" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Deceiver Level 15"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_HostileTakeover_EX"/>
-                    <attribute id="UUID" type="guid" value="1b77b762-3a24-447e-a468-9c6ee2af6ff1"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Deceiver Level 19"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_MirrorImage_EX"/>
-                    <attribute id="UUID" type="guid" value="f2de9211-6a8e-453d-82f8-760d2ff6ff62"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Unbound Level 1"/>
@@ -158,21 +143,6 @@
                     <attribute id="Name" type="FixedString" value="Unbound Level 11"/>
                     <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_Thunderclap"/>
                     <attribute id="UUID" type="guid" value="f0892650-f4dd-41c1-bbe3-76cd7e361985"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Unbound Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_EvasiveFlow_EX"/>
-                    <attribute id="UUID" type="guid" value="f42bd753-926b-4f25-a003-e9272b5bb48e"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Unbound Level 15"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_FlowState_EX"/>
-                    <attribute id="UUID" type="guid" value="ad4890cf-4fd9-4de2-adac-085257187890"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Unbound Level 17"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_StormFists_EX"/>
-                    <attribute id="UUID" type="guid" value="270387bc-806f-4dbf-b2e3-cf32e81f95bd"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 1"/>
@@ -211,33 +181,8 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Eternal Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Transfusion_EX;Shout_Arcana_Card_Spell_HowlOfTheDead"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_HowlOfTheDead"/>
                     <attribute id="UUID" type="guid" value="8abac308-3262-4ce8-99c2-3d3e9c6ba42e"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Eternal Level 15"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_DeathsGrasp_EX"/>
-                    <attribute id="UUID" type="guid" value="ab8427d8-c8df-4bf5-a7ed-a44e15d506c4"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Eternal Level 19"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_RealmOfDeath_EX"/>
-                    <attribute id="UUID" type="guid" value="4d83dde3-8eb7-4aee-bb88-2d98eca566d9"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Starchild Level 17"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_AstralFortitude_EX"/>
-                    <attribute id="UUID" type="guid" value="e1489b7a-2201-4e55-8e5b-eaee56d2008c"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Starchild Level 15"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_StarRadiance_EX"/>
-                    <attribute id="UUID" type="guid" value="5b48dd2d-8f6e-4a27-aaf6-b65aad626004"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Starchild Level 19"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_LunarAegis_EX"/>
-                    <attribute id="UUID" type="guid" value="154921a7-1044-401f-b347-6dcbfdf84d2d"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Arcana Deck Core"/>

@@ -26,9 +26,3 @@ data "StatusType" "EFFECT"
 using "_PASSIVES"
 data "StatusEffect" "d45899d6-06c4-45a5-bc29-6610b1bdf83d"
 
-new entry "INTERRUPT_HOLLOW_IMAGE_EX"
-type "StatusData"
-data "StatusType" "EFFECT"
-using "_PASSIVES"
-data "StatusEffect" "d45899d6-06c4-45a5-bc29-6610b1bdf83d"
-

@@ -21,14 +21,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="84b819a4-4d25-4e7a-a4e3-09ae7cb708e2" />
-        <field name="Name" type="NameTableFieldDefinition" value="FACELESS_COPY_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="54dad2eb-5857-4209-87fd-e4a3482ee147" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="41ab7055-2f0f-492c-98b0-09cbf7e8b39b" />
         <field name="Name" type="NameTableFieldDefinition" value="FACELESS_DRAGONBORN_FEMALE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="10964244-95b0-4967-9932-5ce87ade09e0" />
@@ -305,7 +297,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c903a3cgde5eg547agf1c3g0fcc6c6e6a65" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Arcana_Util_Faceless_Cancel);" />
       </fields>
-    </stat_object><stat_object is_substat="false">
+    </stat_object>
+<stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="446eee8e-474a-4dba-8ba8-c365a4c873e1" />
         <field name="Name" type="NameTableFieldDefinition" value="FACELESS_TIEFLING_STRONG_MALE" />

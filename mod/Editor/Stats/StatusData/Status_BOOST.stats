@@ -650,17 +650,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8a3a3ae3-b290-4b4e-b737-caf838fd29d1" />
-        <field name="Name" type="NameTableFieldDefinition" value="LUNAR_AEGIS_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d698eede-5fd5-42f9-87e8-2850171eed61" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf707e812ge03fg61edge368gf07cb335052f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0eec38b7g00b8gefe0gbfa9g084ec031faae" version="1" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(4);ActionResourceMultiplier(Movement,130,0);UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint));IgnoreLeaveAttackRange();" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="da4ffe55-e87d-429b-8156-b3756b1db10b" />
         <field name="Name" type="NameTableFieldDefinition" value="LUNAR_WISP" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb52a4413g4e2ag6094ga648gd1f61d96db59" version="3" />
@@ -725,20 +714,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5a706228-3f4c-4e35-ac90-25e542dcbec6" />
-        <field name="Name" type="NameTableFieldDefinition" value="REJUVENATION_EX_TECH" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CureWounds" />
-        <field name="StackId" type="StringTableFieldDefinition" value="REJUVENATION_EX_TECH" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead() and not Enemy()):ApplyStatus(REJUVENATION_HELPER,100,0)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(REJUVENATION,100,2)" />
-        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="IgnoreItems" enumeration_type_name="AuraFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2016eff9-7ca1-46f4-a803-9e5c8f44eace" />
         <field name="Name" type="NameTableFieldDefinition" value="REJUVENATION_HELPER" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CureWounds" />
@@ -778,33 +753,6 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d4,Radiant)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d97ef273-66ce-43b1-9020-f39ab3de80f1" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3a377ff8-fb38-4ed9-b6fb-270182a73127" />
-        <field name="Name" type="NameTableFieldDefinition" value="STAR_RADIANCE_AURA_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="909ffc80-18b1-4981-a82f-ad588288b5a7" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4017449g1cf9g8f29g233eg72e1e481be09" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4854ccf3g3172g494bg97a0g1440ad360358" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d4,Radiant);GainTemporaryHitPoints(6)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d4,Radiant);" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_StarRadiance_EX;" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3f77f5b2-b25d-42a4-bd5c-7bb8ed8adc38" />
-        <field name="Name" type="NameTableFieldDefinition" value="STAR_RADIANCE_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8b60100d-a5f6-4e7d-a2c1-1ed2440fa30d" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h47ba9578g58cfga5b1g9f3bgab0dc96a1596" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h394e22fdgef7fgb0c8ga45eg16de78b5aa66" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d4,Radiant);GainTemporaryHitPoints(6)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Dead() and not Enemy()):ApplyStatus(STAR_RADIANCE_AURA_EX,100,1)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(3d4,Radiant);" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_StarRadiance_EX;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -853,18 +801,6 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value=" IF(IsDowned()):RegainHitPoints(1); AI_ONLY:IF(not HasStatus('ASTRAL_FORTITUDE')):RegainHitPoints(Cause.ClassLevel(Arcana))" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6fd469dd-b6a0-454a-8aa8-ac880095b045" />
-        <field name="Name" type="NameTableFieldDefinition" value="ASTRAL_FORTITUDE_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="661a1946-192d-4e5f-ba4c-82c6eff95a32" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h862b75bege21cg74f8gab01g170edafda320" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd80e53ccg0337g8c82gc449gdefc254821d7" version="1" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Cause.ClassLevel(Arcana)*2);" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value=" IF(IsDowned()):RegainHitPoints(1); AI_ONLY:IF(not HasStatus('ASTRAL_FORTITUDE')):RegainHitPoints(Cause.ClassLevel(Arcana)*2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -947,15 +883,6 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#00FFFFFF" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9ab1dd1f-88ba-4496-9753-2da474b71214" />
-        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FLOW_EX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c262ba1c-2b64-4fd0-970a-aa6180370755" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c6b7876gf5f3gbb5agc0c4g1b62e2aee160" version="1" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
     <stat_object color="#00FFFFFF" is_substat="false">

@@ -399,7 +399,6 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_13" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_12" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f42bd753-926b-4f25-a003-e9272b5bb48e,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
@@ -422,7 +421,6 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_15" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_13" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ad4890cf-4fd9-4de2-adac-085257187890,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
@@ -445,7 +443,6 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_17" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_15" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(270387bc-806f-4dbf-b2e3-cf32e81f95bd,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
@@ -466,7 +463,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Unbound" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_19;Arcana_Passive_GaleDeflection_EX" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_19" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_TwinkleToes_17" />
       </fields>
     </stat_object>
@@ -655,7 +652,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(1b77b762-3a24-447e-a468-9c6ee2af6ff1,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
@@ -676,7 +672,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="17" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_HollowImage_EX" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
@@ -697,7 +692,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Deceiver" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(f2de9211-6a8e-453d-82f8-760d2ff6ff62,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
@@ -862,7 +856,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="13" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(38284119-78ca-4f17-8fb3-28a3d6e01727,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -883,7 +876,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(5b48dd2d-8f6e-4a27-aaf6-b65aad626004,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -904,7 +896,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="17" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(e1489b7a-2201-4e55-8e5b-eaee56d2008c,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -925,7 +916,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Starchild" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(154921a7-1044-401f-b347-6dcbfdf84d2d,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -1110,7 +1100,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="15" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ab8427d8-c8df-4bf5-a7ed-a44e15d506c4,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -1131,7 +1120,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="17" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Unbroken_EX;Arcana_Passive_Hemoplague_EX" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Arcana_Passive_Unbroken" />
       </fields>
     </stat_object>
@@ -1153,7 +1141,6 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Eternal" />
         <field name="Level" type="ByteTableFieldDefinition" value="19" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(4d83dde3-8eb7-4aee-bb88-2d98eca566d9,,,,AlwaysPrepared)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
