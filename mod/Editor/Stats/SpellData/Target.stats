@@ -1222,8 +1222,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(GaleBurst_Damage),Thunder);Force(6);ApplyStatus(PRONE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(GaleBurst_Damage))/2,Thunder);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,Thunder);Force(6);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d10)/2,Thunder);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2277287bgc28fg41bbg5c59g3203bee0c5ed" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc3b60f05g2de4ge349g47cdgbfd318148ba4" version="5" />
@@ -2110,6 +2110,8 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Thunder);Force(7);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d10)/2,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2120,6 +2122,8 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Thunder);Force(7);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d10)/2,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2130,6 +2134,8 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder);Force(8);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10)/2,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2140,6 +2146,8 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_GaleBurst" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder);Force(8);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10)/2,Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

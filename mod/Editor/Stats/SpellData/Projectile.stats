@@ -188,6 +188,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_TempestuousMagic" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="99" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
