@@ -18,6 +18,10 @@
     - [ ] Unbound still scales by character level in: Gale Burst tooltip, Leap of Faith, Flowing Strikes.
     - [ ] Eternal Aspect Awakening has not been tested in game yet.
     - [ ] Fill in the patch number and date.
+    - [ ] Deck editing: copies can only be changed through the Script Extender console (!arcanaset) for now.
+          Decide whether to mention that, or wait for an in-game deck editor.
+    - [ ] "Closer to Mystra": add the new spell lists / spell selection once the base class rework lands.
+    - [ ] Confirm the Arcane Overflow / Mastery / Veil / Avatar level moves (1 ⇒ 14/16/18/20) are final.
 -->
 
 # Arcana — Patch X.Y
@@ -31,6 +35,116 @@
 - **Reactions rework:** reaction cards now work on charges with a per-round limit. Gale Deflection can be used up to three times a round.
 - **The EX abilities are gone.** Their power now lives in the Aspect Awakening and in upcasting.
 - **Unbound:** Zephyr Strike is everywhere, Wind Whispers strikes back on its own, and a large pass on durations and upcast values.
+- **Arcane Cards are gone:** the class now casts with **Woven Spell Slots**, a mix of the Warlock and the Wizard.
+- **The Arcana Deck (PC edition):** with Script Extender, combat becomes a deck builder. You draw a hand of cards, spend **Threads** to play them, and build your deck from the spells you know.
+- **Closer to Mystra:** the Arcana are now Mystra's chosen, and their magic is woven straight from her Weave. This is the first step of a larger base class rework.
+
+---
+
+# **NEW** Closer to Mystra
+
+*The Arcana have always pulled at the threads of fate. Now we know whose threads they are.*
+
+- The Arcana are now **chosen by Mystra**, the Lady of Mysteries, bound to the Weave by her own hand. The class description, resources and cards are woven from that idea: you cast with **Woven Spell Slots**, you play cards with **Threads** of the Weave, and spells like Mirrored Spell leave their reflection on Mystra's Weave.
+- **More is coming.** This is the first step of a larger rework of the base class: spell selection will be reworked, and the class will get many more spells to choose from, themed around Mystra and the Weave.
+
+---
+
+# **NEW** Woven Spell Slots
+
+*Arcane Cards were a single pool of 8 to 46 charges that paid for everything and refilled on a Long Rest. It didn't fit how spells work in Baldur's Gate 3, and it couldn't support upcasting. The Arcana now cast with spell slots of their own.*
+
+## **REMOVED** Arcane Cards
+- The **Arcane Cards** resource no longer exists. Every Arcana spell is now paid with a **Woven Spell Slot**.
+
+## **REMOVED** Arcane Shards
+- **Arcane Shards** no longer exist. They only paid for the EX abilities, which are also gone.
+
+## **NEW** Woven Spell Slots
+*A mix of the two base-game casters: all your slots share one level and rise with you, like the Warlock's, but you get many of them, like a Wizard.*
+
+- **All your Woven Spell Slots share a single level,** which rises every two character levels. When it rises, all your slots move up with it.
+- **You get a large pool of them,** growing almost every level.
+- **Every Arcana spell is cast at your current slot level** and gets stronger with it (see *Upcasting*). A level 1 spell cast by a level 9 Arcana uses a level 5 slot and deals its Spell Level 5 values.
+- Woven Spell Slots refill on a **Long Rest**.
+- Cantrips cost no slot.
+
+| Character Level | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Slot Level** | 1 | 1 | 2 | 2 | 3 | 3 | 4 | 4 | 5 | 5 |
+| **Slots** | 2 | 4 | 6 | 7 | 9 | 10 | 11 | 12 | 14 | 15 |
+
+| Character Level | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Slot Level** | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
+| **Slots** | 16 | 16 | 17 | 17 | 18 | 18 | 19 | 20 | 21 | 22 |
+
+## Base Class Features
+- **Arcane Recovery** (Level 2): Replenish Arcane Cards equal to twice your Arcana level ⇒ **Regain 1 Woven Spell Slot**. Still once per Short Rest.
+- **Arcane Overflow:** Level 1 ⇒ **Level 14**. Recover 1 Arcane Card whenever you cast a spell ⇒ **Once per turn in combat, when you cast an Arcane spell, regain 1 Thread and 1 Woven Spell Slot.**
+- **Arcane Mastery:** Level 1 ⇒ **Level 16**. Your next Arcane spell costs no Threads and no Woven Spell Slot. Once per Long Rest.
+- **Arcane Veil:** Level 1 ⇒ **Level 18**.
+- **Arcane Avatar:** Level 1 ⇒ **Level 20**.
+
+---
+
+# **NEW** The Arcana Deck (PC Edition)
+
+*With Script Extender installed, the Arcana fight with a deck of cards, in the spirit of Legends of Runeterra and Slay the Spire. Outside combat nothing changes: your spells are spells, paid with Woven Spell Slots. When a fight starts, the spells become cards.*
+
+> **Console / no Script Extender:** the deck doesn't exist. Every card is an ordinary spell paid with Woven Spell Slots, and everything else in these notes still applies.
+
+## Your Deck
+- **Your deck is built from the Arcane spells you know.** Every card you learn joins it automatically, **3 copies** each (1 copy for Unique cards).
+- **Minimum deck size:** 10 cards from level 1 to 8, 15 cards from level 9.
+- Copies can only be changed outside combat. A deck can't go below its minimum size.
+- **Weapon actions are cards too** (Cleave, Piercing Shot, and so on). They cost no Threads, are Unique and keep their own cooldown. Your **basic attack is not a card**: you can always swing, even with a bad hand.
+
+## Your Hand
+- When combat starts, your deck is shuffled and you draw an **opening hand of 4 cards**.
+- At the start of each of your turns, you **draw 1 card**.
+- Your hand holds up to **10 cards**. A card drawn past the limit is **Unravelled** (lost for the rest of the fight).
+- **You can only play the cards in your hand.** Cards in hand glow on your hotbar; the rest are locked. A **Cards in Hand** counter shows how many you hold.
+- In combat you can only cast cards. Arcana utility spells, and the base-game spells the class grants (Light, Produce Flame, Chill Touch, True Strike), are locked until the fight ends.
+
+## Threads
+*The deck's energy. Spend it, because it won't wait for you.*
+- Playing a card costs **Threads equal to its spell level.** Cantrips cost 1 Thread. In combat, cards cost Threads **instead of** Woven Spell Slots.
+- Threads **refill at the start of each of your turns**, ramping up as the fight goes on:
+
+| Character Level | Turn 1 | Turn 2 | Turn 3+ |
+|---|---|---|---|
+| **1–4** | 1 | 1 | 1 |
+| **5–6** | 1 | 2 | 3 |
+| **7–8** | 2 | 3 | 4 |
+| **9–10** | 3 | 4 | 5 |
+| **11+** | 4 | 5 | 6 |
+
+- **Spare Threads:** up to 2 unspent Threads carry over to your next turn.
+- You can never hold more than **6 Threads**.
+
+## Piles
+- **Deck:** the cards you haven't drawn yet.
+- **Frayed:** where most cards go after you play them. When your deck runs out, the Frayed pile is shuffled back into it.
+- **Unravel:** cards that are gone for the rest of the fight: cards created during combat, weapon actions, cards drawn past the hand limit, and cards whose effect lasts all day (Mirrored Spell, Lunar Wisp...).
+
+## **Reweave** (mulligan)
+- At the start of your first turn in combat you get **Reweave**. Play it to return your hand to your deck, shuffle it, and draw the same number of cards. It's only available on that first turn.
+
+## Card Types
+- **Spell cards:** your Arcane spells.
+- **Ability cards:** class abilities played as cards, such as Untethered.
+- **Passive cards:** cards that switch on an effect until combat ends (or until your next Long Rest), such as Mirrored Spell, Lunar Wisp and the **Ready:** reaction cards.
+- **Created cards:** cards made by other cards during a fight, such as Withdraw after Distortion, the Deceiver's Mimic copies, Zephyr Strike and the Aspect cards. They expire after a few turns, and they're Unravelled once played.
+- **Reaction cards:** you don't play these. Hold them in your hand, and when the trigger happens the game asks whether you want to use one. See *Reaction Cards*.
+
+## Card Keywords
+- **Unique:** at most 1 copy in your deck. Cards with a cooldown of their own are Unique, since a second copy could only be drawn dead.
+- **Fated:** always starts in your opening hand. Fated cards are also Unique.
+- **Fleeting:** if you don't play it this turn, it leaves your hand at the end of the turn.
+- **Created:** made during combat by another card. It lasts a set number of your turns.
+- **Choose:** pick one of several options when you play it (Hemoplague: one of six diseases).
+- **Tangle:** some powerful cards shuffle a Tangle into your deck: a knot in the Weave that can't be played and only takes up room in your hand.
 
 ---
 
