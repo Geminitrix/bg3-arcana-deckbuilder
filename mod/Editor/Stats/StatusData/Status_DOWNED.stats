@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="030d44f1-be8c-4538-9512-08111d49292a">
   <stat_objects>
+    <stat_object color="#FF1E90FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ec35e7b-cd88-c1ac-615e-906399126187" />
+        <field name="Name" type="NameTableFieldDefinition" value="AWAKEN DOWNED STATUS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="00920398-abd2-5d8e-2f2b-cf6ec8513a4d" />
@@ -36,7 +42,5 @@
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="5508ea40-3f23-436d-980d-0b8143f6e2f3" />
         <field name="HideOverheadUI" type="BoolTableFieldDefinition" value="True" />
       </fields>
-    </stat_object>
-    
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>

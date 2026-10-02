@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="bbe0e72e-fa2a-41d2-be9a-c604af561421">
   <stat_objects>
+    <stat_object color="#FF1E90FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9dda069-f022-c4ec-6151-79d1df7e85c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="AWAKEN SPELLS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0f5601e-4e4a-ba72-50f7-0620ccceedf7" />
@@ -31,6 +37,5 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
-    </stat_object>
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>

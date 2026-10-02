@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="47014da6-a81c-40a9-9f3c-4a74b6ddc574">
   <stat_objects>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c75a8d3-9956-98f8-c491-0ca55848d6a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DECEIVER INVISIBLE STATUS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16f5114f-2a1b-4276-b9ff-ea52be218d2f" />
@@ -15,7 +21,8 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
-    </stat_object><stat_object is_substat="false">
+    </stat_object>
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="636f629b-91c3-4a86-9f96-439b94e17efc" />
         <field name="Name" type="NameTableFieldDefinition" value="MIRROR_IMAGE_TECHNICAL" />
@@ -28,7 +35,5 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784131eeg4b49g41f3g2db9ge081041f4762" version="1" />
       </fields>
-    </stat_object>
-    
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>

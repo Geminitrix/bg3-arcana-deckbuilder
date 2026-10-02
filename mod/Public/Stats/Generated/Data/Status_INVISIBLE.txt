@@ -1,3 +1,7 @@
+new entry "DECEIVER INVISIBLE STATUS"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+
 new entry "HOLLOW_IMAGE_INVISIBLE"
 type "StatusData"
 data "StatusType" "INVISIBLE"

@@ -1,3 +1,7 @@
+new entry "Rush_AWAKEN SPELLS"
+type "SpellData"
+data "SpellType" "Rush"
+
 new entry "Rush_Arcana_Created_Aspect_LeapOfFaith"
 type "SpellData"
 data "SpellType" "Rush"

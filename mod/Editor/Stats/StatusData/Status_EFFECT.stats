@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="afc508da-dd39-4821-b0af-9955e5e2f087">
   <stat_objects>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58a845b8-08b8-48fa-aac9-e751e014c301" />
+        <field name="Name" type="NameTableFieldDefinition" value="DECEIVER EFFECT STATUS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a24a1d87-237f-4d19-9f5e-f515d6365dcc" />
@@ -20,21 +26,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9062a64d-33a9-41b3-8dae-78b4018cad8f" />
-        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_GALE_DEFLECT_MISSILES_HIT" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d95bcd08-5cd6-44f6-b0d5-0551f01672c9" />
         <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_HOLLOW_IMAGE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d45899d6-06c4-45a5-bc29-6610b1bdf83d" />
       </fields>
     </stat_object>
-    
-  </stat_objects>
+    <stat_object color="#FFDAA520" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c0b3b0d-83d7-3f81-0b76-1e7274b76e55" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNBOUND EFFECT STATUS" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9062a64d-33a9-41b3-8dae-78b4018cad8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_GALE_DEFLECT_MISSILES_HIT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
+      </fields>
+    </stat_object></stat_objects>
 </stats>

@@ -157,6 +157,5 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
-    </stat_object>
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>

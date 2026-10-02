@@ -1,3 +1,7 @@
+new entry "AWAKEN DOWNED STATUS"
+type "StatusData"
+data "StatusType" "DOWNED"
+
 new entry "ETERNAL_UNDYING_DOWNED"
 type "StatusData"
 data "StatusType" "DOWNED"
