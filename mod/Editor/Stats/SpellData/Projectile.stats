@@ -10,6 +10,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0898eafb-9a9d-4d37-a793-e823d0867431" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEBUG_SigilofMalice" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a79933-9cfc-447a-add6-f96d24d4b34f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);ApplyStatus(SELF,SIGIL_OF_MALICE_LAST_CASTED,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1,Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1,Force)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c2a79933-9cfc-447a-add6-f96d24d4b34f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_SigilofMalice" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);ApplyStatus(SELF,SIGIL_OF_MALICE_LAST_CASTED,100,-1)" />
@@ -117,10 +128,10 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c2a79933-9cfc-447a-add6-f96d24d4b34f" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Arcana_Created_Mimic" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfde409a6gdc0eg96deg50a5g4285eae83cb1" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsLinkedSpellContainer;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he624619ag7ba5gd55fge4dfgc5905104b8f4" version="4" />
         <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Projectile_MagicMissile_AI" />
@@ -136,9 +147,9 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Arcana_Created_MimicSigilofMalice" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(2d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -149,9 +160,9 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Arcana_Created_MimicSigilofMalice" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(6d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(3d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -162,9 +173,9 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Arcana_Created_MimicSigilofMalice" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d6,Force)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(7d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -175,9 +186,9 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Arcana_Created_MimicSigilofMalice" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d6,Force)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(8d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -188,9 +199,9 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Arcana_Created_MimicSigilofMalice" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(9d6,Force)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(9d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(9d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(6d6,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -259,7 +270,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="148f50e8-a9ad-4fd1-b449-2fcddcf2b6b2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(2d8,Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -267,7 +278,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="38893c7c-80df-a8aa-009a-55924fc148d8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -275,7 +286,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a56cd55d-86c4-631e-b9c6-8a9e278e9dec" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -283,7 +294,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bdb33605-b447-786c-d0d6-abd3c063a832" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(7d8,Force,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -291,7 +302,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ad0a06f1-cdaa-f2e9-1300-9f0cf05adc3b" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(8d8,Force,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -307,6 +318,14 @@
         <field name="UUID" type="IdTableFieldDefinition" value="192b9790-39c6-4f36-9750-156af3a51e35" />
         <field name="Name" type="NameTableFieldDefinition" value="STARCHILD SPELLS" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;38cdb41c-2eec-4e03-bb31-83cff0346c35,,;85414f5f-b448-4dda-9370-1b6c4b38b561,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4745922-0da5-4bd5-8606-0788d78d3ff8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEBUG_Starcall" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90803df7-e8af-4b4c-a1ab-daab5254f2b3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -472,5 +491,6 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+  </stat_objects>
 </stats>

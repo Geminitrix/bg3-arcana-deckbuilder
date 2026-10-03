@@ -368,10 +368,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39080543-a41e-448b-b75f-640b3ae3a394" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac42a29bg29bagffcfgad6bg0f22776658d4" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="StackId" type="StringTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h200724afg96c5gcdcegbc15g5d898fa0a99e" version="4" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
       </fields>
@@ -381,9 +381,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1ad45c03-d8fd-bb3f-574a-ce3c0eb7bac0" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
@@ -392,9 +392,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a6773553-82d8-1f1f-7f30-68da6873dc45" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
@@ -403,9 +403,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ddd1457a-1b21-f8f1-98eb-6cd06297b5d5" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d6,Force,Magical)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d6,Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(3d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
@@ -414,9 +414,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fb44dc9d-92d2-a001-4b8f-3b9742428301" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d6,Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(7d6,Force,Magical)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(7d6,Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
       </fields>
     </stat_object>
@@ -425,9 +425,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c6530864-e881-0acc-7faa-b4029ebe2b33" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_ETHEREAL_CHAINS_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d6,Force)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d6,Force,Magical)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d6,Force,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Force)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
@@ -2483,5 +2483,6 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+  </stat_objects>
 </stats>

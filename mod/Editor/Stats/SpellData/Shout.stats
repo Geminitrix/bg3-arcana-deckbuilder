@@ -2379,6 +2379,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53ad4fa7-2f45-47f7-a842-24e7223cbe19" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEBUG_BloodOffering" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b01af0b8-062d-4540-f4fb-91ca900dddb7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b01af0b8-062d-4540-f4fb-91ca900dddb7" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BloodOffering" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />
@@ -2653,5 +2661,6 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+  </stat_objects>
 </stats>
