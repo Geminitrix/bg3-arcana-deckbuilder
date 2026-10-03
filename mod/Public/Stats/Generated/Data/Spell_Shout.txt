@@ -1173,6 +1173,12 @@ data "RootSpellID" "Shout_Arcana_Card_Passive_MirroredSpell"
 data "PowerLevel" "6"
 data "UseCosts" "SpellSlotsGroup:1:1:6;"
 
+new entry "Shout_Deceiver_Clone_Dismiss"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Dismiss_Self"
+data "Sheathing" "DontChange"
+
 new entry "Shout_Arcana_Created_MimicWithdraw"
 type "SpellData"
 data "SpellType" "Shout"

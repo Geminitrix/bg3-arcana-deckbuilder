@@ -1344,6 +1344,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8fa67c7b-a262-29e7-68e7-13feeec248c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Clone_Dismiss" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be2ddd2f-6515-4b5c-aab5-e241280f7a52" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0d25d952-a388-4066-9b7c-55ced1b06519" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Created_MimicWithdraw" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7c0a814a-7eeb-4938-bd23-c0d81ccad215" />
