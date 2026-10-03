@@ -9,24 +9,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="00920398-abd2-5d8e-2f2b-cf6ec8513a4d" />
-        <field name="Name" type="NameTableFieldDefinition" value="ETERNAL_UNDYING_DOWNED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1f04af57-b58e-42e1-915f-8963309539f6" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ebee4g488eg628ag42f0g8ac478849ddb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DeathWard" />
-        <field name="AnimationStart" type="ShortNameTableFieldDefinition" value="7e811df9-74e7-4515-bd02-7043164dbf33(STAT_Fallen_Peace_01_Start)" />
-        <field name="AnimationLoop" type="ShortNameTableFieldDefinition" value="d7b7cf53-fe71-4a23-8011-9675a6e1d902(STAT_Fallen_Peace_01_Loop)" />
-        <field name="AnimationEnd" type="ShortNameTableFieldDefinition" value="ade4cf7f-a34a-40c4-b810-096f0c186bc2(STAT_Fallen_Peace_01_End)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ETERNAL_UNDYING);RegainHitPoints(1,Guaranteed)" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="5508ea40-3f23-436d-980d-0b8143f6e2f3" />
-        <field name="HideOverheadUI" type="BoolTableFieldDefinition" value="True" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b62b9622-e507-426f-700a-9ec55213261c" />
         <field name="Name" type="NameTableFieldDefinition" value="UNDYING_HOPE_DOWNED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1f04af57-b58e-42e1-915f-8963309539f6" />
@@ -38,6 +20,24 @@
         <field name="AnimationEnd" type="ShortNameTableFieldDefinition" value="ade4cf7f-a34a-40c4-b810-096f0c186bc2(STAT_Fallen_Peace_01_End)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(UNDYING_HOPE);RegainHitPoints(MaxHP/2,Guaranteed)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="5508ea40-3f23-436d-980d-0b8143f6e2f3" />
+        <field name="HideOverheadUI" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00920398-abd2-5d8e-2f2b-cf6ec8513a4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ETERNAL_UNDYING_DOWNED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f04af57-b58e-42e1-915f-8963309539f6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ebee4g488eg628ag42f0g8ac478849ddb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DeathWard" />
+        <field name="AnimationStart" type="ShortNameTableFieldDefinition" value="7e811df9-74e7-4515-bd02-7043164dbf33(STAT_Fallen_Peace_01_Start)" />
+        <field name="AnimationLoop" type="ShortNameTableFieldDefinition" value="d7b7cf53-fe71-4a23-8011-9675a6e1d902(STAT_Fallen_Peace_01_Loop)" />
+        <field name="AnimationEnd" type="ShortNameTableFieldDefinition" value="ade4cf7f-a34a-40c4-b810-096f0c186bc2(STAT_Fallen_Peace_01_End)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ETERNAL_UNDYING);RegainHitPoints(1,Guaranteed)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="5508ea40-3f23-436d-980d-0b8143f6e2f3" />
         <field name="HideOverheadUI" type="BoolTableFieldDefinition" value="True" />
