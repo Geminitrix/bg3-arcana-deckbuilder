@@ -147,6 +147,46 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5091e14b-3276-406a-b042-991346b71c1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="GUIDANCE_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e17de6ff-b348-40e7-a347-1c6e26f18bcf" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha350c81fgc5f0gd396g9d13g884eda29270d" version="2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,2d4);RollBonus(RawAbility,2d4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e6bbba7-63ec-4323-b8ab-156771afe67a" />
+        <field name="Name" type="NameTableFieldDefinition" value="GUIDANCE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e17de6ff-b348-40e7-a347-1c6e26f18bcf" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5ec0ed67gd344g1c6cg9fffg3171ecfcff7f" version="2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,3d4);RollBonus(RawAbility,3d4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc528776-bf9b-4fdc-8837-9b4c891c6ff2" />
+        <field name="Name" type="NameTableFieldDefinition" value="GUIDANCE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e17de6ff-b348-40e7-a347-1c6e26f18bcf" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7a74df9fg06eage322ga891g47b0f6def6e1" version="2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,4d4);RollBonus(RawAbility,4d4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da9b1cbe-5d54-482e-b5e3-19adebc7f3b9" />
+        <field name="Name" type="NameTableFieldDefinition" value="GUIDANCE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e17de6ff-b348-40e7-a347-1c6e26f18bcf" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06338f7eg96abgf08cgd4acg7708a83e872f" version="2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,5d4);RollBonus(RawAbility,5d4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8260f7b-f88a-4181-9901-018f08af16d9" />
         <field name="Name" type="NameTableFieldDefinition" value="DISPEL_MAGIC_AURA" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2a94f2dga9e8g3c10g54b0g8624b9247bdd" version="1" />

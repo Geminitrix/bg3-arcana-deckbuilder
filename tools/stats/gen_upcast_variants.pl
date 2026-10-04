@@ -66,6 +66,71 @@ for my $f (bsd_glob("$base/Public/$mod/Stats/Generated/Data/Spell_*.txt")) {
     }
 }
 
+# ---------- 1a. FIRST_SLOT: o primeiro espaco que cada carta pode ver ----------
+# Os espacos da Arcana tem um nivel so, metade do nivel do personagem arredondada para cima. Uma carta
+# concedida no nivel G nunca e conjurada abaixo de ceil(G/2): variante abaixo disso e peso morto (e
+# uma caixa de escolha a mais). As variantes comecam em max(Level+1, ceil(G/2)).
+#
+# G, nesta ordem:
+#   1. a progressao concede direto (lista de magias ou passivas, UnlockSpell num Boost): o nivel dela.
+#      Referencia vinda de outra entrada nao conta -- uma condicao que cita o nome nao ensina a magia.
+#   2. senao, o menor nivel de concessao que a alcanca pelas referencias dos campos dos stats ou pelos
+#      `conjures` do CardDB.lua (Withdraw, criado pela Distortion).
+#   3. quem mora num container (SpellContainerID) so e conjuravel por ele: o nivel do container. As
+#      opcoes do Mimic sao conjuradas pelo Sigil (nivel 1), mas so existem no Mimic (nivel 7).
+# Conferido em 2026-10-04 contra as 60 cartas: reproduz exatamente as variantes do commit 8aad9c5.
+use POSIX qw(ceil);
+my (%grantLevel, %firstSlot, @warnEarly);
+{
+    my $VARIANT = qr/_[1-9]$/;
+    my %ref;
+    for my $n (keys %blk) { next if $n =~ $VARIANT; my %r;
+        while ($blk{$n} =~ /^data "(\w+)" "([^"]*)"/mg) { my ($k, $v) = ($1, $2);
+            next if $k =~ /^(?:DisplayName|Description|ExtraDescription|Icon|RootSpellID|DescriptionParams|TooltipUpcastDescription)$/;
+            for my $w ($v =~ /([A-Za-z][A-Za-z0-9_]*)/g) { $w =~ s/$VARIANT//; $r{$w} = 1 if $w ne $n && $blk{$w} } }
+        $ref{$n} = [ sort keys %r ] }
+    my $slurp = sub { open my $h, '<:raw', $_[0] or die "$_[0]: $!"; local $/; my $s = <$h>; close $h; $s =~ s/\r\n/\n/g; $s };
+    my $db = "$base/Mods/$mod/ScriptExtender/Lua/Server/Cards/CardDB.lua";
+    if (-e $db) { my $s = $slurp->($db);
+        while ($s =~ /\["(\w+)"\]\s*=\s*\{((?:(?!\n    \["|\n\}).)*?conjures\s*=\s*\{.*?)\n    \}/sg) {
+            my ($card, $b) = ($1, $2); push @{ $ref{$card} }, $b =~ /id\s*=\s*"(\w+)"/g } }
+    my (%list, %plist, @roots);
+    my $s = $slurp->("$base/Public/$mod/Lists/SpellLists.lsx");
+    while ($s =~ /<node id="SpellList">(.*?)<\/node>/sg) { my $b = $1;
+        my ($sp) = $b =~ /id="Spells" type="\w+" value="([^"]*)"/; my ($u) = $b =~ /id="UUID" type="\w+" value="([^"]*)"/;
+        $list{$u} = [ grep { length } split /[;,]/, ($sp // '') ] if $u }
+    $s = $slurp->("$base/Public/$mod/Lists/PassiveLists.lsx");
+    while ($s =~ /<node id="PassiveList">(.*?)<\/node>/sg) { my $b = $1;
+        my ($ps) = $b =~ /id="Passives" type="\w+" value="([^"]*)"/; my ($u) = $b =~ /id="UUID" type="\w+" value="([^"]*)"/;
+        $plist{$u} = [ grep { length } split /[;,]/, ($ps // '') ] if $u }
+    $s = $slurp->("$base/Public/$mod/Progressions/Progressions.lsx");
+    while ($s =~ /<node id="Progression">(.*?)<\/node>/sg) { my $b = $1; my %a;
+        $a{$1} = $2 while $b =~ /id="(\w+)" type="\w+" value="([^"]*)"/g;
+        next unless ($a{Name} // '') =~ /^(?:Arcana|Deceiver|Starchild|Unbound|Eternal|Titan)$/; my $L = $a{Level};
+        push @roots, [$_, $L] for grep { length } split /;/, ($a{PassivesAdded} // '');
+        for my $sel (split /;/, ($a{Selectors} // '')) {
+            if    ($sel =~ /^(?:AddSpells|SelectSpells)\(([0-9a-f-]{36})/)     { push @roots, [$_, $L] for @{ $list{$1}  // [] } }
+            elsif ($sel =~ /^(?:SelectPassives|AddPassives)\(([0-9a-f-]{36})/) { push @roots, [$_, $L] for @{ $plist{$1} // [] } } }
+        push @roots, [$_, $L] for ($a{Boosts} // '') =~ /UnlockSpell\((\w+)/g }
+    my %direct;
+    for (@roots) { my ($n, $L) = @$_; $direct{$n} = $L if !defined $direct{$n} || $L < $direct{$n} }
+    %grantLevel = %direct;
+    for my $r (sort { $a->[1] <=> $b->[1] } @roots) { my ($n0, $L) = @$r; my @q = @{ $ref{$n0} // [] }; my %seen = ($n0 => 1);
+        while (@q) { my $n = shift @q;
+            next if $seen{$n}++ || !$blk{$n} || defined $direct{$n} || (defined $grantLevel{$n} && $grantLevel{$n} <= $L);
+            $grantLevel{$n} = $L; push @q, @{ $ref{$n} // [] } } }
+    my $own = sub { my ($n, $k) = @_; my $i = 0;
+        while ($n && $blk{$n} && $i++ < 10) { return $1 if $blk{$n} =~ /^data "$k" "([^"]*)"/m; ($n) = $blk{$n} =~ /^using "([^"]+)"/m } undef };
+    for my $n (keys %blk) { next if $n =~ $VARIANT; my $c = $own->($n, 'SpellContainerID');
+        $grantLevel{$n} = $grantLevel{$c} if defined $c && length $c && defined $grantLevel{$c} }
+    for my $n (keys %plan) {
+        my $g = $grantLevel{$n};
+        unless (defined $g) { push @warnEarly, "  $n: nenhuma progressao a concede -- variantes desde Level+1"; $firstSlot{$n} = $plan{$n}{level} + 1; next }
+        my $f = ceil($g / 2);
+        $firstSlot{$n} = $f > $plan{$n}{level} + 1 ? $f : $plan{$n}{level} + 1;
+    }
+}
+
 # ---------- 1b. containers com upcast ----------
 # O jogo base faz assim (Target_EnhanceAbility): a variante do container, "_3", lista as variantes
 # dos filhos, "..._BearsEndurance_3", e cada filho ganha a propria "_3", com SpellContainerID apontando
@@ -83,7 +148,7 @@ for my $n (sort keys %plan) {
         unless ($blk{$c}) { push @{ $plan{$n}{missing} }, $c; next }
         if ($plan{$c}) { push @{ $plan{$n}{ownPlan} }, $c; next }   # filho com variante propria: nao mexer
         push @{ $plan{$n}{children} }, $c;
-        $childLevels{$c} = [ $plan{$n}{level}+1 .. $MAXSLOT ];
+        $childLevels{$c} = [ $firstSlot{$n} .. $MAXSLOT ];
     }
 }
 
@@ -152,7 +217,8 @@ for my $f (bsd_glob("$base/Editor/Mods/$mod/Stats/SpellData/*.stats")) {
 }
 
 # ---------- 4. gerar ----------
-my (%txtAdd, %statsAdd, @log, @warn, $khnNote);
+my (%txtAdd, %statsAdd, @log, $khnNote);
+my @warn = @warnEarly;
 my $TYPES = qr/^(Target|Shout|Projectile|Zone|Teleportation)_/;
 # uma variante, dos dois lados. $extra: campos de container, como [nome, valor]
 sub emit_variant { my ($n, $L, $cost, @extra) = @_;
@@ -192,7 +258,7 @@ for my $n (sort keys %plan) {
     push @warn, "  $n: filho '$_' do container nao existe" for @{ $plan{$n}{missing} || [] };
     push @warn, "  $n: filho '$_' tem variantes proprias -- o container nao as liga" for @{ $plan{$n}{ownPlan} || [] };
     my @kids = @{ $plan{$n}{children} || [] };
-    for my $L ($lvl+1 .. $MAXSLOT) {
+    for my $L ($firstSlot{$n} .. $MAXSLOT) {
         (my $cost = $uc) =~ s/(SpellSlotsGroup:\d+:\d+):\d/$1:$L/;
         emit_variant($n, $L, $cost, @kids ? (['ContainerSpells', join(';', map { "${_}_$L" } @kids)]) : ());
         # cada filho: a sua "_L", dentro do container "_L", com o custo do nivel L
@@ -231,7 +297,7 @@ $khnNote = sprintf("%d variante(s) com campos editados preservados", scalar keys
     for my $r (sort keys %allRoots) {
         push @facts, qq{DB_ARCANA_CardFamily("$r", "$r");};
         push @facts, qq{DB_ARCANA_CardFamily("${r}_$_", "$r");}
-            for ($plan{$r} ? ($plan{$r}{level}+1 .. $MAXSLOT) : @{ $childLevels{$r} || [] });
+            for ($plan{$r} ? ($firstSlot{$r} .. $MAXSLOT) : @{ $childLevels{$r} || [] });
     }
     $pending{$goal} = join($nl,
         "Version 1", "SubGoalCombiner SGC_AND", "INITSECTION", "PROC_ARCANA_CardFamilies();", "",
@@ -290,8 +356,9 @@ unless ($DRY) {
 }
 
 printf "== %s variantes para %s cartas (antigas removidas: %s) ==\n", scalar @log, scalar keys %plan, $removed;
-print "$_\n" for @log[0..($#log > 7 ? 7 : $#log)];
-print "  ...\n" if @log > 8;
+my $all = grep { $_ eq '--list' } @ARGV;     # --list: todas as variantes, para conferir contra os arquivos
+print "$_\n" for $all ? @log : @log[0..($#log > 7 ? 7 : $#log)];
+print "  ...\n" if @log > 8 && !$all;
 print "  $khnNote\n" if $khnNote;
 print "== AVISOS (", scalar @warn, ") ==\n", map {"$_\n"} @warn;
 print $DRY ? "*** DRY RUN ***\n" : "*** GRAVADO ***\n";

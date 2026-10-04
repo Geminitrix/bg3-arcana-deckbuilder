@@ -6,6 +6,7 @@ local Sy = Req("Server/Core/Sync.lua")
 local L = Req("Server/Deck/List.lua")
 local D = Req("Server/Cards/CardDB.lua")
 local CR = Req("Server/Economy/CombatResources.lua")
+local G = Req("Server/Deck/Grants.lua")
 
 local H = {}
 
@@ -43,8 +44,16 @@ end
 
 function H.Register()
     Ext.Osiris.RegisterListener("EnteredCombat", 2, "after", function(char, combatId)
-        withState(char, function(c, st) F.BeginCombat(c, st, U.Guid(combatId), Po.LevelOf(c)) end)
+        withState(char, function(c, st)
+            G.Ensure(c)
+            F.BeginCombat(c, st, U.Guid(combatId), Po.LevelOf(c))
+        end)
     end)
+
+    -- the deck-only spells (Reweave) come from Lua, not from the progression
+    Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(char) G.Ensure(U.Guid(char)) end)
+    Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(char) G.Ensure(U.Guid(char)) end)
+    Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function() G.EnsureParty() end)
 
     Ext.Osiris.RegisterListener("TurnStarted", 1, "after", function(char)
         withState(char, function(c, st)
@@ -82,7 +91,10 @@ function H.Register()
     end)
 
     Ext.Events.SessionLoaded:Subscribe(function()
-        Ext.Timer.WaitFor(1000, H.ResyncAll)
+        Ext.Timer.WaitFor(1000, function()
+            H.ResyncAll()
+            G.EnsureParty()
+        end)
     end)
     Ext.Events.ResetCompleted:Subscribe(H.ResyncAll)
 end

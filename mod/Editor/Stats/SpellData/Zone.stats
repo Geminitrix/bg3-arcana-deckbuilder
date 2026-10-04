@@ -53,58 +53,58 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb1ef1d8-7bad-4af4-b70f-369a8b05f33c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b02e3021-8669-475c-8cc2-09277784fc01" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BurningHands_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e9820ca-ca83-488d-b483-ad9e93a25061" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d4/2,Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="57704c82-1f3d-480f-aa5e-18a11fc46fa5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="23638917-94f2-4c8d-b950-00abe952d1da" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BurningHands_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e9820ca-ca83-488d-b483-ad9e93a25061" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d4,Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d4/2,Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d4,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d4,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="40451007-ae07-4517-b22e-9c9609edd8d5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8110eebc-4491-4f89-98b4-46aa9f9a13d2" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BurningHands_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e9820ca-ca83-488d-b483-ad9e93a25061" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d4,Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d4/2,Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d4,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d4,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="81af0312-3781-47d8-9c7e-0bec273d5dca" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3fbd53bf-71d8-446e-bb7c-3e96c2d11294" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_BurningHands_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e9820ca-ca83-488d-b483-ad9e93a25061" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d4,Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d4/2,Fire,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d4,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d4,Fire)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_BurningHands" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -150,50 +150,50 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0b028556-79d5-479d-87bd-a20a6bf44c5f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ab9b14a6-893e-47cc-9157-0b48bcdb7224" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_ColorSpray_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9fb7bea4-2dda-40fb-a406-a4b2a68eaf37" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(55)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="55" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_ColorSpray" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(55)" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5398b4e5-d05f-4867-af84-5fbabef293b4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5c67fcb3-cc5a-445a-a97e-bdd86e0e29a2" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_ColorSpray_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9fb7bea4-2dda-40fb-a406-a4b2a68eaf37" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(66)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
-        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="66" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_ColorSpray" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(66)" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="66" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4e5ae902-d1a2-4faa-9298-3f49a08f3997" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b8e1ea1d-6c73-46bb-bb52-2ea435ebedfd" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_ColorSpray_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9fb7bea4-2dda-40fb-a406-a4b2a68eaf37" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(77)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="77" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_ColorSpray" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(77)" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="77" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="26f2c7ee-ac0c-4141-85d7-c45a0b6982c7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e79018a5-3586-495d-bd3f-4a977e59d34f" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Card_Spell_ColorSpray_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9fb7bea4-2dda-40fb-a406-a4b2a68eaf37" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(88)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="88" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Zone_Arcana_Card_Spell_ColorSpray" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(88)" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="88" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">

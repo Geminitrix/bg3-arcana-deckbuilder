@@ -79,7 +79,10 @@ sub level { my $n = shift; my %seen;
 # variantes: RootSpellID, ou "using X" com nome X_N
 my (%VARS, %VAROF);
 for my $n (@ORDER) { my $e = $E{$n}; my $root = $e->{fields}{RootSpellID};
-    my $p = (defined $root && $E{$root}) ? $root : (defined $e->{using} && $n =~ /^\Q$e->{using}\E_(\d+)$/ ? $e->{using} : undef);
+    # o pai tem de estar no mod: GUIDANCE_3 faz `using "GUIDANCE"`, que e do jogo base -- sem esta
+    # condicao ela virava variante de ninguem e perdia o grupo (2026-10-04)
+    my $p = (defined $root && $E{$root}) ? $root
+          : (defined $e->{using} && $E{ $e->{using} } && $n =~ /^\Q$e->{using}\E_(\d+)$/ ? $e->{using} : undef);
     next unless defined $p; $VAROF{$n} = $p; push @{ $VARS{$p} }, $n }
 for my $p (keys %VARS) { @{ $VARS{$p} } = sort { (($a =~ /_(\d+)$/)[0] // 0) <=> (($b =~ /_(\d+)$/)[0] // 0) } @{ $VARS{$p} } }
 
