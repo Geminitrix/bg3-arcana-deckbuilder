@@ -9,7 +9,7 @@
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1,,,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc,,,,AlwaysPrepared);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290,,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1,,,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(3d3ffb90-5676-49cb-8739-80a4be85eb06,,,,AlwaysPrepared);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
                     <attribute id="UUID" type="guid" value="082473bf-d121-4734-8327-ad5a148311f8"/>
                     <children>
@@ -37,7 +37,7 @@
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="Portent"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(ac907a42-680d-4681-909a-c60113635d03,,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ac907a42-680d-4681-909a-c60113635d03,1,0,ArcanaLevel2,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
                     <attribute id="UUID" type="guid" value="e90a675c-7b33-4445-adda-1bb6ac631f71"/>
                 </node>
@@ -56,7 +56,7 @@
                     <attribute id="Name" type="LSString" value="Arcana"/>
                     <attribute id="PassivesAdded" type="LSString" value="ExpertDivination"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1,,,,AlwaysPrepared)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ed96898e-d6c8-4599-bd7c-0cefe6978b95,2,0,ArcanaLevel4,,,AlwaysPrepared);AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
                     <attribute id="UUID" type="guid" value="a791ae94-2b46-430b-9956-3e4431530c2f"/>
                 </node>

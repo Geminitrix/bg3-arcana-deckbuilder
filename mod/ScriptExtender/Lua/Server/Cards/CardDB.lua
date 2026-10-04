@@ -197,8 +197,6 @@ D.skipPrefixes = {
 -- Public/<Mod>/Lists/SpellLists.lsx; conferir esta lista ao mexer nas listas de magia.
 D.vanillaGranted = {
     ["Target_Light"]       = true,
-    ["Shout_ProduceFlame"] = true,
-    ["Target_ChillTouch"]  = true,
     ["Target_TrueStrike"]  = true,
 }
 

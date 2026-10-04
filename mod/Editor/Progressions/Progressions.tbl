@@ -10,7 +10,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1,,,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc,,,,AlwaysPrepared);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290,,,,AlwaysPrepared)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1,,,AlwaysPrepared);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar);AddSpells(3d3ffb90-5676-49cb-8739-80a4be85eb06,,,,AlwaysPrepared);AddSpells(f2e5e2e9-42c8-4f0e-88de-830ef0224290,,,,AlwaysPrepared)" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="4831bb91-b13e-4740-b205-0227dbdddd12;c229d522-d294-43e1-8a05-1967e15c17e8;31b64a26-a650-4ef1-aeec-c2872f48ec14;dc2e68d3-5577-4a9f-be4f-1a71707c1995" />
       </fields>
     </stat_object>
@@ -23,7 +23,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,2,1)" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(ac907a42-680d-4681-909a-c60113635d03,,,,AlwaysPrepared)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(ac907a42-680d-4681-909a-c60113635d03,1,0,ArcanaLevel2,,,AlwaysPrepared)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Portent" />
       </fields>
     </stat_object>
@@ -48,7 +48,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ExpertDivination" />
         <field name="AllowImprovement" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1,,,,AlwaysPrepared)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(ed96898e-d6c8-4599-bd7c-0cefe6978b95,2,0,ArcanaLevel4,,,AlwaysPrepared);AddSpells(07c9ed4c-8afe-44ee-b484-3a4bb50d6ad1,,,,AlwaysPrepared)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcanaSpellSlot,1,2)" />
       </fields>
     </stat_object>

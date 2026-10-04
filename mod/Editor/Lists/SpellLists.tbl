@@ -5,14 +5,28 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d945724f-6795-4b3a-8aae-e4b0bf1e1fc8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 1" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_MageHand;Shout_Arcana_Util_ComprehendLanguages" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_MageHand;Target_Arcana_Card_Spell_BladeWard;Shout_Arcana_Util_ProduceFlame;Target_Arcana_Card_Spell_Enlarge" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d3ffb90-5676-49cb-8739-80a4be85eb06" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcala Level 2.1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_ArcaneRecovery" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ac907a42-680d-4681-909a-c60113635d03" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_DetectSupernatural;Shout_Arcana_Util_ArcaneRecovery" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2.2" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_DetectSupernatural;Shout_Arcana_Util_ComprehendLanguages" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed96898e-d6c8-4599-bd7c-0cefe6978b95" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2.3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_Guidance;Target_Arcana_Card_Spell_Command;Target_Arcana_Card_Spell_ChillTouch;Zone_Arcana_Card_Spell_BurningHands;Zone_Arcana_Card_Spell_ColorSpray;Target_Arcana_Card_Spell_ShockingGrasp" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -54,7 +68,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="06cf51c4-651d-4959-947d-82e8b8ea9d32" />
         <field name="Name" type="NameTableFieldDefinition" value="Starchild Level 1" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Arcana_Card_Spell_Starcall;Target_Arcana_Card_Spell_AstralInfusion;Target_Light;Shout_ProduceFlame" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_Arcana_Card_Spell_Starcall;Target_Arcana_Card_Spell_AstralInfusion;Target_Light" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -201,7 +215,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b712a9e-66d3-45af-bb20-38b750ea651a" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 1" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper;Target_Arcana_Card_Spell_Obliterate;Target_Arcana_Card_Spell_Transfusion;Target_Arcana_Util_DeadWhispers;Target_ChillTouch" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_BloodReaper;Target_Arcana_Card_Spell_Obliterate;Target_Arcana_Card_Spell_Transfusion;Target_Arcana_Util_DeadWhispers" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -218,7 +232,7 @@
         <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_DeathWard;Shout_Arcana_Card_Passive_InescapableDestruction" />
       </fields>
     </stat_object>
-    <stat_object color="#FF808080" is_substat="false">
+    <stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6cc7bce7-943c-4b5c-b4b4-e5144917adf1" />
         <field name="Name" type="NameTableFieldDefinition" value="Eternal Level 7" />
