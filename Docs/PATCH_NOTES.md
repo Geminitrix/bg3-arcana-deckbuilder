@@ -310,6 +310,37 @@ Turn your suffering on a foe. It takes Necrotic damage equal to the hit points y
 
 # Deceiver
 
+## **REWORKED** Mirror Image:
+*The clone was a level 4 copy of the Deceiver that took a whole turn to matter. Doubles are cheap, fragile illusions she can keep on the field and spend.*
+- Now a **level 1** spell (was level 4). Range 18 m ⇒ 9 m.
+- Summons a **Double of the Veil** instead of a full clone of you.
+- **Doubles:** 1 hit point and 12 Armour Class, can't be healed, and act on their own turn. Their spells deal fixed damage that does not scale.
+- A Double can only Dash, Disengage, use its own spells and Dismiss itself, which is now free. It has no attacks.
+- Doubles can't be Charmed, Possessed or Dominated, driven mad or made to flee.
+- You can keep up to 3 Doubles at once. A new Double past that limit replaces the oldest.
+- You gain +1 Armour Class for each of your Doubles.
+- An enemy that destroys a Double gains **Doubt**.
+- Doubles vanish when you leave combat, after a Long Rest or if you die.
+
+## **NEW** Doubt:
+*The Deceiver's new debuff: the longer an enemy fights her illusions, the less it trusts what it sees.*
+- Stacks up to 3 times and lasts 3 turns.
+- Each stack gives -1 to Wisdom Saving Throws and -1 to Attack Rolls against the Deceiver and her Doubles.
+- The third stack turns into **Deluded** for 1 turn: the creature is Confused, acts at random and may lose its turn. It can end the effect with a Wisdom Saving Throw at the start of each turn.
+- Applied by Shatter and by destroying a Double.
+
+## **NEW** Doubles' Spells:
+*Each Double carries its own small kit, so it costs only its own action and never your spell slots.*
+- **Shatter:** the Double bursts, dealing 1d6 Psychic damage to enemies within 3 m and giving each of them 1 Doubt. The Double is destroyed.
+- **Mirror: Sigil of Malice:** deals 1d4 Force damage and marks the target with the Deceiver's Sigil.
+- **Mirror: Ethereal Chains:** the target makes a Wisdom Saving Throw (DC 13). On a failure it takes 1d4 Force damage once and is Restrained for 1 turn.
+- **Unveil:** the Double swaps places with the Deceiver. Once per round across all of your Doubles.
+- Only Doubles can cast these spells. For now Doubles start with Shatter only; Mirror: Sigil of Malice, Mirror: Ethereal Chains and Unveil come with later Deceiver features.
+
+## **REMOVED** Clone Mirror Spells:
+*Replaced by the Doubles' own spells.*
+- The old clone's Mirror: Sigil of Malice, Mirror: Ethereal Chains, Mirror: Distortion and Mirror: Withdraw are gone. The new Mirror: Sigil of Malice and Mirror: Ethereal Chains above are different spells that keep the names.
+
 ## Sigil of Malice:
 ### Spell Level 1: Force Damage 1d6
 ### Spell Level 2: Force Damage 2d6

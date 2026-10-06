@@ -24,16 +24,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="636f629b-91c3-4a86-9f96-439b94e17efc" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_IMAGE_TECHNICAL" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9dbe52a8-8a75-bc91-2ae3-f9ab99936161" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBLE_OF_THE_VEIL_TECH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="245a831a-fb83-4158-8f23-96c48e69e013" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dc797dag6dfeg9533g4398g88b8a10fd57f" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h784131eeg4b49g41f3g2db9ge081041f4762" version="1" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+</stat_objects>
 </stats>

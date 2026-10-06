@@ -278,7 +278,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana Deck DEBUG" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness;Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger;Target_Arcana_Card_Spell_EmotionAnticipation;Shout_Arcana_Util_DEBUG_Heartweaver" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness;Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger;Target_Arcana_Card_Spell_EmotionAnticipation;Shout_Arcana_Util_DEBUG_Heartweaver;Target_Arcana_Util_DEBUG_AddDoubt" />
       </fields>
     </stat_object>
   </stat_objects>

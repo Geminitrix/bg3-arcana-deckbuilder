@@ -460,7 +460,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','ETHEREAL_CHAINS_3','ETHEREAL_CHAINS_4','ETHEREAL_CHAINS_5','ETHEREAL_CHAINS_6','MIMIC_ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS_2','MIMIC_ETHEREAL_CHAINS_3','MIMIC_ETHEREAL_CHAINS_4','MIMIC_ETHEREAL_CHAINS_5','MIMIC_ETHEREAL_CHAINS_6','MIRROR_ETHEREAL_CHAINS'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsArcanaSpell() or HasAnyStatus({'ETHEREAL_CHAINS','ETHEREAL_CHAINS_3','ETHEREAL_CHAINS_4','ETHEREAL_CHAINS_5','ETHEREAL_CHAINS_6','MIMIC_ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS_2','MIMIC_ETHEREAL_CHAINS_3','MIMIC_ETHEREAL_CHAINS_4','MIMIC_ETHEREAL_CHAINS_5','MIMIC_ETHEREAL_CHAINS_6'})) and (HasStatus('SIGIL', context.Target, context.Source) or HasStatus('SIGIL', context.Target, GetSummoner(context.Source)))" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SIGIL_DETONATED_TECH,100,0);IF(RemoveCause(StatusRemoveCause.Condition) and not IsKillingBlow()):DealDamage(Cause.LevelMapValue(Sigil_MarkDamage),Psychic,Magical)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('ASPECT_AWAKENED_EMPRESS', context.Target) and HasStatus('SIGIL', context.Source, context.Target)):Disadvantage(AttackRoll);" />
       </fields>
@@ -610,18 +610,6 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(5d6,Force,Magical)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9d1e2c3f-b46b-4e98-b19a-f97594678244" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_ETHEREAL_CHAINS" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b3988a00-0aac-41c7-84e4-235e62827f2f" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h36fb11fdg724egf61eg596fgcfb255c3c4c0" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MirrorEtherealChains_Damage),Force)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MIRROR_ETHEREAL_CHAINS" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MirrorEtherealChains_Damage),Force,Magical)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(MirrorEtherealChains_Damage),Force,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -802,15 +790,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c0de2d27-5c6a-41a8-95f4-53c216c74bef" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_IMAGE_CLONE_SCALING" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Owner.Level*6);ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f57b4a12-511f-4bf6-a807-63501ec966f6" />
         <field name="Name" type="NameTableFieldDefinition" value="MIMIC_DISTORTION_HELPER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74931156g68e6g78c3g675fgcd9196f71a0c" version="1" />
@@ -829,16 +808,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="FRIENDS_EX" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(SourceDialogue,Charisma)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ce678b3d-28ce-496c-a443-56f7c3a403ae" />
-        <field name="Name" type="NameTableFieldDefinition" value="MIRROR_DISTORTION_HELPER" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc29abaf5g0ec7g9f06g32b9g0b00b68c067a" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MIRROR_DISTORTION_HELPER" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3280,6 +3249,167 @@
         <field name="StackId" type="StringTableFieldDefinition" value="HEARTWEAVER_DEBUG" />
         <field name="Passives" type="StringTableFieldDefinition" value="Arcana_Passive_EmotionalAlchemy;Arcana_Passive_EmpathicSight;Arcana_Passive_ComplexFeelings;Arcana_Passive_Overwhelm;Arcana_Passive_MixedFeelings" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnLongRest" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2c24fab-cc1d-ef52-8014-7ca03a11b1e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBT_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c5a5e3dgf38bg8611g14c6g65b0f7813f82" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5095a420gb43eg2aeegf951g776e0fd2e822" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalForce" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-1,Wisdom);IF(HasPassive('Arcana_Passive_TheVeil',context.Target) or HasPassive('Arcana_Passive_DoubleOfTheVeil',context.Target)):RollBonus(Attack,-1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b04ac38d-e6bd-2b8e-ebc7-ce51bc15e3fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBT_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h056568baga6e9gbbc2ga70eg996998e7c0b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5095a420gb43eg2aeegf951g776e0fd2e822" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalForce" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-2,Wisdom);IF(HasPassive('Arcana_Passive_TheVeil',context.Target) or HasPassive('Arcana_Passive_DoubleOfTheVeil',context.Target)):RollBonus(Attack,-2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d4514ce-37db-c3a9-7594-c56b4584e174" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBT_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h940b1f8cg040bg0ed2g0bdbgfaa89da27460" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5095a420gb43eg2aeegf951g776e0fd2e822" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalForce" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-3,Wisdom);IF(HasPassive('Arcana_Passive_TheVeil',context.Target) or HasPassive('Arcana_Passive_DoubleOfTheVeil',context.Target)):RollBonus(Attack,-3);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3944b56b-d685-4de0-208e-8a83ca643a57" />
+        <field name="Name" type="NameTableFieldDefinition" value="DELUDED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20be0fd5-22da-434f-9dba-3e85a9ce3a8a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ddbbd3bg0deag0869gb289g9b70ec47702c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0905eddbg3c85g6e9dg542cg089dd6d96aab" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DELUDED" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(HasStatus('DELUDED')):ApplyStatus(CONFUSION_SKIP,100,1,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ded5556d-7652-767d-ad24-1f63a3eb0536" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBT_ADD_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2f2fb1dg8bc8g8319g95f3g602823acf63d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBT_ADD_TECH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30ec6432-d35d-cd90-f362-0d281f5bddbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dc797dag6dfeg9533g4398g88b8a10fd57f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d798b3cf-15ab-4911-9884-82799e6fd3ef" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95065aa6-368e-2117-bd5b-5930b50c08ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEIL_LAYER_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef3e531bg709bgeba8g1a63g59df33fd9815" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h863dc3f6g15c4g422agb281gafb68a835ad8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEIL_LAYER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d0d4373-1ab1-00a1-d9f0-45d35ec57514" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEIL_LAYER_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he080bfebg9c1fgecb2g117egf99a34f40bfe" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h863dc3f6g15c4g422agb281gafb68a835ad8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEIL_LAYER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22b52552-0284-39bf-1af3-16cdd7b6b6bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEIL_LAYER_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc7198b9cga8ebg67b0g77a3g3b57f38157ec" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h863dc3f6g15c4g422agb281gafb68a835ad8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEIL_LAYER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(3)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9a14465-1c16-c2eb-dfb7-1ba099deb8d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEIL_LAYER_4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hccfb79eaga3bbg0126g473cgc83145fe511a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h863dc3f6g15c4g422agb281gafb68a835ad8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEIL_LAYER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(4)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="529bb76a-53d0-6475-a414-ffdb960d031c" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEIL_LAYER_5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac37a6e3g4039gfa96gd2f3gccdfc4b4f5ba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h863dc3f6g15c4g422agb281gafb68a835ad8" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEIL_LAYER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(5)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38289639-b79e-6fd9-7fc2-ea6571c89c8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNVEIL_USED_TECH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f79b112g7d58gf199g2e33g6d207fd1e60f" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="UNVEIL_USED_TECH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndRound" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnApply;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

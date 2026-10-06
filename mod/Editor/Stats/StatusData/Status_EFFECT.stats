@@ -17,7 +17,7 @@
         <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Status_GortashChainsofTyranny_Start" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_GortashChainsofTyranny_Start" />
         <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_GortashChainsofTyranny_End" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasAnyStatus({'ETHEREAL_CHAINS','ETHEREAL_CHAINS_3','ETHEREAL_CHAINS_4','ETHEREAL_CHAINS_5','ETHEREAL_CHAINS_6','MIMIC_ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS_2','MIMIC_ETHEREAL_CHAINS_3','MIMIC_ETHEREAL_CHAINS_4','MIMIC_ETHEREAL_CHAINS_5','MIMIC_ETHEREAL_CHAINS_6','MIRROR_ETHEREAL_CHAINS'})" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasAnyStatus({'ETHEREAL_CHAINS','ETHEREAL_CHAINS_3','ETHEREAL_CHAINS_4','ETHEREAL_CHAINS_5','ETHEREAL_CHAINS_6','MIMIC_ETHEREAL_CHAINS','MIMIC_ETHEREAL_CHAINS_2','MIMIC_ETHEREAL_CHAINS_3','MIMIC_ETHEREAL_CHAINS_4','MIMIC_ETHEREAL_CHAINS_5','MIMIC_ETHEREAL_CHAINS_6'})" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -46,5 +46,6 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+</stat_objects>
 </stats>

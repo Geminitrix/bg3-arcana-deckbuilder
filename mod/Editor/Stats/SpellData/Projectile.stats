@@ -82,24 +82,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="89822118-61aa-4902-9707-c374cc715978" />
-        <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Clone_MirrorSigilofMalice" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dbc15f84-d756-425a-a323-c8b056621961" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MirrorSigilofMalice_Damage),Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd66f5137g5a56g8f90g2a7eg143cdc0b770e" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MirrorSigilofMalice_Damage),Force)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MirrorSigilofMalice_Damage),Force)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Projectile_MagicMissile_AI" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf22a0eedgbc8dgc316g2434g51c6f4982dc4" version="2" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="148f50e8-a9ad-4fd1-b449-2fcddcf2b6b2" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Distortion_Explosion" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical);" />
@@ -179,14 +161,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_MimicDistortion_Explosion_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3627047d-efec-4f09-8b05-4f761fe08362" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana_MirrorDistortion_Explosion" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="89551bc7-3fda-40c4-977a-ebef53dc7f9a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MirrorDistortion_Damage),Force,Magical);" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">
@@ -306,6 +280,43 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;2f893fad-98eb-47cf-a524-dd4efd42bc2a,,;ca3147a8-2cf6-45a8-ac9a-1ce0fc11305f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;4156d364-d2c0-4a01-908c-3552f78f434d,,;6f0a29b6-0ae8-4ebf-a1e4-8069c4a6ad16,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8bf1a377-fce3-f802-f2fb-1e41b44f4cb9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Double_MirrorSigil" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d4,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not HasPassive('ARCANA_IS_SPELL', context.Source)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DOUBLE_OF_THE_VEIL',context.Source)" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="100" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="120" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="348013df-7958-4ca9-ac9f-80337e054bee,7bff57fa-fd21-4ab3-9384-83fb14237690" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_MagicMissile" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd66f5137g5a56g8f90g2a7eg143cdc0b770e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf22a0eedgbc8dgc316g2434g51c6f4982dc4" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d4,Force)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Force_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Force_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Force_MagicMissile_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;38cdb41c-2eec-4e03-bb31-83cff0346c35,,;85414f5f-b448-4dda-9370-1b6c4b38b561,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f9785481-e126-4499-b00e-f36fa02cd196" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="655f8b6b-f392-4c5d-8d74-d2a9df5f8f9d" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
+        <field name="CombatAIOverrideSpell" type="StatReferenceTableFieldDefinition" value="Projectile_MagicMissile_AI" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
