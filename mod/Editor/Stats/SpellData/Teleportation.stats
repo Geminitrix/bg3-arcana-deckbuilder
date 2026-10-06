@@ -102,6 +102,5 @@
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="Resurrect(100,100);RestoreResource(Movement,100%,0);UseActionResource(ActionPoint,100%,0);UseActionResource(BonusActionPoint,100%,0);ApplyStatus(RESURRECTING, 100, 1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="100" />
       </fields>
-    </stat_object>
-    </stat_objects>
+    </stat_object></stat_objects>
 </stats>

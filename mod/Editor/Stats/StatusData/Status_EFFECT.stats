@@ -46,6 +46,5 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b0ceab9b-5cdc-4436-ba89-832763900d72" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3f3b236gaab8g745cg0d02gecea5ed8dce3" version="1" />
       </fields>
-    </stat_object>
-</stat_objects>
+    </stat_object></stat_objects>
 </stats>

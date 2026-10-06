@@ -1,3 +1,7 @@
+new entry "HEARTWEAVER INCAPACITATED STATUS"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+
 new entry "EMOTION_AMAZEMENT"
 type "StatusData"
 data "StatusType" "INCAPACITATED"

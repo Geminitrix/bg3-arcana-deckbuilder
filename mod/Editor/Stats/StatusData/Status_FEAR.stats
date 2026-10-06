@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="1d8c865f-bfa7-4f37-b0e4-2bdc12ecf6be">
   <stat_objects>
+    <stat_object color="#FF4B47C2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19fb404f-6526-0f4d-04e4-388100a9295a" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEARTWEAVER FEAR STATUS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="56cb9327-e0d4-f523-6b42-1070d1fa574a" />
@@ -16,6 +22,5 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_APPREHENSIVE,100,5)" />
       </fields>
-    </stat_object>
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>

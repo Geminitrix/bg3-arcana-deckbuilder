@@ -1,3 +1,7 @@
+new entry "HEARTWEAVER FEAR STATUS"
+type "StatusData"
+data "StatusType" "FEAR"
+
 new entry "EMOTION_TERROR"
 type "StatusData"
 data "StatusType" "FEAR"

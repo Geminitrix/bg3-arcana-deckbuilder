@@ -28,11 +28,11 @@ my $EDS = "$G/Editor/Mods/$M/Stats";
 my $apply   = grep { $_ eq '--apply' } @ARGV;
 my $verbose = grep { $_ eq '--verbose' } @ARGV;
 
-my @GROUPS = qw(DEBUG ARCANA DECEIVER STARCHILD UNBOUND ETERNAL AWAKEN);
+my @GROUPS = qw(DEBUG ARCANA DECEIVER STARCHILD UNBOUND ETERNAL HEARTWEAVER AWAKEN);
 my %GRANK; $GRANK{$GROUPS[$_]} = $_ for 0 .. $#GROUPS;
 my %COLOR = (DEBUG => '#FF000000', ARCANA => '#FF000000', DECEIVER => '#FFFF69B4', STARCHILD => '#FF800080',
-             UNBOUND => '#FFDAA520', ETERNAL => '#FF2F4F4F', AWAKEN => '#FF1E90FF');
-my %PROGGROUP = (Arcana => 'ARCANA', Deceiver => 'DECEIVER', Starchild => 'STARCHILD', Unbound => 'UNBOUND', Eternal => 'ETERNAL');
+             UNBOUND => '#FFDAA520', ETERNAL => '#FF2F4F4F', HEARTWEAVER => '#FF4B47C2', AWAKEN => '#FF1E90FF');
+my %PROGGROUP = (Arcana => 'ARCANA', Deceiver => 'DECEIVER', Starchild => 'STARCHILD', Unbound => 'UNBOUND', Eternal => 'ETERNAL', Heartweaver => 'HEARTWEAVER');
 # arquivos organizados: .txt => [.stats, tipo, sufixo da divisoria]. Armor/Character/Weapon nao sao de classe.
 my %FILES = (
     Interrupt           => ['Stats/Interrupt.stats',              'InterruptData', 'INTERRUPTS'],
@@ -46,12 +46,17 @@ my %FILES = (
     Status_BOOST        => ['StatusData/Status_BOOST.stats',      'BOOST',         'STATUS'],
     Status_DOWNED       => ['StatusData/Status_DOWNED.stats',     'DOWNED',        'STATUS'],
     Status_EFFECT       => ['StatusData/Status_EFFECT.stats',     'EFFECT',        'STATUS'],
+    Status_FEAR         => ['StatusData/Status_FEAR.stats',       'FEAR',          'STATUS'],
+    Status_INCAPACITATED => ['StatusData/Status_INCAPACITATED.stats', 'INCAPACITATED', 'STATUS'],
     Status_INVISIBLE    => ['StatusData/Status_INVISIBLE.stats',  'INVISIBLE',     'STATUS'],
     Status_POLYMORPHED  => ['StatusData/Status_POLYMORPHED.stats','POLYMORPHED',   'STATUS'],
 );
 my $SPELLPFX = qr/^(?:Target|Shout|Projectile|Zone|Teleportation|Rush)_/;
 # Despertar: entradas que existem por causa dele
 my $AWAKEN_ROOT = qr/^(?:Arcana_Passive_Aspect_|ASPECT_|Interrupt_Arcana_Aspect_|(?:Target|Shout|Rush|Projectile)_Arcana_Created_Aspect_)/;
+# Heartweaver (2026-10-06): the subclass has no progression yet, so its engine is recognised by name. Remove
+# this once the Heartweaver progression and lists exist (they become its roots like any subclass).
+my $HEARTWEAVER_ROOT = qr/^(?:Target_Arcana_Card_Spell_Emotion[A-Z]|EMOTION_|MOOD_|FEELING_|CATHARSIS$|Arcana_Passive_(?:EmotionalAlchemy|EmpathicSight|ComplexFeelings|Overwhelm|MixedFeelings|Feeling[A-Z]))/;
 
 sub slurp { open my $h, '<:raw', $_[0] or die "$_[0]: $!"; local $/; my $s = <$h>; close $h; $s }
 sub uuid_for { my @h = unpack '(A4)8', md5_hex("arcana-divider:" . shift); "$h[0]$h[1]-$h[2]-$h[3]-$h[4]-$h[5]$h[6]$h[7]" }
@@ -115,7 +120,8 @@ my %ROOT;    # grupo => [ [nome, chave_magia, chave_passiva] ]
 my (%GRP, %WHY);
 for my $n (@ORDER) {
     if ($n =~ /DEBUG/i)                                      { $GRP{$n} = 'DEBUG';  $WHY{$n} = 'nome' }
-    elsif ($n =~ $AWAKEN_ROOT)                               { $GRP{$n} = 'AWAKEN'; $WHY{$n} = 'Despertar' } }
+    elsif ($n =~ $AWAKEN_ROOT)                               { $GRP{$n} = 'AWAKEN'; $WHY{$n} = 'Despertar' }
+    elsif ($n =~ $HEARTWEAVER_ROOT)                        { $GRP{$n} = 'HEARTWEAVER'; $WHY{$n} = 'Heartweaver (nome)' } }
 # WEAPON / EQUIPMENT / BOON / CC SET so valem para quem nenhuma raiz alcanca: uma publicacao do Toolkit ja
 # despejou passivas do Despertar debaixo de EQUIPMENT PASSIVES.
 sub keep_sec { my $c = $E{$_[0]}{cursec} // ''; length $c && !exists $GRANK{$c} && $c ne 'DECIEVER' ? $c : undef }

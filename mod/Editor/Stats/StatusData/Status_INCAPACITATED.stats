@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
   <stat_objects>
+    <stat_object color="#FF4B47C2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9adb0aa5-1bc0-3d35-93c1-60f257985231" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEARTWEAVER INCAPACITATED STATUS" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fca9d2ed-15a6-ce80-371a-6a5550591945" />
@@ -41,6 +47,5 @@
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_AWE" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE);RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
       </fields>
-    </stat_object>
-  </stat_objects>
+    </stat_object></stat_objects>
 </stats>
