@@ -471,12 +471,15 @@ sub existing_entries {
     \%where;
 }
 
-# What goes: every old Emotion*/Feeling* spell (variants too -- gen_upcast_variants rebuilds ours) and every
-# EMOTION_/MOOD_/FEELING_ status that is not in the new set or that moved to another file.
+# What goes: every old Emotion*/Feeling* spell (and its upcast variants) and every EMOTION_/MOOD_/FEELING_ status
+# that is not in the new set or that moved to another file. Never removed: the upcast variants of the current
+# Surges (spell_id($e) . "_2" .. "_6" for every $e in @WHEEL); gen_upcast_variants.pl owns those.
 sub removals {
     my ($have, $new) = @_;   # $new: name => file
+    my %ours = map { my $e = $_; map { (spell_id($e) . "_$_" => 1) } 2 .. 6 } @WHEEL;
     my @rm;
     for my $n (sort keys %$have) {
+        next if $ours{$n};
         next unless $n =~ /^Target_Arcana_Card_Spell_(?:Emotion|Feeling)\w*$/ || $n =~ /^(?:EMOTION|MOOD|FEELING)_\w+$/;
         push @rm, [$have->{$n}, $n] unless ($new->{$n} // '') eq $have->{$n};
     }

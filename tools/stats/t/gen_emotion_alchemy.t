@@ -172,4 +172,33 @@ is($stack_of{$_}, $_, "$_ has its own StackId") for @fe;
 is_deeply([grep { $stack_of{$_} =~ /^(?:EMOTION|MOOD|FEELING)$/ } @fe], [], 'no feeling uses EMOTION, MOOD or FEELING');
 is($stack_of{FEELING_AWE}, 'FEELING_AWE', 'Awe keeps its own StackId');
 is($stack_of{EMOTION_TERROR}, 'EMOTION', 'Terror sets EMOTION, not the StackId of FEARED');
+
+# ---- review fixes (round 4): removals() keeps the upcast variants of the current Surges (synthetic data, no game files)
+{
+    my $have = {
+        Target_Arcana_Card_Spell_EmotionFear   => 'Spell_Target',
+        Target_Arcana_Card_Spell_EmotionFear_4 => 'Spell_Target',
+        Target_Arcana_Card_Spell_EmotionFury_3 => 'Spell_Target',
+        Target_Arcana_Card_Spell_FeelingLove   => 'Spell_Target',
+        MOOD_AFRAID                            => 'Status_BOOST',
+        EMOTION_MOVED                          => 'Status_KNOCKED_DOWN',
+        MOOD_SERENE                            => 'Status_BOOST',
+    };
+    my $new = {
+        Target_Arcana_Card_Spell_EmotionFear => 'Spell_Target',
+        EMOTION_MOVED                        => 'Status_BOOST',
+        MOOD_SERENE                          => 'Status_BOOST',
+    };
+    my %rm = map { ("$_->[0]|$_->[1]" => 1) } Alchemy::removals($have, $new);
+    ok(!$rm{'Spell_Target|Target_Arcana_Card_Spell_EmotionFear_4'}, 'removals: a variant of a current Surge (EmotionFear_4) stays');
+    ok($rm{'Spell_Target|Target_Arcana_Card_Spell_EmotionFury_3'}, 'removals: a variant of an old spell (EmotionFury_3) goes');
+    ok($rm{'Spell_Target|Target_Arcana_Card_Spell_FeelingLove'}, 'removals: an old Feeling spell goes');
+    ok($rm{'Status_BOOST|MOOD_AFRAID'}, 'removals: an old status (MOOD_AFRAID) goes');
+    ok($rm{'Status_KNOCKED_DOWN|EMOTION_MOVED'}, 'removals: a status that moved files goes from its old file');
+    ok(!$rm{'Spell_Target|Target_Arcana_Card_Spell_EmotionFear'}, 'removals: a current Surge in the same file stays');
+    ok(!$rm{'Status_BOOST|MOOD_SERENE'}, 'removals: a current status in the same file stays');
+    is(scalar(keys %rm), 4, 'removals: exactly the 4 old entries');
+    my %all = map { my $e = $_; map { (Alchemy::spell_id($e) . "_$_" => 'Spell_Target') } 2 .. 6 } @W;
+    is_deeply([Alchemy::removals(\%all, {})], [], 'removals: none of the 40 current variants is ever removed');
+}
 done_testing();
