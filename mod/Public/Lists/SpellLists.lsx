@@ -5,14 +5,24 @@
         <node id="root">
             <children>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Arcana Level 1"/>
+                    <attribute id="Name" type="FixedString" value="Arcana Level 1a"/>
                     <attribute id="Spells" type="LSString" value="Target_Arcana_Util_MageHand;Target_Arcana_Card_Spell_BladeWard;Shout_Arcana_Util_ProduceFlame;Target_Arcana_Card_Spell_Enlarge"/>
                     <attribute id="UUID" type="guid" value="d945724f-6795-4b3a-8aae-e4b0bf1e1fc8"/>
                 </node>
                 <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Arcana Level 2.2"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Util_DetectSupernatural;Shout_Arcana_Util_ComprehendLanguages"/>
+                    <attribute id="Name" type="FixedString" value="Arcana Level 1b"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Util_Guidance;Target_Arcana_Card_Spell_Command;Target_Arcana_Card_Spell_ChillTouch;Zone_Arcana_Card_Spell_BurningHands;Zone_Arcana_Card_Spell_ColorSpray;Target_Arcana_Card_Spell_ShockingGrasp"/>
+                    <attribute id="UUID" type="guid" value="ed96898e-d6c8-4599-bd7c-0cefe6978b95"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Arcana Level 2a"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Util_ComprehendSupernatural;Shout_Arcana_Util_ComprehendHistory;Shout_Arcana_Util_ComprehendMind;Shout_Arcana_Util_ComprehendNature;Shout_Arcana_Util_ComprehendMedicine;Shout_Arcana_Util_ComprehendArt"/>
                     <attribute id="UUID" type="guid" value="ac907a42-680d-4681-909a-c60113635d03"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Arcana Level 2b"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Util_ArcaneRecovery"/>
+                    <attribute id="UUID" type="guid" value="3d3ffb90-5676-49cb-8739-80a4be85eb06"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Arcana Level 4"/>
@@ -191,18 +201,8 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Arcana Deck DEBUG"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness;Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger;Target_Arcana_Card_Spell_EmotionAnticipation;Shout_Arcana_Util_DEBUG_Heartweaver"/>
                     <attribute id="UUID" type="guid" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Arcana Level 2.3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Util_Guidance;Target_Arcana_Card_Spell_Command;Target_Arcana_Card_Spell_ChillTouch;Zone_Arcana_Card_Spell_BurningHands;Zone_Arcana_Card_Spell_ColorSpray;Target_Arcana_Card_Spell_ShockingGrasp"/>
-                    <attribute id="UUID" type="guid" value="ed96898e-d6c8-4599-bd7c-0cefe6978b95"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Arcala Level 2.1"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Util_ArcaneRecovery"/>
-                    <attribute id="UUID" type="guid" value="3d3ffb90-5676-49cb-8739-80a4be85eb06"/>
                 </node>
             </children>
         </node>

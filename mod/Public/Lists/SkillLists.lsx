@@ -6,12 +6,12 @@
             <children>
                 <node id="SkillList">
                     <attribute id="Name" type="FixedString" value="The Wanderer Skill List"/>
-                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Nature, Perception, Survival, Stealth, SleightOfHand, Athletics"/>
+                    <attribute id="Skills" type="LSString" value="Acrobatics, AnimalHandling, Arcana, Nature, Perception, Survival, SleightOfHand, Athletics"/>
                     <attribute id="UUID" type="guid" value="46830276-a1ea-46dd-909e-ad4bf0059235"/>
                 </node>
                 <node id="SkillList">
                     <attribute id="Name" type="FixedString" value="The Witch Skill List"/>
-                    <attribute id="Skills" type="LSString" value="Deception, Insight, Intimidation, Performance, Persuasion, Perception, History, Investigation"/>
+                    <attribute id="Skills" type="LSString" value="Deception, Insight, Arcana, Performance, Persuasion, Perception, History, Investigation"/>
                     <attribute id="UUID" type="guid" value="1135673f-7380-4c84-b4f6-f35199cdaae9"/>
                 </node>
                 <node id="SkillList">
@@ -21,7 +21,7 @@
                 </node>
                 <node id="SkillList">
                     <attribute id="Name" type="FixedString" value="The Eternal Skill List"/>
-                    <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Medicine, History, Nature, Investigation, Religion, Survival"/>
+                    <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Medicine, History, Nature, Arcana, Religion, Survival"/>
                     <attribute id="UUID" type="guid" value="41e6f58d-0957-41dd-a6e3-393f7970b46a"/>
                 </node>
             </children>

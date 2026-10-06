@@ -58,10 +58,12 @@ copy "Editor/Mods/$MOD/Progressions"                    "Editor/Progressions"
 TOOLS_SRC="$HERE/Design/Rework/tools"
 rm -rf "$HERE/tools/stats"
 mkdir -p "$HERE/tools/stats"
-for t in gen_upcast_variants.pl sort_stats.pl check_cards.pl stats_add.pl aspect_structure.pl; do
+for t in gen_upcast_variants.pl sort_stats.pl check_cards.pl stats_add.pl aspect_structure.pl gen_emotion_alchemy.pl heartweaver_debug_list.pl; do
     if [ -f "$TOOLS_SRC/$t" ]; then cp "$TOOLS_SRC/$t" "$HERE/tools/stats/$t"
     else echo "  faltando: Design/Rework/tools/$t" >&2; fi
 done
+mkdir -p "$HERE/tools/stats/t"
+[ -f "$TOOLS_SRC/t/gen_emotion_alchemy.t" ] && cp "$TOOLS_SRC/t/gen_emotion_alchemy.t" "$HERE/tools/stats/t/"
 
 # o ScriptExtender e um repositorio proprio la na pasta do jogo
 rm -rf "$DEST/ScriptExtender/.git"

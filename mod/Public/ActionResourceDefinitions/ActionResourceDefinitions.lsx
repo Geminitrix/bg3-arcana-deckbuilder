@@ -5,18 +5,6 @@
         <node id="root">
             <children>
                 <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="ArcanaBeloved"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="68d32cef-75b0-1cc7-ff20-b8e7a109547b"/>
-                </node>
-                <node id="ActionResourceDefinition">
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="ArcanaFoolsLuck"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="0e255903-90a9-9fb9-dc1d-a5a407ddc83f"/>
-                </node>
-                <node id="ActionResourceDefinition">
                     <attribute id="Name" type="FixedString" value="ARCANE RESOURCES"/>
                     <attribute id="UUID" type="guid" value="a6d89ea7-2c35-419f-ac0a-ba1e22bba386"/>
                 </node>
@@ -38,7 +26,7 @@
                     <attribute id="UUID" type="guid" value="bf5014d4-b7d7-4f49-88f9-d92ca9fb8b75"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h14b68f97g6c1cgaca0gd5f3g3726b192f909" version="2"/>
+                    <attribute id="Description" type="TranslatedString" handle="h14b68f97g6c1cgaca0gd5f3g3726b192f909" version="3"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h333d2f38gdb09ga547gf491g8afd4a404675" version="2"/>
                     <attribute id="IsSpellResource" type="bool" value="true"/>
                     <attribute id="MaxLevel" type="uint32" value="9"/>
@@ -85,6 +73,18 @@
                     <attribute id="Name" type="FixedString" value="ArcanaReactInstinctiveCharm"/>
                     <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="UUID" type="guid" value="509598ba-2b73-47db-b624-b65fb740c1fc"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaFoolsLuck"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="0e255903-90a9-9fb9-dc1d-a5a407ddc83f"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaBeloved"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="68d32cef-75b0-1cc7-ff20-b8e7a109547b"/>
                 </node>
             </children>
         </node>

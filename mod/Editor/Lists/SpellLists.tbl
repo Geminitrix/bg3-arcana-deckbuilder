@@ -4,29 +4,29 @@
     <stat_object color="#FF808080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d945724f-6795-4b3a-8aae-e4b0bf1e1fc8" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 1a" />
         <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_MageHand;Target_Arcana_Card_Spell_BladeWard;Shout_Arcana_Util_ProduceFlame;Target_Arcana_Card_Spell_Enlarge" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3d3ffb90-5676-49cb-8739-80a4be85eb06" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcala Level 2.1" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_ArcaneRecovery" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ed96898e-d6c8-4599-bd7c-0cefe6978b95" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 1b" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_Guidance;Target_Arcana_Card_Spell_Command;Target_Arcana_Card_Spell_ChillTouch;Zone_Arcana_Card_Spell_BurningHands;Zone_Arcana_Card_Spell_ColorSpray;Target_Arcana_Card_Spell_ShockingGrasp" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ac907a42-680d-4681-909a-c60113635d03" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2.2" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_DetectSupernatural;Shout_Arcana_Util_ComprehendLanguages" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2a" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_ComprehendSupernatural;Shout_Arcana_Util_ComprehendHistory;Shout_Arcana_Util_ComprehendMind;Shout_Arcana_Util_ComprehendNature;Shout_Arcana_Util_ComprehendMedicine;Shout_Arcana_Util_ComprehendArt" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ed96898e-d6c8-4599-bd7c-0cefe6978b95" />
-        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2.3" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Util_Guidance;Target_Arcana_Card_Spell_Command;Target_Arcana_Card_Spell_ChillTouch;Zone_Arcana_Card_Spell_BurningHands;Zone_Arcana_Card_Spell_ColorSpray;Target_Arcana_Card_Spell_ShockingGrasp" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3d3ffb90-5676-49cb-8739-80a4be85eb06" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana Level 2b" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Util_ArcaneRecovery" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -278,7 +278,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana Deck DEBUG" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness;Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger;Target_Arcana_Card_Spell_EmotionAnticipation;Shout_Arcana_Util_DEBUG_Heartweaver" />
       </fields>
     </stat_object>
   </stat_objects>

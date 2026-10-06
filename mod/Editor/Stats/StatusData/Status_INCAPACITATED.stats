@@ -1,4 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
-  <stat_objects />
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fca9d2ed-15a6-ce80-371a-6a5550591945" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMOTION_AMAZEMENT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h268bfedega6f3gdaadg86dagc9e016519b1c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf035ed9dg3effg7790gcf56gb773d173fe69" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Enthrall" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_DISTRACTED,100,5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b23b92a-929e-0962-ef8c-3bff71209fb9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMOTION_GRIEF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5638800g790agfcc1ga193gffd714dad3d8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4713319g2cc5g0b01g5c38g27bf61aa6ea8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_RayOfInfeeblement" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Incapacitated;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_PENSIVE);BreakConcentration()" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_PENSIVE,100,5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6181727c-6956-9d7a-dd8e-0134c7e1bf2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="FEELING_AWE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f14ae208-8964-4359-bf32-4fd78c7158b6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d964d4cg7d70g7a94g50ccg3d6b153c11b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5614372ege12bg0f93g878fga256fbeb1105" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_HypnoticPattern" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FEELING_AWE" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE);RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
+      </fields>
+    </stat_object>
+  </stat_objects>
 </stats>
