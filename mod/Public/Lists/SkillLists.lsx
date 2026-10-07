@@ -24,6 +24,11 @@
                     <attribute id="Skills" type="LSString" value="Athletics, Intimidation, Medicine, History, Nature, Arcana, Religion, Survival"/>
                     <attribute id="UUID" type="guid" value="41e6f58d-0957-41dd-a6e3-393f7970b46a"/>
                 </node>
+                <node id="SkillList">
+                    <attribute id="Name" type="FixedString" value="The Empath Skill List"/>
+                    <attribute id="Skills" type="LSString" value="Insight, Persuasion, Medicine, Performance, Perception, Religion, AnimalHandling, Intimidation"/>
+                    <attribute id="UUID" type="guid" value="df806fc1-79b4-7328-9e05-8726e513d941"/>
+                </node>
             </children>
         </node>
     </region>

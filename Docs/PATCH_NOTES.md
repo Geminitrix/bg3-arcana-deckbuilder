@@ -470,6 +470,19 @@ Let out a bone-chilling howl that Numbs all nearby creatures.
 
 ---
 
+# **NEW** Heartweaver
+
+The sixth Arcana: XIV - Temperance, Aspect of Empathy. Mystra's empath braids one emotion into another with the threads of the Weave.
+
+## **NEW** Subclass: Heartweaver
+### Level 1: Wisdom and Charisma Saving Throws; Light Armour; Daggers, Quarterstaffs, Light Crossbows, Darts; 4 skills from Insight, Persuasion, Medicine, Performance, Perception, Religion, Animal Handling, Intimidation (2 with Expertise)
+### Level 1: Weave Surge: Joy, Trust, Fear; passives Emotional Alchemy and Empathic Sight
+### Level 3: Weave Surge: Anticipation, Surprise, Sadness
+### Level 5: Weave Surge: Disgust, Anger; passive Complex Feelings
+### Level 7: passive Overwhelm
+### Level 9: passive Mixed Feelings
+*A Weave Surge puts a one-turn emotion on a creature; when it fades it leaves a five-turn mood, and the next Surge reacts with that mood by its distance on Plutchik's wheel of emotions: an intense emotion, one of 24 feelings, or Catharsis.*
+
 # Bug Fixes
 
 - Ethereal Chains: the chains' visual effect no longer vanishes when the target is bound by Mimic: Ethereal Chains.

@@ -29,5 +29,12 @@
         <field name="Skills" type="StringTableFieldDefinition" value="Athletics, Intimidation, Medicine, History, Nature, Arcana, Religion, Survival" />
       </fields>
     </stat_object>
+    <stat_object color="#FF4B47C2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df806fc1-79b4-7328-9e05-8726e513d941" />
+        <field name="Name" type="NameTableFieldDefinition" value="The Empath Skill List" />
+        <field name="Skills" type="StringTableFieldDefinition" value="Insight, Persuasion, Medicine, Performance, Perception, Religion, AnimalHandling, Intimidation" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

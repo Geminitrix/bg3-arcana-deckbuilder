@@ -201,8 +201,23 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Arcana Deck DEBUG"/>
-                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness;Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger;Target_Arcana_Card_Spell_EmotionAnticipation;Shout_Arcana_Util_DEBUG_Heartweaver;Target_Arcana_Util_DEBUG_AddDoubt"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Shout_Arcana_Util_DEBUG_Heartweaver;Target_Arcana_Util_DEBUG_AddDoubt"/>
                     <attribute id="UUID" type="guid" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Heartweaver Level 1"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear"/>
+                    <attribute id="UUID" type="guid" value="05269c79-116f-2b07-6dc1-deeefddc7ae4"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Heartweaver Level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_EmotionAnticipation;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness"/>
+                    <attribute id="UUID" type="guid" value="74e89dac-4330-83f6-cf7b-881854bd4663"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Heartweaver Level 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger"/>
+                    <attribute id="UUID" type="guid" value="e0d34d66-e311-be56-1810-04f9ba0917fd"/>
                 </node>
             </children>
         </node>
