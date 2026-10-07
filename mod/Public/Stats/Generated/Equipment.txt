@@ -24,6 +24,30 @@ add equipment entry "WPN_Dagger"
 add equipmentgroup
 add equipment entry "WPN_LightCrossbow"
 
+new equipment "EQP_CC_Eternal"
+add equipmentgroup
+add equipment entry "ARCANA_CC_ARM_Heavy_Eternal"
+add equipmentgroup
+add equipment entry "ARM_Shoes"
+add equipmentgroup
+add equipment entry "ARM_Camp_Body"
+add equipmentgroup
+add equipment entry "ARM_Camp_Shoes"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"
+add equipmentgroup
+add equipment entry "OBJ_Keychain"
+add equipmentgroup
+add equipment entry "OBJ_Bag_AlchemyPouch"
+add equipmentgroup
+add equipment entry "OBJ_Backpack_CampSupplies"
+add equipmentgroup
+add equipment entry "WPN_Maul"
+
 new equipment "EQP_CC_Starchild"
 add equipmentgroup
 add equipment entry "ARCANA_CC_ARM_Robe_Starchild"
@@ -72,9 +96,9 @@ add equipment entry "OBJ_Bag_AlchemyPouch"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"
 
-new equipment "EQP_CC_Eternal"
+new equipment "EQP_CC_Heartweaver"
 add equipmentgroup
-add equipment entry "ARCANA_CC_ARM_Heavy_Eternal"
+add equipment entry "ARM_Bard"
 add equipmentgroup
 add equipment entry "ARM_Shoes"
 add equipmentgroup
@@ -94,5 +118,7 @@ add equipment entry "OBJ_Bag_AlchemyPouch"
 add equipmentgroup
 add equipment entry "OBJ_Backpack_CampSupplies"
 add equipmentgroup
-add equipment entry "WPN_Maul"
+add equipment entry "WPN_Dart"
+add equipmentgroup
+add equipment entry "WPN_Dagger"
 

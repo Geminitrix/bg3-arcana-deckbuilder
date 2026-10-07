@@ -6,6 +6,37 @@
             <children>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Arcana"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1a,,,AlwaysPrepared);AddSpells(ed96898e-d6c8-4599-bd7c-0cefe6978b95);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar)"/>
+                    <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
+                    <attribute id="UUID" type="guid" value="39f4e9d3-dfa8-48fa-a4e1-bf2852efd2f8"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="4831bb91-b13e-4740-b205-0227dbdddd12"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="c229d522-d294-43e1-8a05-1967e15c17e8"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="31b64a26-a650-4ef1-aeec-c2872f48ec14"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="dc2e68d3-5577-4a9f-be4f-1a71707c1995"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="4d95b491-8ba9-d55f-7d28-7550e4369c95"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
                     <attribute id="IsMulticlass" type="bool" value="false"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Arcana"/>
@@ -193,6 +224,16 @@
                     <attribute id="UUID" type="guid" value="d0409332-7a94-4796-9556-ff6905ed990b"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="IsMulticlass" type="bool" value="true"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Unbound"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch;UnlockedSpellSlotLevel1"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(43261c49-335c-4231-ae5d-6a828cff974c,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="d75cb44d-bba6-43ad-851f-4497ec526e80"/>
+                    <attribute id="UUID" type="guid" value="71db6872-91ab-4b2f-97e8-bac5da934f48"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Wisdom)"/>
                     <attribute id="IsMulticlass" type="bool" value="false"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -202,16 +243,6 @@
                     <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(46830276-a1ea-46dd-909e-ad4bf0059235,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);AddSpells(43261c49-335c-4231-ae5d-6a828cff974c,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="d75cb44d-bba6-43ad-851f-4497ec526e80"/>
                     <attribute id="UUID" type="guid" value="5a26cfd4-4d2c-461e-a939-e74ce87fe3c6"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="IsMulticlass" type="bool" value="true"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Unbound"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_TwinkleToes_1;Arcana_Passive_BetheLeaf;Arcana_Passive_FlowingStrikesAgility;Arcana_Passive_FlowingStrikesPrecision;Arcana_Passive_FlowingStrikeZephyr;Monk_SoundSwitch;UnlockedSpellSlotLevel1"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="AddSpells(43261c49-335c-4231-ae5d-6a828cff974c,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="d75cb44d-bba6-43ad-851f-4497ec526e80"/>
-                    <attribute id="UUID" type="guid" value="71db6872-91ab-4b2f-97e8-bac5da934f48"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="2"/>
@@ -375,17 +406,6 @@
                     <attribute id="UUID" type="guid" value="d33bb4ba-8201-4993-a418-8c697850a2a1"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Charisma);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MusicalInstrument);Proficiency(Daggers);Proficiency(LightCrossbows);Proficiency(Quarterstaffs)"/>
-                    <attribute id="IsMulticlass" type="bool" value="false"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Deceiver"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Telepathy"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(1135673f-7380-4c84-b4f6-f35199cdaae9,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument);AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
-                    <attribute id="UUID" type="guid" value="7df73cfc-f7f2-44f5-b017-c5d0c85e333d"/>
-                </node>
-                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MusicalInstrument);Proficiency(Daggers);Proficiency(LightCrossbows);Proficiency(Quarterstaffs)"/>
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -395,6 +415,17 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
                     <attribute id="UUID" type="guid" value="0c560a79-48fa-4510-897f-081b7be96c1c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Charisma);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MusicalInstrument);Proficiency(Daggers);Proficiency(LightCrossbows);Proficiency(Quarterstaffs)"/>
+                    <attribute id="IsMulticlass" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Deceiver"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Arcana_Passive_Telepathy"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(1135673f-7380-4c84-b4f6-f35199cdaae9,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument);AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb"/>
+                    <attribute id="UUID" type="guid" value="7df73cfc-f7f2-44f5-b017-c5d0c85e333d"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="2"/>
@@ -542,17 +573,6 @@
                     <attribute id="UUID" type="guid" value="2c4887f9-d4f8-4a95-974c-519643440029"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Sickles);Proficiency(Spears)"/>
-                    <attribute id="IsMulticlass" type="bool" value="false"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Starchild"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(b65fa7bc-0683-47eb-bb87-25ef7b4625b7,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>
-                    <attribute id="UUID" type="guid" value="9e9dc5b1-d9dc-4c81-bd23-c987442ea2d3"/>
-                </node>
-                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Sickles);Proficiency(Spears)"/>
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -562,6 +582,17 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>
                     <attribute id="UUID" type="guid" value="ebe622d4-39a5-45fb-8bde-bd1b70a167df"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(Clubs);Proficiency(Daggers);Proficiency(Javelins);Proficiency(Maces);Proficiency(Quarterstaffs);Proficiency(Sickles);Proficiency(Spears)"/>
+                    <attribute id="IsMulticlass" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Starchild"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CosmicOmen;CosmicOmen_Rest;CosmicOmen_Ability"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(b65fa7bc-0683-47eb-bb87-25ef7b4625b7,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);AddSpells(06cf51c4-651d-4959-947d-82e8b8ea9d32,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="464a3bfd-859a-43d5-a20d-d6a9270ce6eb"/>
+                    <attribute id="UUID" type="guid" value="9e9dc5b1-d9dc-4c81-bd23-c987442ea2d3"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="2"/>
@@ -706,16 +737,6 @@
                     <attribute id="UUID" type="guid" value="60e3e094-10e1-4d36-9f12-f368dad72f47"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Strength);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(LightHammers);Proficiency(Clubs);Proficiency(Maces);Proficiency(Greatclubs);Proficiency(Warhammers);Proficiency(Mauls)"/>
-                    <attribute id="IsMulticlass" type="bool" value="false"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Eternal"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(41e6f58d-0957-41dd-a6e3-393f7970b46a,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
-                    <attribute id="UUID" type="guid" value="ba6d575a-d498-4c32-907e-c5e743c91eff"/>
-                </node>
-                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(LightHammers);Proficiency(Clubs);Proficiency(Maces);Proficiency(Greatclubs);Proficiency(Warhammers);Proficiency(Mauls)"/>
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
@@ -724,6 +745,16 @@
                     <attribute id="Selectors" type="LSString" value="AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a,,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
                     <attribute id="UUID" type="guid" value="7da22dfc-39c0-49b0-b1d5-12e367c6a4ea"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Strength);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(LightHammers);Proficiency(Clubs);Proficiency(Maces);Proficiency(Greatclubs);Proficiency(Warhammers);Proficiency(Mauls)"/>
+                    <attribute id="IsMulticlass" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Eternal"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(41e6f58d-0957-41dd-a6e3-393f7970b46a,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);AddSpells(2b712a9e-66d3-45af-bb20-38b750ea651a,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
+                    <attribute id="UUID" type="guid" value="ba6d575a-d498-4c32-907e-c5e743c91eff"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="2"/>
@@ -869,37 +900,6 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="b5a43d76-fd80-4c29-b149-7690e1e1e18f"/>
                     <attribute id="UUID" type="guid" value="8ba69d3c-9e0e-4a78-9637-8466e41314d2"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(ArcanaSpellSlot,2,1)"/>
-                    <attribute id="IsMulticlass" type="bool" value="true"/>
-                    <attribute id="Level" type="uint8" value="1"/>
-                    <attribute id="Name" type="LSString" value="Arcana"/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(d945724f-6795-4b3a-8aae-e4b0bf1e1fc8,2,0,ArcanaLevel1a,,,AlwaysPrepared);AddSpells(ed96898e-d6c8-4599-bd7c-0cefe6978b95);SelectPassives(80c5c4b2-be3f-47e0-9541-09d1194fe34a,1,ArcaneFamiliar)"/>
-                    <attribute id="TableUUID" type="guid" value="99f583de-f62e-43a7-b8f7-4aa29812709f"/>
-                    <attribute id="UUID" type="guid" value="39f4e9d3-dfa8-48fa-a4e1-bf2852efd2f8"/>
-                    <children>
-                        <node id="SubClasses">
-                            <children>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="4831bb91-b13e-4740-b205-0227dbdddd12"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="c229d522-d294-43e1-8a05-1967e15c17e8"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="31b64a26-a650-4ef1-aeec-c2872f48ec14"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="dc2e68d3-5577-4a9f-be4f-1a71707c1995"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="4d95b491-8ba9-d55f-7d28-7550e4369c95"/>
-                                </node>
-                            </children>
-                        </node>
-                    </children>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(Daggers);Proficiency(Quarterstaffs);Proficiency(LightCrossbows);Proficiency(Darts)"/>

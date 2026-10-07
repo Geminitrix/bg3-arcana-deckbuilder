@@ -477,6 +477,7 @@ The sixth Arcana: XIV - Temperance, Aspect of Empathy. Mystra's empath braids on
 ## **NEW** Subclass: Heartweaver
 ### Level 1: Wisdom and Charisma Saving Throws; Light Armour; Daggers, Quarterstaffs, Light Crossbows, Darts; 4 skills from Insight, Persuasion, Medicine, Performance, Perception, Religion, Animal Handling, Intimidation (2 with Expertise)
 ### Level 1: Weave Surge: Joy, Trust, Fear; passives Emotional Alchemy and Empathic Sight
+### Character creation: its own class tag (The Heartweaver), its own starting equipment (Dagger, Darts, 2 Potions of Healing, Scroll of Revivify), suggested abilities Intelligence 15, Wisdom 15, Charisma 13 and default skills
 ### Level 3: Weave Surge: Anticipation, Surprise, Sadness
 ### Level 5: Weave Surge: Disgust, Anger; passive Complex Feelings
 ### Level 7: passive Overwhelm

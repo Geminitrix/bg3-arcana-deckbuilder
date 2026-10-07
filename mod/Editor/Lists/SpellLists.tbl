@@ -267,6 +267,27 @@
         <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Card_Spell_HowlOfTheDead" />
       </fields>
     </stat_object>
+    <stat_object color="#FF6A5ACD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="05269c79-116f-2b07-6dc1-deeefddc7ae4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF6A5ACD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74e89dac-4330-83f6-cf7b-881854bd4663" />
+        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionAnticipation;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF6A5ACD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0d34d66-e311-be56-1810-04f9ba0917fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20d9404e-35c0-4dbc-ad46-f4d8a6e76dfc" />
@@ -279,27 +300,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f2e5e2e9-42c8-4f0e-88de-830ef0224290" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana Deck DEBUG" />
         <field name="Spells" type="StringTableFieldDefinition" value="Shout_Arcana_Created_Tangle_DEBUG;Shout_Arcana_Card_Spell_DEBUG_Fated;Shout_Arcana_Card_Spell_DEBUG_Fleeting;Shout_Arcana_Card_Spell_DEBUG_Unique;Shout_Arcana_Card_Spell_DEBUG_Tangler;Shout_Arcana_Util_DEBUG_Heartweaver;Target_Arcana_Util_DEBUG_AddDoubt" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF4B47C2" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="05269c79-116f-2b07-6dc1-deeefddc7ae4" />
-        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 1" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionJoy;Target_Arcana_Card_Spell_EmotionTrust;Target_Arcana_Card_Spell_EmotionFear" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF4B47C2" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="74e89dac-4330-83f6-cf7b-881854bd4663" />
-        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 3" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionAnticipation;Target_Arcana_Card_Spell_EmotionSurprise;Target_Arcana_Card_Spell_EmotionSadness" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF4B47C2" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e0d34d66-e311-be56-1810-04f9ba0917fd" />
-        <field name="Name" type="NameTableFieldDefinition" value="Heartweaver Level 5" />
-        <field name="Spells" type="StringTableFieldDefinition" value="Target_Arcana_Card_Spell_EmotionDisgust;Target_Arcana_Card_Spell_EmotionAnger" />
       </fields>
     </stat_object>
   </stat_objects>
