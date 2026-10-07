@@ -610,6 +610,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30ec6432-d35d-cd90-f362-0d281f5bddbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dc797dag6dfeg9533g4398g88b8a10fd57f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d798b3cf-15ab-4911-9884-82799e6fd3ef" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e39949a1-5c3e-4257-9eb8-a8a303607fc9" />
         <field name="Name" type="NameTableFieldDefinition" value="FRIENDS_EX" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef9df044g0f98g86c7gf05dg844b7e9823fb" version="1" />
@@ -827,18 +839,6 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnApply;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="30ec6432-d35d-cd90-f362-0d281f5bddbe" />
-        <field name="Name" type="NameTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dc797dag6dfeg9533g4398g88b8a10fd57f" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DOUBLE_OF_THE_VEIL" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d798b3cf-15ab-4911-9884-82799e6fd3ef" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">

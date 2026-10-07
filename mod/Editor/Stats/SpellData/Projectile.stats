@@ -306,16 +306,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="911f7617-42b9-ea82-74b4-51834d90dbca" />
-        <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Double_MirrorSigil_Slot6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8bf1a377-fce3-f802-f2fb-1e41b44f4cb9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="399e91e0-e2da-9c99-897e-bbf1cc346ee9" />
         <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Double_MirrorSigil_Slot3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8bf1a377-fce3-f802-f2fb-1e41b44f4cb9" />
@@ -342,6 +332,16 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage((5d6)/2,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage((5d6)/2,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage((5d6)/2,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="911f7617-42b9-ea82-74b4-51834d90dbca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Deceiver_Double_MirrorSigil_Slot6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bf1a377-fce3-f802-f2fb-1e41b44f4cb9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force,Magical);ApplyStatus(SIGIL_TECH,100,0);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Force)" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">

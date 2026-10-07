@@ -334,6 +334,7 @@ Turn your suffering on a foe. It takes Necrotic damage equal to the hit points y
 - Each stack gives -1 to Wisdom Saving Throws and -1 to Attack Rolls against the Deceiver and her Doubles.
 - The third stack turns into **Deluded** for 1 turn: the creature is Confused, acts at random and may lose its turn. It can end the effect with a Wisdom Saving Throw at the start of each turn.
 - Applied by Shatter, by destroying a Double, by your Sigil detonating and by Malicious Whispers on a marked target.
+- A new level 1 passive, **Doubt**, explains where it comes from and what it does.
 
 ## **NEW** Doubles' Spells:
 *Each Double carries its own small kit, so it costs only its own action and never your spell slots.*

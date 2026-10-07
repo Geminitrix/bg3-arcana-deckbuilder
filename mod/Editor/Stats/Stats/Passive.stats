@@ -146,6 +146,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="935b081d-0d67-6d0b-2328-21634484a56a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Doubt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h096fc856g5f2bg6f33ge7acg6da9b3338f67" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h982669dfg04a3ga0f4g08eegc9a58855ea02" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalForce" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e68992a5-e556-4207-957d-17363492c38d" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_Telepathy" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h87105db1gb18ag4156gf9abgd43725d9eb27" version="1" />
@@ -161,7 +171,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9a567479-2eb4-15d3-736e-e4b11bf0eed8" />
         <field name="Name" type="NameTableFieldDefinition" value="Arcana_Passive_TheVeil" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb16708e1ge3edg9ce1g5712g5b26977fbc01" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8cce4774gc43ag85c1gfbf4g7a2213dd6822" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8cce4774gc43ag85c1gfbf4g7a2213dd6822" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_InvokeDuplicity" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -1110,6 +1120,5 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(WisdomModifier*5);Distance(9)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
-    </stat_object>
-</stat_objects>
+    </stat_object></stat_objects>
 </stats>

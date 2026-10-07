@@ -497,7 +497,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="8fe1f693-d8ff-4b02-a655-efd4acbc04cb" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Telepathy;Arcana_Passive_TheVeil" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Telepathy;Arcana_Passive_TheVeil;Arcana_Passive_Doubt" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(LightArmor);Proficiency(MusicalInstrument);Proficiency(Daggers);Proficiency(LightCrossbows);Proficiency(Quarterstaffs)" />
         <field name="IsMulticlass" type="BoolTableFieldDefinition" value="True" />
       </fields>
@@ -512,7 +512,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Charisma);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MusicalInstrument);Proficiency(Daggers);Proficiency(LightCrossbows);Proficiency(Quarterstaffs)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSkills(1135673f-7380-4c84-b4f6-f35199cdaae9,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectEquipment(aab8c5b5-eacf-4867-8e5f-bd4de3a9132e,1,BardInstrument);AddSpells(507f2c2a-ccdd-44f0-bf45-ca3676e1a03f,,,,AlwaysPrepared)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Telepathy;Arcana_Passive_TheVeil" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Arcana_Passive_Telepathy;Arcana_Passive_TheVeil;Arcana_Passive_Doubt" />
         <field name="IsMulticlass" type="BoolTableFieldDefinition" value="False" />
       </fields>
     </stat_object>
