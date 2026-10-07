@@ -43,7 +43,7 @@ return {
                 T.eq(D.Has(id, "Unique"), r.perRound == 1, id .. " Unique iff once a round")
                 T.eq(D.reactionByUsed[r.used], id, r.used)
             end
-            T.eq(n, 1, "one reaction card (the Deceiver's two left with the Veil)")
+            T.eq(n, 2, "two reaction cards: Gale Deflection and Which One?")
             T.eq(D.reactions["Shout_Arcana_Card_Passive_GaleDeflection"].perRound, 3)
         end,
         ["Has reads keyword flags"] = function()
@@ -62,7 +62,8 @@ return {
             for _, card in pairs(D.cards) do
                 for _, c in ipairs(card.conjures or {}) do T.eq(U.Category(c.id), "Created", c.id) end
             end
-            for _, c in pairs(D.statusConjures) do T.eq(U.Category(c.id), "Created", c.id) end
+            -- a reaction card conjured by an Awakening (Which One?) stays a Passive card: the reaction system reads it
+            for _, c in pairs(D.statusConjures) do T.eq(U.Category(c.id), D.reactions[c.id] and "Passive" or "Created", c.id) end
             -- a container is either a Created card (Mimic) or a deck card whose Choose options
             -- are Created (Hemoplague); the children are always Created
             for container, subs in pairs(D.containers) do

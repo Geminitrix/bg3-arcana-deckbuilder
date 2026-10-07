@@ -70,9 +70,9 @@
                 </node>
                 <node id="ActionResourceDefinition">
                     <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="ArcanaBeloved"/>
+                    <attribute id="Name" type="FixedString" value="ArcanaReactWhichOne"/>
                     <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="UUID" type="guid" value="68d32cef-75b0-1cc7-ff20-b8e7a109547b"/>
+                    <attribute id="UUID" type="guid" value="2fc93ef1-33b0-0569-e5dd-90b0d579e8ba"/>
                 </node>
             </children>
         </node>

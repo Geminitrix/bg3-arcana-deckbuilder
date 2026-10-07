@@ -105,7 +105,8 @@ return {
         ["Awakening an Aspect puts its card in hand"] = function()
             local cards = {
                 ASPECT_AWAKENED_FOOL = "Rush_Arcana_Created_Aspect_LeapOfFaith",
-                ASPECT_AWAKENED_EMPRESS = "Shout_Arcana_Created_Aspect_Heartbreak",
+                ASPECT_AWAKENED_EMPRESS = "Shout_Arcana_Created_Aspect_VeilLifts",
+                ASPECT_AWAKENED_EMPRESS_III = "Shout_Arcana_Card_Passive_WhichOne",
                 ASPECT_AWAKENED_STAR = "Shout_Arcana_Created_Aspect_WishUponAStar",
                 ASPECT_AWAKENED_DEATH = "Target_Arcana_Created_Aspect_FinalToll",
             }

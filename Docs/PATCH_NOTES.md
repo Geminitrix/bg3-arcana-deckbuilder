@@ -373,6 +373,15 @@ Turn your suffering on a foe. It takes Necrotic damage equal to the hit points y
 ## **REWORKED** Friends:
 - Now a level 1 spell. Cast at level 6 it works like the old Faux Amis: no Concentration, the target never notices, and it is unchanged in higher difficulties.
 
+## **REWORKED** Aspect Awakening: 2 - The High Priestess
+*The Empress counted Sigil detonations. The High Priestess counts the Doubt you sow.*
+- 3 - The Empress ⇒ **2 - The High Priestess**, Aspect of Love ⇒ **Aspect of Doubt**.
+- **Goal:** apply stacks of Doubt (4 / 7 / 10) instead of detonating Sigils (3 / 5 / 7).
+- **Tier I, Veiled:** enemies with Doubt have Disadvantage on Attack Rolls against you and your Doubles (was Obsession, against Sigil-marked enemies).
+- **Tier II, Two Pillars:** once per turn, when an enemy becomes Deluded, the nearest unmarked enemy within 6 m gains your Sigil (was Devotion, on a detonation).
+- **Tier III, Aspect of Doubt:** +3 Charisma and Charisma to Arcane damage as before; Beloved ⇒ **Ready: Which One?**, a reaction card you get when you awaken this tier: once per round, when an attack is about to hit you, swap places with your nearest Double. The attack misses, the Double is destroyed in your place and the attacker gains Doubt.
+- **Aspect card:** Heartbreak ⇒ **The Veil Lifts**: every Double shatters, every Sigil you laid detonates, and surviving enemies with Doubt become Deluded.
+
 ## **REMOVED** Deceiver Cards:
 - Mental Prison, Hypnotic Gaze, Terrify, Hostile Takeover, Ready: Instinctive Charm, Ready: Hollow Image, Friends: Faux Amis.
 

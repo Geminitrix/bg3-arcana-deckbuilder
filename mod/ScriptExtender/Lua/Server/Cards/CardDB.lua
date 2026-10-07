@@ -67,6 +67,8 @@ D.cards = {
     -- Reaction cards: see D.reactions. Gale Deflection can be used up to 3 times a round, so it takes
     -- three copies.
     ["Shout_Arcana_Card_Passive_GaleDeflection"] = { aspect = "Unbound", cost = 2 },
+    -- Tier III of the High Priestess: conjured to the hand when she awakens it (statusConjures), never in the deck.
+    ["Shout_Arcana_Card_Passive_WhichOne"] = { aspect = "Deceiver", cost = 3, keywords = { Unique = true } },
 
     -- Spells with a cooldown of their own: a second copy would only ever be drawn dead.
     ["Target_Arcana_Card_Spell_VeiledPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },
@@ -109,7 +111,7 @@ D.cards = {
     -- D.statusConjures). Level 0 and no slot, so they cost no Threads; being conjured sends them to the
     -- exile, and the engine's own OncePerCombat cooldown does the same job on the console.
     ["Rush_Arcana_Created_Aspect_LeapOfFaith"] = { aspect = "Unbound" },
-    ["Shout_Arcana_Created_Aspect_Heartbreak"] = { aspect = "Deceiver" },
+    ["Shout_Arcana_Created_Aspect_VeilLifts"] = { aspect = "Deceiver" },
     ["Shout_Arcana_Created_Aspect_WishUponAStar"] = { aspect = "Starchild" },
     ["Target_Arcana_Created_Aspect_FinalToll"] = { aspect = "Eternal" },
 
@@ -124,7 +126,8 @@ D.statusConjures = {
     ZEPHYR_STRIKE = { id = "Target_Arcana_Created_ZephyrStrike", lasts = 1 },
     -- the Aspect card stays playable for the rest of the fight
     ASPECT_AWAKENED_FOOL = { id = "Rush_Arcana_Created_Aspect_LeapOfFaith", lasts = 99 },
-    ASPECT_AWAKENED_EMPRESS = { id = "Shout_Arcana_Created_Aspect_Heartbreak", lasts = 99 },
+    ASPECT_AWAKENED_EMPRESS = { id = "Shout_Arcana_Created_Aspect_VeilLifts", lasts = 99 },
+    ASPECT_AWAKENED_EMPRESS_III = { id = "Shout_Arcana_Card_Passive_WhichOne", lasts = 99 },
     ASPECT_AWAKENED_STAR = { id = "Shout_Arcana_Created_Aspect_WishUponAStar", lasts = 99 },
     ASPECT_AWAKENED_DEATH = { id = "Target_Arcana_Created_Aspect_FinalToll", lasts = 99 },
 }
@@ -141,6 +144,10 @@ D.reactions = {
     ["Shout_Arcana_Card_Passive_GaleDeflection"] = {
         ready = "GALE_DEFLECTION_READY", resource = "ArcanaReactGaleDeflection",
         used = "GALE_DEFLECTION_USED_TECH", perRound = 3,
+    },
+    ["Shout_Arcana_Card_Passive_WhichOne"] = {
+        ready = "WHICH_ONE_READY", resource = "ArcanaReactWhichOne",
+        used = "WHICH_ONE_USED_TECH", perRound = 1,
     },
 }
 
