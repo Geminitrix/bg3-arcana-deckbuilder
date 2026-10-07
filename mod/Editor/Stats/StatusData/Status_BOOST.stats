@@ -2093,7 +2093,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="97195fcc-ea8e-c2d2-465c-a709532fe468" />
         <field name="Name" type="NameTableFieldDefinition" value="CATHARSIS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfd9f5672g6d69ge1bdg474bgd2247b4b9608" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1f9caedg2e56g9282g2bd3g49592bb4eb18" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1f9caedg2e56g9282g2bd3g49592bb4eb18" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
         <field name="StackId" type="StringTableFieldDefinition" value="CATHARSIS" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2105,7 +2105,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="329dc65c-1520-567f-6b0e-34188226629f" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_ADMIRATION" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb08ea62dg2504gc780g45cbgb152c1df534a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4c5ef36g2e01gfb7bg3e39gf2414b1c575a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4c5ef36g2e01gfb7bg3e39gf2414b1c575a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ShieldOfFaith" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2119,7 +2119,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0439dfff-21d0-52f9-ec32-5ea76921b8ef" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_ANGER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had45a583g5d64g1fefga5d0gb40248bd1437" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heda8fbaegd267gc34cgec96gceaf32607947" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heda8fbaegd267gc34cgec96gceaf32607947" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CrownOfMadness" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2134,7 +2134,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="63232480-626f-de72-3657-6d8f5950130a" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_ANTICIPATION" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37e7ff58g43fege675ge190g4deeb2631fc0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf855510egc0afg86cbgf394g10efc11af3d1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf855510egc0afg86cbgf394g10efc11af3d1" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2147,7 +2147,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="09e00086-893b-4c0e-b429-a21bdad5dcf6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_DISGUST" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heee7b26ag487egb2d0g2d6ag146c4dfa0e6d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcaa56459g369dg9502g8330g6d71a2ec9f7d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcaa56459g369dg9502g8330g6d71a2ec9f7d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2162,7 +2162,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="53969754-3e98-0ced-816f-7669343bc704" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_ECSTASY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88cc4a73g4840g706dgaa75g79605a090397" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec6920b7gd032gb83cg3cd7g151de0769d7d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec6920b7gd032gb83cg3cd7g151de0769d7d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2176,7 +2176,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0dc19f82-90ed-4fca-acba-5153c69cc7ae" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_FEAR" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e56888bge330gd3e3g598cg1aa72a60ff0f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d7877f1g0a04ga5fbg42a5g81639ec216b6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d7877f1g0a04ga5fbg42a5g81639ec216b6" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2191,7 +2191,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b5ee8935-74bd-00b6-b6de-07a0fc4c4ea6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_JOY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1544ded7g81bbgd40bg8c53g90d78ae21898" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb13b93cg1656g9f18g3e12g4f746f4acbcc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb13b93cg1656g9f18g3e12g4f746f4acbcc" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2204,7 +2204,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b3552d85-c8dc-acba-03d3-3c6ff4f9bd3c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_LOATHING" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2b98d09g907fgfa68g3135gf658a7d4fe3a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h793a7dd1gd728gebe5g5540g937ccc3b16ce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h793a7dd1gd728gebe5g5540g937ccc3b16ce" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2220,7 +2220,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3a76a0a2-dcf3-1771-3c0f-aa0bb6f6b9fa" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_RAGE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h648c9a5bga44dg33f7g82fbg913b2a40ad5b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab21fd91g7fe8g7c45gb44dg55387558708a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hab21fd91g7fe8g7c45gb44dg55387558708a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CrownOfMadness" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2236,7 +2236,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="115bfd65-573c-42db-bedf-5496bcba7ebe" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_SADNESS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92b0189eg5221g3fc1g36f1g9dcaefbe91c5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31be8152g930eg0d23g7049g18d4591c9630" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h31be8152g930eg0d23g7049g18d4591c9630" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_RayOfInfeeblement" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2252,7 +2252,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a9f27839-dfce-404a-ae7e-be2204b48646" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_SURPRISE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h89e9addfga559g6364g0b05g9962dfff95dd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6560d97eg26d9gedd8gf8e6g7e4c56982258" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6560d97eg26d9gedd8gf8e6g7e4c56982258" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Enthrall" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2267,7 +2267,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ae960167-ca73-5fe9-2a4e-9a603a3fdd95" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_TRUST" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41c28fc4ge9e2g0ce8g8f56ga61b5d0696d2" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7cb7da32gb32age42fgb456g34f2f0360487" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7cb7da32gb32age42fgb456g34f2f0360487" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ShieldOfFaith" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2280,7 +2280,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bfe74125-4f26-6168-f6bc-a9ce3226dc9e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_VIGILANCE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha81aeffbgd0b7g2876gb87bgf1fdce79d5b5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23d18a12g185ag488fgb03bgf7ef9f9c1e68" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23d18a12g185ag488fgb03bgf7ef9f9c1e68" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2294,7 +2294,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6273e61f-bc58-2224-de92-4250cec0001c" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_AGGRESSIVENESS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddb9da02ge51bgf9f1g17fdg80b645ed8433" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30600d2fgb503g0c62g4f34gbad04c71c7a7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30600d2fgb503g0c62g4f34gbad04c71c7a7" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4, MainMeleeWeaponDamageType)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_AGGRESSIVENESS" />
@@ -2308,7 +2308,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d283462e-daf8-27d2-d210-55b4df6e4b74" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_ANXIETY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haba01b81gae57g3873g0b28g4bf1cf788c20" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h785d1a0ag10ceg0e87gedaeg819c234bd894" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h785d1a0ag10ceg0e87gedaeg819c234bd894" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Confusion" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_ANXIETY" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2323,7 +2323,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9e1aa1f8-1bab-3dbd-235b-be47f0e56058" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_CONTEMPT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfdb03c08g4d73g1c1dg0390g8339cbd512bd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27ff4a65gfc5egcad4g1349g3a52691348ff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27ff4a65gfc5egcad4g1349g3a52691348ff" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_CONTEMPT" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2338,7 +2338,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ddb6020c-4758-7c8e-125b-eaded7d16ff1" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_CURIOSITY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hda4cf989gda7fg1850g6874gfb139254d5c1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb86c171ag4506g113dg3246g48b2c8bd1817" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb86c171ag4506g113dg3246g48b2c8bd1817" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_SeeInvisibility" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_CURIOSITY" />
@@ -2352,7 +2352,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bf729e69-b5f1-f637-a98f-244360f5cdef" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_CYNICISM" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbc2d8648g379cg15b1g2dc7g56b32c7f5ef9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1710a0d5g41eeg7c6fgb744gf7efe2d7c4ae" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1710a0d5g41eeg7c6fgb744gf7efe2d7c4ae" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_CYNICISM" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2367,7 +2367,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c90e8575-78f8-fffb-abd9-d65ce147d0f6" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_DELIGHT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e5a8cc6g0358g50begd0cfg3c52d2ddd2d9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h10bbc781g72a9gf702g46bcgc157ea36ce5e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h10bbc781g72a9gf702g46bcgc157ea36ce5e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_DELIGHT" />
@@ -2381,7 +2381,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="397b766c-ae61-eb33-8b23-0d6f85fe7e2e" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_DESPAIR" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd96efcd8g4da7ge075gc3bfga1dae83b0a40" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b5259b2gddf9g23c5gae5bg67a7681aef49" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b5259b2gddf9g23c5gae5bg67a7681aef49" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bane" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_DESPAIR" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2396,7 +2396,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1a443f3e-dd73-29b1-c6d1-97af2154e177" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_DISAPPROVAL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8913616bg398fg72ffgc014g3c5df30ba41b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c049e9age063g30edg557dg93e9e69eeafc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c049e9age063g30edg557dg93e9e69eeafc" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bane" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_DISAPPROVAL" />
@@ -2413,7 +2413,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="893256f9-6950-945b-163f-d56a5177a261" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_DISAPPROVED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haac5c108g3b08g3008g4619g90ea20da23de" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6de0e54eg818cga5b2g23b6g4fca70ebd48c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6de0e54eg818cga5b2g23b6g4fca70ebd48c" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bane" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_DISAPPROVED" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2427,7 +2427,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1a71ba80-aeaf-d85a-e255-9e625b2095ea" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_DOMINANCE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3aa34cdbgd4abg4447g214bg5461b3dee81e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he795eb3agf294ge7a2g2598g19367c3bbc44" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he795eb3agf294ge7a2g2598g19367c3bbc44" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_DominatePerson" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_DOMINANCE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2440,7 +2440,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6c30b813-7cb8-7f5e-2d34-8f7d8f2b00dd" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_ENVY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64698cdbgbbefg3a7eg121agfa2b8f63388a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a11d7cdg3605gd543g5f22g3f6224d12149" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a11d7cdg3605gd543g5f22g3f6224d12149" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Confusion" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_ENVY" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2455,7 +2455,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="89be5373-02db-80c6-a3a1-9df9f5272d0d" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_GUILT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41857eeeg7163gbfe5g139fg99fb0b865c49" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f1b263bgef9agfb6ag5993g666122be19b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f1b263bgef9agfb6ag5993g666122be19b4" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_GUILT" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2470,7 +2470,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="da89825c-995e-7a0c-6066-b52dd4772a69" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_HOPE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b1ce397g2299g5c77g0015g3784a607eb6a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb497303cg614age6c1g9b0cg4cf7314c5bf8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb497303cg614age6c1g9b0cg4cf7314c5bf8" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bless" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_HOPE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2483,7 +2483,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f8fc4ac4-5d5f-2711-d57d-382ab6808332" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_LOVE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had1feb25gcb4cg7b17g7136g04942e5e3b4a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf887fd0dgf42fgcd81g038dg8ab55e894e0f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf887fd0dgf42fgcd81g038dg8ab55e894e0f" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_WardingBond" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_LOVE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2497,7 +2497,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e41a422e-d755-5dc4-6e20-e308e0b8cbdc" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_MORBIDNESS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34f423ccgb264g2bdcg8a13gc5ae9a31e05b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h850982a9g8d76g0565g6e2dg8cbf953a6c70" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h850982a9g8d76g0565g6e2dg8cbf953a6c70" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d6)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_MORBIDNESS" />
@@ -2521,7 +2521,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="776047ff-5162-7653-2a3b-94b0235121ee" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_OPTIMISM" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h182ba209gbc6cgb713ge431g34f70fd2e665" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc18898f3g9881g3cc5g2b31gc3bec9346cd2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc18898f3g9881g3cc5g2b31gc3bec9346cd2" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_OPTIMISM" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2535,7 +2535,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8cd47c70-84c0-d9e2-748b-f0fe2dd8e5ef" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_OUTRAGE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4eff377egbffeg7062gbd5dgae2b2878c3e9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc99eab8g2a25ge40dg7e62g493da4ff0a48" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfc99eab8g2a25ge40dg7e62g493da4ff0a48" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CompelledDuel" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_OUTRAGE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2550,7 +2550,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4128d097-7d70-0e87-8e99-8d8e1eac02c6" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_PESSIMISM" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e5ec5ccg72a5g4a9cge8c4g976b1822af42" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf8a08ed1g80bcg6c62g2bffg844c200b0262" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf8a08ed1g80bcg6c62g2bffg844c200b0262" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_RayOfInfeeblement" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_PESSIMISM" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2565,7 +2565,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e1f5f61b-72c1-42b9-6ff3-c98797bdf9a9" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_PRIDE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3d99a44g892cg6272g2148g225ce8ceaf9d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09e69a96ga453g345eg0f3bgff46b2afe319" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09e69a96ga453g345eg0f3bgff46b2afe319" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_PRIDE" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2578,7 +2578,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fb972948-edf3-d10a-68da-ef88d36b5c63" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_REMORSE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcca03b63g76dbg3a8fg9dffgfeaa2a1080d9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87d2e17ag5a9eg64ceg3be5g2591f6d2d004" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87d2e17ag5a9eg64ceg3be5g2591f6d2d004" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_REMORSE" />
@@ -2604,7 +2604,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8a44ed5e-06ca-1577-a97b-69e338cdda5e" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_SENTIMENTALITY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h79d3558eg7e3ag0178gdcc1gf218ede4de2c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3dc6fc8gda0cg11f7g91f6g86450c2e50c7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3dc6fc8gda0cg11f7g91f6g86450c2e50c7" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CalmEmotions" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_SENTIMENTALITY" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2617,7 +2617,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="84f63fb2-56b4-9a14-e0ea-d0114b572d05" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_SHAME" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0a3e50e7gc06cgfca6g26efg386f3c6cbd04" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1a392eag4af7gb546g5bc5g19f9506e1d9e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb1a392eag4af7gb546g5bc5g19f9506e1d9e" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_SHAME" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2632,7 +2632,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="06ff8034-7df9-cc49-ab86-a29a7a9217f7" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_SUBMISSION" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a3f5cadgc215g289dg55e2g493813a40d97" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9dad6b05gce58g708bga6c6g91cd5d836b5e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9dad6b05gce58g708bga6c6g91cd5d836b5e" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_DominatePerson" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_SUBMISSION" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2647,7 +2647,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="902c4229-022e-a154-0e00-ab2f9732c966" />
         <field name="Name" type="NameTableFieldDefinition" value="FEELING_UNBELIEF" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e03bbf9ga1f8g6030gbe77gc704cb4c2f8e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cfc4bb0g0d66g1d5bg453cg701fc80fe533" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cfc4bb0g0d66g1d5bg453cg701fc80fe533" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Counterspell" />
         <field name="StackId" type="StringTableFieldDefinition" value="FEELING_UNBELIEF" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2662,7 +2662,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ac48163a-488c-4000-3524-b2fde249bff7" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_ACCEPTING" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3eecb2bcg25e5gc65cgd341g983df7612422" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h730c232ag8291gf76bgd938g613707b0785f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h730c232ag8291gf76bgd938g613707b0785f" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ShieldOfFaith" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2674,7 +2674,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f0186a41-329a-03d7-0697-31cc4d52d419" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_ANNOYED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h05523ad2g3ce6gb533g8ac1gdbd834c4a169" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4d5aef97g430bg9d40gfc12ga22c4c2eedd0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4d5aef97g430bg9d40gfc12ga22c4c2eedd0" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CrownOfMadness" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2686,7 +2686,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5247492f-36e2-ad6c-519a-4c1a62cdbf25" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_APPREHENSIVE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ee55276g021ag56e1gc802g6dc4acfdb48d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4e5bf4e4gdc92g7c9bg9871g9690b4997077" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4e5bf4e4gdc92g7c9bg9871g9690b4997077" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2698,7 +2698,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="366129dc-c33f-da0a-4155-8564791557d5" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_BORED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08fe9015gcd75gd236g09fcgc65bff13bacf" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h696c8006gab6bg5f67gd02dg7695ee6933e1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h696c8006gab6bg5f67gd02dg7695ee6933e1" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_StinkingCloud" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2710,7 +2710,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e28fdf70-306b-b765-29ba-f5805c54962a" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_DISTRACTED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46c7a0e8g45cdg796bg85edg6d9d0a3bc2ca" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf23dc643gf276gae0agbfb3gb571632b332d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf23dc643gf276gae0agbfb3gb571632b332d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Enthrall" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -2722,7 +2722,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="435c7db3-4d4d-8490-4dd3-542aae8c96ab" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_INTERESTED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41ecdf3dg1ef4g0e39g04adg7164ca860df1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07e8f03dg4522g3c17g627ag37c547356e2d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07e8f03dg4522g3c17g627ag37c547356e2d" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
@@ -2735,7 +2735,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e8aaa4ff-cb27-458a-1c61-4c5d9cd3a0e7" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_PENSIVE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h30e939a0gdefdgf3e8gb291g346a1bb8be36" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h130a0cecg0f5fg7c98g4268gb91803d89ea5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h130a0cecg0f5fg7c98g4268gb91803d89ea5" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_RayOfInfeeblement" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
@@ -2748,7 +2748,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bab50591-5f8d-c67a-6da5-1d5c0c626283" />
         <field name="Name" type="NameTableFieldDefinition" value="MOOD_SERENE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a23bf3bg124fge324g566ag98a3ee5d61c9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b35fc4bg1a54g91f8g2bd3g5f5477f99e6f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b35fc4bg1a54g91f8g2bd3g5f5477f99e6f" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOOD" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -3417,5 +3417,6 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+</stat_objects>
 </stats>

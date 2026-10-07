@@ -13,7 +13,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMOTION_TERROR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a21a2b6a-9ae8-4363-a0fd-0243e49856b3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4395b95cg1e90ge023g294agd9b2db2dfaf1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3b8aca6fg533bg78d1g2ea6g1ae905529556" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3b8aca6fg533bg78d1g2ea6g1ae905529556" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_PhantasmalKiller" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -22,5 +22,6 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_APPREHENSIVE,100,5)" />
       </fields>
-    </stat_object></stat_objects>
+    </stat_object>
+</stat_objects>
 </stats>

@@ -182,6 +182,12 @@
 
 ---
 
+## **REWRITTEN** Subclass Descriptions
+*Each subclass was described in a different voice. They now read as if written by the same hand: what Mystra wove each one from, and the Arcanum it carries.*
+
+- New text for every subclass in character creation, in the subclass list and on the class tags (the Arcana's tag included).
+- The Deceiver's texts already describe the Veil: Doubles, Doubt, Sigils and chains.
+
 # **NEW** Aspect Awakening
 
 *Inspired by champion level-ups. Each subclass has an in-combat objective. Meet it and your Aspect awakens until the fight ends. The bonuses are cumulative: Tier I at level 3, Tier II at level 7, Tier III at level 12. The old level 20 capstones (0 - The Fool, 3 - The Empress, 17 - The Star, 13 - Death) are now part of Tier III.*
@@ -483,6 +489,10 @@ The sixth Arcana: XIV - Temperance, Aspect of Empathy. Mystra's empath braids on
 ### Level 7: passive Overwhelm
 ### Level 9: passive Mixed Feelings
 *A Weave Surge puts a one-turn emotion on a creature; when it fades it leaves a five-turn mood, and the next Surge reacts with that mood by its distance on Plutchik's wheel of emotions: an intense emotion, one of 24 feelings, or Catharsis.*
+
+- Character creation now lists the Heartweaver's proficiencies, as it does for the other subclasses.
+- **Weave Surge tooltips:** one short line of flavour, then the effect, then the mood the surge leaves behind. The expanded tooltip lists what the Surge becomes on each mood (primary, secondary, tertiary, Catharsis, intense), and a warning reminds you that a Surge reacts with a mood instead of taking hold.
+- Emotion, mood and feeling conditions describe on one line where they come from and what they do.
 
 # Bug Fixes
 
