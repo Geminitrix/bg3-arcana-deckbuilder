@@ -65,14 +65,13 @@ D.cards = {
     ["Shout_Arcana_Card_Spell_HowlOfTheDead"] = { aspect = "Eternal", cost = 1 },
 
     -- Reaction cards: see D.reactions. Gale Deflection can be used up to 3 times a round, so it takes
-    -- three copies; the Deceiver's two are once a round and stay Unique.
+    -- three copies.
     ["Shout_Arcana_Card_Passive_GaleDeflection"] = { aspect = "Unbound", cost = 2 },
-    ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = { aspect = "Deceiver", cost = 2, keywords = { Unique = true } },
-    ["Shout_Arcana_Card_Passive_HollowImage"] = { aspect = "Deceiver", cost = 3, keywords = { Unique = true } },
 
     -- Spells with a cooldown of their own: a second copy would only ever be drawn dead.
-    ["Target_Arcana_Card_Spell_MentalPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },
+    ["Target_Arcana_Card_Spell_VeiledPrison"] = { aspect = "Deceiver", keywords = { Unique = true } },
     ["Target_Arcana_Card_Spell_Marionette"] = { aspect = "Deceiver", keywords = { Unique = true } },
+    ["Shout_Arcana_Card_Spell_GrandDeception"] = { aspect = "Deceiver", keywords = { Unique = true } },
     ["Target_Arcana_Card_Spell_SolarPurge"] = { aspect = "Starchild", keywords = { Unique = true } },
     ["Teleportation_Arcana_Card_Spell_Starbreath"] = { aspect = "Starchild", keywords = { Unique = true } },
     ["Shout_Arcana_Card_Spell_StellarGrace"] = { aspect = "Starchild", keywords = { Unique = true } },
@@ -142,14 +141,6 @@ D.reactions = {
     ["Shout_Arcana_Card_Passive_GaleDeflection"] = {
         ready = "GALE_DEFLECTION_READY", resource = "ArcanaReactGaleDeflection",
         used = "GALE_DEFLECTION_USED_TECH", perRound = 3,
-    },
-    ["Shout_Arcana_Card_Passive_HollowImage"] = {
-        ready = "HOLLOW_IMAGE_READY", resource = "ArcanaReactHollowImage",
-        used = "HOLLOW_IMAGE_USED_TECH", perRound = 1,
-    },
-    ["Shout_Arcana_Card_Passive_InstinctiveCharm"] = {
-        ready = "INSTINCTIVE_CHARM_READY", resource = "ArcanaReactInstinctiveCharm",
-        used = "INSTINCTIVE_CHARM_USED_TECH", perRound = 1,
     },
 }
 

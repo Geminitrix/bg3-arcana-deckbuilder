@@ -17,12 +17,6 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "RemoveEvents" "OnStatusRemoved"
 data "BeamEffect" "69d2c975-e1f2-4364-8358-c578ae016394"
 
-new entry "INTERRUPT_HOLLOW_IMAGE"
-type "StatusData"
-data "StatusType" "EFFECT"
-using "_PASSIVES"
-data "StatusEffect" "d45899d6-06c4-45a5-bc29-6610b1bdf83d"
-
 new entry "UNBOUND EFFECT STATUS"
 type "StatusData"
 data "StatusType" "EFFECT"

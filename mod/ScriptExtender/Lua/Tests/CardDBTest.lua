@@ -43,7 +43,7 @@ return {
                 T.eq(D.Has(id, "Unique"), r.perRound == 1, id .. " Unique iff once a round")
                 T.eq(D.reactionByUsed[r.used], id, r.used)
             end
-            T.eq(n, 3, "three reaction cards")
+            T.eq(n, 1, "one reaction card (the Deceiver's two left with the Veil)")
             T.eq(D.reactions["Shout_Arcana_Card_Passive_GaleDeflection"].perRound, 3)
         end,
         ["Has reads keyword flags"] = function()

@@ -320,10 +320,10 @@ Turn your suffering on a foe. It takes Necrotic damage equal to the hit points y
 *The clone was a level 4 copy of the Deceiver that took a whole turn to matter. Doubles are cheap, fragile illusions she can keep on the field and spend.*
 - Now a **level 1** spell (was level 4). Range 18 m ⇒ 9 m.
 - Summons a **Double of the Veil** instead of a full clone of you.
-- **Doubles:** 1 hit point and 12 Armour Class, can't be healed, and act on their own turn. Their spells deal fixed damage that does not scale.
+- **Doubles:** 1 hit point and 12 Armour Class, can't be healed, and act on their own turn. Their Mirror spells deal half the damage of your Sigil of Malice at your highest spell slot.
 - A Double can only Dash, Disengage, use its own spells and Dismiss itself, which is now free. It has no attacks.
 - Doubles can't be Charmed, Possessed or Dominated, driven mad or made to flee.
-- You can keep up to 3 Doubles at once. A new Double past that limit replaces the oldest.
+- You can keep up to 3 Doubles at once, 4 from level 7 and 5 from level 12. A new Double past that limit replaces the oldest.
 - You gain +1 Armour Class for each of your Doubles.
 - An enemy that destroys a Double gains **Doubt**.
 - Doubles vanish when you leave combat, after a Long Rest or if you die.
@@ -333,15 +333,47 @@ Turn your suffering on a foe. It takes Necrotic damage equal to the hit points y
 - Stacks up to 3 times and lasts 3 turns.
 - Each stack gives -1 to Wisdom Saving Throws and -1 to Attack Rolls against the Deceiver and her Doubles.
 - The third stack turns into **Deluded** for 1 turn: the creature is Confused, acts at random and may lose its turn. It can end the effect with a Wisdom Saving Throw at the start of each turn.
-- Applied by Shatter and by destroying a Double.
+- Applied by Shatter, by destroying a Double, by your Sigil detonating and by Malicious Whispers on a marked target.
 
 ## **NEW** Doubles' Spells:
 *Each Double carries its own small kit, so it costs only its own action and never your spell slots.*
 - **Shatter:** the Double bursts, dealing 1d6 Psychic damage to enemies within 3 m and giving each of them 1 Doubt. The Double is destroyed.
-- **Mirror: Sigil of Malice:** deals 1d4 Force damage and marks the target with the Deceiver's Sigil.
-- **Mirror: Ethereal Chains:** the target makes a Wisdom Saving Throw (DC 13). On a failure it takes 1d4 Force damage once and is Restrained for 1 turn.
+- **Mirror: Sigil of Malice:** deals half your Sigil of Malice at your highest slot ((3d6)/2 at level 5 up to (6d6)/2 at level 11) as Force damage and marks the target with the Deceiver's Sigil.
+- **Mirror: Ethereal Chains:** the target makes a Wisdom Saving Throw (DC 13). On a failure it takes the same Force damage as Mirror: Sigil of Malice, once, and is Restrained for 1 turn.
 - **Unveil:** the Double swaps places with the Deceiver. Once per round across all of your Doubles.
-- Only Doubles can cast these spells. For now Doubles start with Shatter only; Mirror: Sigil of Malice, Mirror: Ethereal Chains and Unveil come with later Deceiver features.
+- Only Doubles can cast these spells. Shatter from level 1, the Mirror spells from level 5 (Two Truths), Unveil from level 9.
+
+## **REWORKED** Deceiver Progression:
+*The Deceiver's cards now follow the Veil: Doubles from level 1, Doubt as the thread through the whole kit.*
+- **Level 1:** Mirror Image (was level 7), Friends (was a cantrip), passive **The Veil**.
+- **Level 3:** Ethereal Chains, **Veiled Prison** (replaces Mental Prison and Hypnotic Gaze).
+- **Level 5:** Distortion, passive **Two Truths** (Doubles learn Mirror: Sigil of Malice and Mirror: Ethereal Chains). Ready: Instinctive Charm ⇒ removed.
+- **Level 7:** Mimic, up to 4 Doubles.
+- **Level 9:** Marionette, passive **Unveil** (Doubles learn Unveil). Terrify ⇒ removed.
+- **Level 11:** **Grand Deception** (replaces Hostile Takeover). Ready: Hollow Image ⇒ removed.
+- **Level 12:** up to 5 Doubles.
+- **Level 13:** Friends: Faux Amis ⇒ removed (it is now Friends cast at level 6).
+
+## **REWORKED** Distortion:
+- Leaves a Double where you stood. **Withdraw** now swaps places with that Double; if the Double is gone, Withdraw is lost.
+
+## **NEW** Veiled Prison:
+- 18 m, Wisdom Saving Throw: the target is Incapacitated for 10 turns and attacks from within 3 m always land Critical Hits. It repeats the save at the end of each of its turns. A target with 2 or more Doubt saves with Disadvantage. Concentration, once per Short Rest.
+
+## **NEW** Grand Deception:
+- Summons the Doubles you are missing, up to your limit. Every enemy within 9 m makes a Wisdom Saving Throw or gains 2 Doubt. Once per Long Rest.
+
+## **REWORKED** Malicious Whispers:
+- A creature marked with your Sigil now also suffers **Paranoia** (it can't take reactions) and gains 1 Doubt. The Sigil it detonates adds 1 more.
+
+## **REWORKED** Marionette:
+- Charmed targets no longer save with Advantage. A target with 2 or more Doubt saves with Disadvantage.
+
+## **REWORKED** Friends:
+- Now a level 1 spell. Cast at level 6 it works like the old Faux Amis: no Concentration, the target never notices, and it is unchanged in higher difficulties.
+
+## **REMOVED** Deceiver Cards:
+- Mental Prison, Hypnotic Gaze, Terrify, Hostile Takeover, Ready: Instinctive Charm, Ready: Hollow Image, Friends: Faux Amis.
 
 ## **REMOVED** Clone Mirror Spells:
 *Replaced by the Doubles' own spells.*

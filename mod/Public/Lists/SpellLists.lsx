@@ -86,43 +86,38 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 1"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Arcana_Card_Spell_SigilofMalice;Shout_Arcana_Util_Faceless;Target_Arcana_Card_Spell_MaliciousWhispers"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_Arcana_Card_Spell_SigilofMalice;Shout_Arcana_Util_Faceless;Target_Arcana_Card_Spell_MaliciousWhispers;Target_Arcana_Card_Spell_MirrorImage;Target_Arcana_Util_Friends"/>
                     <attribute id="UUID" type="guid" value="507f2c2a-ccdd-44f0-bf45-ca3676e1a03f"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 3"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_EtherealChains;Target_Arcana_Card_Spell_MentalPrison;Target_Arcana_Card_Spell_HypnoticGaze"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_EtherealChains;Target_Arcana_Card_Spell_VeiledPrison"/>
                     <attribute id="UUID" type="guid" value="f5216d9b-4fed-49f0-b1ea-8a5e2b831b59"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Distortion;Shout_Arcana_Card_Passive_InstinctiveCharm"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Distortion"/>
                     <attribute id="UUID" type="guid" value="9aac7d55-57b7-4942-afb4-1751e506b172"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 7"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_MirrorImage;Target_Arcana_Created_Mimic"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Created_Mimic"/>
                     <attribute id="UUID" type="guid" value="8163075e-1c66-4173-a15c-2c78a9524021"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 9"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Marionette;Target_Arcana_Card_Spell_Terrify"/>
+                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_Marionette"/>
                     <attribute id="UUID" type="guid" value="55ff77d4-6dd9-4cda-8e9b-84ba78cf5a54"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 11"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Card_Spell_HostileTakeover;Shout_Arcana_Card_Passive_HollowImage"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Spell_GrandDeception"/>
                     <attribute id="UUID" type="guid" value="7134712c-169c-4210-9b13-541e9660392c"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Deceiver Level 12"/>
                     <attribute id="Spells" type="LSString" value="Shout_Arcana_Card_Passive_MirroredCharm;Shout_Arcana_Card_Passive_MirroredSpell"/>
                     <attribute id="UUID" type="guid" value="292cab8b-27ad-467c-9a99-2f0b7bddd406"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Name" type="FixedString" value="Deceiver Level 13"/>
-                    <attribute id="Spells" type="LSString" value="Target_Arcana_Util_Friends_EX"/>
-                    <attribute id="UUID" type="guid" value="4657a3f6-e7f5-4ac4-b5c4-c0665adcb36d"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Name" type="FixedString" value="Unbound Level 1"/>

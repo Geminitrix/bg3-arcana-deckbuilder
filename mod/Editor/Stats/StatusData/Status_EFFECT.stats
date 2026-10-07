@@ -24,14 +24,6 @@
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="69d2c975-e1f2-4364-8358-c578ae016394" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d95bcd08-5cd6-44f6-b0d5-0551f01672c9" />
-        <field name="Name" type="NameTableFieldDefinition" value="INTERRUPT_HOLLOW_IMAGE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f2284b28-f8b1-4f51-abb7-55692e6cec0f" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d45899d6-06c4-45a5-bc29-6610b1bdf83d" />
-      </fields>
-    </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3c0b3b0d-83d7-3f81-0b76-1e7274b76e55" />

@@ -7,7 +7,6 @@ local R = Req("Server/Economy/Reactions.lua")
 
 local CHAR = "char-reactions"
 local GALE = "Shout_Arcana_Card_Passive_GaleDeflection"
-local HOLLOW = "Shout_Arcana_Card_Passive_HollowImage"
 local world, savedIo
 
 local function inCombat(list)
@@ -72,17 +71,6 @@ return {
             T.eq(world.res.ArcanaReactGaleDeflection, 0, "a resync does not hand it back")
             E.Emit("TurnStarted", { char = CHAR, state = st, turn = 2 })
             T.eq(world.res.ArcanaReactGaleDeflection, 1, "the owner's turn resets the limit")
-        end,
-        ["Hollow Image is once a round even with two copies"] = function()
-            local st = inCombat({ [HOLLOW] = 1 })
-            hold(st, HOLLOW, 2)
-            T.eq(world.res.ArcanaReactHollowImage, 1, "one a round")
-            react(st, HOLLOW)
-            T.eq(world.res.ArcanaReactHollowImage, 0, "spent")
-            P.AddToHand(CHAR, st, "Some_Other_Card")
-            T.eq(world.res.ArcanaReactHollowImage, 0, "still spent this round")
-            E.Emit("TurnStarted", { char = CHAR, state = st, turn = 2 })
-            T.eq(world.res.ArcanaReactHollowImage, 1, "back on the owner's turn")
         end,
         ["The last copy used switches the reaction off"] = function()
             local st = inCombat({ [GALE] = 3 })

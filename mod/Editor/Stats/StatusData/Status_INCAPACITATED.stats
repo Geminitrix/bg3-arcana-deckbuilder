@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
   <stat_objects>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b59bc823-d4fa-45ed-b4eb-fe47ebff0ed1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DECEIVER INCAPACITATED STATUS" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9bcf0677-d631-4c40-61dc-f4765bbd79e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="VEILED_PRISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e487a04-156c-40d7-89d3-7f219ca98fc5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h162b4621g0415g1ed4ga396g15f7617603e8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbed0b510ga5f2gb392g064ag8b61b851c92a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="VEILED_PRISON" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC(), false, HasAnyStatus({'DOUBT_2','DOUBT_3'},{},{},context.Target))" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF4B47C2" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9adb0aa5-1bc0-3d35-93c1-60f257985231" />
@@ -9,15 +27,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fca9d2ed-15a6-ce80-371a-6a5550591945" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMOTION_AMAZEMENT" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h268bfedega6f3gdaadg86dagc9e016519b1c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf035ed9dg3effg7790gcf56gb773d173fe69" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Enthrall" />
-        <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_DISTRACTED,100,5)" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6181727c-6956-9d7a-dd8e-0134c7e1bf2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="FEELING_AWE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f14ae208-8964-4359-bf32-4fd78c7158b6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d964d4cg7d70g7a94g50ccg3d6b153c11b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5614372ege12bg0f93g878fga256fbeb1105" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_HypnoticPattern" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FEELING_AWE" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE);RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,15 +55,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6181727c-6956-9d7a-dd8e-0134c7e1bf2d" />
-        <field name="Name" type="NameTableFieldDefinition" value="FEELING_AWE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f14ae208-8964-4359-bf32-4fd78c7158b6" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d964d4cg7d70g7a94g50ccg3d6b153c11b3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5614372ege12bg0f93g878fga256fbeb1105" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_HypnoticPattern" />
-        <field name="StackId" type="StringTableFieldDefinition" value="FEELING_AWE" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_APPREHENSIVE);RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fca9d2ed-15a6-ce80-371a-6a5550591945" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMOTION_AMAZEMENT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h268bfedega6f3gdaadg86dagc9e016519b1c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf035ed9dg3effg7790gcf56gb773d173fe69" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Enthrall" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMOTION" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MOOD_DISTRACTED);BreakConcentration()" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(MOOD_DISTRACTED,100,5)" />
       </fields>
-    </stat_object>
-</stat_objects>
+    </stat_object></stat_objects>
 </stats>

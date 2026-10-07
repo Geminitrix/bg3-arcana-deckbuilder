@@ -66,7 +66,8 @@ return {
         end,
         ["Cards with a cooldown of their own are Unique"] = function()
             for _, id in ipairs({
-                "Target_Arcana_Card_Spell_MentalPrison", "Target_Arcana_Card_Spell_Marionette",
+                "Target_Arcana_Card_Spell_VeiledPrison", "Target_Arcana_Card_Spell_Marionette",
+                "Shout_Arcana_Card_Spell_GrandDeception",
                 "Target_Arcana_Card_Spell_SolarPurge", "Teleportation_Arcana_Card_Spell_Starbreath",
                 "Shout_Arcana_Card_Spell_StellarGrace", "Shout_Arcana_Card_Spell_Wish",
             }) do T.eq(L.MaxCopies(id), 1, id) end

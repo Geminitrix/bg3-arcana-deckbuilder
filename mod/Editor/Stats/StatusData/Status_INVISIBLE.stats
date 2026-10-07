@@ -20,20 +20,5 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16f5114f-2a1b-4276-b9ff-ea52be218d2f" />
-        <field name="Name" type="NameTableFieldDefinition" value="HOLLOW_IMAGE_INVISIBLE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8599f8e8-ac20-44db-896c-4ea5c6bf89c4" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_IllusorySelf" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ExcludeFromPortraitRendering" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Invisible;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="20" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
     </stat_object></stat_objects>
 </stats>
