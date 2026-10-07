@@ -201,4 +201,20 @@ is($stack_of{EMOTION_TERROR}, 'EMOTION', 'Terror sets EMOTION, not the StackId o
     my %all = map { my $e = $_; map { (Alchemy::spell_id($e) . "_$_" => 'Spell_Target') } 2 .. 6 } @W;
     is_deeply([Alchemy::removals(\%all, {})], [], 'removals: none of the 40 current variants is ever removed');
 }
+
+# ---- text layout (2026-10-07): status text on one line; the Surge says its mood up front and lists its reactions
+for my $k (grep { /^HW_(?:EMOTION|MOOD|FEELING)_\w+_DESC$|^HW_CATHARSIS_DESC$/ } sort keys %lt) {
+    unlike($lt{$k}, qr/<br>/, "$k: one line");
+}
+for my $e (@W) {
+    my $id = uc Alchemy::spell_id($e);
+    my $mood = $Alchemy::EMO{$e}{mood}{name};
+    like($lt{"HW_${id}_DESC"}, qr/^[^.]+\. The target\b.*<br><br>When the surge fades, it leaves the target <LSTag[^>]*>$mood<\/LSTag> for 5 turns, /,
+        "$e: one flavour sentence, the effect, then the mood");
+    my @lines = split /<br>/, $lt{"HW_${id}_EXTRA"};
+    is_deeply([map { /^(\w+)/ } @lines], [qw(Primary Secondary Tertiary Catharsis Intense)], "$e: one line per kind of reaction");
+    is(scalar(() = $lt{"HW_${id}_EXTRA"} =~ / into /g), 8, "$e: 8 reactions listed (one per mood)");
+    my ($sp) = $p =~ /(^new entry "Target_Arcana_Card_Spell_Emotion$e"\n.*?)\n\n/ms;
+    like($sp, qr/^data "TooltipPermanentWarnings" "$Alchemy::SURGE_WARNING"$/m, "$e: the standard warning");
+}
 done_testing();

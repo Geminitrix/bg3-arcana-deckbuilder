@@ -33,82 +33,96 @@ our %GATE = (0 => 'Arcana_Passive_Overwhelm', 1 => undef, 2 => 'Arcana_Passive_C
 our $FEELING_TURNS  = 2;
 our $MOOD_TURNS     = 5;
 our $CATHARSIS_DICE = '2d8';
+# the level each gate passive arrives at (Heartweaver progression), shown in the Surges' list of reactions
+our %GATE_LEVEL = (Arcana_Passive_Overwhelm => 7, Arcana_Passive_ComplexFeelings => 5, Arcana_Passive_MixedFeelings => 9);
+# TooltipExtraTexts entry (Public/$M/TooltipExtras): the warning every Surge shows, written by hand in that table
+our $SURGE_WARNING = '70aa3de3-6968-4c6e-a9cc-46344d0c08c2';
 
 # ---------------------------------------------------------------- the states
 # side: A = goes on an ally when the target has no mood (bright arc); I = on a non-ally (dark arc).
-# peak/mood/intense: boosts + the mechanics sentence (the engine puts the image sentence first).
+# flavour + effect: the Surge's description (one short sentence, then what the target gets).
+# peak/mood/intense: boosts + the mechanics sentence of the status. mood fx: the same effect as a clause that
+#   closes the Surge's "When the surge fades..." sentence.
 # type/using: status type and vanilla parent when it is not a plain BOOST -- the type decides the FILE
 #   (Status_<TYPE>.txt) and the engine behaviour (FEAR flees, INCAPACITATED can't act). With `using`, leave
 #   boosts undef to inherit the parent's.
 # extra: more fields for the entry. params: DescriptionParams. onapply: added to OnApplyFunctors.
 our %EMO = (
-    Joy => { side => 'A', word => 'joy', icon => 'Spell_Enchantment_Heroism',
-        spell => "Pluck the bright thread of joy in an ally's Weave, so that every blow and every effort lands truer.",
+    Joy => { side => 'A', icon => 'Spell_Enchantment_Heroism',
+        flavour => "Pluck a bright thread of joy in an ally's Weave.",
+        effect  => "The target has Advantage on Attack Rolls and Ability Checks.",
         peak    => { boosts => 'Advantage(AttackRoll);Advantage(AllAbilities)',
                      text => 'Has Advantage on Attack Rolls and Ability Checks.' },
-        mood    => { name => 'Serene', image => 'Calmed', boosts => 'Advantage(SavingThrow,Wisdom)',
+        mood    => { name => 'Serene', fx => 'with Advantage on Wisdom Saving Throws', boosts => 'Advantage(SavingThrow,Wisdom)',
                      text => 'Has Advantage on Wisdom Saving Throws.' },
         intense => { name => 'Ecstasy', boosts => 'ActionResource(ActionPoint,1,0)',
                      text => 'Has an additional action.' } },
-    Trust => { side => 'A', word => 'trust', icon => 'Spell_Abjuration_ShieldOfFaith',
-        spell => "Steady an ally with a thread of trust drawn from the Weave, letting harm glance off their resolve.",
+    Trust => { side => 'A', icon => 'Spell_Abjuration_ShieldOfFaith',
+        flavour => "Steady an ally with a thread of trust.",
+        effect  => "The target gains a +2 bonus to Armour Class and has Advantage on Saving Throws.",
         peak    => { boosts => 'AC(2);Advantage(AllSavingThrows)',
                      text => 'Armour Class increased by 2. Has Advantage on Saving Throws.' },
-        mood    => { name => 'Accepting', image => 'Settled', boosts => 'AC(1)',
+        mood    => { name => 'Accepting', fx => 'with a +1 bonus to Armour Class', boosts => 'AC(1)',
                      text => 'Armour Class increased by 1.' },
         intense => { name => 'Admiration', boosts => 'Resistance(All, Resistant);StatusImmunity(SG_Charmed);StatusImmunity(SG_Frightened)',
                      text => 'Resistant to all damage. Cannot be Charmed or Frightened.' } },
-    Fear => { side => 'I', word => 'fear', icon => 'Spell_Illusion_PhantasmalKiller',
-        spell => "Wrap a creature in a cold thread of fear, rooting it in place and shaking its every move.",
+    Fear => { side => 'I', icon => 'Spell_Illusion_PhantasmalKiller',
+        flavour => "Wrap a creature in a cold thread of fear.",
+        effect  => "The target can't move and has Disadvantage on Ability Checks and Attack Rolls.",
         peak    => { boosts => 'Disadvantage(AllAbilities);Disadvantage(AttackRoll);ActionResourceBlock(Movement)',
                      text => "Can't move. Has Disadvantage on Ability Checks and Attack Rolls." },
-        mood    => { name => 'Apprehensive', image => 'Shaken', boosts => 'RollBonus(SavingThrow,-1d4,Wisdom)',
+        mood    => { name => 'Apprehensive', fx => 'subtracting 1d4 from its Wisdom Saving Throws', boosts => 'RollBonus(SavingThrow,-1d4,Wisdom)',
                      text => 'Subtracts 1d4 from Wisdom Saving Throws.' },
         # FEAR type (the Fear spell's FEARED): the creature flees. Its per-turn save is switched off -- 1 turn.
         intense => { name => 'Terror', type => 'FEAR', using => 'FEARED',
                      text => 'Flees in terror. Has Disadvantage on Ability Checks and Attack Rolls.',
                      extra => { RemoveConditions => '', RemoveEvents => '', TooltipSave => '' } } },
-    Surprise => { side => 'I', word => 'surprise', icon => 'Spell_Enchantment_Enthrall',
-        spell => "Snap a thread of surprise before a creature's eyes, leaving it too startled to react.",
+    Surprise => { side => 'I', icon => 'Spell_Enchantment_Enthrall',
+        flavour => "Snap a thread of surprise before a creature's eyes.",
+        effect  => "The target can't take reactions or bonus actions and has Disadvantage on Dexterity Saving Throws.",
         peak    => { boosts => 'ActionResourceBlock(ReactionActionPoint);ActionResourceBlock(BonusActionPoint);Disadvantage(SavingThrow,Dexterity)',
                      text => "Can't take reactions or bonus actions. Has Disadvantage on Dexterity Saving Throws." },
-        mood    => { name => 'Distracted', image => 'Still reeling from', boosts => 'Disadvantage(Concentration)',
+        mood    => { name => 'Distracted', fx => 'with Disadvantage on Saving Throws to maintain Concentration', boosts => 'Disadvantage(Concentration)',
                      text => 'Has Disadvantage on Saving Throws to maintain Concentration.' },
         intense => { name => 'Amazement', type => 'INCAPACITATED', using => 'STUNNED', onapply => 'BreakConcentration()',
                      text => "Stunned: can't move or take actions or reactions. Automatically fails Strength and Dexterity Saving Throws, and attacks against it have Advantage." } },
-    Sadness => { side => 'I', word => 'sorrow', icon => 'Spell_Necromancy_RayOfInfeeblement',
-        spell => "Weigh a creature down with a grey thread of sorrow, slowing both its steps and its will.",
+    Sadness => { side => 'I', icon => 'Spell_Necromancy_RayOfInfeeblement',
+        flavour => "Weigh a creature down with a grey thread of sorrow.",
+        effect  => "The target's movement speed is halved, and it can only take either an action or a bonus action.",
         peak    => { boosts => 'ActionResourceMultiplier(Movement,50,0)',
                      text => 'Movement speed is halved, and it can only take either an action or a bonus action.',
                      extra => { Passives => 'Slow_ActionPoint' } },
-        mood    => { name => 'Pensive', image => 'Weighed down by', boosts => 'ActionResource(Movement,-3,0)',
+        mood    => { name => 'Pensive', fx => 'with its movement speed reduced by [1]', boosts => 'ActionResource(Movement,-3,0)',
                      text => 'Movement speed reduced by [1].', params => 'Distance(3)' },
         intense => { name => 'Grief', type => 'INCAPACITATED', boosts => 'ActionResourceBlock(Movement)', onapply => 'BreakConcentration()',
                      text => "Incapacitated: can't move or take actions, bonus actions or reactions.",
                      extra => { StatusGroups => 'SG_Incapacitated;SG_Condition' } } },
-    Disgust => { side => 'I', word => 'disgust', icon => 'Spell_Conjuration_StinkingCloud',
-        spell => "Twist a creature's Weave into revulsion, leaving it retching and unable to act.",
+    Disgust => { side => 'I', icon => 'Spell_Conjuration_StinkingCloud',
+        flavour => "Twist a creature's Weave into revulsion.",
+        effect  => "The target can't take actions and has Disadvantage on Constitution Saving Throws.",
         peak    => { boosts => 'ActionResourceBlock(ActionPoint);Disadvantage(SavingThrow,Constitution)',
                      text => "Can't take actions. Has Disadvantage on Constitution Saving Throws." },
-        mood    => { name => 'Bored', image => 'Dulled', boosts => 'ActionResourceBlock(ReactionActionPoint)',
+        mood    => { name => 'Bored', fx => 'unable to take reactions', boosts => 'ActionResourceBlock(ReactionActionPoint)',
                      text => "Can't take reactions." },
         intense => { name => 'Loathing', boosts => 'ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);Disadvantage(AttackRoll);Disadvantage(AllAbilities)',
                      text => "Can't take actions or bonus actions. Has Disadvantage on Attack Rolls and Ability Checks." } },
-    Anger => { side => 'I', word => 'fury', icon => 'Spell_Enchantment_CrownOfMadness',
-        spell => "Set a red thread of fury alight in a creature's mind, driving it to strike whoever stands nearest.",
+    Anger => { side => 'I', icon => 'Spell_Enchantment_CrownOfMadness',
+        flavour => "Set a red thread of fury alight in a creature's mind.",
+        effect  => "The target attacks the nearest creature other than you.",
         peak    => { boosts => 'CannotHarmCauseEntity(CannotHarmMadness);ActionResourceBlock(ReactionActionPoint);AiArchetypeOverride(madness,99);Tag(AI_UNPREFERRED_TARGET);DetectDisturbancesBlock(true)',
                      text => 'Will attack the nearest creature, other than the spellcaster.',
                      extra => { StatusPropertyFlags => 'InitiateCombat;BringIntoCombat;LoseControl', StatusGroups => 'SG_Condition;SG_Mad' } },
-        mood    => { name => 'Annoyed', image => 'Prickling with', boosts => 'AC(-1)',
+        mood    => { name => 'Annoyed', fx => 'with its Armour Class reduced by 1', boosts => 'AC(-1)',
                      text => 'Armour Class reduced by 1.' },
         intense => { name => 'Rage', boosts => 'CannotHarmCauseEntity(CannotHarmMadness);ActionResourceBlock(ReactionActionPoint);AiArchetypeOverride(madness,99);Tag(AI_UNPREFERRED_TARGET);DetectDisturbancesBlock(true);Advantage(AttackRoll);Advantage(AttackTarget)',
                      text => 'Will attack the nearest creature, other than the spellcaster, with Advantage. Attacks against it also have Advantage.',
                      extra => { StatusPropertyFlags => 'InitiateCombat;BringIntoCombat;LoseControl', StatusGroups => 'SG_Condition;SG_Mad' } } },
-    Anticipation => { side => 'A', word => 'anticipation', icon => 'Spell_Transmutation_Longstrider',
-        spell => "Pull a taut thread of anticipation through an ally's Weave, leaving them poised to move and react.",
+    Anticipation => { side => 'A', icon => 'Spell_Transmutation_Longstrider',
+        flavour => "Pull a taut thread of anticipation through an ally's Weave.",
+        effect  => "The target gains an additional reaction, and its movement speed is doubled.",
         peak    => { boosts => 'ActionResource(ReactionActionPoint,1,0);ActionResourceMultiplier(Movement,200,0)',
                      text => 'Has an additional reaction, and movement speed is doubled.' },
-        mood    => { name => 'Interested', image => 'Kept alert by', boosts => 'ActionResource(Movement,3,0)',
+        mood    => { name => 'Interested', fx => 'with its movement speed increased by [1]', boosts => 'ActionResource(Movement,3,0)',
                      text => 'Movement speed increased by [1].', params => 'Distance(3)' },
         intense => { name => 'Vigilance', boosts => 'ActionResource(ReactionActionPoint,2,0);Advantage(SavingThrow,Dexterity)',
                      text => 'Has 2 additional reactions and Advantage on Dexterity Saving Throws.' } },
@@ -315,10 +329,7 @@ sub status_entry {
     ["Status_$type", entry($id, 'StatusData', @f)];
 }
 
-sub mood_image { my $e = shift; my $img = $EMO{$e}{mood}{image};
-    # some images already end in their preposition
-    $img =~ /\b(by|from|with)$/ ? "$img the last echo of $EMO{$e}{word} in the Weave." : "$img by the last echo of $EMO{$e}{word} in the Weave." }
-
+# Status text: one line, a standard opening that says where the status comes from, then its effect.
 sub build_statuses {
     my @out;
     for my $e (@WHEEL) {
@@ -326,14 +337,14 @@ sub build_statuses {
         my $side = $E->{side};
         my $fade = 'IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(' . mood_id($e) . ",100,$MOOD_TURNS)";
         push @out, status_entry(peak_id($e), "Emotion: $e",
-            tag_terms("Gripped by a thread of $E->{word} in the Weave.<br><br>$E->{peak}{text}"),
+            tag_terms("Surging with $e. $E->{peak}{text}"),
             $E->{icon}, $side, { %{ $E->{peak} }, stack => 'EMOTION', onremove => $fade });
         push @out, status_entry(mood_id($e), "Mood: $E->{mood}{name}",
-            tag_terms(mood_image($e) . "<br><br>$E->{mood}{text}"),
+            tag_terms("The fading echo of $e. $E->{mood}{text}"),
             $E->{icon}, 'mood', { %{ $E->{mood} }, stack => 'MOOD' });
         my $I = $E->{intense};
         push @out, status_entry(intense_id($e), "Emotion: $I->{name}",
-            tag_terms(ucfirst($E->{word}) . " pulled so tight in the Weave that it overwhelms.<br><br>$I->{text}"),
+            tag_terms("$e surged again on its own echo. $I->{text}"),
             $E->{icon}, $side, { %$I, stack => 'EMOTION', onremove => $fade,
             onapply => join(';', grep { defined } 'RemoveStatus(' . mood_id($e) . ')', $I->{onapply}) });
     }
@@ -341,18 +352,18 @@ sub build_statuses {
         my $F = $FEELING{$k}; my ($x, $y) = split /\+/, $k;
         my $consume = join ';', map { 'RemoveStatus(' . mood_id($_) . ')' } $x, $y;
         push @out, status_entry('FEELING_' . uc $F->{name}, "Feeling: $F->{name}",
-            tag_terms("Threads of $EMO{$x}{word} and $EMO{$y}{word}, braided into one.<br><br>$F->{text}"),
+            tag_terms("$x and $y, braided together. $F->{text}"),
             $F->{icon}, $F->{kind}, { %$F, stack => 'FEELING_' . uc $F->{name},
             onapply => join(';', grep { defined } $consume, $F->{onapply}) });
     }
     # helpers
     push @out, status_entry('FEELING_DISAPPROVED', 'Disapproved',
-        tag_terms('Weighed down by the disapproval of an ally.<br><br>Has Disadvantage on Attack Rolls.'),
+        tag_terms("Shaken by an ally's Disapproval. Has Disadvantage on Attack Rolls."),
         'Spell_Enchantment_Bane', 'I', { boosts => 'Disadvantage(AttackRoll)', stack => 'FEELING_DISAPPROVED' });
     push @out, hidden_status('FEELING_REMORSE_TECH', 'Remorse', 'OnApplyFunctors', 'DealDamage(1d6,Psychic,Magical)');
     push @out, hidden_status('FEELING_MORBIDNESS_TECH', 'Morbidness', 'OnApplyFunctors', 'RegainHitPoints(1d6)');
     push @out, status_entry('CATHARSIS', 'Catharsis',
-        'Opposing threads of the Weave snapped at once, releasing everything they held.',
+        'Opposing emotions, snapped at once. Every mood is spent.',
         'Spell_Enchantment_CalmEmotions', 'mood', { stack => 'CATHARSIS',
         onapply => join(';', map { 'RemoveStatus(' . mood_id($_) . ')' } @WHEEL) });
     @out;
@@ -410,13 +421,30 @@ our @CAST = (
     TargetEffect => '4b5dc428-d623-4203-a7f0-a86c47bf9aa8',
 );
 
+# The Surge's ExtraDescription: what it becomes on each mood, one line per kind of reaction.
+our @REACTION_LINES = ([1, 'Primary'], [2, 'Secondary'], [3, 'Tertiary'], [4, 'Catharsis'], [0, 'Intense']);
+sub result_name { my ($s, $m, $r) = @_;
+    $r->{kind} eq 'catharsis' ? 'Catharsis' : $r->{kind} eq 'intensify' ? $EMO{$s}{intense}{name} : feeling_of($s, $m)->{name} }
+sub reaction_list {
+    my $s = shift;
+    my @lines;
+    for my $l (@REACTION_LINES) {
+        my ($d, $label) = @$l;
+        my @m = grep { distance($s, $_) == $d } @WHEEL;
+        my $gate = $GATE{$d};
+        my $head = $gate ? "$label (level $GATE_LEVEL{$gate})" : $label;
+        push @lines, "$head: " . join(', ', map { my $r = reaction($s, $_);
+            st_tag(mood_id($_), $EMO{$_}{mood}{name}) . ' into ' . st_tag($r->{status}, result_name($s, $_, $r)) } @m) . '.';
+    }
+    join '<br>', @lines;
+}
+
 sub build_spells {
     my $out = '';
-    my $alchemy = qq{<LSTag Type="Passive" Tooltip="Arcana_Passive_EmotionalAlchemy">Emotional Alchemy</LSTag>};
     for my $e (@WHEEL) {
         my $E = $EMO{$e}; my $dark = $E->{side} eq 'I';
-        my $extra = 'When the surge fades, it leaves the target ' . st_tag(mood_id($e), $E->{mood}{name})
-                  . ".<br><br>If the target already carries a mood, the threads react instead - see $alchemy.";
+        my $desc = tag_terms("$E->{flavour} $E->{effect}<br><br>When the surge fades, it leaves the target "
+                 . st_tag(mood_id($e), $E->{mood}{name}) . " for $MOOD_TURNS turns, $E->{mood}{fx}.");
         $out .= entry(spell_id($e), 'SpellData',
             SpellType => 'Target', Level => 1, SpellSchool => 'Enchantment', TargetRadius => 18, AmountOfTargets => 1,
             SpellRoll => 'Ally() or Self() or not SavingThrow(Ability.Wisdom, SourceSpellDC())',
@@ -425,10 +453,12 @@ sub build_spells {
             TargetConditions => target_conditions($e),
             Icon => $E->{icon},
             DisplayName => loca(key(spell_id($e), 'NAME'), "Weave Surge: $e"),
-            Description => loca(key(spell_id($e), 'DESC'), $E->{spell}),
-            ExtraDescription => loca(key(spell_id($e), 'EXTRA'), $extra),
+            Description => loca(key(spell_id($e), 'DESC'), $desc),
+            DescriptionParams => $E->{mood}{params},
+            ExtraDescription => loca(key(spell_id($e), 'EXTRA'), reaction_list($e)),
             TooltipAttackSave => 'Wisdom',
             TooltipStatusApply => 'ApplyStatus(' . peak_id($e) . ',100,1)',
+            TooltipPermanentWarnings => $SURGE_WARNING,
             @CAST,
             PreviewCursor => 'Cast', CastTextEvent => 'Cast',
             CycleConditions => $dark ? 'Enemy() and not Dead()' : 'Ally() and not Dead()',
